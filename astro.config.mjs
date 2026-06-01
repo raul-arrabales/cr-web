@@ -1,5 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  markdown: {
+    image: {
+      service: {
+        entrypoint: 'astro/assets/services/noop'
+      }
+    }
+  }
+});

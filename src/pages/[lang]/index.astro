@@ -1,0 +1,33 @@
+---
+export function getStaticPaths() {
+  return [
+    { params: { lang: "es" } },
+    { params: { lang: "en" } },
+  ];
+}
+
+const { lang } = Astro.params;
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <title>Raúl Arrabales</title>
+  </head>
+  <body>
+    <main>
+      <h1>Raúl Arrabales</h1>
+
+      <p>
+        {lang === "es"
+          ? "Web personal, blog, libros y publicaciones."
+          : "Personal website, blog, books and publications."}
+      </p>
+
+      <ul>
+        <li><a href={`/${lang}/blog/2025/que-son-los-agentes-de-ia/`}>Blog</a></li>
+        <li><a href={`/${lang}/pages/2025/amor-programado/`}>Página de ejemplo</a></li>
+      </ul>
+    </main>
+  </body>
+</html>
