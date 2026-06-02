@@ -1,0 +1,113 @@
+---
+import { getCollection } from "astro:content";
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import { type Lang, siteCopy } from "../../../lib/site";
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: "es" } },
+    { params: { lang: "en" } },
+  ];
+}
+
+const { lang } = Astro.params as { lang: Lang };
+const copy = siteCopy[lang];
+
+const posts = (await getCollection("blog", ({ id }) => id.startsWith(`${lang}/`)))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .map((post) => {
+    const [, year, slug] = post.id.split("/");
+
+    return {
+      title: post.data.title,
+      date: post.data.date,
+      href: `/${lang}/blog/${year}/${slug}/`,
+      tags: post.data.tags ?? [],
+      categories: post.data.categories ?? [],
+    };
+  });
+
+const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<SiteLayout lang={lang} title={`Raúl Arrabales | ${copy.blogLabel}`} description={copy.blogIntro}>
+  <section class="panel">
+    <div class="prose">
+      <p class="eyebrow">{copy.blogLabel}</p>
+      <h1>{copy.blogLabel}</h1>
+      <p class="lede">{copy.blogIntro}</p>
+    </div>
+  </section>
+
+  <section class="panel list-panel">
+    <ul class="post-list">
+      {posts.map((post) => (
+        <li class="post-item">
+          <a class="post-link" href={post.href}>
+            <div class="copy">
+              <h2>{post.title}</h2>
+              {(post.categories.length > 0 || post.tags.length > 0) && (
+                <p class="meta">
+                  {[...post.categories, ...post.tags].slice(0, 4).join(" · ")}
+                </p>
+              )}
+            </div>
+            <time datetime={post.date.toISOString()}>{formatter.format(post.date)}</time>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <style>
+    .list-panel {
+      margin-top: 1.25rem;
+    }
+
+    .post-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line);
+    }
+
+    .post-item {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .post-link {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 1rem 0;
+      text-decoration: none;
+    }
+
+    .post-link:hover {
+      color: var(--accent);
+    }
+
+    .copy h2 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .meta {
+      margin: 0.45rem 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .post-link time {
+      color: var(--muted);
+      white-space: nowrap;
+      font-size: 0.95rem;
+    }
+  </style>
+</SiteLayout>

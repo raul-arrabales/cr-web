@@ -1,5 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
+import SiteLayout from "../../../../../layouts/SiteLayout.astro";
+import { type Lang } from "../../../../../lib/site";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
@@ -16,21 +18,19 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 const { Content } = await render(page);
+const lang = Astro.params.lang as Lang;
+
+const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
 ---
 
-<html lang={Astro.params.lang}>
-  <head>
-    <meta charset="utf-8" />
-    <title>{page.data.title}</title>
-  </head>
-  <body>
-    <main>
-      <a href={`/${Astro.params.lang}/`}>← Inicio</a>
-
-      <article>
-        <h1>{page.data.title}</h1>
-        <Content />
-      </article>
-    </main>
-  </body>
-</html>
+<SiteLayout lang={lang} title={page.data.title}>
+  <article class="panel prose">
+    {page.data.date && <p class="eyebrow">{formatter.format(page.data.date)}</p>}
+    <h1>{page.data.title}</h1>
+    <Content />
+  </article>
+</SiteLayout>

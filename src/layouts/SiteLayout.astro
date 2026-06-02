@@ -1,0 +1,249 @@
+---
+import type { Lang } from "../lib/site";
+import { getNavItems, getOtherLanguage, siteCopy } from "../lib/site";
+
+type NavItem = {
+  href: string;
+  label: string;
+};
+
+interface Props {
+  title: string;
+  lang: Lang;
+  description?: string;
+  navItems?: NavItem[];
+}
+
+const { title, lang, description, navItems = getNavItems(lang) } = Astro.props;
+const copy = siteCopy[lang];
+const alternateLanguage = getOtherLanguage(lang);
+const alternateHref = `/${alternateLanguage}/`;
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    {description && <meta name="description" content={description} />}
+    <title>{title}</title>
+    <style>
+      :root {
+        --bg: #f5f1e8;
+        --surface: rgba(255, 255, 255, 0.78);
+        --surface-strong: rgba(255, 255, 255, 0.92);
+        --text: #1f1a17;
+        --muted: #61574f;
+        --line: rgba(55, 42, 34, 0.14);
+        --accent: #a14f2a;
+        --accent-soft: #f2dfd3;
+        --shadow: 0 22px 60px rgba(43, 29, 21, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(161, 79, 42, 0.16), transparent 35%),
+          radial-gradient(circle at top right, rgba(89, 108, 137, 0.14), transparent 30%),
+          linear-gradient(180deg, #faf7f1 0%, var(--bg) 100%);
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .shell {
+        width: min(1100px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 1.25rem 0 4rem;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        margin: 0 0 2rem;
+        padding: 0.9rem 1rem;
+        border: 1px solid var(--line);
+        border-radius: 1.25rem;
+        background: rgba(250, 247, 241, 0.82);
+        backdrop-filter: blur(14px);
+        box-shadow: var(--shadow);
+      }
+
+      .header-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .brand {
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+      }
+
+      .top-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        align-items: center;
+      }
+
+      .language-pill,
+      .nav-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 2.4rem;
+        padding: 0.55rem 0.9rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        text-decoration: none;
+      }
+
+      .language-pill {
+        font-size: 0.92rem;
+      }
+
+      .section-nav {
+        margin-top: 0.9rem;
+      }
+
+      .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .nav-link {
+        font-size: 0.98rem;
+      }
+
+      .nav-link:hover,
+      .language-pill:hover,
+      .brand:hover {
+        color: var(--accent);
+      }
+
+      main {
+        display: block;
+      }
+
+      .panel {
+        padding: 1.6rem;
+        border: 1px solid var(--line);
+        border-radius: 1.5rem;
+        background: var(--surface-strong);
+        box-shadow: var(--shadow);
+      }
+
+      .prose {
+        font-size: 1.05rem;
+        line-height: 1.75;
+      }
+
+      .prose h1,
+      .prose h2,
+      .prose h3 {
+        line-height: 1.15;
+      }
+
+      .prose h1 {
+        margin-top: 0;
+        font-size: clamp(2rem, 3.6vw, 3.5rem);
+      }
+
+      .prose img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .prose a {
+        color: var(--accent);
+      }
+
+      .prose blockquote {
+        margin: 1.5rem 0;
+        padding-left: 1rem;
+        border-left: 3px solid var(--accent);
+        color: var(--muted);
+      }
+
+      .eyebrow {
+        margin: 0 0 0.8rem;
+        color: var(--muted);
+        font-size: 0.84rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .lede {
+        color: var(--muted);
+        font-size: 1.08rem;
+      }
+
+      @media (max-width: 720px) {
+        .shell {
+          width: min(100% - 1rem, 1100px);
+          padding-top: 0.75rem;
+        }
+
+        .site-header {
+          border-radius: 1rem;
+        }
+
+        .panel {
+          padding: 1.2rem;
+          border-radius: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="site-header">
+        <div class="header-row">
+          <a class="brand" href={`/${lang}/`}>{copy.siteTitle}</a>
+
+          <div class="top-actions">
+            <a class="language-pill" href={alternateHref}>
+              {copy.switchLanguageLabel}: {alternateLanguage.toUpperCase()}
+            </a>
+          </div>
+        </div>
+
+        <nav class="section-nav" aria-label={copy.menuLabel}>
+          <ul class="nav-list">
+            {navItems.map((item) => (
+              <li><a class="nav-link" href={item.href}>{item.label}</a></li>
+            ))}
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <slot />
+      </main>
+    </div>
+  </body>
+</html>
