@@ -1,43 +1,102 @@
-# Astro Starter Kit: Minimal
+# cr-web
+
+Unified personal website and blog built with Astro.
+
+This repository consolidates content from two legacy WordPress sites, one in English and one in Spanish, into a single static site. The project is content-first, bilingual, and optimized for static hosting.
+
+## Stack
+
+- Astro `^6.4.2`
+- Node `>=22.12.0`
+- Static output in `dist/`
+
+## Content Model
+
+Current Astro content collections:
+
+- `blog`
+- `pages`
+
+Canonical content paths:
+
+- Blog posts: `src/content/blog/{lang}/{year}/{slug}/index.md`
+- Pages: `src/content/pages/{lang}/{year}/{slug}/index.md`
+
+Current route shape:
+
+- Blog posts: `/{lang}/blog/{year}/{slug}/`
+- Pages: `/{lang}/pages/{year}/{slug}/`
+
+Supported languages:
+
+- `en`
+- `es`
+
+Localized entries are managed independently unless a relationship is explicitly documented.
+
+## Local Development
+
+Install dependencies:
 
 ```sh
-npm create astro@latest -- --template minimal
+npm install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Start the dev server:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+npm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Create a production build:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```sh
+npm run build
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+Preview the built site locally:
 
-## 🧞 Commands
+```sh
+npm run preview
+```
 
-All commands are run from the root of the project, from a terminal:
+## Cloudflare Pages
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+This project currently deploys cleanly as a static Astro site.
 
-## 👀 Want to learn more?
+Recommended Cloudflare Pages settings:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Framework preset: `Astro`
+- Production branch: `main` or your chosen default branch
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Root directory: repository root
+
+Optional environment setting:
+
+- `NODE_VERSION=22.12.0`
+
+The repo includes [wrangler.toml](/home/array/projects/web/cr-web/wrangler.toml) to document the Pages output directory for Wrangler-based workflows.
+
+Important:
+
+- If you use a Cloudflare dashboard-connected Git deployment, keep the dashboard build settings aligned with this repo.
+- If you later add Pages Functions or bindings, update `wrangler.toml` intentionally and treat it as part of your deployment source of truth.
+
+### First Deployment Check
+
+After Cloudflare finishes the first deploy, verify:
+
+- `/`
+- `/en/`
+- `/es/`
+- One English blog post
+- One Spanish blog post
+- One `pages` route in each language
+- Legacy assets under `public/legacy-images`
+
+## Notes
+
+- Favor static-friendly changes and minimal client-side JavaScript.
+- Preserve migrated content fidelity first, then refine formatting and presentation incrementally.
+- Before shipping meaningful content or template changes, run `npm run build`.
