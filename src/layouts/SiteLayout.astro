@@ -1,4 +1,5 @@
 ---
+import "../styles/fonts.css";
 import type { Lang } from "../lib/site";
 import { getNavItems, getOtherLanguage, siteCopy } from "../lib/site";
 
@@ -40,6 +41,7 @@ const alternateHref = `/${alternateLanguage}/`;
         --accent: #a14f2a;
         --accent-soft: #f2dfd3;
         --shadow: 0 22px 60px rgba(43, 29, 21, 0.08);
+        --brand-font: "Orbitron", sans-serif;
       }
 
       * {
@@ -47,7 +49,7 @@ const alternateHref = `/${alternateLanguage}/`;
       }
 
       html {
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: "Space Grotesk", sans-serif;
         color: var(--text);
         background:
           radial-gradient(circle at top left, rgba(161, 79, 42, 0.16), transparent 35%),
@@ -92,9 +94,10 @@ const alternateHref = `/${alternateLanguage}/`;
       }
 
       .brand {
+        font-family: var(--brand-font);
         font-size: 1.1rem;
         font-weight: 700;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.04em;
         text-decoration: none;
       }
 

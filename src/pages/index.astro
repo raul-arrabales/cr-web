@@ -1,4 +1,5 @@
 ---
+import "../styles/fonts.css";
 import { getNavItems, languages, sectionRoutes } from "../lib/site";
 
 const englishNav = getNavItems("en");
@@ -26,6 +27,7 @@ const spanishNav = getNavItems("es");
         --line: rgba(55, 42, 34, 0.14);
         --accent: #a14f2a;
         --shadow: 0 24px 70px rgba(43, 29, 21, 0.08);
+        --brand-font: "Orbitron", sans-serif;
       }
 
       * {
@@ -33,7 +35,7 @@ const spanishNav = getNavItems("es");
       }
 
       html {
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: "Space Grotesk", sans-serif;
         color: var(--text);
         background:
           radial-gradient(circle at top left, rgba(161, 79, 42, 0.16), transparent 35%),
@@ -75,16 +77,29 @@ const spanishNav = getNavItems("es");
       }
 
       .brand {
-        font-size: 1.1rem;
+        display: inline-flex;
+        align-items: center;
+        flex: 0 1 auto;
+        min-width: 0;
+        max-width: 100%;
+        padding: 0.15rem 0;
+        font-family: var(--brand-font);
+        font-size: clamp(1.4rem, 3.2vw, 2.5rem);
         font-weight: 700;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.04em;
+        line-height: 1.05;
         text-decoration: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .language-pills {
         display: flex;
         flex-wrap: wrap;
         gap: 0.6rem;
+        justify-content: flex-end;
+        flex: 0 0 auto;
       }
 
       .pill,
@@ -188,12 +203,22 @@ const spanishNav = getNavItems("es");
           padding-top: 0.75rem;
         }
 
+        .brand {
+          font-size: clamp(1.2rem, 6vw, 1.8rem);
+          letter-spacing: 0.03em;
+        }
+
         .grid {
           grid-template-columns: 1fr;
         }
 
         .menu ul {
           grid-template-columns: 1fr;
+        }
+
+        .language-pills {
+          justify-content: flex-start;
+          width: 100%;
         }
       }
     </style>
@@ -212,24 +237,16 @@ const spanishNav = getNavItems("es");
 
       <main>
         <section class="hero">
-          <p class="eyebrow">Raúl Arrabales personal website</p>
-          <h1>Thoughts, publications, and media.</h1>
+          <p class="eyebrow">Thoughts, publications, and media</p>
+          <h1>Raúl Arrabales Moreno, PhD</h1>
           <p class="lede">
-            Choose a language to explore the blog, publications, media presence, and
-            curriculum vitae. 
+            Cognitive Science | Artificial Intelligence | Machine Consciousness 
           </p>
-
-          <div class="cta-row">
-            <a class="cta" href={sectionRoutes.en.home}>Enter English site</a>
-            <a class="cta" href={sectionRoutes.es.home}>Entrar en español</a>
-          </div>
         </section>
 
         <section class="grid">
           <article class="language-card">
             <p class="eyebrow">English</p>
-            <h2>English</h2>
-            <p>{languages[0].description}</p>
             <nav class="menu" aria-label="English sections">
               <ul>
                 {englishNav.map((item) => (
@@ -241,8 +258,6 @@ const spanishNav = getNavItems("es");
 
           <article class="language-card">
             <p class="eyebrow">Español</p>
-            <h2>Español</h2>
-            <p>{languages[1].description}</p>
             <nav class="menu" aria-label="Secciones en español">
               <ul>
                 {spanishNav.map((item) => (
