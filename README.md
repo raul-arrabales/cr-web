@@ -1,6 +1,6 @@
 # cr-web
 
-Unified personal website and blog built with Astro.
+Raul's personal website and blog built with Astro.
 
 This repository consolidates content from two legacy WordPress sites, one in English and one in Spanish, into a single static site. The project is content-first, bilingual, and optimized for static hosting.
 
@@ -82,18 +82,6 @@ Important:
 
 - If you use a Cloudflare dashboard-connected Git deployment, keep the dashboard build settings aligned with this repo.
 - If you later add Pages Functions or bindings, update `wrangler.toml` intentionally and treat it as part of your deployment source of truth.
-
-### First Deployment Check
-
-After Cloudflare finishes the first deploy, verify:
-
-- `/`
-- `/en/`
-- `/es/`
-- One English blog post
-- One Spanish blog post
-- One `pages` route in each language
-- Legacy assets under `public/legacy-images`
 
 ## Notes
 
