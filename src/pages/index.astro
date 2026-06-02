@@ -37,14 +37,25 @@ const spanishNav = getNavItems("es");
       html {
         font-family: "Space Grotesk", sans-serif;
         color: var(--text);
-        background:
-          radial-gradient(circle at top left, rgba(161, 79, 42, 0.16), transparent 35%),
-          radial-gradient(circle at top right, rgba(89, 108, 137, 0.14), transparent 30%),
-          linear-gradient(180deg, #faf7f1 0%, var(--bg) 100%);
+        background: #f8f4ec;
       }
 
       body {
+        position: relative;
         margin: 0;
+        min-height: 100vh;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background:
+          radial-gradient(circle at top left, rgba(161, 79, 42, 0.1), transparent 32%),
+          radial-gradient(circle at top right, rgba(89, 108, 137, 0.08), transparent 28%),
+          linear-gradient(180deg, #faf7f1 0%, var(--bg) 100%);
       }
 
       a {
@@ -136,6 +147,13 @@ const spanishNav = getNavItems("es");
         line-height: 0.95;
       }
 
+      .hero-title {
+        font-size: clamp(1.65rem, 5vw, 4.35rem);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
       .lede {
         max-width: 42rem;
         color: var(--muted);
@@ -208,6 +226,10 @@ const spanishNav = getNavItems("es");
           letter-spacing: 0.03em;
         }
 
+        .hero-title {
+          font-size: clamp(1.25rem, 5.8vw, 2.4rem);
+        }
+
         .grid {
           grid-template-columns: 1fr;
         }
@@ -238,7 +260,7 @@ const spanishNav = getNavItems("es");
       <main>
         <section class="hero">
           <p class="eyebrow">Thoughts, publications, and media</p>
-          <h1>Raúl Arrabales Moreno, PhD</h1>
+          <h1 class="hero-title">Raúl Arrabales Moreno, PhD</h1>
           <p class="lede">
             Cognitive Science | Artificial Intelligence | Machine Consciousness 
           </p>

@@ -41,6 +41,12 @@ type SiteCopy = {
   exploreLabel: string;
 };
 
+export type MediaHubItem = {
+  title: string;
+  description: string;
+  href: string;
+};
+
 export const sectionRoutes: Record<Lang, SiteSectionMap> = {
   en: {
     home: "/en/",
@@ -103,4 +109,64 @@ export function getNavItems(lang: Lang): NavItem[] {
 
 export function getOtherLanguage(lang: Lang): Lang {
   return lang === "en" ? "es" : "en";
+}
+
+export function getMediaHubItems(lang: Lang): MediaHubItem[] {
+  const routes = sectionRoutes[lang];
+
+  if (lang === "es") {
+    return [
+      {
+        title: "Pódcast",
+        description:
+          "Conversaciones sobre inteligencia artificial, tecnología y psicología, con espacio para ideas más personales y experimentales.",
+        href: "/es/pages/2025/podcast/",
+      },
+      {
+        title: "Conferencias",
+        description:
+          "Charlas invitadas, ponencias y sesiones públicas sobre IA, psicología y transformación tecnológica.",
+        href: "/es/pages/2016/conferencias/",
+      },
+      {
+        title: "Entrevistas",
+        description:
+          "Apariciones en medios, entrevistas y cobertura pública relacionada con investigación, divulgación y práctica profesional.",
+        href: "/es/pages/2016/medios/",
+      },
+      {
+        title: "Próximos Eventos",
+        description:
+          "Una vista rápida de conferencias y encuentros próximos para seguir la actividad pública más reciente.",
+        href: "/es/pages/2025/proximos-eventos/",
+      },
+    ];
+  }
+
+  return [
+    {
+      title: "Podcast",
+      description:
+        "Conversations about artificial intelligence, technology, and psychology, including more personal and experimental threads.",
+      href: "/en/pages/2025/podcast/",
+    },
+    {
+      title: "Invited Talks",
+      description:
+        "Public talks, keynote sessions, and invited appearances on AI, psychology, and technological change.",
+      href: "/en/pages/2015/invited-talks/",
+    },
+    {
+      title: "Interviews",
+      description:
+        "Media appearances, interviews, and public coverage connected to research, writing, and professional work.",
+      href: "/en/pages/2015/media-appearances/",
+    },
+    {
+      title: "Upcoming Events",
+      description:
+        "A quick overview of upcoming conferences and events for following current public activity.",
+      href: "/en/pages/2025/%EF%B8%8F-upcoming-events/",
+    },
+  ];
 }

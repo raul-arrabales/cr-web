@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import SiteLayout from "../../../../../layouts/SiteLayout.astro";
-import { type Lang } from "../../../../../lib/site";
+import { getMediaHubItems, type Lang } from "../../../../../lib/site";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
@@ -19,6 +19,9 @@ export async function getStaticPaths() {
 const { page } = Astro.props;
 const { Content } = await render(page);
 const lang = Astro.params.lang as Lang;
+const slug = Astro.params.slug ?? "";
+const isMediaHub = slug === "media-presence" || slug === "presencia-en-medios";
+const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
 
 const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
   year: "numeric",
@@ -28,9 +31,75 @@ const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
 ---
 
 <SiteLayout lang={lang} title={page.data.title}>
-  <article class="panel prose">
+  <article class="panel prose page-panel">
     {page.data.date && <p class="eyebrow">{formatter.format(page.data.date)}</p>}
     <h1>{page.data.title}</h1>
-    <Content />
+    {isMediaHub ? (
+      <div class="media-hub">
+        {mediaHubItems.map((item) => (
+          <a class="media-card" href={item.href}>
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <Content />
+    )}
   </article>
+
+  <style>
+    .page-panel {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .media-hub {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .media-card {
+      display: block;
+      padding: 1.2rem;
+      border: 1px solid var(--line);
+      border-radius: 1.1rem;
+      background: var(--surface);
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition:
+        transform 160ms ease,
+        border-color 160ms ease,
+        color 160ms ease;
+    }
+
+    .media-card:hover {
+      color: var(--accent);
+      border-color: rgba(161, 79, 42, 0.28);
+      transform: translateY(-1px);
+    }
+
+    .media-card h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+
+    .media-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    @media (max-width: 720px) {
+      .media-hub {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </SiteLayout>
