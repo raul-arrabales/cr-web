@@ -1,0 +1,300 @@
+---
+import { siteCopy, type Lang, type NavItem } from "../lib/site";
+
+interface Props {
+  brandHref: string;
+  brandLabel: string;
+  currentLang?: Lang | null;
+  uiLang?: Lang;
+  navItems?: NavItem[];
+  navLabel?: string;
+}
+
+const {
+  brandHref,
+  brandLabel,
+  currentLang = null,
+  uiLang = currentLang ?? "en",
+  navItems = [],
+  navLabel,
+} = Astro.props;
+
+const copy = siteCopy[uiLang];
+const languageTargets: Record<Lang, string> = {
+  en: "/en/",
+  es: "/es/",
+};
+const languages: Lang[] = ["en", "es"];
+---
+
+<header class="site-header">
+  <div class="header-row">
+    <a class="brand" href={brandHref}>{brandLabel}</a>
+
+    <div class="top-actions">
+      <button
+        class="theme-toggle"
+        type="button"
+        data-theme-toggle
+        data-label-dark={copy.switchToDarkModeLabel}
+        data-label-light={copy.switchToLightModeLabel}
+        aria-label={copy.themeToggleLabel}
+        title={copy.themeToggleLabel}
+      >
+        <svg class="theme-icon theme-icon--light" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+          <path
+            d="M12 2.8v2.4M12 18.8v2.4M21.2 12h-2.4M5.2 12H2.8M18.5 5.5l-1.7 1.7M7.2 16.8l-1.7 1.7M18.5 18.5l-1.7-1.7M7.2 7.2 5.5 5.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="1.8"
+          ></path>
+        </svg>
+
+        <svg class="theme-icon theme-icon--dark" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M19.4 14.8A7.9 7.9 0 0 1 9.2 4.6a8.7 8.7 0 1 0 10.2 10.2Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-width="1.8"
+          ></path>
+        </svg>
+      </button>
+
+      <nav class="language-switch" aria-label={copy.languageSelectorLabel}>
+        {languages.map((language) =>
+          currentLang === language ? (
+            <span class="language-option is-active" aria-current="page">{language.toUpperCase()}</span>
+          ) : (
+            <a class="language-option" href={languageTargets[language]} lang={language}>
+              {language.toUpperCase()}
+            </a>
+          ),
+        )}
+      </nav>
+    </div>
+  </div>
+
+  {navItems.length > 0 && navLabel && (
+    <nav class="section-nav" aria-label={navLabel}>
+      <ul class="nav-list">
+        {navItems.map((item) => (
+          <li><a class="nav-link" href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  )}
+</header>
+
+<script is:inline>
+  (() => {
+    const storageKey = "theme";
+    const button = document.querySelector("[data-theme-toggle]");
+
+    if (!(button instanceof HTMLButtonElement)) {
+      return;
+    }
+
+    const root = document.documentElement;
+    const darkLabel = button.dataset.labelDark || "Switch to dark mode";
+    const lightLabel = button.dataset.labelLight || "Switch to light mode";
+
+    const getTheme = () => (root.dataset.theme === "dark" ? "dark" : "light");
+
+    const sync = () => {
+      const theme = getTheme();
+      const nextLabel = theme === "dark" ? lightLabel : darkLabel;
+      button.setAttribute("aria-label", nextLabel);
+      button.setAttribute("title", nextLabel);
+    };
+
+    sync();
+
+    button.addEventListener("click", () => {
+      const nextTheme = getTheme() === "dark" ? "light" : "dark";
+
+      root.dataset.theme = nextTheme;
+      root.style.colorScheme = nextTheme;
+
+      try {
+        window.localStorage.setItem(storageKey, nextTheme);
+      } catch {}
+
+      sync();
+    });
+  })();
+</script>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin: 0 0 2rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+    background: var(--surface);
+    backdrop-filter: blur(14px);
+    box-shadow: var(--shadow);
+  }
+
+  .header-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0.15rem 0;
+    font-family: var(--brand-font);
+    font-size: clamp(1.15rem, 2.8vw, 1.7rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.05;
+    color: var(--muted);
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .top-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .theme-toggle,
+  .language-switch,
+  .nav-link,
+  .language-option {
+    border: 1px solid var(--line);
+    background: var(--surface-strong);
+  }
+
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.7rem;
+    height: 2.7rem;
+    padding: 0;
+    border-radius: 999px;
+    color: var(--muted);
+    cursor: pointer;
+  }
+
+  .theme-icon {
+    width: 1.15rem;
+    height: 1.15rem;
+    display: none;
+  }
+
+  .theme-icon--light {
+    display: block;
+  }
+
+  :global(html[data-theme="dark"]) .theme-icon--light {
+    display: none;
+  }
+
+  :global(html[data-theme="dark"]) .theme-icon--dark {
+    display: block;
+  }
+
+  .language-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.22rem;
+    padding: 0.22rem;
+    border-radius: 999px;
+  }
+
+  .language-option {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    min-height: 2.2rem;
+    padding: 0.42rem 0.82rem;
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .language-option.is-active {
+    border-color: transparent;
+    background: var(--accent-soft);
+    color: var(--text);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+  }
+
+  .section-nav {
+    margin-top: 0.9rem;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.4rem;
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.98rem;
+    text-decoration: none;
+  }
+
+  .nav-link:hover,
+  .language-option:hover,
+  .theme-toggle:hover,
+  .brand:hover {
+    color: var(--accent);
+  }
+
+  .theme-toggle:focus-visible,
+  .language-option:focus-visible,
+  .nav-link:focus-visible,
+  .brand:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 720px) {
+    .site-header {
+      border-radius: 1rem;
+    }
+
+    .brand {
+      font-size: clamp(1.05rem, 5vw, 1.4rem);
+      letter-spacing: 0.03em;
+    }
+
+    .top-actions {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+</style>

@@ -1,0 +1,98 @@
+:root {
+  --bg: #f5f1e8;
+  --page: #f8f4ec;
+  --page-top: #faf7f1;
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-strong: rgba(255, 255, 255, 0.94);
+  --surface-soft: rgba(255, 255, 255, 0.56);
+  --text: #1f1a17;
+  --muted: #61574f;
+  --line: rgba(55, 42, 34, 0.14);
+  --accent: #a14f2a;
+  --accent-soft: rgba(161, 79, 42, 0.14);
+  --shadow: 0 24px 70px rgba(43, 29, 21, 0.08);
+  --glow-warm: rgba(161, 79, 42, 0.1);
+  --glow-cool: rgba(89, 108, 137, 0.08);
+  --brand-font: "Orbitron", sans-serif;
+}
+
+:root[data-theme="dark"] {
+  --bg: #15120f;
+  --page: #12100e;
+  --page-top: #191613;
+  --surface: rgba(29, 25, 22, 0.82);
+  --surface-strong: rgba(35, 30, 27, 0.94);
+  --surface-soft: rgba(51, 44, 39, 0.72);
+  --text: #f4ede4;
+  --muted: #c5b6a6;
+  --line: rgba(239, 228, 214, 0.12);
+  --accent: #e8a06d;
+  --accent-soft: rgba(232, 160, 109, 0.18);
+  --shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
+  --glow-warm: rgba(232, 160, 109, 0.12);
+  --glow-cool: rgba(103, 132, 171, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--text);
+  background: var(--page);
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top left, var(--glow-warm), transparent 32%),
+    radial-gradient(circle at top right, var(--glow-cool), transparent 28%),
+    linear-gradient(180deg, var(--page-top) 0%, var(--bg) 100%);
+}
+
+a {
+  color: inherit;
+}
+
+.shell {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.25rem 0 4rem;
+}
+
+.panel {
+  padding: 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 720px) {
+  .shell {
+    width: min(100% - 1rem, 1120px);
+    padding-top: 0.75rem;
+  }
+
+  .panel {
+    padding: 1.2rem;
+    border-radius: 1.1rem;
+  }
+}

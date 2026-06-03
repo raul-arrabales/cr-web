@@ -13,7 +13,7 @@ export const languages = [
 
 export type Lang = (typeof languages)[number]["code"];
 
-type NavItem = {
+export type NavItem = {
   href: string;
   label: string;
 };
@@ -39,6 +39,10 @@ type SiteCopy = {
   blogIntro: string;
   recentPostsLabel: string;
   exploreLabel: string;
+  languageSelectorLabel: string;
+  themeToggleLabel: string;
+  switchToDarkModeLabel: string;
+  switchToLightModeLabel: string;
   footerUpdatedLabel: string;
   footerDisclaimer: string;
   footerLicenseLead: string;
@@ -83,6 +87,10 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     blogIntro: "Writing on artificial intelligence, consciousness, psychology, and related topics.",
     recentPostsLabel: "Recent posts",
     exploreLabel: "Explore",
+    languageSelectorLabel: "Language selector",
+    themeToggleLabel: "Theme toggle",
+    switchToDarkModeLabel: "Switch to dark mode",
+    switchToLightModeLabel: "Switch to light mode",
     footerUpdatedLabel: "Last updated",
     footerDisclaimer: "My posts are my own views and do not necessarily represent the views of my employer.",
     footerLicenseLead: "by Raúl Arrabales Moreno. Work licensed under a",
@@ -102,6 +110,10 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     blogIntro: "Artículos sobre inteligencia artificial, consciencia, psicología y temas afines.",
     recentPostsLabel: "Entradas recientes",
     exploreLabel: "Explorar",
+    languageSelectorLabel: "Selector de idioma",
+    themeToggleLabel: "Selector de tema",
+    switchToDarkModeLabel: "Cambiar a modo oscuro",
+    switchToLightModeLabel: "Cambiar a modo claro",
     footerUpdatedLabel: "Última actualización",
     footerDisclaimer:
       "Mis publicaciones reflejan mis opiniones personales y no representan necesariamente las de mi empleador.",
