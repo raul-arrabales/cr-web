@@ -1,5 +1,6 @@
 ---
 import "../styles/fonts.css";
+import SiteFooter from "../components/SiteFooter.astro";
 import { getNavItems, languages, sectionRoutes } from "../lib/site";
 
 const englishNav = getNavItems("en");
@@ -290,6 +291,8 @@ const spanishNav = getNavItems("es");
           </article>
         </section>
       </main>
+
+      <SiteFooter updatedAt={new Date()} />
     </div>
   </body>
 </html>

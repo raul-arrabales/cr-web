@@ -39,6 +39,11 @@ type SiteCopy = {
   blogIntro: string;
   recentPostsLabel: string;
   exploreLabel: string;
+  footerUpdatedLabel: string;
+  footerDisclaimer: string;
+  footerLicenseLead: string;
+  footerLicenseLinkLabel: string;
+  footerTrademarkNotice: string;
 };
 
 export type MediaHubItem = {
@@ -78,6 +83,11 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     blogIntro: "Writing on artificial intelligence, consciousness, psychology, and related topics.",
     recentPostsLabel: "Recent posts",
     exploreLabel: "Explore",
+    footerUpdatedLabel: "Last updated",
+    footerDisclaimer: "My posts are my own views and do not necessarily represent the views of my employer.",
+    footerLicenseLead: "by Raúl Arrabales Moreno. Work licensed under a",
+    footerLicenseLinkLabel: "Creative Commons Licence (CC BY-NC-SA 3.0)",
+    footerTrademarkNotice: "All logos and trademarks are property of their respective owner.",
   },
   es: {
     siteTitle: "Raúl Arrabales",
@@ -92,6 +102,12 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     blogIntro: "Artículos sobre inteligencia artificial, consciencia, psicología y temas afines.",
     recentPostsLabel: "Entradas recientes",
     exploreLabel: "Explorar",
+    footerUpdatedLabel: "Última actualización",
+    footerDisclaimer:
+      "Mis publicaciones reflejan mis opiniones personales y no representan necesariamente las de mi empleador.",
+    footerLicenseLead: "por Raúl Arrabales Moreno. Obra licenciada bajo una",
+    footerLicenseLinkLabel: "Licencia Creative Commons (CC BY-NC-SA 3.0)",
+    footerTrademarkNotice: "Todos los logotipos y marcas registradas pertenecen a sus respectivos propietarios.",
   },
 };
 

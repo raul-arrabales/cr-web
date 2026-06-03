@@ -1,5 +1,6 @@
 ---
 import "../styles/fonts.css";
+import SiteFooter from "../components/SiteFooter.astro";
 import type { Lang } from "../lib/site";
 import { getNavItems, getOtherLanguage, siteCopy } from "../lib/site";
 
@@ -13,9 +14,10 @@ interface Props {
   lang: Lang;
   description?: string;
   navItems?: NavItem[];
+  updatedAt?: Date;
 }
 
-const { title, lang, description, navItems = getNavItems(lang) } = Astro.props;
+const { title, lang, description, navItems = getNavItems(lang), updatedAt = new Date() } = Astro.props;
 const copy = siteCopy[lang];
 const alternateLanguage = getOtherLanguage(lang);
 const alternateHref = `/${alternateLanguage}/`;
@@ -340,6 +342,8 @@ const alternateHref = `/${alternateLanguage}/`;
       <main>
         <slot />
       </main>
+
+      <SiteFooter lang={lang} updatedAt={updatedAt} />
     </div>
   </body>
 </html>
