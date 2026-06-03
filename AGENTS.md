@@ -24,12 +24,12 @@ The content model currently uses two Astro content collections defined in [src/c
 Canonical content paths:
 
 - Blog posts: `src/content/blog/{lang}/{year}/{slug}/index.md`
-- Evergreen/static pages: `src/content/pages/{lang}/{year}/{slug}/index.md`
+- Evergreen/static pages: `src/content/pages/{lang}/{slug}/index.md`
 
 Current route shape:
 
 - Blog posts render at `/{lang}/blog/{year}/{slug}/`
-- Pages render at `/{lang}/pages/{year}/{slug}/`
+- Pages render at `/{lang}/pages/{slug}/`
 
 Language handling:
 

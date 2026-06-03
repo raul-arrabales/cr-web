@@ -20,7 +20,7 @@ Current Astro content collections:
 Canonical content paths:
 
 - Blog posts: `src/content/blog/{lang}/{year}/{slug}/index.md`
-- Pages: `src/content/pages/{lang}/{year}/{slug}/index.md`
+- Pages: `src/content/pages/{lang}/{slug}/index.md`
 
 Current route shape:
 

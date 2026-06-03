@@ -64,18 +64,18 @@ export const sectionRoutes: Record<Lang, SiteSectionMap> = {
   en: {
     home: "/en/",
     blog: "/en/blog/",
-    publications: "/en/pages/2015/publications/",
-    media: "/en/pages/2025/media-presence/",
-    cv: "/en/pages/2015/cv-english/",
-    contact: "/en/pages/2016/contact-me/",
+    publications: "/en/pages/publications/",
+    media: "/en/pages/media-presence/",
+    cv: "/en/pages/cv-english/",
+    contact: "/en/pages/contact-me/",
   },
   es: {
     home: "/es/",
     blog: "/es/blog/",
-    publications: "/es/pages/2016/publicaciones/",
-    media: "/es/pages/2025/presencia-en-medios/",
-    cv: "/es/pages/2016/curriculum/",
-    contact: "/es/pages/2016/contacto/",
+    publications: "/es/pages/publicaciones/",
+    media: "/es/pages/presencia-en-medios/",
+    cv: "/es/pages/curriculum/",
+    contact: "/es/pages/contacto/",
   },
 };
 
@@ -141,18 +141,18 @@ export function getNavItems(lang: Lang): NavItem[] {
     lang === "es"
       ? [
           routes.media,
-          "/es/pages/2025/podcast/",
-          "/es/pages/2016/conferencias/",
-          "/es/pages/2016/medios/",
-          "/es/pages/2025/proximos-eventos/",
+          "/es/pages/podcast/",
+          "/es/pages/conferencias/",
+          "/es/pages/medios/",
+          "/es/pages/proximos-eventos/",
         ]
       : [
           routes.media,
-          "/en/pages/2025/podcast/",
-          "/en/pages/2015/invited-talks/",
-          "/en/pages/2015/media-appearances/",
-          "/en/pages/2025/%EF%B8%8F-upcoming-events/",
-          "/en/pages/2025/️-upcoming-events/",
+          "/en/pages/podcast/",
+          "/en/pages/invited-talks/",
+          "/en/pages/media-appearances/",
+          "/en/pages/%EF%B8%8F-upcoming-events/",
+          "/en/pages/️-upcoming-events/",
         ];
 
   return [
@@ -176,25 +176,25 @@ export function getMediaHubItems(lang: Lang): MediaHubItem[] {
         title: "Pódcast",
         description:
           "Conversaciones sobre inteligencia artificial, tecnología y psicología, con espacio para ideas más personales y experimentales.",
-        href: "/es/pages/2025/podcast/",
+        href: "/es/pages/podcast/",
       },
       {
         title: "Conferencias",
         description:
           "Charlas invitadas, ponencias y sesiones públicas sobre IA, psicología y transformación tecnológica.",
-        href: "/es/pages/2016/conferencias/",
+        href: "/es/pages/conferencias/",
       },
       {
         title: "Entrevistas",
         description:
           "Apariciones en medios, entrevistas y cobertura pública relacionada con investigación, divulgación y práctica profesional.",
-        href: "/es/pages/2016/medios/",
+        href: "/es/pages/medios/",
       },
       {
         title: "Próximos Eventos",
         description:
           "Una vista rápida de conferencias y encuentros próximos para seguir la actividad pública más reciente.",
-        href: "/es/pages/2025/proximos-eventos/",
+        href: "/es/pages/proximos-eventos/",
       },
     ];
   }
@@ -204,25 +204,25 @@ export function getMediaHubItems(lang: Lang): MediaHubItem[] {
       title: "Podcast",
       description:
         "Conversations about artificial intelligence, technology, and psychology, including more personal and experimental threads.",
-      href: "/en/pages/2025/podcast/",
+      href: "/en/pages/podcast/",
     },
     {
       title: "Invited Talks",
       description:
         "Public talks, keynote sessions, and invited appearances on AI, psychology, and technological change.",
-      href: "/en/pages/2015/invited-talks/",
+      href: "/en/pages/invited-talks/",
     },
     {
       title: "Interviews",
       description:
         "Media appearances, interviews, and public coverage connected to research, writing, and professional work.",
-      href: "/en/pages/2015/media-appearances/",
+      href: "/en/pages/media-appearances/",
     },
     {
       title: "Upcoming Events",
       description:
         "A quick overview of upcoming conferences and events for following current public activity.",
-      href: "/en/pages/2025/%EF%B8%8F-upcoming-events/",
+      href: "/en/pages/%EF%B8%8F-upcoming-events/",
     },
   ];
 }

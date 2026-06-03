@@ -1,17 +1,17 @@
 ---
 import { getCollection, render } from "astro:content";
-import ContactForm from "../../../../../components/ContactForm.astro";
-import SiteLayout from "../../../../../layouts/SiteLayout.astro";
-import { getMediaHubItems, type Lang } from "../../../../../lib/site";
+import ContactForm from "../../../../components/ContactForm.astro";
+import SiteLayout from "../../../../layouts/SiteLayout.astro";
+import { getMediaHubItems, type Lang } from "../../../../lib/site";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
 
   return pages.map((page) => {
-    const [lang, year, slug] = page.id.split("/");
+    const [lang, slug] = page.id.split("/");
 
     return {
-      params: { lang, year, slug },
+      params: { lang, slug },
       props: { page },
     };
   });
@@ -24,17 +24,10 @@ const slug = Astro.params.slug ?? "";
 const isMediaHub = slug === "media-presence" || slug === "presencia-en-medios";
 const isContactPage = slug === "contact-me" || slug === "contacto";
 const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
-
-const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-});
 ---
 
 <SiteLayout lang={lang} title={page.data.title}>
   <article class="panel prose page-panel">
-    {page.data.date && <p class="eyebrow">{formatter.format(page.data.date)}</p>}
     <h1>{page.data.title}</h1>
     {isMediaHub ? (
       <div class="media-hub">
