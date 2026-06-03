@@ -151,8 +151,7 @@ export function getNavItems(lang: Lang): NavItem[] {
           "/en/pages/podcast/",
           "/en/pages/invited-talks/",
           "/en/pages/media-appearances/",
-          "/en/pages/%EF%B8%8F-upcoming-events/",
-          "/en/pages/️-upcoming-events/",
+          "/en/pages/upcoming-events/",
         ];
 
   return [
@@ -222,7 +221,7 @@ export function getMediaHubItems(lang: Lang): MediaHubItem[] {
       title: "Upcoming Events",
       description:
         "A quick overview of upcoming conferences and events for following current public activity.",
-      href: "/en/pages/%EF%B8%8F-upcoming-events/",
+      href: "/en/pages/upcoming-events/",
     },
   ];
 }

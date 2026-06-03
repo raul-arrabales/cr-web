@@ -17,4 +17,4 @@ Discover more about my perspective on AI and Psychology through 👉 [interviews
 
 ### 📅 Upcoming Events
 
-Join me at one of my 👉 [upcoming events](https://www.conscious-robots.com/media-presence/%f0%9f%97%93%ef%b8%8f-upcoming-events/) to explore the future of AI and Psychology together.
+Join me at one of my 👉 [upcoming events](/en/pages/upcoming-events/) to explore the future of AI and Psychology together.
