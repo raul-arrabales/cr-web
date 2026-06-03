@@ -1,0 +1,282 @@
+---
+import type { Lang } from "../lib/site";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const copy =
+  lang === "es"
+    ? {
+        formTitle: "Envíame un mensaje",
+        nameLabel: "Nombre",
+        emailLabel: "Correo electrónico",
+        subjectLabel: "Asunto",
+        messageLabel: "Mensaje",
+        namePlaceholder: "Tu nombre",
+        emailPlaceholder: "tu@email.com",
+        subjectPlaceholder: "Motivo de tu mensaje",
+        messagePlaceholder: "Escribe tu mensaje aquí",
+        submitLabel: "Enviar mensaje",
+        sendingLabel: "Enviando...",
+        successMessage: "Gracias. Tu mensaje se ha enviado correctamente.",
+        errorMessage:
+          "No se pudo enviar el mensaje en este momento. Inténtalo de nuevo dentro de unos minutos.",
+      }
+    : {
+        formTitle: "Send me a message",
+        nameLabel: "Name",
+        emailLabel: "Email",
+        subjectLabel: "Subject",
+        messageLabel: "Message",
+        namePlaceholder: "Your name",
+        emailPlaceholder: "you@example.com",
+        subjectPlaceholder: "What is this about?",
+        messagePlaceholder: "Write your message here",
+        submitLabel: "Send message",
+        sendingLabel: "Sending...",
+        successMessage: "Thanks. Your message has been sent successfully.",
+        errorMessage: "Your message could not be sent right now. Please try again in a few minutes.",
+      };
+---
+
+<section class="contact-form-wrap panel">
+  <div class="contact-form-header">
+    <h2>{copy.formTitle}</h2>
+  </div>
+
+  <form
+    class="contact-form"
+    action="https://formspree.io/f/xlgkeeon"
+    method="POST"
+    data-contact-form
+    data-success-message={copy.successMessage}
+    data-error-message={copy.errorMessage}
+    data-submit-label={copy.submitLabel}
+    data-sending-label={copy.sendingLabel}
+    novalidate
+  >
+    <input type="hidden" name="lang" value={lang} />
+
+    <label class="field">
+      <span>{copy.nameLabel}</span>
+      <input type="text" name="name" placeholder={copy.namePlaceholder} autocomplete="name" required />
+    </label>
+
+    <label class="field">
+      <span>{copy.emailLabel}</span>
+      <input
+        type="email"
+        name="email"
+        placeholder={copy.emailPlaceholder}
+        autocomplete="email"
+        inputmode="email"
+        required
+      />
+    </label>
+
+    <label class="field">
+      <span>{copy.subjectLabel}</span>
+      <input type="text" name="subject" placeholder={copy.subjectPlaceholder} required />
+    </label>
+
+    <label class="field">
+      <span>{copy.messageLabel}</span>
+      <textarea name="message" rows="7" placeholder={copy.messagePlaceholder} required></textarea>
+    </label>
+
+    <div class="form-actions">
+      <button type="submit">{copy.submitLabel}</button>
+      <p class="form-status" data-form-status aria-live="polite"></p>
+    </div>
+  </form>
+</section>
+
+<script is:inline>
+  (() => {
+    const forms = document.querySelectorAll("[data-contact-form]");
+
+    forms.forEach((form) => {
+      if (!(form instanceof HTMLFormElement)) {
+        return;
+      }
+
+      const submitButton = form.querySelector('button[type="submit"]');
+      const status = form.querySelector("[data-form-status]");
+
+      if (!(submitButton instanceof HTMLButtonElement) || !(status instanceof HTMLElement)) {
+        return;
+      }
+
+      const successMessage = form.dataset.successMessage || "Your message has been sent.";
+      const errorMessage = form.dataset.errorMessage || "Something went wrong. Please try again.";
+      const submitLabel = form.dataset.submitLabel || submitButton.textContent || "Submit";
+      const sendingLabel = form.dataset.sendingLabel || "Sending...";
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        if (!form.reportValidity()) {
+          return;
+        }
+
+        status.textContent = "";
+        status.dataset.state = "";
+        submitButton.disabled = true;
+        submitButton.textContent = sendingLabel;
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          const result = await response.json().catch(() => null);
+
+          if (!response.ok) {
+            const firstError =
+              result && Array.isArray(result.errors) && result.errors.length > 0
+                ? result.errors[0]?.message
+                : errorMessage;
+
+            throw new Error(typeof firstError === "string" ? firstError : errorMessage);
+          }
+
+          form.reset();
+          status.textContent = successMessage;
+          status.dataset.state = "success";
+        } catch (error) {
+          status.textContent = error instanceof Error && error.message ? error.message : errorMessage;
+          status.dataset.state = "error";
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = submitLabel;
+        }
+      });
+    });
+  })();
+</script>
+
+<style>
+  .contact-form-wrap {
+    margin-top: 2rem;
+    padding: 1.4rem;
+    background: var(--surface-soft);
+  }
+
+  .contact-form-header h2 {
+    margin: 0 0 1rem;
+    font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+    line-height: 1.15;
+  }
+
+  .contact-form {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .field {
+    display: grid;
+    gap: 0.45rem;
+  }
+
+  .field span {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .field input,
+  .field textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 0.9rem;
+    background: var(--surface-strong);
+    color: var(--text);
+    font: inherit;
+  }
+
+  .field textarea {
+    resize: vertical;
+    min-height: 10rem;
+  }
+
+  .field input::placeholder,
+  .field textarea::placeholder {
+    color: var(--muted);
+  }
+
+  .field input:focus,
+  .field textarea:focus {
+    outline: 2px solid transparent;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-soft);
+  }
+
+  .form-actions {
+    display: grid;
+    gap: 0.8rem;
+    align-items: start;
+  }
+
+  .form-actions button {
+    justify-self: start;
+    padding: 0.9rem 1.35rem;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff7f0;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+      transform 160ms ease,
+      opacity 160ms ease,
+      box-shadow 160ms ease;
+    box-shadow: var(--shadow);
+  }
+
+  .form-actions button:hover:not(:disabled) {
+    transform: translateY(-1px);
+  }
+
+  .form-actions button:disabled {
+    cursor: wait;
+    opacity: 0.8;
+  }
+
+  .form-status {
+    min-height: 1.5rem;
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .form-status[data-state="success"] {
+    color: #2d6a4f;
+  }
+
+  .form-status[data-state="error"] {
+    color: #b63d2b;
+  }
+
+  :root[data-theme="dark"] .form-actions button {
+    color: #2a1407;
+  }
+
+  @media (max-width: 720px) {
+    .contact-form-wrap {
+      margin-top: 1.5rem;
+      padding: 1.1rem;
+    }
+
+    .form-actions button {
+      width: 100%;
+      justify-self: stretch;
+    }
+  }
+</style>

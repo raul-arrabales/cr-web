@@ -80,7 +80,7 @@ a {
 .panel {
   padding: 1.6rem;
   border: 1px solid var(--line);
-  border-radius: 1.5rem;
+  border-radius: 0.99rem;
   background: var(--surface);
   box-shadow: var(--shadow);
 }
@@ -93,6 +93,6 @@ a {
 
   .panel {
     padding: 1.2rem;
-    border-radius: 1.1rem;
+    border-radius: 0.5rem;
   }
 }

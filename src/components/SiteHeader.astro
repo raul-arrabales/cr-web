@@ -25,67 +25,88 @@ const languageTargets: Record<Lang, string> = {
   es: "/es/",
 };
 const languages: Lang[] = ["en", "es"];
+const currentPath = Astro.url.pathname;
+
+function normalizePath(path: string) {
+  return path.endsWith("/") ? path : `${path}/`;
+}
+
+function isCurrentSection(item: NavItem) {
+  const prefixes = item.matchPrefixes?.length ? item.matchPrefixes : [item.href];
+
+  return prefixes.some((prefix) => normalizePath(currentPath).startsWith(normalizePath(prefix)));
+}
 ---
 
 <header class="site-header">
   <div class="header-row">
     <a class="brand" href={brandHref}>{brandLabel}</a>
 
-    <div class="top-actions">
-      <button
-        class="theme-toggle"
-        type="button"
-        data-theme-toggle
-        data-label-dark={copy.switchToDarkModeLabel}
-        data-label-light={copy.switchToLightModeLabel}
-        aria-label={copy.themeToggleLabel}
-        title={copy.themeToggleLabel}
-      >
-        <svg class="theme-icon theme-icon--light" viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
-          <path
-            d="M12 2.8v2.4M12 18.8v2.4M21.2 12h-2.4M5.2 12H2.8M18.5 5.5l-1.7 1.7M7.2 16.8l-1.7 1.7M18.5 18.5l-1.7-1.7M7.2 7.2 5.5 5.5"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-width="1.8"
-          ></path>
-        </svg>
+    <div class="header-tools">
+      {navItems.length > 0 && navLabel && (
+        <nav class="section-nav" aria-label={navLabel}>
+          <ul class="nav-list">
+            {navItems.map((item) => (
+              <li>
+                <a
+                  class:list={["nav-link", isCurrentSection(item) && "is-active"]}
+                  href={item.href}
+                  aria-current={isCurrentSection(item) ? "page" : undefined}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
 
-        <svg class="theme-icon theme-icon--dark" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M19.4 14.8A7.9 7.9 0 0 1 9.2 4.6a8.7 8.7 0 1 0 10.2 10.2Z"
-            fill="none"
-            stroke="currentColor"
-            stroke-linejoin="round"
-            stroke-width="1.8"
-          ></path>
-        </svg>
-      </button>
+      <div class="top-actions">
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          data-label-dark={copy.switchToDarkModeLabel}
+          data-label-light={copy.switchToLightModeLabel}
+          aria-label={copy.themeToggleLabel}
+          title={copy.themeToggleLabel}
+        >
+          <svg class="theme-icon theme-icon--light" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+            <path
+              d="M12 2.8v2.4M12 18.8v2.4M21.2 12h-2.4M5.2 12H2.8M18.5 5.5l-1.7 1.7M7.2 16.8l-1.7 1.7M18.5 18.5l-1.7-1.7M7.2 7.2 5.5 5.5"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="1.8"
+            ></path>
+          </svg>
 
-      <nav class="language-switch" aria-label={copy.languageSelectorLabel}>
-        {languages.map((language) =>
-          currentLang === language ? (
-            <span class="language-option is-active" aria-current="page">{language.toUpperCase()}</span>
-          ) : (
-            <a class="language-option" href={languageTargets[language]} lang={language}>
-              {language.toUpperCase()}
-            </a>
-          ),
-        )}
-      </nav>
+          <svg class="theme-icon theme-icon--dark" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M19.4 14.8A7.9 7.9 0 0 1 9.2 4.6a8.7 8.7 0 1 0 10.2 10.2Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-linejoin="round"
+              stroke-width="1.8"
+            ></path>
+          </svg>
+        </button>
+
+        <nav class="language-switch" aria-label={copy.languageSelectorLabel}>
+          {languages.map((language) =>
+            currentLang === language ? (
+              <span class="language-option is-active" aria-current="page">{language.toUpperCase()}</span>
+            ) : (
+              <a class="language-option" href={languageTargets[language]} lang={language}>
+                {language.toUpperCase()}
+              </a>
+            ),
+          )}
+        </nav>
+      </div>
     </div>
   </div>
-
-  {navItems.length > 0 && navLabel && (
-    <nav class="section-nav" aria-label={navLabel}>
-      <ul class="nav-list">
-        {navItems.map((item) => (
-          <li><a class="nav-link" href={item.href}>{item.label}</a></li>
-        ))}
-      </ul>
-    </nav>
-  )}
 </header>
 
 <script is:inline>
@@ -152,6 +173,7 @@ const languages: Lang[] = ["en", "es"];
   .brand {
     display: inline-flex;
     align-items: center;
+    flex: 0 0 auto;
     min-width: 0;
     max-width: 100%;
     padding: 0.15rem 0;
@@ -167,8 +189,18 @@ const languages: Lang[] = ["en", "es"];
     text-overflow: ellipsis;
   }
 
+  .header-tools {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 0.7rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
   .top-actions {
     display: flex;
+    flex: 0 0 auto;
     flex-wrap: wrap;
     gap: 0.6rem;
     align-items: center;
@@ -218,7 +250,7 @@ const languages: Lang[] = ["en", "es"];
     align-items: center;
     gap: 0.22rem;
     padding: 0.22rem;
-    border-radius: 999px;
+    border-radius: 0.85rem;
   }
 
   .language-option {
@@ -228,10 +260,10 @@ const languages: Lang[] = ["en", "es"];
     min-width: 3rem;
     min-height: 2.2rem;
     padding: 0.42rem 0.82rem;
-    border-radius: 999px;
+    border-radius: 0.7rem;
     color: var(--muted);
-    font-size: 0.9rem;
-    font-weight: 700;
+    font-size: 0.8rem;
+    font-weight: 500;
     letter-spacing: 0.08em;
     text-decoration: none;
     text-transform: uppercase;
@@ -245,26 +277,62 @@ const languages: Lang[] = ["en", "es"];
   }
 
   .section-nav {
-    margin-top: 0.9rem;
+    flex: 0 1 auto;
+    min-width: 0;
   }
 
   .nav-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.65rem;
+    flex-wrap: nowrap;
+    gap: 0;
     margin: 0;
-    padding: 0;
+    padding: 0.18rem;
     list-style: none;
+    border: 1px solid var(--line);
+    border-radius: 0.5rem;
+    background: var(--surface-strong);
+    width: fit-content;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-list li {
+    position: relative;
+    display: flex;
+  }
+
+  .nav-list li + li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.45rem;
+    bottom: 0.45rem;
+    width: 1px;
+    background: var(--line);
   }
 
   .nav-link {
     display: inline-flex;
     align-items: center;
-    min-height: 2.4rem;
-    padding: 0.55rem 0.9rem;
-    border-radius: 999px;
+    min-height: 2.2rem;
+    padding: 0.45rem 0.85rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background: transparent;
     font-size: 0.98rem;
     text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .nav-link.is-active {
+    color: var(--text);
+    background: var(--accent-soft);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
   }
 
   .nav-link:hover,
@@ -292,8 +360,18 @@ const languages: Lang[] = ["en", "es"];
       letter-spacing: 0.03em;
     }
 
+    .header-tools {
+      order: 3;
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .section-nav {
+      flex-basis: auto;
+    }
+
     .top-actions {
-      width: 100%;
       justify-content: flex-start;
     }
   }

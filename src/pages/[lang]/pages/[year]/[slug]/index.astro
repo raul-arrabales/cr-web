@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
+import ContactForm from "../../../../../components/ContactForm.astro";
 import SiteLayout from "../../../../../layouts/SiteLayout.astro";
 import { getMediaHubItems, type Lang } from "../../../../../lib/site";
 
@@ -21,6 +22,7 @@ const { Content } = await render(page);
 const lang = Astro.params.lang as Lang;
 const slug = Astro.params.slug ?? "";
 const isMediaHub = slug === "media-presence" || slug === "presencia-en-medios";
+const isContactPage = slug === "contact-me" || slug === "contacto";
 const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
 
 const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
@@ -44,7 +46,10 @@ const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
         ))}
       </div>
     ) : (
-      <Content />
+      <>
+        <Content />
+        {isContactPage && <ContactForm lang={lang} />}
+      </>
     )}
   </article>
 

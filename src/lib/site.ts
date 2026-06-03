@@ -16,6 +16,7 @@ export type Lang = (typeof languages)[number]["code"];
 export type NavItem = {
   href: string;
   label: string;
+  matchPrefixes?: string[];
 };
 
 type SiteSectionMap = {
@@ -24,6 +25,7 @@ type SiteSectionMap = {
   publications: string;
   media: string;
   cv: string;
+  contact: string;
 };
 
 type SiteCopy = {
@@ -39,6 +41,7 @@ type SiteCopy = {
   blogIntro: string;
   recentPostsLabel: string;
   exploreLabel: string;
+  contactLabel: string;
   languageSelectorLabel: string;
   themeToggleLabel: string;
   switchToDarkModeLabel: string;
@@ -63,6 +66,7 @@ export const sectionRoutes: Record<Lang, SiteSectionMap> = {
     publications: "/en/pages/2015/publications/",
     media: "/en/pages/2025/media-presence/",
     cv: "/en/pages/2015/cv-english/",
+    contact: "/en/pages/2016/contact-me/",
   },
   es: {
     home: "/es/",
@@ -70,15 +74,16 @@ export const sectionRoutes: Record<Lang, SiteSectionMap> = {
     publications: "/es/pages/2016/publicaciones/",
     media: "/es/pages/2025/presencia-en-medios/",
     cv: "/es/pages/2016/curriculum/",
+    contact: "/es/pages/2016/contacto/",
   },
 };
 
 export const siteCopy: Record<Lang, SiteCopy> = {
   en: {
-    siteTitle: "Raúl Arrabales",
+    siteTitle: "Raúl Arrabales Moreno, PhD",
     homeLabel: "Home",
     blogLabel: "Blog",
-    publicationsLabel: "Publications",
+    publicationsLabel: "Books",
     mediaLabel: "Media",
     cvLabel: "CV",
     menuLabel: "Main menu",
@@ -87,6 +92,7 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     blogIntro: "Writing on artificial intelligence, consciousness, psychology, and related topics.",
     recentPostsLabel: "Recent posts",
     exploreLabel: "Explore",
+    contactLabel: "Contact",
     languageSelectorLabel: "Language selector",
     themeToggleLabel: "Theme toggle",
     switchToDarkModeLabel: "Switch to dark mode",
@@ -98,10 +104,10 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     footerTrademarkNotice: "All logos and trademarks are property of their respective owner.",
   },
   es: {
-    siteTitle: "Raúl Arrabales",
+    siteTitle: "Raúl Arrabales Moreno, PhD",
     homeLabel: "Inicio",
     blogLabel: "Blog",
-    publicationsLabel: "Publicaciones",
+    publicationsLabel: "Libros",
     mediaLabel: "Medios",
     cvLabel: "CV",
     menuLabel: "Menú principal",
@@ -110,6 +116,7 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     blogIntro: "Artículos sobre inteligencia artificial, consciencia, psicología y temas afines.",
     recentPostsLabel: "Entradas recientes",
     exploreLabel: "Explorar",
+    contactLabel: "Contacto",
     languageSelectorLabel: "Selector de idioma",
     themeToggleLabel: "Selector de tema",
     switchToDarkModeLabel: "Cambiar a modo oscuro",
@@ -127,10 +134,28 @@ export function getNavItems(lang: Lang): NavItem[] {
   const copy = siteCopy[lang];
   const routes = sectionRoutes[lang];
 
+  const mediaMatchPrefixes =
+    lang === "es"
+      ? [
+          routes.media,
+          "/es/pages/2025/podcast/",
+          "/es/pages/2016/conferencias/",
+          "/es/pages/2016/medios/",
+          "/es/pages/2025/proximos-eventos/",
+        ]
+      : [
+          routes.media,
+          "/en/pages/2025/podcast/",
+          "/en/pages/2015/invited-talks/",
+          "/en/pages/2015/media-appearances/",
+          "/en/pages/2025/%EF%B8%8F-upcoming-events/",
+          "/en/pages/2025/️-upcoming-events/",
+        ];
+
   return [
     { href: routes.blog, label: copy.blogLabel },
     { href: routes.publications, label: copy.publicationsLabel },
-    { href: routes.media, label: copy.mediaLabel },
+    { href: routes.media, label: copy.mediaLabel, matchPrefixes: mediaMatchPrefixes },
     { href: routes.cv, label: copy.cvLabel },
   ];
 }
