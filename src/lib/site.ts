@@ -30,6 +30,7 @@ type SiteSectionMap = {
 
 type SiteCopy = {
   siteTitle: string;
+  backToTopLabel: string;
   homeLabel: string;
   blogLabel: string;
   publicationsLabel: string;
@@ -81,6 +82,7 @@ export const sectionRoutes: Record<Lang, SiteSectionMap> = {
 export const siteCopy: Record<Lang, SiteCopy> = {
   en: {
     siteTitle: "Raúl Arrabales Moreno, PhD",
+    backToTopLabel: "Back to Top",
     homeLabel: "Home",
     blogLabel: "Blog",
     publicationsLabel: "Books",
@@ -105,6 +107,7 @@ export const siteCopy: Record<Lang, SiteCopy> = {
   },
   es: {
     siteTitle: "Raúl Arrabales Moreno, PhD",
+    backToTopLabel: "Volver arriba",
     homeLabel: "Inicio",
     blogLabel: "Blog",
     publicationsLabel: "Libros",

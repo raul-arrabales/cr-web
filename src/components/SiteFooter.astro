@@ -18,7 +18,8 @@ const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
 ---
 
 <footer class="site-footer">
-  <nav class="footer-links" aria-label="External links">
+  <nav class="footer-links" aria-label={lang === "es" ? "Enlaces del pie" : "Footer links"}>
+    <a href="#top">{copy.backToTopLabel}</a>
     <a href={routes.home}>{copy.homeLabel}</a>
     <a href={routes.contact}>{copy.contactLabel}</a>
     <a href="https://www.linkedin.com/in/raularrabales/" rel="noreferrer" target="_blank">LinkedIn</a>
