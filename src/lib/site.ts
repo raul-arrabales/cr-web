@@ -44,6 +44,8 @@ type SiteCopy = {
   homeIntro: string;
   blogIntro: string;
   recentPostsLabel: string;
+  latestPostsLabel: string;
+  viewAllLabel: string;
   exploreLabel: string;
   contactLabel: string;
   languageSelectorLabel: string;
@@ -100,6 +102,8 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     homeIntro: "Personal website, blog, books, and research-related writing.",
     blogIntro: "Writing on artificial intelligence, consciousness, psychology, and related topics.",
     recentPostsLabel: "Recent posts",
+    latestPostsLabel: "The Latest",
+    viewAllLabel: "View all",
     exploreLabel: "Explore",
     contactLabel: "Contact",
     languageSelectorLabel: "Language selector",
@@ -127,6 +131,8 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     homeIntro: "Web personal, blog, libros y publicaciones relacionadas con la investigación.",
     blogIntro: "Artículos sobre inteligencia artificial, consciencia, psicología y temas afines.",
     recentPostsLabel: "Entradas recientes",
+    latestPostsLabel: "Lo último",
+    viewAllLabel: "Ver todo",
     exploreLabel: "Explorar",
     contactLabel: "Contacto",
     languageSelectorLabel: "Selector de idioma",

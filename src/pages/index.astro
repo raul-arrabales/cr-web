@@ -1,13 +1,45 @@
 ---
+import { getCollection } from "astro:content";
 import "../styles/fonts.css";
 import "../styles/site-chrome.css";
 import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import ThemeBoot from "../components/ThemeBoot.astro";
-import { getNavItems } from "../lib/site";
+import { getNavItems, languages, sectionRoutes, siteCopy } from "../lib/site";
 
 const englishNav = getNavItems("en");
 const spanishNav = getNavItems("es");
+
+const latestPostsByLanguage = await Promise.all(
+  (["en", "es"] as const).map(async (lang) => {
+    const posts = (await getCollection("blog", ({ id }) => id.startsWith(`${lang}/`)))
+      .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+      .slice(0, 3)
+      .map((post) => {
+        const [, year, slug] = post.id.split("/");
+
+        return {
+          title: post.data.title,
+          date: post.data.date,
+          href: `/${lang}/blog/${year}/${slug}/`,
+        };
+      });
+
+    return {
+      lang,
+      label: languages.find((entry) => entry.code === lang)?.label ?? lang,
+      latestLabel: siteCopy[lang].latestPostsLabel,
+      viewAllLabel: siteCopy[lang].viewAllLabel,
+      route: sectionRoutes[lang].blog,
+      formatter: new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      }),
+      posts,
+    };
+  }),
+);
 ---
 
 <html lang="en">
@@ -79,6 +111,10 @@ const spanishNav = getNavItems("es");
         margin-top: 1.5rem;
       }
 
+      .latest-grid {
+        margin-top: 1.1rem;
+      }
+
       .language-card {
         padding: 1.4rem;
         border-radius: 1.5rem;
@@ -124,6 +160,72 @@ const spanishNav = getNavItems("es");
         color: var(--accent);
       }
 
+      .latest-head {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
+
+      .latest-head h2 {
+        margin: 0;
+        font-size: 1.4rem;
+      }
+
+      .latest-link {
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      .latest-link:hover {
+        color: var(--accent);
+      }
+
+      .latest-list {
+        display: grid;
+        gap: 0.7rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .latest-item {
+        border-top: 1px solid var(--line);
+        padding-top: 0.7rem;
+      }
+
+      .latest-item:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .latest-post {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 1rem;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      .latest-post:hover {
+        color: var(--accent);
+      }
+
+      .latest-post span {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .latest-post time {
+        color: var(--muted);
+        font-size: 0.92rem;
+        white-space: nowrap;
+      }
+
       @media (max-width: 780px) {
         .hero-title {
           font-size: clamp(1.25rem, 5.8vw, 2.4rem);
@@ -166,7 +268,7 @@ const spanishNav = getNavItems("es");
 
           <article class="language-card">
             <p class="eyebrow">Español</p>
-            <nav class="menu" aria-label="Secciones en español">
+          <nav class="menu" aria-label="Secciones en español">
               <ul>
                 {spanishNav.map((item) => (
                   <li><a class="menu-link" href={item.href}>{item.label}</a></li>
@@ -174,6 +276,35 @@ const spanishNav = getNavItems("es");
               </ul>
             </nav>
           </article>
+        </section>
+
+        <section class="grid latest-grid" aria-label="Latest posts by language">
+          {latestPostsByLanguage.map((group) => (
+            <article class="language-card">
+              <div class="latest-head">
+                <div>
+                  <p class="eyebrow">{group.label}</p>
+                  <h2>{group.latestLabel}</h2>
+                </div>
+                <a class="latest-link" href={group.route}>
+                  {group.viewAllLabel}
+                </a>
+              </div>
+
+              <ul class="latest-list">
+                {group.posts.map((post) => (
+                  <li class="latest-item">
+                    <a class="latest-post" href={post.href}>
+                      <span>{post.title}</span>
+                      <time datetime={post.date.toISOString()}>
+                        {group.formatter.format(post.date)}
+                      </time>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
         </section>
       </main>
 

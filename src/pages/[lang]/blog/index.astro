@@ -22,8 +22,7 @@ const posts = (await getCollection("blog", ({ id }) => id.startsWith(`${lang}/`)
       title: post.data.title,
       date: post.data.date,
       href: `/${lang}/blog/${year}/${slug}/`,
-      tags: post.data.tags ?? [],
-      categories: post.data.categories ?? [],
+      excerpt: getExcerpt(post.body),
     };
   });
 
@@ -32,6 +31,22 @@ const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
   month: "long",
   day: "numeric",
 });
+
+function getExcerpt(body: string, maxWords = 14) {
+  const cleaned = body
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/[*_>#`~=-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  const words = cleaned.split(" ").filter(Boolean);
+  const excerpt = words.slice(0, maxWords).join(" ");
+
+  return words.length > maxWords ? `${excerpt}…` : excerpt;
+}
 ---
 
 <SiteLayout lang={lang} title={`Raúl Arrabales | ${copy.blogLabel}`} description={copy.blogIntro}>
@@ -48,15 +63,9 @@ const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
       {posts.map((post) => (
         <li class="post-item">
           <a class="post-link" href={post.href}>
-            <div class="copy">
-              <h2>{post.title}</h2>
-              {(post.categories.length > 0 || post.tags.length > 0) && (
-                <p class="meta">
-                  {[...post.categories, ...post.tags].slice(0, 4).join(" · ")}
-                </p>
-              )}
-            </div>
+            <h2>{post.title}</h2>
             <time datetime={post.date.toISOString()}>{formatter.format(post.date)}</time>
+            <p class="excerpt">{post.excerpt}</p>
           </a>
         </li>
       ))}
@@ -80,11 +89,10 @@ const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
     }
 
     .post-link {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
       gap: 1rem;
-      align-items: baseline;
-      justify-content: space-between;
+      align-items: center;
       padding: 1rem 0;
       text-decoration: none;
     }
@@ -93,21 +101,31 @@ const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
       color: var(--accent);
     }
 
-    .copy h2 {
+    .post-link h2 {
       margin: 0;
       font-size: 1.2rem;
-    }
-
-    .meta {
-      margin: 0.45rem 0 0;
-      color: var(--muted);
-      font-size: 0.95rem;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .post-link time {
       color: var(--muted);
       white-space: nowrap;
       font-size: 0.95rem;
+    }
+
+    .excerpt {
+      grid-column: 1;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.45;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   </style>
 </SiteLayout>
