@@ -47,6 +47,15 @@ type SiteCopy = {
   recentPostsLabel: string;
   latestPostsLabel: string;
   viewAllLabel: string;
+  searchLabel: string;
+  searchIntro: string;
+  searchPlaceholder: string;
+  searchLoadingLabel: string;
+  searchEmptyLabel: string;
+  searchNoResultsLabel: string;
+  searchErrorLabel: string;
+  searchPostLabel: string;
+  searchPageLabel: string;
   paginationLabel: string;
   previousPageLabel: string;
   nextPageLabel: string;
@@ -109,6 +118,15 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     recentPostsLabel: "Recent posts",
     latestPostsLabel: "The Latest",
     viewAllLabel: "View all",
+    searchLabel: "Search",
+    searchIntro: "Find posts and pages from this site.",
+    searchPlaceholder: "Search posts and pages...",
+    searchLoadingLabel: "Loading search index...",
+    searchEmptyLabel: "Start typing to search the archive.",
+    searchNoResultsLabel: "No results found.",
+    searchErrorLabel: "Search is unavailable right now.",
+    searchPostLabel: "Post",
+    searchPageLabel: "Page",
     paginationLabel: "Blog pagination",
     previousPageLabel: "Previous",
     nextPageLabel: "Next",
@@ -142,6 +160,15 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     recentPostsLabel: "Entradas recientes",
     latestPostsLabel: "Lo último",
     viewAllLabel: "Ver todo",
+    searchLabel: "Buscar",
+    searchIntro: "Encuentra entradas y páginas de esta web.",
+    searchPlaceholder: "Buscar entradas y páginas...",
+    searchLoadingLabel: "Cargando índice de búsqueda...",
+    searchEmptyLabel: "Empieza a escribir para buscar en el archivo.",
+    searchNoResultsLabel: "No se encontraron resultados.",
+    searchErrorLabel: "La búsqueda no está disponible ahora mismo.",
+    searchPostLabel: "Entrada",
+    searchPageLabel: "Página",
     paginationLabel: "Paginación del blog",
     previousPageLabel: "Anterior",
     nextPageLabel: "Siguiente",

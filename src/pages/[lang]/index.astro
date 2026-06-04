@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BlogPostRow from "../../components/BlogPostRow.astro";
+import SearchPanel from "../../components/SearchPanel.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import { getPostExcerpt } from "../../lib/blog";
 import { type Lang, siteCopy, sectionRoutes } from "../../lib/site";
@@ -45,6 +46,19 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
       <p class="lede">{copy.homeIntro}</p>
     </div>
   </section>
+
+  <SearchPanel
+    lang={lang}
+    title={copy.searchLabel}
+    intro={copy.searchIntro}
+    placeholder={copy.searchPlaceholder}
+    loadingLabel={copy.searchLoadingLabel}
+    emptyLabel={copy.searchEmptyLabel}
+    noResultsLabel={copy.searchNoResultsLabel}
+    errorLabel={copy.searchErrorLabel}
+    postLabel={copy.searchPostLabel}
+    pageLabel={copy.searchPageLabel}
+  />
 
   <section class="panel recent-panel">
     <div class="section-head">
