@@ -1,6 +1,8 @@
 ---
 import { getCollection } from "astro:content";
+import BlogPostRow from "../../../components/BlogPostRow.astro";
 import SiteLayout from "../../../layouts/SiteLayout.astro";
+import { getPostExcerpt } from "../../../lib/blog";
 import { type Lang, siteCopy } from "../../../lib/site";
 
 export async function getStaticPaths({ paginate }) {
@@ -17,21 +19,7 @@ export async function getStaticPaths({ paginate }) {
           title: post.data.title,
           date: post.data.date,
           href: `/${lang}/blog/${year}/${slug}/`,
-          excerpt: (() => {
-            const cleaned = post.body
-              .replace(/```[\s\S]*?```/g, " ")
-              .replace(/!\[[^\]]*\]\([^)]+\)/g, " ")
-              .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-              .replace(/<[^>]+>/g, " ")
-              .replace(/[*_>#`~=-]/g, " ")
-              .replace(/\s+/g, " ")
-              .trim();
-
-            const words = cleaned.split(" ").filter(Boolean);
-            const excerpt = words.slice(0, 14).join(" ");
-
-            return words.length > 14 ? `${excerpt}…` : excerpt;
-          })(),
+          excerpt: getPostExcerpt(post.body),
         };
       });
 
@@ -84,11 +72,14 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
     <ul class="post-list">
       {page.data.map((post) => (
         <li class="post-item">
-          <a class="post-link" href={post.href}>
-            <h2>{post.title}</h2>
-            <time datetime={post.date.toISOString()}>{formatter.format(post.date)}</time>
-            <p class="excerpt">{post.excerpt}</p>
-          </a>
+          <BlogPostRow
+            variant="archive"
+            title={post.title}
+            href={post.href}
+            date={post.date}
+            formatter={formatter}
+            excerpt={post.excerpt}
+          />
         </li>
       ))}
     </ul>
@@ -144,46 +135,6 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
 
     .post-item {
       border-bottom: 1px solid var(--line);
-    }
-
-    .post-link {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 1rem;
-      align-items: center;
-      padding: 1rem 0;
-      text-decoration: none;
-    }
-
-    .post-link:hover {
-      color: var(--accent);
-    }
-
-    .post-link h2 {
-      margin: 0;
-      font-size: 1.2rem;
-      min-width: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .post-link time {
-      color: var(--muted);
-      white-space: nowrap;
-      font-size: 0.95rem;
-    }
-
-    .excerpt {
-      grid-column: 1;
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.95rem;
-      line-height: 1.45;
-      min-width: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
     }
 
     .pagination {

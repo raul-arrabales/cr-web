@@ -2,9 +2,11 @@
 import { getCollection } from "astro:content";
 import "../styles/fonts.css";
 import "../styles/site-chrome.css";
+import BlogPostRow from "../components/BlogPostRow.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import ThemeBoot from "../components/ThemeBoot.astro";
+import { getPostExcerpt } from "../lib/blog";
 import { getNavItems, languages, sectionRoutes, siteCopy } from "../lib/site";
 
 const englishNav = getNavItems("en");
@@ -23,6 +25,7 @@ const latestPostsByLanguage = await Promise.all(
           title: post.data.title,
           date: post.data.date,
           href: `/${lang}/blog/${year}/${slug}/`,
+          excerpt: getPostExcerpt(post.body),
         };
       });
 
@@ -202,31 +205,6 @@ const latestPostsByLanguage = await Promise.all(
         padding-top: 0;
       }
 
-      .latest-post {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) auto;
-        gap: 1rem;
-        align-items: center;
-        text-decoration: none;
-      }
-
-      .latest-post:hover {
-        color: var(--accent);
-      }
-
-      .latest-post span {
-        min-width: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-
-      .latest-post time {
-        color: var(--muted);
-        font-size: 0.92rem;
-        white-space: nowrap;
-      }
-
       @media (max-width: 780px) {
         .hero-title {
           font-size: clamp(1.25rem, 5.8vw, 2.4rem);
@@ -295,12 +273,14 @@ const latestPostsByLanguage = await Promise.all(
               <ul class="latest-list">
                 {group.posts.map((post) => (
                   <li class="latest-item">
-                    <a class="latest-post" href={post.href}>
-                      <span>{post.title}</span>
-                      <time datetime={post.date.toISOString()}>
-                        {group.formatter.format(post.date)}
-                      </time>
-                    </a>
+                    <BlogPostRow
+                      variant="compact"
+                      title={post.title}
+                      href={post.href}
+                      date={post.date}
+                      formatter={group.formatter}
+                      excerpt={post.excerpt}
+                    />
                   </li>
                 ))}
               </ul>

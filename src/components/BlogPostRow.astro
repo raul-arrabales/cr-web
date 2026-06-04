@@ -1,0 +1,70 @@
+---
+interface Props {
+  title: string;
+  href: string;
+  date: Date;
+  formatter: Intl.DateTimeFormat;
+  excerpt?: string;
+  variant?: "compact" | "archive";
+}
+
+const { title, href, date, formatter, excerpt, variant = "compact" } = Astro.props;
+const TitleTag = variant === "archive" ? "h2" : "span";
+---
+
+<a class:list={["blog-post-row", `is-${variant}`, excerpt && "has-excerpt"]} href={href}>
+  <TitleTag class="title">{title}</TitleTag>
+  <time datetime={date.toISOString()}>{formatter.format(date)}</time>
+  {excerpt && <p class="excerpt">{excerpt}</p>}
+</a>
+
+<style>
+  .blog-post-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 0;
+    text-decoration: none;
+  }
+
+  .blog-post-row:hover {
+    color: var(--accent);
+  }
+
+  .title {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .is-compact .title {
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  .is-archive .title {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .blog-post-row time {
+    color: var(--muted);
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  .excerpt {
+    grid-column: 1;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.45;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+</style>
