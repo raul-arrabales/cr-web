@@ -12,6 +12,7 @@ const spanishNav = getNavItems("es");
 
 const latestPostsByLanguage = await Promise.all(
   (["en", "es"] as const).map(async (lang) => {
+    const languageCopy = siteCopy[lang];
     const posts = (await getCollection("blog", ({ id }) => id.startsWith(`${lang}/`)))
       .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
       .slice(0, 3)
@@ -28,10 +29,10 @@ const latestPostsByLanguage = await Promise.all(
     return {
       lang,
       label: languages.find((entry) => entry.code === lang)?.label ?? lang,
-      latestLabel: siteCopy[lang].latestPostsLabel,
-      viewAllLabel: siteCopy[lang].viewAllLabel,
+      latestLabel: languageCopy.latestPostsLabel,
+      viewAllLabel: languageCopy.viewAllLabel,
       route: sectionRoutes[lang].blog,
-      formatter: new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
+      formatter: new Intl.DateTimeFormat(languageCopy.dateLocale, {
         year: "numeric",
         month: "short",
         day: "numeric",

@@ -27,7 +27,7 @@ const posts = (await getCollection("blog", ({ id }) => id.startsWith(`${lang}/`)
     };
   });
 
-const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
+const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
   year: "numeric",
   month: "long",
   day: "numeric",
