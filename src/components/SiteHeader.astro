@@ -4,6 +4,7 @@ import { siteCopy, type Lang, type NavItem } from "../lib/site";
 interface Props {
   brandHref: string;
   brandLabel: string;
+  brandShortLabel?: string;
   currentLang?: Lang | null;
   uiLang?: Lang;
   navItems?: NavItem[];
@@ -12,7 +13,8 @@ interface Props {
 
 const {
   brandHref,
-  brandLabel,
+  brandLabel = "Conscious Robots",
+  brandShortLabel = "CR",
   currentLang = null,
   uiLang = currentLang ?? "en",
   navItems = [],
@@ -38,9 +40,12 @@ function isCurrentSection(item: NavItem) {
 }
 ---
 
-<header class="site-header">
+<header class="site-header" data-brand-mode="full" data-header-layout="inline">
   <div class="header-row">
-    <a class="brand" href={brandHref}>{brandLabel}</a>
+    <a class="brand" href={brandHref} data-brand-link>
+      <span class="brand-label brand-label--full">{brandLabel}</span>
+      <span class="brand-label brand-label--short">{brandShortLabel}</span>
+    </a>
 
     <div class="header-tools">
       {navItems.length > 0 && navLabel && (
@@ -113,6 +118,120 @@ function isCurrentSection(item: NavItem) {
   (() => {
     const storageKey = "theme";
     const button = document.querySelector("[data-theme-toggle]");
+    const header = document.querySelector("[data-brand-mode]");
+    const headerRow = header?.querySelector(".header-row");
+    const brandLink = header?.querySelector("[data-brand-link]");
+    const headerTools = header?.querySelector(".header-tools");
+
+    const getFlexGap = (element) => {
+      return Number.parseFloat(window.getComputedStyle(element).columnGap) || 0;
+    };
+
+    const getElementChildren = (element) => {
+      return Array.from(element.children).filter((child) => child instanceof HTMLElement);
+    };
+
+    const getUnwrappedFlexWidth = (element) => {
+      const children = getElementChildren(element);
+
+      if (!children.length) {
+        return element.scrollWidth;
+      }
+
+      const gap = getFlexGap(element);
+      const childWidth = children.reduce((total, child) => total + child.scrollWidth, 0);
+
+      return childWidth + gap * (children.length - 1);
+    };
+
+    const getRequiredToolsWidth = () => {
+      if (!(headerTools instanceof HTMLElement)) {
+        return 0;
+      }
+
+      const children = getElementChildren(headerTools);
+      const gap = getFlexGap(headerTools);
+      const childWidth = children.reduce((total, child) => {
+        if (child.classList.contains("section-nav")) {
+          return total + (child.querySelector(".nav-list")?.scrollWidth ?? child.scrollWidth);
+        }
+
+        if (child.classList.contains("top-actions")) {
+          return total + getUnwrappedFlexWidth(child);
+        }
+
+        return total + child.scrollWidth;
+      }, 0);
+
+      return childWidth + gap * Math.max(children.length - 1, 0);
+    };
+
+    const getBrandWidth = (mode) => {
+      if (!(header instanceof HTMLElement) || !(brandLink instanceof HTMLElement)) {
+        return 0;
+      }
+
+      const previousMode = header.dataset.brandMode === "short" ? "short" : "full";
+      header.dataset.brandMode = mode;
+
+      const width = brandLink.scrollWidth;
+
+      header.dataset.brandMode = previousMode;
+
+      return width;
+    };
+
+    const getInlineRequiredWidth = (brandMode) => {
+      if (!(headerRow instanceof HTMLElement)) {
+        return 0;
+      }
+
+      return getBrandWidth(brandMode) + getRequiredToolsWidth() + getFlexGap(headerRow);
+    };
+
+    const syncBrandMode = () => {
+      if (
+        !(header instanceof HTMLElement) ||
+        !(headerRow instanceof HTMLElement) ||
+        !(brandLink instanceof HTMLElement) ||
+        !(headerTools instanceof HTMLElement)
+      ) {
+        return;
+      }
+
+      header.dataset.headerLayout = "inline";
+
+      const availableWidth = headerRow.clientWidth;
+      const fullLabelFitsOnOneRow = getInlineRequiredWidth("full") <= availableWidth;
+      const shortLabelFitsOnOneRow = getInlineRequiredWidth("short") <= availableWidth;
+
+      if (fullLabelFitsOnOneRow) {
+        header.dataset.brandMode = "full";
+        header.dataset.headerLayout = "inline";
+      } else if (shortLabelFitsOnOneRow) {
+        header.dataset.brandMode = "short";
+        header.dataset.headerLayout = "inline";
+      } else {
+        header.dataset.brandMode = "full";
+        header.dataset.headerLayout = "stacked";
+      }
+    };
+
+    syncBrandMode();
+
+    if (header instanceof HTMLElement && "ResizeObserver" in window) {
+      const resizeObserver = new ResizeObserver(() => {
+        window.requestAnimationFrame(syncBrandMode);
+      });
+
+      resizeObserver.observe(header);
+
+      if (headerRow instanceof HTMLElement) {
+        resizeObserver.observe(headerRow);
+      }
+    } else {
+      window.addEventListener("resize", syncBrandMode);
+    }
 
     if (!(button instanceof HTMLButtonElement)) {
       return;
@@ -189,6 +308,18 @@ function isCurrentSection(item: NavItem) {
     text-overflow: ellipsis;
   }
 
+  .brand-label--short {
+    display: none;
+  }
+
+  .site-header[data-brand-mode="short"] .brand-label--full {
+    display: none;
+  }
+
+  .site-header[data-brand-mode="short"] .brand-label--short {
+    display: inline;
+  }
+
   .header-tools {
     display: flex;
     flex: 1 1 auto;
@@ -196,6 +327,27 @@ function isCurrentSection(item: NavItem) {
     gap: 0.7rem;
     align-items: center;
     justify-content: flex-end;
+  }
+
+  .site-header[data-header-layout="stacked"] .header-tools {
+    order: 3;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .site-header[data-header-layout="stacked"] .brand {
+    flex-basis: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .site-header[data-header-layout="stacked"] .section-nav {
+    flex-basis: auto;
+  }
+
+  .site-header[data-header-layout="stacked"] .top-actions {
+    justify-content: center;
   }
 
   .top-actions {
@@ -360,19 +512,5 @@ function isCurrentSection(item: NavItem) {
       letter-spacing: 0.03em;
     }
 
-    .header-tools {
-      order: 3;
-      flex-basis: 100%;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
-
-    .section-nav {
-      flex-basis: auto;
-    }
-
-    .top-actions {
-      justify-content: flex-start;
-    }
   }
 </style>

@@ -20,6 +20,7 @@ export type NavItem = {
 };
 
 type SiteSectionMap = {
+  welcome: string;
   home: string;
   blog: string;
   publications: string;
@@ -32,6 +33,7 @@ type SiteCopy = {
   siteTitle: string;
   myName: string;
   backToTopLabel: string;
+  welcomeLabel: string;   
   homeLabel: string;
   blogLabel: string;
   publicationsLabel: string;
@@ -63,6 +65,7 @@ export type MediaHubItem = {
 
 export const sectionRoutes: Record<Lang, SiteSectionMap> = {
   en: {
+    welcome: "/",
     home: "/en/",
     blog: "/en/blog/",
     publications: "/en/pages/publications/",
@@ -71,6 +74,7 @@ export const sectionRoutes: Record<Lang, SiteSectionMap> = {
     contact: "/en/pages/contact-me/",
   },
   es: {
+    welcome: "/",
     home: "/es/",
     blog: "/es/blog/",
     publications: "/es/pages/publicaciones/",
@@ -85,6 +89,7 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     siteTitle: "Raúl Arrabales Moreno, PhD",
     myName: "Raúl Arrabales Moreno",
     backToTopLabel: "Back to Top",
+    welcomeLabel: "Welcome",
     homeLabel: "Home",
     blogLabel: "Blog",
     publicationsLabel: "Books",
@@ -111,6 +116,7 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     siteTitle: "Raúl Arrabales Moreno, PhD",
     myName: "Raúl Arrabales Moreno",
     backToTopLabel: "Volver arriba",
+    welcomeLabel: "Bienvenida",
     homeLabel: "Inicio",
     blogLabel: "Blog",
     publicationsLabel: "Libros",
