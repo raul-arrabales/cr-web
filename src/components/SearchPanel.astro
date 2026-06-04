@@ -157,22 +157,34 @@ const {
       items.slice(0, resultLimit).forEach((item) => {
         const li = document.createElement("li");
         const link = document.createElement("a");
+        const header = document.createElement("div");
+        const badge = document.createElement("span");
+        const date = document.createElement("time");
         const title = document.createElement("span");
-        const meta = document.createElement("span");
         const excerpt = document.createElement("span");
         const typeLabel = item.type === "post" ? labels.postLabel : labels.pageLabel;
         const formattedDate = formatDate(item.date, labels.locale);
 
         link.className = "search-result";
         link.href = item.href;
+        header.className = "search-result-header";
+        badge.className = `search-result-badge is-${item.type}`;
+        badge.textContent = typeLabel;
         title.className = "search-result-title";
         title.textContent = item.title;
-        meta.className = "search-result-meta";
-        meta.textContent = formattedDate ? `${typeLabel} · ${formattedDate}` : typeLabel;
         excerpt.className = "search-result-excerpt";
         excerpt.textContent = item.excerpt;
 
-        link.append(title, meta, excerpt);
+        header.append(badge);
+
+        if (formattedDate) {
+          date.className = "search-result-date";
+          date.dateTime = item.date;
+          date.textContent = formattedDate;
+          header.append(date);
+        }
+
+        link.append(header, title, excerpt);
         li.append(link);
         resultsList.append(li);
       });
@@ -280,35 +292,89 @@ const {
 
   .search-result {
     display: grid;
-    gap: 0.25rem;
-    padding: 0.95rem 1rem;
+    gap: 0.55rem;
+    padding: 1rem 1.05rem;
     border: 1px solid var(--line);
     border-radius: 0.85rem;
     background: var(--surface-soft);
     text-decoration: none;
+    transition:
+      border-color 160ms ease,
+      background-color 160ms ease,
+      transform 160ms ease,
+      color 160ms ease;
   }
 
   .search-result:hover {
     color: var(--accent);
     border-color: rgba(161, 79, 42, 0.32);
+    background: var(--surface);
+    transform: translateY(-1px);
+  }
+
+  .search-result-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    align-items: center;
+  }
+
+  .search-result-badge,
+  .search-result-date {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.7rem;
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .search-result-badge {
+    padding: 0.2rem 0.55rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface-strong);
+  }
+
+  .search-result-badge.is-post {
+    border-color: rgba(161, 79, 42, 0.22);
+    color: var(--accent);
+  }
+
+  .search-result-badge.is-page {
+    border-color: rgba(89, 108, 137, 0.2);
+  }
+
+  .search-result-date::before {
+    content: "";
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-right: 0.45rem;
+    border-radius: 999px;
+    background: var(--line);
+    flex: none;
   }
 
   .search-result-title {
-    overflow: hidden;
+    display: block;
+    font-size: 1.02rem;
     font-weight: 700;
-    line-height: 1.25;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    line-height: 1.3;
   }
 
-  .search-result-meta,
   .search-result-excerpt {
-    overflow: hidden;
     color: var(--muted);
-    font-size: 0.92rem;
-    line-height: 1.45;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .search-result-excerpt {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   .sr-only {
@@ -323,10 +389,12 @@ const {
   }
 
   @media (max-width: 560px) {
-    .search-result-title,
-    .search-result-meta,
+    .search-result {
+      padding: 0.95rem;
+    }
+
     .search-result-excerpt {
-      white-space: normal;
+      -webkit-line-clamp: 3;
     }
   }
 </style>

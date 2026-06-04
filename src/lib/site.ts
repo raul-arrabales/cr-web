@@ -22,6 +22,7 @@ export type NavItem = {
 type SiteSectionMap = {
   welcome: string;
   home: string;
+  search: string;
   blog: string;
   publications: string;
   media: string;
@@ -82,6 +83,7 @@ export const sectionRoutes: Record<Lang, SiteSectionMap> = {
   en: {
     welcome: "/",
     home: "/en/",
+    search: "/en/search/",
     blog: "/en/blog/",
     publications: "/en/pages/publications/",
     media: "/en/pages/media-presence/",
@@ -91,6 +93,7 @@ export const sectionRoutes: Record<Lang, SiteSectionMap> = {
   es: {
     welcome: "/",
     home: "/es/",
+    search: "/es/search/",
     blog: "/es/blog/",
     publications: "/es/pages/publicaciones/",
     media: "/es/pages/presencia-en-medios/",

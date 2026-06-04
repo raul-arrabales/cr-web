@@ -1,0 +1,29 @@
+---
+import SearchPanel from "../../../components/SearchPanel.astro";
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import { languages, type Lang, siteCopy } from "../../../lib/site";
+
+export async function getStaticPaths() {
+  return languages.map(({ code }) => ({
+    params: { lang: code },
+  }));
+}
+
+const { lang } = Astro.params as { lang: Lang };
+const copy = siteCopy[lang];
+---
+
+<SiteLayout lang={lang} title={`Raúl Arrabales | ${copy.searchLabel}`} description={copy.searchIntro}>
+  <SearchPanel
+    lang={lang}
+    title={copy.searchLabel}
+    intro={copy.searchIntro}
+    placeholder={copy.searchPlaceholder}
+    loadingLabel={copy.searchLoadingLabel}
+    emptyLabel={copy.searchEmptyLabel}
+    noResultsLabel={copy.searchNoResultsLabel}
+    errorLabel={copy.searchErrorLabel}
+    postLabel={copy.searchPostLabel}
+    pageLabel={copy.searchPageLabel}
+  />
+</SiteLayout>
