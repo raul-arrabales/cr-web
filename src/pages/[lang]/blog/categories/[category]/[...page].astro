@@ -1,31 +1,43 @@
 ---
 import { getCollection } from "astro:content";
-import BlogPostRow from "../../../components/BlogPostRow.astro";
-import SiteLayout from "../../../layouts/SiteLayout.astro";
-import { getCategoryCounts, toBlogPostListItem } from "../../../lib/blog";
-import { type Lang, siteCopy } from "../../../lib/site";
+import BlogPostRow from "../../../../../components/BlogPostRow.astro";
+import { filterPostsByCategory, getCategoryCounts, toBlogPostListItem } from "../../../../../lib/blog";
+import SiteLayout from "../../../../../layouts/SiteLayout.astro";
+import { type Lang, siteCopy } from "../../../../../lib/site";
 
 export async function getStaticPaths({ paginate }) {
   const posts = await getCollection("blog");
+  const languages = ["en", "es"] as const;
 
-  return (["en", "es"] as const).flatMap((lang) => {
-    const langPosts = posts
-      .filter((post) => post.id.startsWith(`${lang}/`))
-      .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-      .map((post) => toBlogPostListItem(post));
+  return languages.flatMap((lang) => {
+    const langPosts = posts.filter((post) => post.id.startsWith(`${lang}/`));
+    const categories = getCategoryCounts(langPosts, lang);
 
-    return paginate(langPosts, {
-      pageSize: 20,
-      params: { lang },
+    return categories.flatMap((category) => {
+      const categoryPosts = filterPostsByCategory(langPosts, category.slug)
+        .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+        .map((post) => toBlogPostListItem(post));
+
+      return paginate(categoryPosts, {
+        pageSize: 20,
+        params: { lang, category: category.slug },
+        props: { categoryCount: category.count },
+      });
     });
   });
 }
 
-const { lang } = Astro.params as { lang: Lang };
+const { lang, category } = Astro.params as { lang: Lang; category: string };
 const copy = siteCopy[lang];
-const { page } = Astro.props;
-const posts = await getCollection("blog", ({ id }) => id.startsWith(`${lang}/`));
-const categories = getCategoryCounts(posts, lang);
+const { page, categoryCount } = Astro.props as {
+  page: {
+    data: ReturnType<typeof toBlogPostListItem>[];
+    currentPage: number;
+    lastPage: number;
+    url: { prev?: string; next?: string };
+  };
+  categoryCount: number;
+};
 
 const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
   year: "numeric",
@@ -34,29 +46,20 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
 });
 ---
 
-<SiteLayout lang={lang} title={`Raúl Arrabales | ${copy.blogLabel}`} description={copy.blogIntro}>
-  <section class="panel">
-    <div class="prose">
-      <p class="eyebrow">{copy.myName}</p>
-      <h1>{copy.blogLabel}</h1>
-      <p class="lede">{copy.blogIntro}</p>
-    </div>
-
-    {categories.length > 0 && (
-      <div class="category-index" aria-labelledby="blog-categories-heading">
-        <p id="blog-categories-heading" class="category-index-heading">
-          {copy.blogCategoriesLabel}
-        </p>
-        <div class="category-chip-list">
-          {categories.map((category) => (
-            <a class="category-chip-link" href={`/${lang}/blog/categories/${category.slug}/`}>
-              <span>{category.slug}</span>
-              <span class="category-chip-count">{category.count}</span>
-            </a>
-          ))}
-        </div>
-      </div>
-    )}
+<SiteLayout
+  lang={lang}
+  title={`Raúl Arrabales | ${copy.blogCategoryArchiveTitle}: ${category}`}
+  description={`${copy.blogCategoryArchiveIntro} ${category}`}
+>
+  <section class="panel prose">
+    <p class="eyebrow">{copy.blogCategoryArchiveTitle}</p>
+    <h1>{category}</h1>
+    <p class="lede">
+      {copy.blogCategoryArchiveIntro} {categoryCount}
+    </p>
+    <a class="back-link" href={`/${lang}/blog/`}>
+      {copy.blogBackToArchiveLabel}
+    </a>
   </section>
 
   <section class="panel list-panel">
@@ -113,47 +116,18 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
   </section>
 
   <style>
-    .category-index {
-      display: grid;
-      gap: 0.8rem;
-      margin-top: 1.5rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--line);
-    }
-
-    .category-index-heading {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .category-chip-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }
-
-    .category-chip-link {
+    .back-link {
       display: inline-flex;
       align-items: center;
-      gap: 0.55rem;
-      min-height: 2.25rem;
-      padding: 0.45rem 0.85rem;
+      min-height: 2.2rem;
+      padding: 0.45rem 0.9rem;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: var(--surface);
       text-decoration: none;
     }
 
-    .category-chip-link:hover {
+    .back-link:hover {
       color: var(--accent);
-    }
-
-    .category-chip-count {
-      color: var(--muted);
-      font-size: 0.85rem;
     }
 
     .list-panel {
@@ -170,12 +144,6 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
       border-radius: 0.75rem;
       backdrop-filter: blur(12px);
       scroll-margin-top: clamp(4rem, 7vw, 5.5rem);
-    }
-
-    .page-count {
-      margin: 1rem 0 0;
-      color: var(--muted);
-      font-size: 0.95rem;
     }
 
     .post-list {

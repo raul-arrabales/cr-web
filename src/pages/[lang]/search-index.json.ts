@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
-import { cleanMarkdownText, getPostExcerpt } from "../../lib/blog";
+import { cleanMarkdownText, getBlogPostRoute, getPostExcerpt } from "../../lib/blog";
 import { languages, type Lang } from "../../lib/site";
 
 type SearchIndexItem = {
@@ -27,11 +27,11 @@ export const GET: APIRoute = async ({ params }) => {
   const pages = await getCollection("pages", ({ id }) => id.startsWith(`${lang}/`));
 
   const postItems: SearchIndexItem[] = posts.map((post) => {
-    const [, year, slug] = post.id.split("/");
+    const route = getBlogPostRoute(post);
 
     return {
       title: post.data.title,
-      href: `/${lang}/blog/${year}/${slug}/`,
+      href: route.href,
       type: "post",
       date: post.data.date.toISOString(),
       text: cleanMarkdownText(post.body),

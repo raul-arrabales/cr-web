@@ -1,4 +1,5 @@
 ---
+import type { TaxonomyCount } from "../lib/blog";
 import type { Lang } from "../lib/site";
 
 interface Props {
@@ -12,6 +13,13 @@ interface Props {
   errorLabel: string;
   postLabel: string;
   pageLabel: string;
+  categoryFilterLabel: string;
+  tagFilterLabel: string;
+  clearFiltersLabel: string;
+  activeFiltersLabel: string;
+  noTaxonomyLabel: string;
+  categoryOptions: TaxonomyCount[];
+  tagOptions: TaxonomyCount[];
 }
 
 const {
@@ -25,6 +33,13 @@ const {
   errorLabel,
   postLabel,
   pageLabel,
+  categoryFilterLabel,
+  tagFilterLabel,
+  clearFiltersLabel,
+  activeFiltersLabel,
+  noTaxonomyLabel,
+  categoryOptions,
+  tagOptions,
 } = Astro.props;
 ---
 
@@ -39,6 +54,10 @@ const {
   data-post-label={postLabel}
   data-page-label={pageLabel}
   data-locale={lang === "es" ? "es-ES" : "en-US"}
+  data-clear-filters-label={clearFiltersLabel}
+  data-active-filters-label={activeFiltersLabel}
+  data-category-filter-label={categoryFilterLabel}
+  data-tag-filter-label={tagFilterLabel}
 >
   <div class="section-head">
     <div>
@@ -52,6 +71,70 @@ const {
     <span class="sr-only">{title}</span>
     <input data-search-input type="search" placeholder={placeholder} autocomplete="off" />
   </label>
+
+  <div class="search-filters">
+    <section class="filter-group">
+      <div class="filter-header">
+        <h3>{categoryFilterLabel}</h3>
+      </div>
+      {
+        categoryOptions.length ? (
+          <div class="filter-chip-list" data-filter-group="category">
+            {categoryOptions.map((option) => (
+              <button
+                type="button"
+                class="filter-chip"
+                data-filter-chip
+                data-filter-type="category"
+                data-filter-value={option.slug}
+                aria-pressed="false"
+              >
+                <span>{option.slug}</span>
+                <span class="filter-chip-count">{option.count}</span>
+              </button>
+            ))}
+          </div>
+        ) : (
+          <p class="filter-empty">{noTaxonomyLabel}</p>
+        )
+      }
+    </section>
+
+    <section class="filter-group">
+      <div class="filter-header">
+        <h3>{tagFilterLabel}</h3>
+      </div>
+      {
+        tagOptions.length ? (
+          <div class="filter-chip-list" data-filter-group="tag">
+            {tagOptions.map((option) => (
+              <button
+                type="button"
+                class="filter-chip"
+                data-filter-chip
+                data-filter-type="tag"
+                data-filter-value={option.slug}
+                aria-pressed="false"
+              >
+                <span>{option.slug}</span>
+                <span class="filter-chip-count">{option.count}</span>
+              </button>
+            ))}
+          </div>
+        ) : (
+          <p class="filter-empty">{noTaxonomyLabel}</p>
+        )
+      }
+    </section>
+  </div>
+
+  <div class="active-filters" data-active-filters hidden>
+    <p class="active-filters-label">{activeFiltersLabel}</p>
+    <div class="active-filter-list" data-active-filter-list></div>
+    <button type="button" class="clear-filters-button" data-clear-filters>
+      {clearFiltersLabel}
+    </button>
+  </div>
 
   <p class="search-status" data-search-status aria-live="polite">{emptyLabel}</p>
   <ol class="search-results" data-search-results></ol>
@@ -86,14 +169,77 @@ const {
     const input = panel.querySelector("[data-search-input]");
     const status = panel.querySelector("[data-search-status]");
     const resultsList = panel.querySelector("[data-search-results]");
+    const clearFiltersButton = panel.querySelector("[data-clear-filters]");
+    const activeFilters = panel.querySelector("[data-active-filters]");
+    const activeFilterList = panel.querySelector("[data-active-filter-list]");
+    const filterChips = [...panel.querySelectorAll("[data-filter-chip]")];
     const labels = panel.dataset;
     const resultLimit = 8;
     let indexPromise;
     let indexedItems = [];
     let activeTerms = [];
+    let activeCategory = "";
+    let activeTag = "";
 
     const setStatus = (message) => {
       status.textContent = message;
+    };
+
+    const syncUrl = () => {
+      const url = new URL(window.location.href);
+
+      if (activeCategory) {
+        url.searchParams.set("category", activeCategory);
+      } else {
+        url.searchParams.delete("category");
+      }
+
+      if (activeTag) {
+        url.searchParams.set("tag", activeTag);
+      } else {
+        url.searchParams.delete("tag");
+      }
+
+      window.history.replaceState({}, "", url);
+    };
+
+    const updateActiveFilterUi = () => {
+      clearChildren(activeFilterList);
+
+      const filters = [
+        activeCategory ? { type: "category", value: activeCategory } : null,
+        activeTag ? { type: "tag", value: activeTag } : null,
+      ].filter(Boolean);
+
+      if (!filters.length) {
+        activeFilters.hidden = true;
+        return;
+      }
+
+      activeFilters.hidden = false;
+
+      filters.forEach((filter) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "active-filter-pill";
+        button.dataset.clearFilter = filter.type;
+        const filterLabel =
+          filter.type === "category" ? labels.categoryFilterLabel : labels.tagFilterLabel;
+        button.textContent = `${filterLabel}: ${filter.value}`;
+        activeFilterList.append(button);
+      });
+    };
+
+    const updateChipState = () => {
+      filterChips.forEach((chip) => {
+        const type = chip.dataset.filterType;
+        const value = chip.dataset.filterValue;
+        const isActive =
+          (type === "category" && value === activeCategory) || (type === "tag" && value === activeTag);
+
+        chip.setAttribute("aria-pressed", isActive ? "true" : "false");
+        chip.classList.toggle("is-active", isActive);
+      });
     };
 
     const loadIndex = () => {
@@ -132,6 +278,8 @@ const {
     };
 
     const scoreItem = (item, terms) => {
+      if (!terms.length) return 1;
+
       let score = 0;
 
       for (const term of terms) {
@@ -152,6 +300,16 @@ const {
       }
 
       return score;
+    };
+
+    const matchesFilters = (item) => {
+      if (!activeCategory && !activeTag) return true;
+      if (item.type !== "post") return false;
+
+      const categoryMatch = !activeCategory || (item.categories || []).includes(activeCategory);
+      const tagMatch = !activeTag || (item.tags || []).includes(activeTag);
+
+      return categoryMatch && tagMatch;
     };
 
     const appendHighlightedText = (node, text, terms) => {
@@ -178,6 +336,25 @@ const {
 
         node.append(document.createTextNode(fragment));
       });
+    };
+
+    const appendTaxonomyMeta = (container, item) => {
+      if (item.type !== "post") return;
+
+      const taxonomy = [...(item.categories || []), ...(item.tags || [])];
+      if (!taxonomy.length) return;
+
+      const metaList = document.createElement("div");
+      metaList.className = "search-result-taxonomy";
+
+      taxonomy.forEach((value) => {
+        const badge = document.createElement("span");
+        badge.className = "search-result-taxonomy-chip";
+        badge.textContent = value;
+        metaList.append(badge);
+      });
+
+      container.append(metaList);
     };
 
     const renderResults = (items) => {
@@ -220,6 +397,7 @@ const {
         }
 
         body.append(title, excerpt);
+        appendTaxonomyMeta(body, item);
         link.append(header, body);
         li.append(link);
         resultsList.append(li);
@@ -228,24 +406,28 @@ const {
 
     const runSearch = async () => {
       const query = input.value.trim();
+      const terms = normalizeSearchText(query).split(/\s+/).filter(Boolean);
+      const hasFilters = Boolean(activeCategory || activeTag);
       clearChildren(resultsList);
+      activeTerms = terms;
+      updateChipState();
+      updateActiveFilterUi();
+      syncUrl();
 
-      if (!query) {
+      if (!query && !hasFilters) {
         setStatus(labels.emptyLabel);
         return;
       }
 
-      const terms = normalizeSearchText(query).split(/\s+/).filter(Boolean);
       const items = await loadIndex();
-      activeTerms = terms;
 
-      if (!terms.length || !items.length) {
+      if (!items.length) {
         return;
       }
 
       const matches = items
         .map((item) => ({ item, score: scoreItem(item, terms) }))
-        .filter(({ score }) => score > 0)
+        .filter(({ item, score }) => score > 0 && matchesFilters(item))
         .sort((a, b) => b.score - a.score)
         .map(({ item }) => item);
 
@@ -258,199 +440,243 @@ const {
       renderResults(matches);
     };
 
-    input.addEventListener("focus", loadIndex, { once: true });
-    input.addEventListener("input", runSearch);
+    const setInitialFiltersFromUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      activeCategory = params.get("category") || "";
+      activeTag = params.get("tag") || "";
+    };
+
+    setInitialFiltersFromUrl();
+    updateChipState();
+    updateActiveFilterUi();
+
+    filterChips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        const type = chip.dataset.filterType;
+        const value = chip.dataset.filterValue || "";
+
+        if (type === "category") {
+          activeCategory = activeCategory === value ? "" : value;
+        }
+
+        if (type === "tag") {
+          activeTag = activeTag === value ? "" : value;
+        }
+
+        void runSearch();
+      });
+    });
+
+    activeFilterList.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-clear-filter]");
+      if (!button) return;
+
+      if (button.dataset.clearFilter === "category") activeCategory = "";
+      if (button.dataset.clearFilter === "tag") activeTag = "";
+
+      void runSearch();
+    });
+
+    clearFiltersButton?.addEventListener("click", () => {
+      activeCategory = "";
+      activeTag = "";
+      void runSearch();
+    });
+
+    input.addEventListener("input", () => {
+      void runSearch();
+    });
+
+    if (activeCategory || activeTag) {
+      void runSearch();
+    }
   });
 </script>
 
-<style is:global>
+<style>
   .search-panel {
     display: grid;
-    gap: 1rem;
-  }
-
-  .search-panel .section-head {
-    margin-bottom: 0;
-  }
-
-  .search-panel h2 {
-    max-width: 42rem;
-    margin: 0;
-    font-size: clamp(1.35rem, 2vw, 1.75rem);
-    line-height: 1.2;
+    gap: 1.25rem;
   }
 
   .search-box {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: 0.75rem;
+    display: flex;
     align-items: center;
-    padding: 0.8rem 1rem;
+    gap: 0.75rem;
+    padding: 0.9rem 1rem;
     border: 1px solid var(--line);
-    border-radius: 0.85rem;
-    background: var(--surface-strong);
-  }
-
-  .search-icon {
-    color: var(--accent);
-    font-size: 1.35rem;
-    line-height: 1;
+    border-radius: 1rem;
+    background: color-mix(in srgb, var(--surface) 92%, transparent);
   }
 
   .search-box input {
     width: 100%;
-    min-width: 0;
     border: 0;
-    outline: 0;
-    color: var(--text);
+    padding: 0;
     background: transparent;
+    color: inherit;
     font: inherit;
   }
 
-  .search-box:focus-within {
-    border-color: rgba(161, 79, 42, 0.46);
-    box-shadow: 0 0 0 4px var(--accent-soft);
+  .search-box input:focus {
+    outline: none;
   }
 
-  .search-panel .search-status {
-    min-height: 1.4rem;
-    margin: 0;
+  .search-icon {
     color: var(--muted);
-    font-size: 0.95rem;
   }
 
-  .search-panel .search-results {
+  .search-filters {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .filter-group {
     display: grid;
     gap: 0.65rem;
+  }
+
+  .filter-header h3,
+  .active-filters-label {
     margin: 0;
-    padding: 0;
-    list-style: none;
+    font-size: 0.9rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
   }
 
-  .search-panel .search-result {
-    display: grid;
-    gap: 0.8rem;
-    padding: 1rem 1.05rem;
-    border: 1px solid var(--line);
-    border-radius: 0.85rem;
-    background: var(--surface-soft);
-    text-decoration: none;
-    text-decoration: none;
-    transition:
-      border-color 160ms ease,
-      background-color 160ms ease,
-      transform 160ms ease,
-      color 160ms ease;
-  }
-
-  .search-panel .search-result:hover {
-    color: var(--accent);
-    border-color: rgba(161, 79, 42, 0.32);
-    background: var(--surface);
-    transform: translateY(-1px);
-  }
-
-  .search-panel .search-result,
-  .search-panel .search-result:hover,
-  .search-panel .search-result:visited,
-  .search-panel .search-result * {
-    text-decoration: none !important;
-  }
-
-  .search-panel .search-result-header {
+  .filter-chip-list,
+  .active-filter-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.65rem;
-    align-items: center;
   }
 
-  .search-panel .search-result-badge,
-  .search-panel .search-result-date {
-    display: inline-flex;
-    align-items: center;
-    min-height: 1.7rem;
-    color: var(--muted);
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-
-  .search-panel .search-result-badge {
-    padding: 0.2rem 0.55rem;
+  .filter-chip,
+  .active-filter-pill,
+  .clear-filters-button {
     border: 1px solid var(--line);
     border-radius: 999px;
-    background: var(--surface-strong);
+    background: var(--surface);
+    color: inherit;
+    font: inherit;
   }
 
-  .search-panel .search-result-badge.is-post {
-    border-color: rgba(161, 79, 42, 0.22);
+  .filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.45rem 0.8rem;
+    cursor: pointer;
+  }
+
+  .filter-chip.is-active,
+  .active-filter-pill {
+    border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
+    background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+  }
+
+  .filter-chip-count {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  .filter-empty,
+  .search-status {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .active-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .active-filter-pill,
+  .clear-filters-button {
+    padding: 0.42rem 0.8rem;
+    cursor: pointer;
+  }
+
+  .clear-filters-button:hover,
+  .filter-chip:hover,
+  .active-filter-pill:hover,
+  .search-result:hover {
     color: var(--accent);
   }
 
-  .search-panel .search-result-badge.is-page {
-    border-color: rgba(89, 108, 137, 0.2);
-  }
-
-  .search-panel .search-result-separator {
-    color: var(--muted);
-    font-size: 0.8rem;
-    line-height: 1;
-  }
-
-  .search-panel .search-result-title {
-    display: block;
-    margin: 0 0 0.5rem;
-    font-size: 1.08rem;
-    font-weight: 800;
-    line-height: 1.25;
-  }
-
-  .search-panel .search-result-excerpt {
-    color: var(--muted);
-    font-size: 0.95rem;
-    line-height: 1.55;
-  }
-
-  .search-panel .search-result-excerpt {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-  }
-
-  .search-panel .search-highlight {
-    padding: 0 0.12rem;
-    border-radius: 0.18rem;
-    color: inherit;
-    background: color-mix(in srgb, var(--accent) 18%, transparent);
-    box-decoration-break: clone;
-  }
-
-  .search-panel .search-result-body {
-    display: grid;
-    gap: 0.15rem;
-  }
-
-  .search-panel .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
+  .search-results {
+    margin: 0;
     padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.9rem;
   }
 
-  @media (max-width: 560px) {
-    .search-panel .search-result {
-      padding: 0.95rem;
-    }
+  .search-result {
+    display: grid;
+    gap: 0.65rem;
+    padding: 1rem;
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    text-decoration: none;
+    background: color-mix(in srgb, var(--surface) 95%, transparent);
+  }
 
-    .search-panel .search-result-excerpt {
-      -webkit-line-clamp: 3;
+  .search-result-header,
+  .search-result-taxonomy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .search-result-body {
+    display: grid;
+    gap: 0.45rem;
+  }
+
+  .search-result-badge,
+  .search-result-taxonomy-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.8rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+  }
+
+  .search-result-badge {
+    background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  }
+
+  .search-result-taxonomy-chip {
+    border: 1px solid var(--line);
+    color: var(--muted);
+  }
+
+  .search-result-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  .search-result-date,
+  .search-result-separator,
+  .search-result-excerpt {
+    color: var(--muted);
+  }
+
+  .search-highlight {
+    background: color-mix(in srgb, var(--accent) 16%, transparent);
+    color: inherit;
+  }
+
+  @media (max-width: 720px) {
+    .active-filters {
+      align-items: flex-start;
+      flex-direction: column;
     }
   }
 </style>

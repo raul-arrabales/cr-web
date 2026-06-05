@@ -1,5 +1,7 @@
 ---
+import { getCollection } from "astro:content";
 import SearchPanel from "../../../components/SearchPanel.astro";
+import { getSearchTaxonomy } from "../../../lib/blog";
 import SiteLayout from "../../../layouts/SiteLayout.astro";
 import { languages, type Lang, siteCopy } from "../../../lib/site";
 
@@ -11,6 +13,8 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params as { lang: Lang };
 const copy = siteCopy[lang];
+const posts = await getCollection("blog");
+const taxonomy = getSearchTaxonomy(posts, lang);
 ---
 
 <SiteLayout lang={lang} title={`Raúl Arrabales | ${copy.searchLabel}`} description={copy.searchIntro}>
@@ -25,5 +29,12 @@ const copy = siteCopy[lang];
     errorLabel={copy.searchErrorLabel}
     postLabel={copy.searchPostLabel}
     pageLabel={copy.searchPageLabel}
+    categoryFilterLabel={copy.searchCategoryFilterLabel}
+    tagFilterLabel={copy.searchTagFilterLabel}
+    clearFiltersLabel={copy.searchClearFiltersLabel}
+    activeFiltersLabel={copy.searchActiveFiltersLabel}
+    noTaxonomyLabel={copy.searchNoTaxonomyLabel}
+    categoryOptions={taxonomy.categories}
+    tagOptions={taxonomy.tags}
   />
 </SiteLayout>

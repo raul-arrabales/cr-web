@@ -57,9 +57,18 @@ type SiteCopy = {
   searchErrorLabel: string;
   searchPostLabel: string;
   searchPageLabel: string;
+  searchCategoryFilterLabel: string;
+  searchTagFilterLabel: string;
+  searchClearFiltersLabel: string;
+  searchActiveFiltersLabel: string;
+  searchNoTaxonomyLabel: string;
   paginationLabel: string;
   previousPageLabel: string;
   nextPageLabel: string;
+  blogCategoriesLabel: string;
+  blogCategoryArchiveTitle: string;
+  blogCategoryArchiveIntro: string;
+  blogBackToArchiveLabel: string;
   exploreLabel: string;
   contactLabel: string;
   languageSelectorLabel: string;
@@ -130,9 +139,18 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     searchErrorLabel: "Search is unavailable right now.",
     searchPostLabel: "Post",
     searchPageLabel: "Page",
+    searchCategoryFilterLabel: "Categories",
+    searchTagFilterLabel: "Tags",
+    searchClearFiltersLabel: "Clear filters",
+    searchActiveFiltersLabel: "Active filters",
+    searchNoTaxonomyLabel: "No filters available yet.",
     paginationLabel: "Blog pagination",
     previousPageLabel: "Previous",
     nextPageLabel: "Next",
+    blogCategoriesLabel: "Browse by category",
+    blogCategoryArchiveTitle: "Category",
+    blogCategoryArchiveIntro: "Posts filed under this category.",
+    blogBackToArchiveLabel: "Back to all posts",
     exploreLabel: "Explore",
     contactLabel: "Contact",
     languageSelectorLabel: "Language selector",
@@ -172,9 +190,18 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     searchErrorLabel: "La búsqueda no está disponible ahora mismo.",
     searchPostLabel: "Entrada",
     searchPageLabel: "Página",
+    searchCategoryFilterLabel: "Categorías",
+    searchTagFilterLabel: "Etiquetas",
+    searchClearFiltersLabel: "Limpiar filtros",
+    searchActiveFiltersLabel: "Filtros activos",
+    searchNoTaxonomyLabel: "Todavía no hay filtros disponibles.",
     paginationLabel: "Paginación del blog",
     previousPageLabel: "Anterior",
     nextPageLabel: "Siguiente",
+    blogCategoriesLabel: "Explorar por categoría",
+    blogCategoryArchiveTitle: "Categoría",
+    blogCategoryArchiveIntro: "Entradas archivadas en esta categoría.",
+    blogBackToArchiveLabel: "Volver a todas las entradas",
     exploreLabel: "Explorar",
     contactLabel: "Contacto",
     languageSelectorLabel: "Selector de idioma",

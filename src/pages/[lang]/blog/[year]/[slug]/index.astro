@@ -25,12 +25,66 @@ const formatter = new Intl.DateTimeFormat(lang === "es" ? "es-ES" : "en-US", {
   month: "long",
   day: "numeric",
 });
+
+const categories = post.data.categories ?? [];
+const tags = post.data.tags ?? [];
 ---
 
 <SiteLayout lang={lang} title={post.data.title}>
   <article class="panel prose">
-    <p class="eyebrow">{formatter.format(post.data.date)}</p>
+    <div class="post-meta">
+      <p class="eyebrow">{formatter.format(post.data.date)}</p>
+      {(categories.length > 0 || tags.length > 0) && (
+        <div class="taxonomy-badges" aria-label="Post taxonomy">
+          {categories.map((category) => (
+            <a class="taxonomy-badge" href={`/${lang}/blog/categories/${category}/`}>
+              {category}
+            </a>
+          ))}
+          {tags.map((tag) => (
+            <a class="taxonomy-badge is-tag" href={`/${lang}/search/?tag=${encodeURIComponent(tag)}`}>
+              {tag}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
     <h1>{post.data.title}</h1>
     <Content />
   </article>
+
+  <style>
+    .post-meta {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .taxonomy-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .taxonomy-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2rem;
+      padding: 0.32rem 0.75rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: inherit;
+      text-decoration: none;
+      font-size: 0.88rem;
+      background: color-mix(in srgb, var(--surface) 94%, transparent);
+    }
+
+    .taxonomy-badge.is-tag {
+      color: var(--muted);
+    }
+
+    .taxonomy-badge:hover {
+      color: var(--accent);
+    }
+  </style>
 </SiteLayout>
