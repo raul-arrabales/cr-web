@@ -93,6 +93,13 @@ export function getCategoryCounts(posts: CollectionEntry<"blog">[], lang: Lang) 
   );
 }
 
+export function getTagCounts(posts: CollectionEntry<"blog">[], lang: Lang) {
+  return getTaxonomyCounts(
+    posts.filter((post) => getBlogPostRoute(post).lang === lang),
+    "tags",
+  );
+}
+
 export function getSearchTaxonomy(posts: CollectionEntry<"blog">[], lang: Lang) {
   const langPosts = posts.filter((post) => getBlogPostRoute(post).lang === lang);
 

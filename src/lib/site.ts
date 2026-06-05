@@ -69,6 +69,7 @@ type SiteCopy = {
   previousPageLabel: string;
   nextPageLabel: string;
   blogCategoriesLabel: string;
+  blogTagsLabel: string;
   blogCategoryArchiveTitle: string;
   blogCategoryArchiveIntro: string;
   blogBackToArchiveLabel: string;
@@ -154,6 +155,7 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     previousPageLabel: "Previous",
     nextPageLabel: "Next",
     blogCategoriesLabel: "Browse by category",
+    blogTagsLabel: "Browse by tag",
     blogCategoryArchiveTitle: "Category",
     blogCategoryArchiveIntro: "Posts filed under this category.",
     blogBackToArchiveLabel: "Back to all posts",
@@ -208,6 +210,7 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     previousPageLabel: "Anterior",
     nextPageLabel: "Siguiente",
     blogCategoriesLabel: "Explorar por categoría",
+    blogTagsLabel: "Explorar por etiqueta",
     blogCategoryArchiveTitle: "Categoría",
     blogCategoryArchiveIntro: "Entradas archivadas en esta categoría.",
     blogBackToArchiveLabel: "Volver a todas las entradas",
