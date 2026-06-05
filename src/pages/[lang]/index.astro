@@ -44,14 +44,6 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
       <h1>{copy.siteTitle}</h1>
       <p class="lede">{copy.homeIntro}</p>
     </div>
-
-    <div class="search-cta">
-      <div class="search-cta-copy">
-        <p class="search-cta-label">{copy.searchLabel}</p>
-        <p>{copy.searchIntro}</p>
-      </div>
-      <a class="browse-all search-cta-link" href={routes.search}>{copy.searchLabel}</a>
-    </div>
   </section>
 
   <section class="panel recent-panel">
@@ -79,6 +71,16 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
     </ul>
   </section>
 
+  <section class="panel">
+    <div class="search-cta">
+      <div class="search-cta-copy">
+        <p class="search-cta-label">{copy.searchLabel}</p>
+        <p>{copy.searchIntro}</p>
+      </div>
+      <a class="browse-all search-cta-link" href={routes.search}>{copy.searchLabel}</a>
+    </div>
+  </section>
+
   <style>
     .panel + .panel {
       margin-top: 1.25rem;
@@ -98,9 +100,6 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
       gap: 1rem;
       align-items: center;
       justify-content: space-between;
-      margin-top: 1.5rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--line);
     }
 
     .search-cta-copy {
