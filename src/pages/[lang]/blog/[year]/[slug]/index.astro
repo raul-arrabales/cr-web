@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
+import TaxonomyChip from "../../../../../components/TaxonomyChip.astro";
 import SiteLayout from "../../../../../layouts/SiteLayout.astro";
 import { type Lang } from "../../../../../lib/site";
 
@@ -37,14 +38,14 @@ const tags = post.data.tags ?? [];
       {(categories.length > 0 || tags.length > 0) && (
         <div class="taxonomy-badges" aria-label="Post taxonomy">
           {categories.map((category) => (
-            <a class="taxonomy-badge" href={`/${lang}/blog/categories/${category}/`}>
-              {category}
-            </a>
+            <TaxonomyChip href={`/${lang}/blog/categories/${category}/`} label={category} />
           ))}
           {tags.map((tag) => (
-            <a class="taxonomy-badge is-tag" href={`/${lang}/search/?tag=${encodeURIComponent(tag)}`}>
-              {tag}
-            </a>
+            <TaxonomyChip
+              href={`/${lang}/search/?tag=${encodeURIComponent(tag)}`}
+              label={tag}
+              tone="muted"
+            />
           ))}
         </div>
       )}
@@ -64,27 +65,6 @@ const tags = post.data.tags ?? [];
       flex-wrap: wrap;
       gap: 0.6rem;
       margin-bottom: 0.35rem;
-    }
-
-    .taxonomy-badge {
-      display: inline-flex;
-      align-items: center;
-      min-height: 2rem;
-      padding: 0.32rem 0.75rem;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      color: inherit;
-      text-decoration: none;
-      font-size: 0.88rem;
-      background: color-mix(in srgb, var(--surface) 94%, transparent);
-    }
-
-    .taxonomy-badge.is-tag {
-      color: var(--muted);
-    }
-
-    .taxonomy-badge:hover {
-      color: var(--accent);
     }
   </style>
 </SiteLayout>

@@ -1,4 +1,5 @@
 ---
+import TaxonomyChip from "./TaxonomyChip.astro";
 import type { TaxonomyCount } from "../lib/blog";
 
 type Props = {
@@ -93,10 +94,11 @@ const { blogHref, categories, categoryLabel, searchHref, tagLabel, tags } = Astr
         >
           <div class="category-chip-list">
             {categories.map((category) => (
-              <a class="category-chip-link" href={`${blogHref}categories/${category.slug}/`}>
-                <span>{category.slug}</span>
-                <span class="category-chip-count">{category.count}</span>
-              </a>
+              <TaxonomyChip
+                href={`${blogHref}categories/${category.slug}/`}
+                label={category.slug}
+                count={category.count}
+              />
             ))}
           </div>
         </div>
@@ -106,10 +108,12 @@ const { blogHref, categories, categoryLabel, searchHref, tagLabel, tags } = Astr
         <div id="blog-tags-panel" class="category-index" data-taxonomy-panel="tags" hidden>
           <div class="category-chip-list">
             {tags.map((tag) => (
-              <a class="category-chip-link" href={`${searchHref}?tag=${encodeURIComponent(tag.slug)}`}>
-                <span>{tag.slug}</span>
-                <span class="category-chip-count">{tag.count}</span>
-              </a>
+              <TaxonomyChip
+                href={`${searchHref}?tag=${encodeURIComponent(tag.slug)}`}
+                label={tag.slug}
+                count={tag.count}
+                tone="muted"
+              />
             ))}
           </div>
         </div>
@@ -119,36 +123,9 @@ const { blogHref, categories, categoryLabel, searchHref, tagLabel, tags } = Astr
 )}
 
 <script>
-  const taxonomyGroup = document.querySelector("[data-taxonomy-browsers]");
-  const taxonomyButtons = taxonomyGroup?.querySelectorAll("[data-taxonomy-toggle]");
-  const taxonomyPanels = taxonomyGroup?.querySelectorAll("[data-taxonomy-panel]");
+  import { initTaxonomyAccordions } from "../scripts/taxonomyAccordion";
 
-  taxonomyButtons?.forEach((button) => {
-    button.addEventListener("click", () => {
-      const taxonomy = button.getAttribute("data-taxonomy-toggle");
-      const shouldOpen = button.getAttribute("aria-expanded") !== "true";
-
-      taxonomyButtons.forEach((otherButton) => {
-        otherButton.setAttribute("aria-expanded", "false");
-      });
-
-      taxonomyPanels?.forEach((panel) => {
-        panel.hidden = true;
-      });
-
-      if (!shouldOpen || !taxonomy) {
-        return;
-      }
-
-      button.setAttribute("aria-expanded", "true");
-
-      const activePanel = taxonomyGroup?.querySelector(`[data-taxonomy-panel="${taxonomy}"]`);
-
-      if (activePanel instanceof HTMLElement) {
-        activePanel.hidden = false;
-      }
-    });
-  });
+  initTaxonomyAccordions();
 </script>
 
 <style>
@@ -227,27 +204,6 @@ const { blogHref, categories, categoryLabel, searchHref, tagLabel, tags } = Astr
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-  }
-
-  .category-chip-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    min-height: 2.25rem;
-    padding: 0.45rem 0.85rem;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    background: var(--surface);
-    text-decoration: none;
-  }
-
-  .category-chip-link:hover {
-    color: var(--accent);
-  }
-
-  .category-chip-count {
-    color: var(--muted);
-    font-size: 0.85rem;
   }
 
   @media (min-width: 48rem) {
