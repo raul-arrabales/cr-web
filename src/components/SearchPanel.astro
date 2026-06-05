@@ -553,7 +553,7 @@ const {
   }
 
   .filter-chip,
-  .active-filter-pill,
+  .search-panel :global(.active-filter-pill),
   .clear-filters-button {
     border: 1px solid var(--line);
     border-radius: 999px;
@@ -571,7 +571,7 @@ const {
   }
 
   .filter-chip.is-active,
-  .active-filter-pill {
+  .search-panel :global(.active-filter-pill) {
     border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
     background: color-mix(in srgb, var(--accent) 10%, var(--surface));
   }
@@ -594,7 +594,7 @@ const {
     gap: 0.75rem;
   }
 
-  .active-filter-pill,
+  .search-panel :global(.active-filter-pill),
   .clear-filters-button {
     padding: 0.42rem 0.8rem;
     cursor: pointer;
@@ -602,8 +602,8 @@ const {
 
   .clear-filters-button:hover,
   .filter-chip:hover,
-  .active-filter-pill:hover,
-  .search-result:hover {
+  .search-panel :global(.active-filter-pill:hover),
+  .search-panel :global(.search-result:hover) {
     color: var(--accent);
   }
 
@@ -615,7 +615,7 @@ const {
     gap: 0.9rem;
   }
 
-  .search-result {
+  .search-panel :global(.search-result) {
     display: grid;
     gap: 0.65rem;
     padding: 1rem;
@@ -625,21 +625,21 @@ const {
     background: color-mix(in srgb, var(--surface) 95%, transparent);
   }
 
-  .search-result-header,
-  .search-result-taxonomy {
+  .search-panel :global(.search-result-header),
+  .search-panel :global(.search-result-taxonomy) {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     align-items: center;
   }
 
-  .search-result-body {
+  .search-panel :global(.search-result-body) {
     display: grid;
     gap: 0.45rem;
   }
 
-  .search-result-badge,
-  .search-result-taxonomy-chip {
+  .search-panel :global(.search-result-badge),
+  .search-panel :global(.search-result-taxonomy-chip) {
     display: inline-flex;
     align-items: center;
     min-height: 1.8rem;
@@ -648,27 +648,27 @@ const {
     font-size: 0.82rem;
   }
 
-  .search-result-badge {
+  .search-panel :global(.search-result-badge) {
     background: color-mix(in srgb, var(--accent) 12%, var(--surface));
   }
 
-  .search-result-taxonomy-chip {
+  .search-panel :global(.search-result-taxonomy-chip) {
     border: 1px solid var(--line);
     color: var(--muted);
   }
 
-  .search-result-title {
+  .search-panel :global(.search-result-title) {
     font-size: 1.05rem;
     font-weight: 600;
   }
 
-  .search-result-date,
-  .search-result-separator,
-  .search-result-excerpt {
+  .search-panel :global(.search-result-date),
+  .search-panel :global(.search-result-separator),
+  .search-panel :global(.search-result-excerpt) {
     color: var(--muted);
   }
 
-  .search-highlight {
+  .search-panel :global(.search-highlight) {
     background: color-mix(in srgb, var(--accent) 16%, transparent);
     color: inherit;
   }
