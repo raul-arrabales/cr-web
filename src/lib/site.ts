@@ -57,8 +57,11 @@ type SiteCopy = {
   searchErrorLabel: string;
   searchPostLabel: string;
   searchPageLabel: string;
+  searchFiltersToggleLabel: string;
   searchCategoryFilterLabel: string;
   searchTagFilterLabel: string;
+  searchCategoryPlaceholder: string;
+  searchTagPlaceholder: string;
   searchClearFiltersLabel: string;
   searchActiveFiltersLabel: string;
   searchNoTaxonomyLabel: string;
@@ -139,8 +142,11 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     searchErrorLabel: "Search is unavailable right now.",
     searchPostLabel: "Post",
     searchPageLabel: "Page",
+    searchFiltersToggleLabel: "Filters",
     searchCategoryFilterLabel: "Categories",
     searchTagFilterLabel: "Tags",
+    searchCategoryPlaceholder: "Choose a category...",
+    searchTagPlaceholder: "Choose a tag...",
     searchClearFiltersLabel: "Clear filters",
     searchActiveFiltersLabel: "Active filters",
     searchNoTaxonomyLabel: "No filters available yet.",
@@ -190,8 +196,11 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     searchErrorLabel: "La búsqueda no está disponible ahora mismo.",
     searchPostLabel: "Entrada",
     searchPageLabel: "Página",
+    searchFiltersToggleLabel: "Filtros",
     searchCategoryFilterLabel: "Categorías",
     searchTagFilterLabel: "Etiquetas",
+    searchCategoryPlaceholder: "Elige una categoría...",
+    searchTagPlaceholder: "Elige una etiqueta...",
     searchClearFiltersLabel: "Limpiar filtros",
     searchActiveFiltersLabel: "Filtros activos",
     searchNoTaxonomyLabel: "Todavía no hay filtros disponibles.",

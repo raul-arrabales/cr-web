@@ -13,8 +13,11 @@ interface Props {
   errorLabel: string;
   postLabel: string;
   pageLabel: string;
+  filtersToggleLabel: string;
   categoryFilterLabel: string;
   tagFilterLabel: string;
+  categoryPlaceholder: string;
+  tagPlaceholder: string;
   clearFiltersLabel: string;
   activeFiltersLabel: string;
   noTaxonomyLabel: string;
@@ -33,8 +36,11 @@ const {
   errorLabel,
   postLabel,
   pageLabel,
+  filtersToggleLabel,
   categoryFilterLabel,
   tagFilterLabel,
+  categoryPlaceholder,
+  tagPlaceholder,
   clearFiltersLabel,
   activeFiltersLabel,
   noTaxonomyLabel,
@@ -47,6 +53,7 @@ const {
   class="panel search-panel"
   data-search-panel
   data-index-url={`/${lang}/search-index.json`}
+  data-lang={lang}
   data-empty-label={emptyLabel}
   data-loading-label={loadingLabel}
   data-no-results-label={noResultsLabel}
@@ -66,75 +73,72 @@ const {
     </div>
   </div>
 
-  <label class="search-box">
-    <span class="search-icon" aria-hidden="true">⌕</span>
-    <span class="sr-only">{title}</span>
-    <input data-search-input type="search" placeholder={placeholder} autocomplete="off" />
-  </label>
+  <div class="search-controls">
+    <div class="search-primary">
+      <label class="search-box">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <span class="sr-only">{title}</span>
+        <input data-search-input type="search" placeholder={placeholder} autocomplete="off" />
+      </label>
 
-  <div class="search-filters">
-    <section class="filter-group">
-      <div class="filter-header">
-        <h3>{categoryFilterLabel}</h3>
+      <div class="active-filters" data-active-filters hidden>
+        <div class="active-filter-head">
+          <p class="active-filters-label">{activeFiltersLabel}</p>
+          <button type="button" class="clear-filters-link" data-clear-filters hidden>
+            {clearFiltersLabel}
+          </button>
+        </div>
+        <div class="active-filter-row">
+          <div class="active-filter-list" data-active-filter-list></div>
+        </div>
       </div>
-      {
-        categoryOptions.length ? (
-          <div class="filter-chip-list" data-filter-group="category">
-            {categoryOptions.map((option) => (
-              <button
-                type="button"
-                class="filter-chip"
-                data-filter-chip
-                data-filter-type="category"
-                data-filter-value={option.slug}
-                aria-pressed="false"
-              >
-                <span>{option.slug}</span>
-                <span class="filter-chip-count">{option.count}</span>
-              </button>
-            ))}
-          </div>
-        ) : (
-          <p class="filter-empty">{noTaxonomyLabel}</p>
-        )
-      }
-    </section>
+    </div>
 
-    <section class="filter-group">
-      <div class="filter-header">
-        <h3>{tagFilterLabel}</h3>
+    <details class="filter-disclosure" data-filter-disclosure>
+      <summary class="filter-toggle">{filtersToggleLabel}</summary>
+      <div class="filter-panel">
+        {
+          categoryOptions.length || tagOptions.length ? (
+            <>
+              <div class="filter-grid">
+                <label class="filter-field">
+                  <span>{categoryFilterLabel}</span>
+                  <input
+                    type="search"
+                    list={`search-categories-${lang}`}
+                    placeholder={categoryPlaceholder}
+                    data-filter-input="category"
+                    autocomplete="off"
+                  />
+                </label>
+
+                <label class="filter-field">
+                  <span>{tagFilterLabel}</span>
+                  <input
+                    type="search"
+                    list={`search-tags-${lang}`}
+                    placeholder={tagPlaceholder}
+                    data-filter-input="tag"
+                    autocomplete="off"
+                  />
+                </label>
+              </div>
+            </>
+          ) : (
+            <p class="filter-empty">{noTaxonomyLabel}</p>
+          )
+        }
       </div>
-      {
-        tagOptions.length ? (
-          <div class="filter-chip-list" data-filter-group="tag">
-            {tagOptions.map((option) => (
-              <button
-                type="button"
-                class="filter-chip"
-                data-filter-chip
-                data-filter-type="tag"
-                data-filter-value={option.slug}
-                aria-pressed="false"
-              >
-                <span>{option.slug}</span>
-                <span class="filter-chip-count">{option.count}</span>
-              </button>
-            ))}
-          </div>
-        ) : (
-          <p class="filter-empty">{noTaxonomyLabel}</p>
-        )
-      }
-    </section>
+    </details>
   </div>
 
-  <div class="active-filters" data-active-filters hidden>
-    <p class="active-filters-label">{activeFiltersLabel}</p>
-    <div class="active-filter-list" data-active-filter-list></div>
-    <button type="button" class="clear-filters-button" data-clear-filters>
-      {clearFiltersLabel}
-    </button>
-  </div>
+  <datalist id={`search-categories-${lang}`}>
+    {categoryOptions.map((option) => <option value={option.slug} label={`${option.slug} (${option.count})`} />)}
+  </datalist>
+
+  <datalist id={`search-tags-${lang}`}>
+    {tagOptions.map((option) => <option value={option.slug} label={`${option.slug} (${option.count})`} />)}
+  </datalist>
 
   <p class="search-status" data-search-status aria-live="polite">{emptyLabel}</p>
   <ol class="search-results" data-search-results></ol>
@@ -169,12 +173,20 @@ const {
     const input = panel.querySelector("[data-search-input]");
     const status = panel.querySelector("[data-search-status]");
     const resultsList = panel.querySelector("[data-search-results]");
-    const clearFiltersButton = panel.querySelector("[data-clear-filters]");
     const activeFilters = panel.querySelector("[data-active-filters]");
     const activeFilterList = panel.querySelector("[data-active-filter-list]");
-    const filterChips = [...panel.querySelectorAll("[data-filter-chip]")];
+    const clearFiltersButton = panel.querySelector("[data-clear-filters]");
+    const categoryInput = panel.querySelector('[data-filter-input="category"]');
+    const tagInput = panel.querySelector('[data-filter-input="tag"]');
+    const disclosure = panel.querySelector("[data-filter-disclosure]");
     const labels = panel.dataset;
     const resultLimit = 8;
+    const validCategories = new Set(
+      [...panel.querySelectorAll(`#search-categories-${panel.dataset.lang} option`)].map((option) => option.value),
+    );
+    const validTags = new Set(
+      [...panel.querySelectorAll(`#search-tags-${panel.dataset.lang} option`)].map((option) => option.value),
+    );
     let indexPromise;
     let indexedItems = [];
     let activeTerms = [];
@@ -188,19 +200,23 @@ const {
     const syncUrl = () => {
       const url = new URL(window.location.href);
 
-      if (activeCategory) {
-        url.searchParams.set("category", activeCategory);
-      } else {
-        url.searchParams.delete("category");
-      }
+      if (activeCategory) url.searchParams.set("category", activeCategory);
+      else url.searchParams.delete("category");
 
-      if (activeTag) {
-        url.searchParams.set("tag", activeTag);
-      } else {
-        url.searchParams.delete("tag");
-      }
+      if (activeTag) url.searchParams.set("tag", activeTag);
+      else url.searchParams.delete("tag");
 
       window.history.replaceState({}, "", url);
+    };
+
+    const syncFilterInputs = () => {
+      if (categoryInput) categoryInput.value = activeCategory;
+      if (tagInput) tagInput.value = activeTag;
+    };
+
+    const updateClearButton = () => {
+      if (!clearFiltersButton) return;
+      clearFiltersButton.hidden = !(activeCategory || activeTag);
     };
 
     const updateActiveFilterUi = () => {
@@ -213,10 +229,12 @@ const {
 
       if (!filters.length) {
         activeFilters.hidden = true;
+        updateClearButton();
         return;
       }
 
       activeFilters.hidden = false;
+      updateClearButton();
 
       filters.forEach((filter) => {
         const button = document.createElement("button");
@@ -230,27 +248,12 @@ const {
       });
     };
 
-    const updateChipState = () => {
-      filterChips.forEach((chip) => {
-        const type = chip.dataset.filterType;
-        const value = chip.dataset.filterValue;
-        const isActive =
-          (type === "category" && value === activeCategory) || (type === "tag" && value === activeTag);
-
-        chip.setAttribute("aria-pressed", isActive ? "true" : "false");
-        chip.classList.toggle("is-active", isActive);
-      });
-    };
-
     const loadIndex = () => {
       if (!indexPromise) {
         setStatus(labels.loadingLabel);
         indexPromise = fetch(labels.indexUrl)
           .then((response) => {
-            if (!response.ok) {
-              throw new Error("Search index request failed");
-            }
-
+            if (!response.ok) throw new Error("Search index request failed");
             return response.json();
           })
           .then((items) => {
@@ -288,9 +291,7 @@ const {
         const excerptMatch = item.searchExcerpt.includes(term);
         const bodyMatch = item.searchText.includes(term);
 
-        if (!titleMatch && !metaMatch && !excerptMatch && !bodyMatch) {
-          return 0;
-        }
+        if (!titleMatch && !metaMatch && !excerptMatch && !bodyMatch) return 0;
 
         if (item.searchTitle.startsWith(term)) score += 130;
         if (titleMatch) score += 100;
@@ -410,8 +411,8 @@ const {
       const hasFilters = Boolean(activeCategory || activeTag);
       clearChildren(resultsList);
       activeTerms = terms;
-      updateChipState();
       updateActiveFilterUi();
+      syncFilterInputs();
       syncUrl();
 
       if (!query && !hasFilters) {
@@ -420,10 +421,7 @@ const {
       }
 
       const items = await loadIndex();
-
-      if (!items.length) {
-        return;
-      }
+      if (!items.length) return;
 
       const matches = items
         .map((item) => ({ item, score: scoreItem(item, terms) }))
@@ -446,24 +444,40 @@ const {
       activeTag = params.get("tag") || "";
     };
 
+    const applyFilters = () => {
+      const nextCategory = categoryInput?.value.trim() || "";
+      const nextTag = tagInput?.value.trim() || "";
+
+      activeCategory = validCategories.has(nextCategory) ? nextCategory : "";
+      activeTag = validTags.has(nextTag) ? nextTag : "";
+      if (disclosure) disclosure.open = false;
+      void runSearch();
+    };
+
+    const clearFilters = () => {
+      activeCategory = "";
+      activeTag = "";
+      if (categoryInput) categoryInput.value = "";
+      if (tagInput) tagInput.value = "";
+      clearChildren(activeFilterList);
+      activeFilters.hidden = true;
+      updateClearButton();
+      void runSearch();
+    };
+
     setInitialFiltersFromUrl();
-    updateChipState();
+    syncFilterInputs();
     updateActiveFilterUi();
 
-    filterChips.forEach((chip) => {
-      chip.addEventListener("click", () => {
-        const type = chip.dataset.filterType;
-        const value = chip.dataset.filterValue || "";
+    clearFiltersButton?.addEventListener("click", clearFilters);
 
-        if (type === "category") {
-          activeCategory = activeCategory === value ? "" : value;
+    [categoryInput, tagInput].forEach((field) => {
+      field?.addEventListener("change", applyFilters);
+      field?.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          applyFilters();
         }
-
-        if (type === "tag") {
-          activeTag = activeTag === value ? "" : value;
-        }
-
-        void runSearch();
       });
     });
 
@@ -474,12 +488,7 @@ const {
       if (button.dataset.clearFilter === "category") activeCategory = "";
       if (button.dataset.clearFilter === "tag") activeTag = "";
 
-      void runSearch();
-    });
-
-    clearFiltersButton?.addEventListener("click", () => {
-      activeCategory = "";
-      activeTag = "";
+      syncFilterInputs();
       void runSearch();
     });
 
@@ -488,6 +497,7 @@ const {
     });
 
     if (activeCategory || activeTag) {
+      if (disclosure) disclosure.open = true;
       void runSearch();
     }
   });
@@ -497,6 +507,19 @@ const {
   .search-panel {
     display: grid;
     gap: 1.25rem;
+  }
+
+  .search-controls {
+    display: grid;
+    gap: 0.85rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+  }
+
+  .search-primary {
+    display: grid;
+    gap: 0.75rem;
+    min-width: 0;
   }
 
   .search-box {
@@ -509,7 +532,8 @@ const {
     background: color-mix(in srgb, var(--surface) 92%, transparent);
   }
 
-  .search-box input {
+  .search-box input,
+  .filter-field input {
     width: 100%;
     border: 0;
     padding: 0;
@@ -518,7 +542,8 @@ const {
     font: inherit;
   }
 
-  .search-box input:focus {
+  .search-box input:focus,
+  .filter-field input:focus {
     outline: none;
   }
 
@@ -526,17 +551,42 @@ const {
     color: var(--muted);
   }
 
-  .search-filters {
+  .filter-disclosure {
+    min-width: min(24rem, 100%);
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    background: color-mix(in srgb, var(--surface) 96%, transparent);
+  }
+
+  .filter-toggle {
+    cursor: pointer;
+    list-style: none;
+    padding: 0.85rem 1rem;
+    font-weight: 600;
+  }
+
+  .filter-toggle::-webkit-details-marker {
+    display: none;
+  }
+
+  .filter-panel {
     display: grid;
     gap: 1rem;
+    padding: 0 1rem 1rem;
   }
 
-  .filter-group {
+  .filter-grid {
     display: grid;
-    gap: 0.65rem;
+    gap: 0.85rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .filter-header h3,
+  .filter-field {
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .filter-field span,
   .active-filters-label {
     margin: 0;
     font-size: 0.9rem;
@@ -545,40 +595,30 @@ const {
     letter-spacing: 0.08em;
   }
 
-  .filter-chip-list,
+    .filter-field input {
+      padding: 0.8rem 0.9rem;
+      border: 1px solid var(--line);
+      border-radius: 0.85rem;
+      background: var(--surface);
+    }
+
+  .active-filter-head,
+  .active-filter-row,
   .active-filter-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.65rem;
   }
 
-  .filter-chip,
-  .search-panel :global(.active-filter-pill),
-  .clear-filters-button {
+  .filter-action-button,
+  .search-panel :global(.active-filter-pill) {
     border: 1px solid var(--line);
     border-radius: 999px;
     background: var(--surface);
     color: inherit;
     font: inherit;
-  }
-
-  .filter-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    padding: 0.45rem 0.8rem;
+    padding: 0.45rem 0.9rem;
     cursor: pointer;
-  }
-
-  .filter-chip.is-active,
-  .search-panel :global(.active-filter-pill) {
-    border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
-    background: color-mix(in srgb, var(--accent) 10%, var(--surface));
-  }
-
-  .filter-chip-count {
-    color: var(--muted);
-    font-size: 0.85rem;
   }
 
   .filter-empty,
@@ -588,20 +628,39 @@ const {
   }
 
   .active-filters {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.75rem;
+    display: grid;
+    gap: 0.45rem;
   }
 
-  .search-panel :global(.active-filter-pill),
-  .clear-filters-button {
-    padding: 0.42rem 0.8rem;
+  .active-filters[hidden] {
+    display: none !important;
+  }
+
+  .active-filter-head {
+    align-items: baseline;
+  }
+
+  .active-filter-row {
+    align-items: center;
+  }
+
+  .clear-filters-link {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: var(--muted);
+    font: inherit;
+    text-decoration: underline;
     cursor: pointer;
   }
 
-  .clear-filters-button:hover,
-  .filter-chip:hover,
+  .search-panel :global(.active-filter-pill) {
+    border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
+    background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+  }
+
+  .filter-action-button:hover,
+  .clear-filters-link:hover,
   .search-panel :global(.active-filter-pill:hover),
   .search-panel :global(.search-result:hover) {
     color: var(--accent);
@@ -674,9 +733,16 @@ const {
   }
 
   @media (max-width: 720px) {
+    .search-controls {
+      grid-template-columns: 1fr;
+    }
+
+    .filter-grid {
+      grid-template-columns: 1fr;
+    }
+
     .active-filters {
       align-items: flex-start;
-      flex-direction: column;
     }
   }
 </style>
