@@ -122,6 +122,7 @@ function isCurrentSection(item: NavItem) {
     const headerRow = header?.querySelector(".header-row");
     const brandLink = header?.querySelector("[data-brand-link]");
     const headerTools = header?.querySelector(".header-tools");
+    const root = document.documentElement;
 
     const getFlexGap = (element) => {
       return Number.parseFloat(window.getComputedStyle(element).columnGap) || 0;
@@ -217,11 +218,23 @@ function isCurrentSection(item: NavItem) {
       }
     };
 
+    const syncHeaderOffset = () => {
+      if (!(header instanceof HTMLElement)) {
+        return;
+      }
+
+      root.style.setProperty("--site-header-offset", `${header.offsetHeight + 20}px`);
+    };
+
     syncBrandMode();
+    syncHeaderOffset();
 
     if (header instanceof HTMLElement && "ResizeObserver" in window) {
       const resizeObserver = new ResizeObserver(() => {
-        window.requestAnimationFrame(syncBrandMode);
+        window.requestAnimationFrame(() => {
+          syncBrandMode();
+          syncHeaderOffset();
+        });
       });
 
       resizeObserver.observe(header);
@@ -230,14 +243,16 @@ function isCurrentSection(item: NavItem) {
         resizeObserver.observe(headerRow);
       }
     } else {
-      window.addEventListener("resize", syncBrandMode);
+      window.addEventListener("resize", () => {
+        syncBrandMode();
+        syncHeaderOffset();
+      });
     }
 
     if (!(button instanceof HTMLButtonElement)) {
       return;
     }
 
-    const root = document.documentElement;
     const darkLabel = button.dataset.labelDark || "Switch to dark mode";
     const lightLabel = button.dataset.labelLight || "Switch to light mode";
 

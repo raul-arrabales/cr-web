@@ -1,4 +1,5 @@
 :root {
+  --site-header-offset: 8rem;
   --bg: #f5f1e8;
   --page: #f8f4ec;
   --page-top: #faf7f1;
@@ -42,6 +43,7 @@ html {
   color: var(--text);
   background: var(--page);
   color-scheme: light;
+  scroll-padding-top: var(--site-header-offset);
 }
 
 html[data-theme="dark"] {

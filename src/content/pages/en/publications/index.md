@@ -1,15 +1,52 @@
 ---
-title: "Books &amp; other Publications"
+title: "Books and other Publications"
 date: 2015-12-27
 ---
 
-* * *
+Raúl Arrabales featured books and complete publications archive.
 
-## Recent Books
+## On this page
 
-[<img src="/legacy-images/images/Portada-Amor-programado-scaled-1-662x1024.jpg" alt="" />](https://www.esferalibros.com/libros/amor-programado/)
+<div class="contents-card">
+
+This page is split into two sections: featured books with extended descriptions, followed by the full publication archive.
+
+- [Featured books](#featured-books)
+  - [Hardwired for Love](#hardwired-for-love)
+  - [Mental Disorders in Artificial Intelligence](#mental-disorders-in-artificial-intelligence)
+- [All publications](#all-publications)
+  - [Books](#books)
+  - [Gartner research](#gartner-research)
+  - [PhD thesis](#phd-thesis)
+  - [Master theses](#master-theses)
+  - [Book chapters](#book-chapters)
+  - [E-books](#e-books)
+  - [Peer reviewed international journals](#peer-reviewed-international-journals)
+  - [International conference proceedings](#international-conference-proceedings)
+  - [International workshop proceedings](#international-workshop-proceedings)
+  - [Posters](#posters)
+  - [Pop science and outreach](#pop-science-and-outreach)
+
+</div>
+
+<a id="featured-books"></a>
+
+## Featured Books
+
+
+<a id="hardwired-for-love"></a>
 
 ### Hardwired for Love (Spanish, 2025)
+
+<div class="featured-book-section">
+
+<div class="featured-book-cover">
+  <a href="https://www.esferalibros.com/libros/amor-programado/">
+    <img src="/legacy-images/images/Portada-Amor-programado-scaled-1-662x1024.jpg" alt="Cover of Amor Programado (Hardwired for Love)" />
+  </a>
+</div>
+
+<div class="featured-book-body">
 
 What happens when emotions and machines collide?
 
@@ -23,9 +60,25 @@ In _Amor Programado (Hardwired for Love)_, AI expert Dr. Raúl Arrabales explore
 
 This is more than just a book about technology — it’s an invitation to reflect on the future of love and connection in a world where feelings can be coded. A compelling read for anyone curious about what it means to be human in the age of intelligent machines.
 
+</div>
+
+</div>
+
 * * *
 
+<a id="mental-disorders-in-artificial-intelligence"></a>
+
 ### Mental Disorders in Artificial Intelligence (2024)
+
+<div class="featured-book-section">
+
+<div class="featured-book-cover">
+  <a href="https://www.conscious-robots.com/publications/mental-disorders-in-artificial-intelligence-book/">
+    <img src="/legacy-images/images/Book_3D_MDAI.png" alt="Mental Disorders in Artificial Intelligence book cover" />
+  </a>
+</div>
+
+<div class="featured-book-body">
 
 Gain a deep understanding of AI by exploring its psychological quirks, blunders, mistakes, and failure cases.
 
@@ -33,20 +86,37 @@ Gain a deep understanding of AI by exploring its psychological quirks, blunders,
 
 Available in e-book and paperback
 
-[<img src="/legacy-images/images/png-clipart-kindle-unlimited-logo-tech-companies-1.png" alt="" />](https://mybook.to/mental-disorders-ai)
-
-[<img src="/legacy-images/images/Amazon_logo.svg_.png" alt="" />](https://mybook.to/mdai-paperback)
+<div class="book-badges">
+  <a href="https://mybook.to/mental-disorders-ai">
+    <img src="/legacy-images/images/png-clipart-kindle-unlimited-logo-tech-companies-1.png" alt="Kindle edition" />
+  </a>
+  <a href="https://mybook.to/mdai-paperback">
+    <img src="/legacy-images/images/Amazon_logo.svg_.png" alt="Amazon paperback" />
+  </a>
+</div>
 
 👉 [Look inside the book! 🧐](https://www.amazon.es/Mental-Disorders-Artificial-Intelligence-Understanding/dp/8409640171/?asin=B0DC6XVG96&revisionId=b2ad0dc3&format=3&depth=1)
 
-[<img src="/legacy-images/images/Book_3D_MDAI.png" alt="MDAI" />](https://www.conscious-robots.com/publications/mental-disorders-in-artificial-intelligence-book/)
+</div>
+
+</div>
 
 * * *
 
+<a id="all-publications"></a>
+
 ## All Publications
 
-Scientific papers and other publications of  
-**Raúl Arrabales Moreno, Ph.D.** ([Google Scholar citations](https://scholar.google.es/citations?user=yFsC0SYAAAAJ) | [ResearchGate Profile](https://www.researchgate.net/profile/Raul_Arrabales))
+<div class="publication-archive">
+
+<p class="archive-intro">
+  Scientific papers and other publications of
+  <strong>Raúl Arrabales Moreno, Ph.D.</strong>
+  (<a href="https://scholar.google.es/citations?user=yFsC0SYAAAAJ">Google Scholar citations</a> |
+  <a href="https://www.researchgate.net/profile/Raul_Arrabales">ResearchGate Profile</a>)
+</p>
+
+<a id="books"></a>
 
 ### Books (3)
 
@@ -59,6 +129,8 @@ Arrabales, R. "**Mental Disorders in Artificial Intelligence**". Psicobótica Bo
 Arrabales, R. "**Los Trastornos Mentales de la Inteligencia Artificial**". Psicobótica Books. Madrid. October, 2023. ISBN 978-8409549559. 
 \[[Paperback Edition (es)](https://www.amazon.es/Los-Trastornos-Mentales-Inteligencia-Artificial/dp/B0CKD3VTBW/)\] \[[Kindle Edition (es)](https://www.amazon.es/Los-Trastornos-Mentales-Inteligencia-Artificial-ebook/dp/B0CK8LXFNF/)\] \[[Book Website: tmia.es](https://www.tmia.es/)\]
 
+<a id="gartner-research"></a>
+
 ### Gartner Research (4)
 
 Arrabales, R. "**Use These Best Practices for Successful Agentic Analytics Implementations**". Apr., 2026. Gartner. \[[Gartner Research](https://www.gartner.com/en/documents/7374530)\]
@@ -69,10 +141,14 @@ Arrabales, R. "**How to Select the Best-Fit Generative AI Implementation Approac
 
 Agarwal, et al. "**2026 Planning Guide for Analytics and Artificial Intelligence**". Oct., 2025. Gartner. \[[Gartner Research](https://www.gartner.com/en/documents/7001998)\]
 
+<a id="phd-thesis"></a>
+
 ### PhD Thesis (1)
 
 Arrabales, R. "**Evaluation and Development of Consciousness in Artificial Cognitive Systems**". _PhD Thesis_. Carlos III University of Madrid. February, 2011. 
 \[[PDF](http://www.conscious-robots.com/papers/Tesis_Raul_Arrabales.pdf)\] \[[PPT](http://www.conscious-robots.com/papers/Arrabales_PhD_web.pdf)\] \[[BibTeX](http://www.conscious-robots.com/papers/Tesis11_Arrabales_bibtex.txt)\]
+
+<a id="master-theses"></a>
 
 ### Master Theses (6)
 
@@ -88,6 +164,8 @@ Arcaute, C.,  Arrabales, R., Cascallana, O., De la Hermosa, M., Matanzo, A. "*
 Arrabales, R. "**Artificial Vision System for an Autonomous Underwater Vehicle"**. Final Year Project. BSc Computer Science. UC3M/University of Limerick. Jun. 2001.
 
 Arrabales, R. "**Speech Recognition Module for a Mobility Aid System"**. Final Year Project. BEng in Computer Engineering. UPM. Jun. 1999.
+
+<a id="book-chapters"></a>
 
 ### Book Chapters (6)
 
@@ -109,10 +187,14 @@ Arrabales, R. and Muñoz, J. "**Enhancing Game Play Experience Using Machine C
 Arrabales, R. Ledezma, A. and Sanchis, A. "**Simulating Visual Qualia in the CERA-CRANIUM Cognitive Architecture"**. From Brains to Systems: Brain-Inspired Cognitive Systems 2010. In Series: Advances in Experimental Medicine and Biology, vol. 718, Hernández, C.; Sanz, R.; Gomez, J.; Smith, L.S.; Hussain, A.; Chella, A.; Aleksander, I. (Eds.). Springer New York. In press. ISBN: 978-1-4614-0163-6. 
 \[PDF\] \[[BOOK](http://www.springer.com/biomed/neuroscience/book/978-1-4614-0163-6)\] \[BibTeX\]
 
+<a id="e-books"></a>
+
 ### E-Books (1)
 
 Arrabales, R. "Computación Cognitiva. La nueva revolución del Big Data**"**. El Confidencial y El Instituto de la Economía Digital de ESIC. Jan. 2016. 
 \[[E-BOOK](http://elconfidencial.icemd.com/Enero2016/)\]
+
+<a id="peer-reviewed-international-journals"></a>
 
 ### Peer Reviewed International Journals (10)
 
@@ -149,6 +231,8 @@ Arrabales, R. Ledezma, A. and Sanchis, A. "**A Cognitive Approach to Multimodal 
 Arrabales, R. Ledezma, A. and Sanchis, A. "**Integrated Attention for Cognitive Robotics**". Communications of the Systemics and Informatics World Network (SIWN). Volume 5. August 2008. Pages 1-5. 
 \[[PDF](http://www.conscious-robots.com/papers/Arrabales_DART2008_v20.pdf)\] \[[BibTeX](http://www.conscious-robots.com/papers/SIWN_08_Arrabales.txt)\] \[[Journal Website](http://siwn.org.uk/)\]
 
+<a id="international-conference-proceedings"></a>
+
 ### International Conference Proceedings (9)
 
 Arrabales, R. Ledezma, A. and Sanchis, A. "**Towards the Generation of Visual Qualia in Artificial Cognitive Architectures**". BICS 2010 (_Brain Inspired Cognitive Systems_). Conference Preprints ISBN 978-84-614-1870-1. 
@@ -181,6 +265,8 @@ Arrabales R., Flanagan C., Toal D., "**An adaptive video event mining system for
 \[CORE ERA Conference Ranking: B\]  
 \[[PDF](http://www.conscious-robots.com/papers/ANNIE_02_Arrabales_Vision.pdf)\] \[[BibTeX](http://www.conscious-robots.com/papers/ANNIE_02_Arrabales_Vision.txt)\] \[[RefWorks](http://www.conscious-robots.com/papers/ANNIE_02_Arrabales_Vision_refworks.txt)\] \[[ProCite/EndNote](http://www.conscious-robots.com/papers/ANNIE_02_Arrabales_Vision_procite.txt)\] \[[Book](http://catalog.asme.org/books/PrintBook/Intelligent_Systems_Through_5.cfm)\]
 
+<a id="international-workshop-proceedings"></a>
+
 ### International Workshop Proceedings (6)
 
 Arrabales, R. "**Exploring Possible Mechanisms for Inner Speech Generation in the CERA-CRANIUM Cognitive Architecture**". Retecog 2011 - The Architectures of Mind. Madrid. July 2011. 
@@ -202,6 +288,8 @@ Arrabales, R. Ledezma, A. and Sanchis, A. "**Criteria for Consciousness in Artif
 Arrabales, R. and Sanchis de Miguel, A. "**A Machine Consciousness Approach to Autonomous Mobile Robotics".** In the 5th International Cognitive Robotics Workshop. AAAI-06. Boston, MA. July 2006. 
 \[[PDF](http://www.conscious-robots.com/papers/CogRob_06_Arrabales.pdf)\] \[[BibTeX](http://www.conscious-robots.com/papers/CogRob_06_Arrabales.txt)\] \[[RefWorks](http://www.conscious-robots.com/papers/CogRob_06_Arrabales_refworks.txt)\] \[[ProCite/EndNote](http://www.conscious-robots.com/papers/CogRob_06_Arrabales_procite.txt)\] \[[Workshop](http://cogrob06.cs.tum.edu/)\]
 
+<a id="posters"></a>
+
 ### Posters (3)
 
 Arrabales, R. Ledezma, A. and Sanchis, A. "**CC-Bot: A Believable Video Game Bot based on Machine Consciousness**". 5_th International Conference on Cognitive Systems_ (CogSys 2012). Vienna. Austria. February 2012. 
@@ -213,7 +301,9 @@ Arrabales, R. Ledezma, A. and Sanchis, A. "**ConsScale: A Cognitive Scale Inspir
 Arrabales, R. Ledezma, A. and Sanchis, A. "**CRANIUM-CERA Cognitive Architecture**". 1st International Semminar on New Issues of Artificial Intelligence. Universidad Carlos III de Madrid. February 2008. 
 \[[Poster](http://www.conscious-robots.com/papers/PosterSeminarioRaul_3.pdf)\] \[[Semminar Website](../en/ai-techniques/biologicaly-inspired-ai/1st-international-seminar-on-new-issues.html)\]
 
-### Pop Sicence and Outreach (12)
+<a id="pop-science-and-outreach"></a>
+
+### Pop Science and Outreach (12)
 
 Arrabales, R. "**La Computación Cognitiva como Fuente de Datos de Gran Valor**". Digital Knowledge. ICEMD. Sep. 2017. 
 \[[Website](http://www.icemd.com/digital-knowledge/articulos/la-computacion-cognitiva-fuente-datos-gran-valor/)\]
@@ -250,3 +340,5 @@ Arrabales, R. and Muñoz, J. "**The Awakening of Conscious Bots: Inside the Min
 
 Arrabales, R. "**El Ataque de los Cylon II**". Blog de Sistemas Inteligentes de Madri+d. Agosto 2009. 
 \[[PDF](http://www.conscious-robots.com/papers/Arrabales_Cylon_2009.pdf)\] \[[Website](http://www.madrimasd.org/blogs/sistemas_inteligentes/2009/08/17/123326)\]
+
+</div>
