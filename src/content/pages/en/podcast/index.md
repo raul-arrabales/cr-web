@@ -3,52 +3,75 @@ title: "Podcast"
 date: 2025-04-23
 ---
 
-> As of July 2025, all of my public speaking on AI can be found on [Gartner](https://www.gartner.com/en/experts/raul-arrabales).
+<div class="podcast-intro">
+  <p>Explore Raúl Arrabales' podcast projects on artificial intelligence, psychology, and technology in a more conversational format.</p>
+  <p>Since July 2025, all of my public speaking on AI can be found on <a href="https://www.gartner.com/en/experts/raul-arrabales">Gartner</a>.</p>
+  <p class="podcast-note">All episodes are currently recorded in Spanish. English-language pages are kept here so the media archive stays complete and easy to navigate.</p>
+</div>
 
-## Older content
+<div class="podcast-contents">
+  <p>This page gathers the two current podcast series.</p>
+  <ul>
+    <li><a href="#ai-de-todo">AI de ToDo</a></li>
+    <li><a href="#iria-y-raul">Iria y Raúl</a></li>
+  </ul>
+</div>
 
-At the moment, all podcast episodes are recorded in Spanish 🇪🇸💃. I might recruit an AI to help with translations soon… Until then, feel free to tune in if you speak Spanish!
+<a id="ai-de-todo"></a>
 
 ## AI de ToDo
 
-<img src="/legacy-images/images/WhatsApp-Image-2025-04-07-at-20.41.37-300x300.jpeg" alt="" />
+<div class="podcast-show">
+  <div class="podcast-show-head">
+    <figure class="podcast-show-cover">
+      <img src="/legacy-images/images/WhatsApp-Image-2025-04-07-at-20.41.37-300x300.jpeg" alt="AI de ToDo podcast cover" />
+    </figure>
+    <div class="podcast-show-body">
+      <p class="podcast-kicker">Podcast Series</p>
+      <p class="podcast-tagline">A practical AI show about the latest advances, real-world impact, and the questions worth asking.</p>
+      <p>In each episode, AI experts discuss recent developments in artificial intelligence, computing, and technology, from generative models and algorithmic ethics to the broader social effects of automation.</p>
+      <ul class="podcast-highlights">
+        <li>Expert roundtable format</li>
+        <li>Current AI topics with an accessible tone</li>
+        <li>Technical depth without losing the human angle</li>
+      </ul>
+    </div>
+  </div>
 
-Un podcast donde los expertos en inteligencia artificial lo cuentan todo. En cada episodio debatimos los avances más recientes en IA, informática y tecnología, desde los modelos generativos hasta la ética algorítmica, pasando por el impacto social de la automatización. Si te apasiona el futuro de la inteligencia artificial o trabajas con datos y tecnología, este es tu espacio para aprender, cuestionar y descubrir.
+  <div class="podcast-links">
+    <a href="https://go.ivoox.com/sq/2590970">Listen on iVoox</a>
+    <a href="https://open.spotify.com/show/6UecxOeIpp1M1aLFTa6far?si=y6DfglvLSnq7gjyF0lfuIg">Listen on Spotify</a>
+  </div>
 
-🎙️ Contertulios expertos.  
-🤖 Temas actuales.  
-🧠 Conversaciones profundas… y cercanas.
+  <div class="podcast-player">
+    <iframe src="https://www.ivoox.com/player_es_podcast_2590970_zp_1.html?c1=1f495e" width="100%" height="400" frameborder="0" allowfullscreen scrolling="no" loading="lazy"></iframe>
+  </div>
+</div>
 
-Escúchanos y entérate de todo lo que está pasando en el mundo de la IA.
-
-* * *
-
-🎧 [Escúchalo en iVoox](https://go.ivoox.com/sq/2590970):
-
-<iframe src="https://www.ivoox.com/player_es_podcast_2590970_zp_1.html?c1=1f495e" width="100%" height="400" frameborder="0" allowfullscreen scrolling="no" loading="lazy"></iframe>
-
-* * *
-
-🎧 [Escúchalo en Spotify](https://open.spotify.com/show/6UecxOeIpp1M1aLFTa6far?si=y6DfglvLSnq7gjyF0lfuIg)
+<a id="iria-y-raul"></a>
 
 ## Iria y Raúl
 
-<img src="/legacy-images/images/podcast_iria_v1-300x300.png" alt="" />
+<div class="podcast-show">
+  <div class="podcast-show-head">
+    <figure class="podcast-show-cover">
+      <img src="/legacy-images/images/podcast_iria_v1-300x300.png" alt="Iria y Raúl podcast cover" />
+    </figure>
+    <div class="podcast-show-body">
+      <p class="podcast-kicker">Podcast Series</p>
+      <p class="podcast-tagline">A looser, more playful conversation where AI, humor, and everyday life meet.</p>
+      <p>Iria, an AI with plenty of charisma, and Raúl, a curious human with strong opinions, talk without a script about technology, science, emotions, odd corners of modern life, and whatever else comes up.</p>
+      <p>Each episode blends ideas, reflections, and humor to make complex topics feel close, lively, and easy to explore.</p>
+    </div>
+  </div>
 
-Un espacio donde la inteligencia artificial y el humor se encuentran con la vida cotidiana. Iria, una IA con mucho carisma, y Raúl, un humano curioso y sin pelos en la lengua, charlan sin guión sobre tecnología, ciencia, emociones, rarezas del mundo moderno… y lo que surja.
+  <div class="podcast-links">
+    <a href="https://go.ivoox.com/sq/2586521">Listen on iVoox</a>
+    <a href="https://www.youtube.com/@RaulArrabales/podcasts">Watch on YouTube</a>
+    <a href="https://open.spotify.com/show/73mTm90qEf9c8SVgCGJB87?si=OsaLJdI9Q1OzCYM9MsgjFA">Listen on Spotify</a>
+  </div>
 
-Cada episodio es una mezcla espontánea de conocimiento, reflexiones y carcajadas (a veces nerviosas). Si te gustan las conversaciones auténticas, las preguntas difíciles y los momentos inesperados, este podcast es para ti.
-
-🧠💬✨ Porque a veces, para entender el futuro, solo hace falta una buena charla.
-
-* * *
-
-🎧 [Escúchalo en iVoox](https://go.ivoox.com/sq/2586521):
-
-<iframe src="https://www.ivoox.com/player_es_podcast_2586521_zp_1.html?c1=f4b36c" width="100%" height="400" frameborder="0" allowfullscreen scrolling="no" loading="lazy"></iframe>
-
-* * *
-
-▶️ [Escúchalo en YouTube](https://www.youtube.com/@RaulArrabales/podcasts)
-
-🎧 [Escúchalo en Spotify](https://open.spotify.com/show/73mTm90qEf9c8SVgCGJB87?si=OsaLJdI9Q1OzCYM9MsgjFA)
+  <div class="podcast-player">
+    <iframe src="https://www.ivoox.com/player_es_podcast_2586521_zp_1.html?c1=f4b36c" width="100%" height="400" frameborder="0" allowfullscreen scrolling="no" loading="lazy"></iframe>
+  </div>
+</div>

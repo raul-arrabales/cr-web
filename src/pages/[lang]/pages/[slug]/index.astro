@@ -24,6 +24,7 @@ const slug = Astro.params.slug ?? "";
 const isMediaHub = slug === "media-presence" || slug === "presencia-en-medios";
 const isContactPage = slug === "contact-me" || slug === "contacto";
 const isPublicationsPage = slug === "publications" || slug === "publicaciones";
+const isPodcastPage = slug === "podcast";
 const isBookLandingPage =
   slug === "mental-disorders-in-artificial-intelligence-book" ||
   slug === "los-trastornos-mentales-de-la-inteligencia-artificial-libro";
@@ -35,6 +36,7 @@ const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
     class:list={[
       "panel prose page-panel",
       isPublicationsPage && "is-publications-page",
+      isPodcastPage && "is-podcast-page",
       isBookLandingPage && "is-book-landing-page",
     ]}
   >
@@ -416,6 +418,154 @@ const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
       margin-top: 0.5rem;
     }
 
+    .page-panel.is-podcast-page :global(.podcast-intro),
+    .page-panel.is-podcast-page :global(.podcast-show) {
+      margin: 1.5rem 0 2rem;
+      padding: 1.2rem;
+      border: 1px solid var(--line);
+      border-radius: 1.2rem;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-intro) {
+      background:
+        radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 8%, transparent), transparent 52%),
+        var(--surface);
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-intro > :first-child),
+    .page-panel.is-podcast-page :global(.podcast-show > :first-child),
+    .page-panel.is-podcast-page :global(.podcast-show-body > :first-child) {
+      margin-top: 0;
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-intro > :last-child),
+    .page-panel.is-podcast-page :global(.podcast-show > :last-child),
+    .page-panel.is-podcast-page :global(.podcast-show-body > :last-child) {
+      margin-bottom: 0;
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-note) {
+      margin: 0.9rem 0 0;
+      color: var(--muted);
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-contents) {
+      margin: 1.5rem 0 2rem;
+      padding: 1.1rem 1.2rem;
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: color-mix(in srgb, var(--surface) 94%, transparent);
+      box-shadow: 0 12px 30px rgba(43, 29, 21, 0.05);
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-contents p) {
+      margin-top: 0;
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-contents ul) {
+      margin: 0.75rem 0 0;
+      padding-left: 1.1rem;
+    }
+
+    .page-panel.is-podcast-page :global(h2) {
+      margin-top: 3rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--line);
+      font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+      letter-spacing: 0.01em;
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-show-head) {
+      display: grid;
+      grid-template-columns: minmax(11rem, 15rem) minmax(0, 1fr);
+      gap: 1.4rem;
+      align-items: start;
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-show-cover) {
+      margin: 0;
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-show-cover img) {
+      width: min(100%, 15rem);
+      max-width: 100%;
+      border-radius: 1rem;
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-kicker) {
+      margin: 0 0 0.8rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-tagline) {
+      margin: 0 0 1rem;
+      font-size: clamp(1.15rem, 2vw, 1.45rem);
+      line-height: 1.35;
+      color: var(--text);
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-highlights) {
+      margin: 1rem 0 0;
+      padding-left: 1.1rem;
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-highlights li + li) {
+      margin-top: 0.35rem;
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-links) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin: 1.25rem 0 0;
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-links a) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--surface) 92%, transparent);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      transition:
+        transform 160ms ease,
+        border-color 160ms ease,
+        color 160ms ease;
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-links a:hover) {
+      transform: translateY(-1px);
+      border-color: color-mix(in srgb, var(--accent) 32%, var(--line));
+      color: var(--accent);
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-player) {
+      margin-top: 1.25rem;
+      padding: 0.9rem;
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: color-mix(in srgb, var(--surface) 88%, transparent);
+    }
+
+    .page-panel.is-podcast-page :global(.podcast-player iframe) {
+      display: block;
+      width: 100%;
+      border: 0;
+      border-radius: 0.8rem;
+      background: transparent;
+    }
+
     @media (max-width: 720px) {
       .page-panel.is-book-landing-page :global(.book-hero) {
         grid-template-columns: 1fr;
@@ -480,6 +630,33 @@ const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
 
       .page-panel.is-publications-page :global(.publication-archive > p:not(.archive-intro):not(:has(> a[id]))) {
         padding: 0.9rem 0.95rem;
+      }
+
+      .page-panel.is-podcast-page :global(.podcast-intro),
+      .page-panel.is-podcast-page :global(.podcast-show),
+      .page-panel.is-podcast-page :global(.podcast-contents) {
+        padding: 1rem;
+      }
+
+      .page-panel.is-podcast-page :global(.podcast-show-head) {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .page-panel.is-podcast-page :global(.podcast-show-cover img) {
+        width: min(100%, 13rem);
+      }
+
+      .page-panel.is-podcast-page :global(.podcast-links) {
+        gap: 0.65rem;
+      }
+
+      .page-panel.is-podcast-page :global(.podcast-links a) {
+        width: 100%;
+      }
+
+      .page-panel.is-podcast-page :global(.podcast-player) {
+        padding: 0.75rem;
       }
     }
   </style>
