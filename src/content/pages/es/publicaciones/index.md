@@ -59,6 +59,10 @@ Raúl Arrabales nos revela en estas páginas cómo la neurociencia, la psicolog�
 
 Este libro es una invitación a descubrir los límites (y las oportunidades) del amor en esta nueva forma de relacionarnos. Una lectura imprescindible para quienes se preguntan qué significa ser humano en un mundo donde los sentimientos también pueden programarse.
 
+[¡Comprar en Amazon!](https://www.amazon.es/Amor-programado-Inteligencia-Artificial-Colecci%C3%B3n/dp/8410941384/ref=sr_1_2?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=SP5QO42Y7T69&dib=eyJ2IjoiMSJ9.Igxbe5fB-2_dNaw_JyclSRXdSzKM5a-LJ_udiqmfnKcO3YOkSFQ9AO2carGLHw-vhLbTo-HiIfWCzLjp3APHmC5ZdSWonQ7Tdkg4YmCqSHal_CW8n-VcQdxN4nBpcPJucQcKQv4F7dhYmvMFRSwTMA.vabo1IKZH6xIOLw_hAW6nqmQZD1WJuFDZaxvO6-PoqY&dib_tag=se&keywords=amor+programado&qid=1753093702&s=books&sprefix=amor+programado%2Cstripbooks%2C84&sr=1-2)
+
+[Más información](https://www.esferalibros.com/libros/amor-programado/)
+
 </div>
 
 </div>
