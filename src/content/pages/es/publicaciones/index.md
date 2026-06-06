@@ -85,9 +85,9 @@ Este libro es una invitación a descubrir los límites (y las oportunidades) del
 
 Adquiere una comprensión profunda de la IA a través de sus problemillas psicológicos, pifias, errores y casos de fracaso
 
-[👉 Más información sobre este libro](https://www.conscious-robots.com/es/publicaciones/los-trastornos-mentales-de-la-inteligencia-artificial-libro/)
+👉 [Más información sobre este libro](/es/pages/los-trastornos-mentales-de-la-inteligencia-artificial-libro/)
 
-🇺🇸 [Edición en inglés](https://www.conscious-robots.com/publications/mental-disorders-in-artificial-intelligence-book/)
+🇺🇸 [Edición en inglés](/en/pages/mental-disorders-in-artificial-intelligence-book/)
 
 Disponible en e-book y tapa blanda
 
@@ -100,7 +100,7 @@ Disponible en e-book y tapa blanda
   </a>
 </div>
 
-[👉 ¡Lee una muestra! 🧐](https://www.amazon.es/Los-Trastornos-Mentales-Inteligencia-Artificial-ebook/dp/B0CK8LXFNF/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1DI3PKER8JI51&dib=eyJ2IjoiMSJ9.1WnJKFCTXyPqI8B-Ua5vdA.MoSKxKnzqDlqB4It3mVCmaEelod_oMKYJe6sqqwLd9k&dib_tag=se&keywords=los+trastornos+mentales+de+la+inteligencia&qid=1744905180&s=digital-text&sprefix=los+trastornos+mentale+de+la+inteligencia%2Cdigital-text%2C79&sr=1-1&asin=B0CK8LXFNF&revisionId=f4e8a047&format=3&depth=1)
+👉 [¡Lee una muestra! 🧐](https://www.amazon.es/Los-Trastornos-Mentales-Inteligencia-Artificial-ebook/dp/B0CK8LXFNF/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1DI3PKER8JI51&dib=eyJ2IjoiMSJ9.1WnJKFCTXyPqI8B-Ua5vdA.MoSKxKnzqDlqB4It3mVCmaEelod_oMKYJe6sqqwLd9k&dib_tag=se&keywords=los+trastornos+mentales+de+la+inteligencia&qid=1744905180&s=digital-text&sprefix=los+trastornos+mentale+de+la+inteligencia%2Cdigital-text%2C79&sr=1-1&asin=B0CK8LXFNF&revisionId=f4e8a047&format=3&depth=1)
 
 </div>
 
