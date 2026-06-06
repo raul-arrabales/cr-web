@@ -3,7 +3,33 @@ title: "Invited Talks"
 date: 2015-12-27
 ---
 
-> _As of July 2025, all of my public speaking on AI can be found on_ [Gartner Conferences](https://www.gartner.com/en/conferences)_._
+<div class="talks-intro">
+  <p>A curated archive of invited talks, conference appearances, workshops, and public sessions across artificial intelligence, psychology, business, and digital transformation.</p>
+  <p class="talks-note">As of July 2025, all of my public speaking on AI can be found on <a href="https://www.gartner.com/en/conferences">Gartner Conferences</a>.</p>
+</div>
+
+<div class="talks-contents">
+  <p>This page starts with the most recent conference appearances and then moves through the earlier archive by year.</p>
+  <ul>
+    <li><a href="#invited-talks-2025-2026">Invited talks 2025-2026</a></li>
+    <li><a href="#older-invited-talks">Older invited talks</a></li>
+    <li><a href="#invited-talks-2024">Invited talks 2024</a></li>
+    <li><a href="#invited-talks-2023">Invited talks 2023</a></li>
+    <li><a href="#invited-talks-2022">Invited talks 2022</a></li>
+    <li><a href="#invited-talks-2021">Invited talks 2021</a></li>
+    <li><a href="#invited-talks-2020">Invited talks 2020</a></li>
+    <li><a href="#invited-talks-2019">Invited talks 2019</a></li>
+    <li><a href="#invited-talks-2018">Invited talks 2018</a></li>
+    <li><a href="#invited-talks-2017">Invited talks 2017</a></li>
+    <li><a href="#invited-talks-2016">Invited talks 2016</a></li>
+    <li><a href="#invited-talks-2015">Invited talks 2015</a></li>
+    <li><a href="#invited-talks-2014">Invited talks 2014</a></li>
+    <li><a href="#invited-talks-2013">Invited talks 2013</a></li>
+    <li><a href="#invited-talks-2012">Invited talks 2012</a></li>
+    <li><a href="#invited-talks-2011">Invited talks 2011</a></li>
+    <li><a href="#invited-talks-up-to-2010">Invited talks up to 2010</a></li>
+  </ul>
+</div>
 
 ### Invited Talks 2025 - 2026
 

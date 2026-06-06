@@ -3,9 +3,29 @@ title: "Interviews and media appearances"
 date: 2015-12-27
 ---
 
-> As of July 2025, all of my public speaking on AI can be found on [Gartner](https://www.gartner.com/en/experts/raul-arrabales).
+<div class="media-intro">
+  <p>A selected archive of interviews, press coverage, radio appearances, and public conversations across artificial intelligence, psychology, business, and technology.</p>
+  <p class="media-note">As of July 2025, all of my public speaking on AI can be found on <a href="https://www.gartner.com/en/experts/raul-arrabales">Gartner</a>.</p>
+</div>
 
-## Older interviews
+<div class="media-contents">
+  <p>This archive is organized by recent highlights first, followed by earlier appearances by year.</p>
+  <ul>
+    <li><a href="#recent-highlights">Recent highlights</a></li>
+    <li><a href="#media-appearances-2018">Media appearances 2018</a></li>
+    <li><a href="#media-appearances-2017">Media appearances 2017</a></li>
+    <li><a href="#media-appearances-2016">Media appearances 2016</a></li>
+    <li><a href="#media-appearances-2015">Media appearances 2015</a></li>
+    <li><a href="#media-appearances-2014">Media appearances 2014</a></li>
+    <li><a href="#media-appearances-2012-2013">Media appearances 2012-2013</a></li>
+    <li><a href="#media-appearances-2011">Media appearances 2011</a></li>
+    <li><a href="#media-appearances-up-to-2010">Media appearances up to 2010</a></li>
+  </ul>
+</div>
+
+<a id="recent-highlights"></a>
+
+## Recent Highlights
 
 - Interview with Raúl Arrabales. "_Los Trastornos mentales de las Inteligencias Artificiales_". **_La Tertul-IA_**. Sep. 2024 [\[Spotify\]](https://open.spotify.com/episode/70HDHe0IiC9IT2G5WgaJud).
 

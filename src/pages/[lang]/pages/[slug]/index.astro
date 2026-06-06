@@ -25,10 +25,23 @@ const isMediaHub = slug === "media-presence" || slug === "presencia-en-medios";
 const isContactPage = slug === "contact-me" || slug === "contacto";
 const isPublicationsPage = slug === "publications" || slug === "publicaciones";
 const isPodcastPage = slug === "podcast";
+const isMediaArchivePage = slug === "media-appearances" || slug === "medios";
+const isTalksArchivePage = slug === "invited-talks" || slug === "conferencias";
+const isEventsPage = slug === "upcoming-events" || slug === "proximos-eventos";
 const isBookLandingPage =
   slug === "mental-disorders-in-artificial-intelligence-book" ||
   slug === "los-trastornos-mentales-de-la-inteligencia-artificial-libro";
 const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
+const mediaHubIntro =
+  lang === "es"
+    ? {
+        lead: "Una vista rápida de la actividad pública de Raúl Arrabales en medios, charlas, podcasts y próximos encuentros.",
+        note: "Explora los distintos formatos para seguir conversaciones, entrevistas y apariciones relacionadas con inteligencia artificial, psicología y tecnología.",
+      }
+    : {
+        lead: "A quick overview of Raúl Arrabales' public-facing work across media, talks, podcasts, and upcoming events.",
+        note: "Browse different formats for following interviews, conversations, and appearances related to artificial intelligence, psychology, and technology.",
+      };
 ---
 
 <SiteLayout lang={lang} title={page.data.title}>
@@ -37,19 +50,28 @@ const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
       "panel prose page-panel",
       isPublicationsPage && "is-publications-page",
       isPodcastPage && "is-podcast-page",
+      isMediaArchivePage && "is-media-archive-page",
+      isTalksArchivePage && "is-talks-archive-page",
+      isEventsPage && "is-events-page",
       isBookLandingPage && "is-book-landing-page",
     ]}
   >
     <h1>{page.data.title}</h1>
     {isMediaHub ? (
-      <div class="media-hub">
-        {mediaHubItems.map((item) => (
-          <a class="media-card" href={item.href}>
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-          </a>
-        ))}
-      </div>
+      <>
+        <div class="media-hub-intro">
+          <p>{mediaHubIntro.lead}</p>
+          <p class="media-hub-note">{mediaHubIntro.note}</p>
+        </div>
+        <div class="media-hub">
+          {mediaHubItems.map((item) => (
+            <a class="media-card" href={item.href}>
+              <h2>{item.title}</h2>
+              <p>{item.description}</p>
+            </a>
+          ))}
+        </div>
+      </>
     ) : (
       <>
         <Content />
@@ -73,29 +95,52 @@ const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
       margin-top: 1.5rem;
     }
 
-    .media-card {
-      display: block;
+    .media-hub-intro {
+      margin: 1.4rem 0 2rem;
       padding: 1.2rem;
       border: 1px solid var(--line);
-      border-radius: 1.1rem;
-      background: var(--surface);
+      border-radius: 1.2rem;
+      background:
+        radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 8%, transparent), transparent 52%),
+        var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .media-hub-intro p {
+      margin: 0;
+    }
+
+    .media-hub-note {
+      margin-top: 0.85rem !important;
+      color: var(--muted);
+    }
+
+    .media-card {
+      display: block;
+      padding: 1.25rem;
+      border: 1px solid var(--line);
+      border-radius: 1.2rem;
+      background:
+        linear-gradient(180deg, color-mix(in srgb, var(--surface) 94%, white 6%), var(--surface));
       text-decoration: none;
       box-shadow: var(--shadow);
       transition:
         transform 160ms ease,
         border-color 160ms ease,
-        color 160ms ease;
+        color 160ms ease,
+        box-shadow 160ms ease;
     }
 
     .media-card:hover {
       color: var(--accent);
-      border-color: rgba(161, 79, 42, 0.28);
+      border-color: color-mix(in srgb, var(--accent) 30%, var(--line));
       transform: translateY(-1px);
+      box-shadow: 0 18px 38px rgba(43, 29, 21, 0.08);
     }
 
     .media-card h2 {
       margin: 0 0 0.5rem;
-      font-size: 1.2rem;
+      font-size: clamp(1.15rem, 2vw, 1.35rem);
       line-height: 1.2;
     }
 
@@ -566,6 +611,237 @@ const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
       background: transparent;
     }
 
+    .page-panel.is-media-archive-page :global(.media-intro),
+    .page-panel.is-media-archive-page :global(.media-contents) {
+      margin: 1.5rem 0 2rem;
+      padding: 1.2rem;
+      border: 1px solid var(--line);
+      border-radius: 1.2rem;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-media-archive-page :global(.media-intro) {
+      background:
+        radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 8%, transparent), transparent 52%),
+        var(--surface);
+    }
+
+    .page-panel.is-media-archive-page :global(.media-intro > :first-child),
+    .page-panel.is-media-archive-page :global(.media-contents > :first-child) {
+      margin-top: 0;
+    }
+
+    .page-panel.is-media-archive-page :global(.media-intro > :last-child),
+    .page-panel.is-media-archive-page :global(.media-contents > :last-child) {
+      margin-bottom: 0;
+    }
+
+    .page-panel.is-media-archive-page :global(.media-note) {
+      color: var(--muted);
+    }
+
+    .page-panel.is-media-archive-page :global(.media-contents ul) {
+      margin: 0.75rem 0 0;
+      padding-left: 1.1rem;
+    }
+
+    .page-panel.is-media-archive-page :global(h2),
+    .page-panel.is-media-archive-page :global(h3) {
+      margin-top: 3rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--line);
+      font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+      letter-spacing: 0.01em;
+    }
+
+    .page-panel.is-media-archive-page :global(h3) {
+      font-size: clamp(1.2rem, 2vw, 1.55rem);
+    }
+
+    .page-panel.is-media-archive-page :global(ul) {
+      margin: 1.1rem 0 2rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .page-panel.is-media-archive-page :global(ul li) {
+      margin: 0 0 0.9rem;
+      padding: 1rem 1.05rem;
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: color-mix(in srgb, var(--surface) 90%, transparent);
+      box-shadow: 0 12px 30px rgba(43, 29, 21, 0.05);
+      line-height: 1.7;
+    }
+
+    .page-panel.is-media-archive-page :global(figure) {
+      margin: 1rem 0 2rem;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: color-mix(in srgb, var(--surface) 94%, transparent);
+      box-shadow: 0 12px 30px rgba(43, 29, 21, 0.05);
+    }
+
+    .page-panel.is-media-archive-page :global(figure img) {
+      width: min(100%, 26rem);
+      border-radius: 0.9rem;
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-media-archive-page :global(figcaption) {
+      margin-top: 0.85rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .page-panel.is-talks-archive-page :global(.talks-intro),
+    .page-panel.is-talks-archive-page :global(.talks-contents) {
+      margin: 1.5rem 0 2rem;
+      padding: 1.2rem;
+      border: 1px solid var(--line);
+      border-radius: 1.2rem;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-talks-archive-page :global(.talks-intro) {
+      background:
+        radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 8%, transparent), transparent 52%),
+        var(--surface);
+    }
+
+    .page-panel.is-talks-archive-page :global(.talks-intro > :first-child),
+    .page-panel.is-talks-archive-page :global(.talks-contents > :first-child) {
+      margin-top: 0;
+    }
+
+    .page-panel.is-talks-archive-page :global(.talks-intro > :last-child),
+    .page-panel.is-talks-archive-page :global(.talks-contents > :last-child) {
+      margin-bottom: 0;
+    }
+
+    .page-panel.is-talks-archive-page :global(.talks-note) {
+      color: var(--muted);
+    }
+
+    .page-panel.is-talks-archive-page :global(.talks-contents ul) {
+      margin: 0.75rem 0 0;
+      padding-left: 1.1rem;
+      list-style: disc;
+    }
+
+    .page-panel.is-talks-archive-page :global(h2),
+    .page-panel.is-talks-archive-page :global(h3) {
+      margin-top: 3rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--line);
+      font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+      letter-spacing: 0.01em;
+    }
+
+    .page-panel.is-talks-archive-page :global(h3) {
+      font-size: clamp(1.2rem, 2vw, 1.55rem);
+    }
+
+    .page-panel.is-talks-archive-page :global(ul) {
+      margin: 1.1rem 0 2rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .page-panel.is-talks-archive-page :global(ul li) {
+      margin: 0 0 0.9rem;
+      padding: 1rem 1.05rem;
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: color-mix(in srgb, var(--surface) 90%, transparent);
+      box-shadow: 0 12px 30px rgba(43, 29, 21, 0.05);
+      line-height: 1.7;
+    }
+
+    .page-panel.is-talks-archive-page :global(figure) {
+      margin: 1rem 0 2rem;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: color-mix(in srgb, var(--surface) 94%, transparent);
+      box-shadow: 0 12px 30px rgba(43, 29, 21, 0.05);
+    }
+
+    .page-panel.is-talks-archive-page :global(figure img) {
+      width: min(100%, 28rem);
+      border-radius: 0.9rem;
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-talks-archive-page :global(figcaption) {
+      margin-top: 0.85rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .page-panel.is-events-page :global(.events-intro),
+    .page-panel.is-events-page :global(.events-actions) {
+      margin: 1.5rem 0 2rem;
+      padding: 1.25rem;
+      border: 1px solid var(--line);
+      border-radius: 1.2rem;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-events-page :global(.events-intro) {
+      background:
+        radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 8%, transparent), transparent 52%),
+        var(--surface);
+    }
+
+    .page-panel.is-events-page :global(.events-intro > :first-child),
+    .page-panel.is-events-page :global(.events-actions > :first-child) {
+      margin-top: 0;
+    }
+
+    .page-panel.is-events-page :global(.events-intro > :last-child),
+    .page-panel.is-events-page :global(.events-actions > :last-child) {
+      margin-bottom: 0;
+    }
+
+    .page-panel.is-events-page :global(.events-note) {
+      color: var(--muted);
+    }
+
+    .page-panel.is-events-page :global(.events-links) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin: 1.1rem 0 0;
+    }
+
+    .page-panel.is-events-page :global(.events-links a) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--surface) 92%, transparent);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      transition:
+        transform 160ms ease,
+        border-color 160ms ease,
+        color 160ms ease;
+    }
+
+    .page-panel.is-events-page :global(.events-links a:hover) {
+      transform: translateY(-1px);
+      border-color: color-mix(in srgb, var(--accent) 32%, var(--line));
+      color: var(--accent);
+    }
+
     @media (max-width: 720px) {
       .page-panel.is-book-landing-page :global(.book-hero) {
         grid-template-columns: 1fr;
@@ -657,6 +933,54 @@ const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
 
       .page-panel.is-podcast-page :global(.podcast-player) {
         padding: 0.75rem;
+      }
+
+      .media-hub-intro,
+      .media-card {
+        padding: 1rem;
+      }
+
+      .page-panel.is-media-archive-page :global(.media-intro),
+      .page-panel.is-media-archive-page :global(.media-contents) {
+        padding: 1rem;
+      }
+
+      .page-panel.is-media-archive-page :global(ul li),
+      .page-panel.is-media-archive-page :global(figure) {
+        padding: 0.9rem 0.95rem;
+      }
+
+      .page-panel.is-media-archive-page :global(h2),
+      .page-panel.is-media-archive-page :global(h3) {
+        margin-top: 2.5rem;
+      }
+
+      .page-panel.is-talks-archive-page :global(.talks-intro),
+      .page-panel.is-talks-archive-page :global(.talks-contents) {
+        padding: 1rem;
+      }
+
+      .page-panel.is-talks-archive-page :global(ul li),
+      .page-panel.is-talks-archive-page :global(figure) {
+        padding: 0.9rem 0.95rem;
+      }
+
+      .page-panel.is-talks-archive-page :global(h2),
+      .page-panel.is-talks-archive-page :global(h3) {
+        margin-top: 2.5rem;
+      }
+
+      .page-panel.is-events-page :global(.events-intro),
+      .page-panel.is-events-page :global(.events-actions) {
+        padding: 1rem;
+      }
+
+      .page-panel.is-events-page :global(.events-links) {
+        gap: 0.65rem;
+      }
+
+      .page-panel.is-events-page :global(.events-links a) {
+        width: 100%;
       }
     }
   </style>

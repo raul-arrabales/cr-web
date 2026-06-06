@@ -3,7 +3,32 @@ title: "Conferencias"
 date: 2016-01-03
 ---
 
-> Desde julio de 2025, todas mis intervenciones públicas sobre inteligencia artificial están disponibles en [Gartner Conferences](https://www.gartner.com/en/conferences).
+<div class="talks-intro">
+  <p>Un archivo seleccionado de conferencias, talleres, ponencias invitadas y sesiones públicas sobre inteligencia artificial, psicología, negocio y transformación digital.</p>
+  <p class="talks-note">Desde julio de 2025, todas mis intervenciones públicas sobre inteligencia artificial están disponibles en <a href="https://www.gartner.com/en/conferences">Gartner Conferences</a>.</p>
+</div>
+
+<div class="talks-contents">
+  <p>La página comienza con las apariciones más recientes y después recorre el archivo histórico por años.</p>
+  <ul>
+    <li><a href="#conferencias-2025-2026">Conferencias 2025-2026</a></li>
+    <li><a href="#contenido-previo">Contenido previo</a></li>
+    <li><a href="#2023-24">2023-24</a></li>
+    <li><a href="#2022">2022</a></li>
+    <li><a href="#2021">2021</a></li>
+    <li><a href="#2020">2020</a></li>
+    <li><a href="#2019">2019</a></li>
+    <li><a href="#2018">2018</a></li>
+    <li><a href="#2017">2017</a></li>
+    <li><a href="#2016">2016</a></li>
+    <li><a href="#2015">2015</a></li>
+    <li><a href="#2014">2014</a></li>
+    <li><a href="#2013">2013</a></li>
+    <li><a href="#2012">2012</a></li>
+    <li><a href="#2011">2011</a></li>
+    <li><a href="#ponencias-hasta-2010">Ponencias hasta 2010</a></li>
+  </ul>
+</div>
 
 ### Conferencias 2025 - 2026
 

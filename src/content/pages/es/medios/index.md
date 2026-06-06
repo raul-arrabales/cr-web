@@ -3,9 +3,27 @@ title: "Entrevistas y presencia en los medios"
 date: 2016-01-03
 ---
 
-> Desde julio de 2025, todas mis intervenciones públicas sobre Inteligencia Artificial están disponibles en [Gartner](https://www.gartner.com/en/experts/raul-arrabales).
+<div class="media-intro">
+  <p>Un archivo seleccionado de entrevistas, prensa, radio y apariciones públicas relacionadas con inteligencia artificial, psicología, empresa y tecnología.</p>
+  <p class="media-note">Desde julio de 2025, todas mis intervenciones públicas sobre Inteligencia Artificial están disponibles en <a href="https://www.gartner.com/en/experts/raul-arrabales">Gartner</a>.</p>
+</div>
 
-## Entrevistas previas
+<div class="media-contents">
+  <p>La página comienza con los contenidos más recientes y después recorre el archivo por años.</p>
+  <ul>
+    <li><a href="#entrevistas-destacadas">Entrevistas destacadas</a></li>
+    <li><a href="#medios-2018">Medios 2018</a></li>
+    <li><a href="#medios-2017">Medios 2017</a></li>
+    <li><a href="#medios-2016">Medios 2016</a></li>
+    <li><a href="#medios-2015">Medios 2015</a></li>
+    <li><a href="#medios-2014">Medios 2014</a></li>
+    <li><a href="#medios-2012-2013">Medios 2012-2013</a></li>
+    <li><a href="#medios-2011">Medios 2011</a></li>
+    <li><a href="#apariciones-en-los-medios-hasta-2010">Apariciones en los medios hasta 2010</a></li>
+  </ul>
+</div>
+
+## Entrevistas Destacadas
 
 - "Los Trastornos mentales de las Inteligencias Artificiales con Raúl Arrabales". **_La Tertul-IA_**. Sep. 2024 [\[Spotify\]](https://open.spotify.com/episode/70HDHe0IiC9IT2G5WgaJud).
 
