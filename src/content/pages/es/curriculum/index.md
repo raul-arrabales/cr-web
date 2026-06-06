@@ -3,16 +3,22 @@ title: "Curriculum Vitae"
 date: 2016-01-03
 ---
 
-# Dr. Raúl Arrabales Moreno
-
-# 
-<img src="/legacy-images/images/Raul_Ago_2018_pos3_v2.jpg" alt="Raúl Arrabales Moreno" />
-
-_**Misión:**_ Promover el uso responsable de la Inteligencia Artificial (IA) para incrementar la generación de valor en las organizaciones.
-
-_**Bio:**_ Raúl Arrabales es Doctor en Inteligencia Artificial, Psicólogo General Sanitario, Ingeniero en Informática y MBA. Arrabales cuenta con una experiencia profesional de más de 20 años en entornos académicos, empresariales y sanitarios. Su carrera tecnológica gira en torno a la Inteligencia Artificial y la Psicología, habiendo desempeñado diferentes roles en compañías internacionales como IBM, CommScope, Orange, Capgemini, Accenture, DataRobot y BASF.
-
-_**Actualmente, Raúl es Director Senior de Análisis en Gartner**_, responsable de proporcionar análisis objetivos y recomendaciones accionables sobre IA a líderes empresariales y tecnológicos para apoyar la toma de decisiones estratégicas.
+<div class="cv-hero">
+  <div class="cv-hero-copy">
+    <p class="cv-kicker">Estrategia IA • Psicología • Investigación • Docencia</p>
+    <p class="cv-summary"><strong>Dr. Raúl Arrabales Moreno</strong> es estratega de IA, psicólogo, investigador y docente, centrado en ayudar a las organizaciones a convertir la inteligencia artificial en valor práctico y responsable.</p>
+    <p class="cv-mission"><strong>Misión:</strong> Promover el uso responsable de la Inteligencia Artificial para incrementar la generación de valor en las organizaciones.</p>
+    <p>Raúl Arrabales es Doctor en Inteligencia Artificial, Psicólogo General Sanitario, Ingeniero en Informática y MBA. Cuenta con más de 20 años de experiencia en entornos académicos, empresariales y sanitarios, y ha desempeñado diferentes roles en compañías internacionales como IBM, CommScope, Orange, Capgemini, Accenture, DataRobot, BASF y Gartner.</p>
+    <div class="cv-meta">
+      <p class="cv-meta-item"><span class="cv-meta-label">Rol actual</span>Director Senior de Análisis, Gartner</p>
+      <p class="cv-meta-item"><span class="cv-meta-label">Especialidad</span>IA generativa, adopción de IA, psicología</p>
+      <p class="cv-meta-item"><span class="cv-meta-label">Trayectoria</span>20+ años entre industria y universidad</p>
+    </div>
+  </div>
+  <figure class="cv-photo-frame">
+    <img src="/legacy-images/images/Raul_Ago_2018_pos3_v2.jpg" alt="Retrato de Dr. Raúl Arrabales Moreno" />
+  </figure>
+</div>
 
 * * *
 
@@ -34,15 +40,15 @@ _**Actualmente, Raúl es Director Senior de Análisis en Gartner**_, responsable
 
 * * *
 
-| 2025 - Hoy | **_**Gartner**. Director Senior de Análisis - IA Generativa_   **Responsable de proporcionar análisis objetivos y recomendaciones accionables a líderes empresariales y tecnológicos para apoyar la toma de decisiones estratégicas. |
+| 2025 - Hoy | _**Gartner. Director Senior de Análisis - IA Generativa**_   Responsable de proporcionar análisis objetivos y recomendaciones accionables a líderes empresariales y tecnológicos para apoyar la toma de decisiones estratégicas. |
 | :-- | --- |
-| 2024 - 2025 | **_**BASF. Global Digital Services**. AI Technical Experts Advisory Lead_   **Impulsando la generación de valor a través de la IA. |
-| 2023 - 2024 | **_**Psicobōtica**. Socio Fundador y CEO_   **IA Generativa aplicada a la Psicología. |
-| 2023 - 2024 | **_**Senior AI Advisor**_   **Ayudo a las empresas con sus proyectos de IA Generativa y Predictiva. |
-| 2018 - 2024 | _****IE University (Instituto de Empresa). Profesor Inteligencia Artificial.   ****Profesor asociado IE School of Human Sciences & Technology._ |
-| 2021-2023 | _****DataRobot.** Senior Data Scientist - Southern Europe & Emerging Markets**_   Científico de Datos Sénior del área de Preventa. |
+| 2024 - 2025 | _**BASF. Global Digital Services. AI Technical Experts Advisory Lead**_   Impulsando la generación de valor a través de la IA. |
+| 2023 - 2024 | _**Psicobōtica. Socio fundador y CEO**_   IA generativa aplicada a la psicología. |
+| 2023 - 2024 | _**Senior AI Advisor**_   Ayudo a las empresas con sus proyectos de IA generativa y predictiva. |
+| 2018 - 2024 | _**IE University (Instituto de Empresa). Profesor de Inteligencia Artificial**_   Profesor asociado en IE School of Human Sciences & Technology. |
+| 2021-2023 | _**DataRobot. Senior Data Scientist - Southern Europe & Emerging Markets**_   Científico de datos sénior del área de preventa. |
 | 2015-2021 | _**ESIC. Profesor Asociado**_   Profesor en ESIC. Neurociencia, AI, Data Science. |
-| 2017-2021 | **_Serendeepia Research. Socio y Co-fundador_   **Desarrollo de productos IA basados en Machine Learning y Deep Learning. |
+| 2017-2021 | _**Serendeepia Research. Socio y cofundador**_   Desarrollo de productos IA basados en machine learning y deep learning. |
 | 2015-2017 | **_Accenture. Analytics Senior Manager_**    Responsable de grandes proyectos Big Data Analytics. Accenture AI. |
 | 2014-2015 | _**Altran (Capgemini). Analytics & Insights Solution Manager**_   Gerente responsable de las soluciones de Data Science, Analytics & Insights. |
 | 2014-2017 | _**MBIT School. Director Académico y profesor**_   Dirección académica e innovación hasta Oct. 2014. Profesor Data Science. |
@@ -59,7 +65,7 @@ _**Actualmente, Raúl es Director Senior de Análisis en Gartner**_, responsable
 
 * * *
 
-| _2019 - 2024_ | _**P**sicólogo General Sanitario - Consulta Propia****_   Psicólogo clínico, terapeuta de adultos.   Centro Sanitario CS16764. |
+| _2019 - 2024_ | _**Psicólogo General Sanitario - Consulta propia**_   Psicólogo clínico, terapeuta de adultos. Centro Sanitario CS16764. |
 | --- | --- |
 | _2020 - 2021_ | _**Psicólogo clínico voluntario**_. ANPSA. Comunidad de Madrid.   Centro Sanitario CS15190. |
 | _2020_ | _**Dispositivo de Atención Psicológica Covid-19**_. Consejería de Sanidad de la Comunidad de Madrid. |
@@ -76,9 +82,9 @@ _**Actualmente, Raúl es Director Senior de Análisis en Gartner**_, responsable
 
 | _08/2023_ | _**Seminario de Apego y Trauma.**_ Ago. 2023. EUNIP. |
 | --- | --- |
-| _07/2023_ | _**Alimentación y salud: un enfoque psicobiologico.**_ Jul. 2023. UNED. |
+| _07/2023_ | _**Alimentación y salud: un enfoque psicobiológico.**_ Jul. 2023. UNED. |
 | _02/2022_ | _**Gestión del sesgo inconsciente y construcción de una cultura inclusiva.**_ Feb. 2022. DataRobot. |
-| _2020/2021_ | _**_E**specialista Universitario en Intervención en Trauma con EMDR**_**   Universidad Internacional de la Rioja (UNIR)._ |
+| _2020/2021_ | _**Especialista Universitario en Intervención en Trauma con EMDR**_. Universidad Internacional de La Rioja (UNIR). |
 | _07/2021_  | _**Talleres y Técnicas de Crecimiento Personal:** Abrazar la luz que entra por la herida. Resiliencia y Esperanza._ Cursos de Verano 2021. Ávila. UNED. |
 | _11-12/2020_ | _**Psicoanálisis de la Sexualidad**_. Grupo Cero / UNED. |
 | _03-07/2020_ | _**Experto en Trastornos de la Personalidad**_. Asociación Española para el Fomento y Desarrollo de la Psicoterapia. |
@@ -98,7 +104,7 @@ _**Actualmente, Raúl es Director Senior de Análisis en Gartner**_, responsable
 | _04/2016_ | _**Coaching avanzado para formadores**_. Programa extensión universitaria Madrid-Sur UNED. |
 | _12/2015_ | _**Storytelling. Comunicar y persuadir con recursos narrativos**_. UNED Ext. Universitaria. |
 | _04/2015_ | _**Concepto y Tratamiento del Trauma Psicológico y la Disociación**_. Fund. Cult. Santa Teresa, C.A. UNED Ávila. |
-| _12/2014_ | _**MBSR (Mindfulness Based Stress Reduction 8-Week training)**_ by Saki Santorelly and Florence Meleo-Meyer. University of Massachusets Medical School. |
+| _12/2014_ | _**MBSR (Mindfulness Based Stress Reduction 8-Week training)**_ by Saki Santorelli and Florence Meleo-Meyer. University of Massachusetts Medical School. |
 | _04/2013_ | _**Psicología Positiva: Fundamentos Teóricos y Aplicaciones**_. UNED Ext. Universitaria. |
 | _06/2008_ | _**Relaciones Interpersonales y Resolución de Conflictos en el Aula**._ Universidad de Cádiz. |
 
@@ -387,21 +393,19 @@ TFG (Dic. 2007) "_Sistema de Detección Visual de Obstáculos para un Robot Móv
 
 ## Competencias Técnicas y Metodológicas
 
-* * *
-
-_**IA Generativa:**_ LLMs, Prompt Engineering, RAG, RLHF, Fine Tuning PEFT, Lang Chains, ReAct._**  
-Ventas B2B**_: Pipeline Gen., MEDDIC, PoV planning & execution, Business Value Assessment.  
-_**Ciencia Cognitiva**_: Psicología Cognitiva/Clínica, Inteligencia Artificial Psicobiología. **  
-_Data Science_**: Diseños de investigación, PLN, Machine Learning, Deep Learning, TF, KNIME, etc.  
-_**BI & Big Data Analytics**_: Hadoop, Spark, Spark MLlib, Hortonworks, Cloudera, etc.  
-_**Dirección de Proyectos y SCM**_: PMP, Metodologías Ágiles. Lean, Scrum.  
-_**Desarrollo de Negocio**_: New Business Development, estrategia y planes de negocio.  
-_**E-Learning y LMS**_: Moodle, Sakai, Blackboard, BB Collaborate, Adobe Connect, MOOCs.  
-_**Ocio Digital**_: VoD, IPTV, 3PiP, NPVR, RRSS, Gamificación, Serious Games, Comp. Games.  
-_**Web y CMS**_: Joomla, Drupal, Wordpress, MySQL, PHP, Javascript, HTML.  
-_**Programación**_: Java, Python, C#, R, JS, C++, XML, Robotics Developer Studio.  
-_**Internetworking & Cloud**_: TCP/IP, Web Services, RESTful API design, Google Cloud.  
-_**Sistemas Operativos**_: Linux, Transit, Solaris, MacOS, Windows, CentOS, Android.
+- **IA generativa:** LLMs, prompt engineering, RAG, RLHF, PEFT fine-tuning, LangChain, ReAct
+- **Ventas B2B:** Pipeline generation, MEDDIC, planificación y ejecución de PoV, business value assessment
+- **Ciencia cognitiva:** Psicología cognitiva y clínica, inteligencia artificial, psicobiología
+- **Data science:** Diseños de investigación, PLN, machine learning, deep learning, TensorFlow, KNIME
+- **BI y big data analytics:** Hadoop, Spark, Spark MLlib, Hortonworks, Cloudera
+- **Dirección de proyectos y SCM:** PMP, metodologías ágiles, Lean, Scrum
+- **Desarrollo de negocio:** New business development, estrategia y planes de negocio
+- **E-learning y LMS:** Moodle, Sakai, Blackboard, BB Collaborate, Adobe Connect, MOOCs
+- **Ocio digital:** VoD, IPTV, 3PiP, NPVR, RRSS, gamificación, serious games, computer games
+- **Web y CMS:** Joomla, Drupal, WordPress, MySQL, PHP, JavaScript, HTML
+- **Programación:** Java, Python, C#, R, JavaScript, C++, XML, Robotics Developer Studio
+- **Internetworking y cloud:** TCP/IP, web services, diseño de APIs RESTful, Google Cloud
+- **Sistemas operativos:** Linux, Transit, Solaris, macOS, Windows, CentOS, Android
 
 ## Afiliaciones
 
@@ -417,14 +421,8 @@ _**Sistemas Operativos**_: Linux, Transit, Solaris, MacOS, Windows, CentOS, Andr
 [EuCogII](http://www.eucognition.org/) - Miembro 2nd European Network for the Advancement of Artificial Cognitive Systems, Interaction and Robotics.  
 [Retecog](http://retecog.net/) - Miembro Red Temática de Ciencias Cognitivas.
 
-## Publicaciones
+<div class="cv-footer-card">
 
-* * *
+Puedes seguir explorando en la [página de publicaciones](/es/pages/publicaciones/) o conectar a través de [LinkedIn](https://www.linkedin.com/in/raularrabales/).
 
-\- Por favor, vea la [Página de Publicaciones](http://www.conscious-robots.com/es/publicaciones/).
-
-* * *
-
-<img src="/legacy-images/images/btn_viewmy_160x25.png" alt="See Raul Arrabales LinkedIn Profile" />
-
-[](http://es.linkedin.com/in/raularrabales/en)
+</div>

@@ -3,14 +3,22 @@ title: "Curriculum Vitae"
 date: 2015-12-27
 ---
 
-# Dr. Raúl Arrabales Moreno
-<img src="/legacy-images/images/Raul_Ago_2018_pos3_v2.jpg" alt="Raúl Arrabales Moreno" />
-
-_**Mission:**_ To drive responsible and strategic AI adoption, empowering organizations to harness AI for innovation and value realization.
-
-_**Bio:**_ Raúl holds a Ph.D. in Artificial Intelligence, along with degrees in Clinical Psychology, Computer Science, and an MBA. With over 20 years of experience in AI strategy, adoption, and enablement, he has worked across academic, cross-industry, and corporate settings, helping organizations navigate the complexities of AI implementation. He has held key roles at leading global companies, including IBM, CommScope, Orange, Capgemini, Accenture, DataRobot and BASF.
-
-_**In his current role as Senior Director Analyst at Gartner**_, Raúl delivers objective and actionable AI insights to help business and technology executives drive impactful decisions across their organizations.
+<div class="cv-hero">
+  <div class="cv-hero-copy">
+    <p class="cv-kicker">AI Strategy • Psychology • Research • Teaching</p>
+    <p class="cv-summary"><strong>Dr. Raúl Arrabales Moreno</strong> is an AI strategist, psychologist, researcher, and educator focused on helping organizations turn artificial intelligence into practical and responsible value.</p>
+    <p class="cv-mission"><strong>Mission:</strong> To drive responsible and strategic AI adoption, empowering organizations to harness AI for innovation and value realization.</p>
+    <p>Raúl holds a Ph.D. in Artificial Intelligence, along with degrees in Clinical Psychology, Computer Science, and an MBA. With more than 20 years of experience across academic, corporate, and advisory settings, he has held key roles at IBM, CommScope, Orange, Capgemini, Accenture, DataRobot, BASF, and Gartner.</p>
+    <div class="cv-meta">
+      <p class="cv-meta-item"><span class="cv-meta-label">Current role</span>Senior Director Analyst, Gartner</p>
+      <p class="cv-meta-item"><span class="cv-meta-label">Focus</span>Generative AI, AI adoption, psychology</p>
+      <p class="cv-meta-item"><span class="cv-meta-label">Experience</span>20+ years across industry and academia</p>
+    </div>
+  </div>
+  <figure class="cv-photo-frame">
+    <img src="/legacy-images/images/Raul_Ago_2018_pos3_v2.jpg" alt="Portrait of Dr. Raúl Arrabales Moreno" />
+  </figure>
+</div>
 
 ## Higher Education
 
@@ -30,15 +38,15 @@ _**In his current role as Senior Director Analyst at Gartner**_, Raúl delivers 
 
 * * *
 
-| 2025 - Now | **_**Gartner**. Senior Director Analyst - Generative AI_   **Delivering actionable, objective business and technology insights to executives and their teams. |
+| 2025 - Now | _**Gartner. Senior Director Analyst - Generative AI**_   Delivering actionable, objective business and technology insights to executives and their teams. |
 | :-- | --- |
-| 2024 - 2025 | _****BASF - Global Digital Services**. AI Technical Experts Advisory Lead**_   Driving AI transformation and value realization across the organization. |
-| 2023 - 2024 | _****Psicobōtica**. Founder & CEO**_   Generative AI applied to Pyschology. |
-| 2023 - 2024 | _****Independent Senior AI Advisor****_   Helping organizations with their Predictive and Generative AI projects. |
+| 2024 - 2025 | _**BASF - Global Digital Services. AI Technical Experts Advisory Lead**_   Driving AI transformation and value realization across the organization. |
+| 2023 - 2024 | _**Psicobōtica. Founder & CEO**_   Generative AI applied to Psychology. |
+| 2023 - 2024 | _**Independent Senior AI Advisor**_   Helping organizations with their predictive and generative AI projects. |
 | 2018 - 2024 | _**IE University. Artificial Intelligence Professor**_   Associate professor at the IE School of Human Sciences and Technology. |
-| 2021 - 2023 | _****DataRobot.** Senior Data Scientist - Southern Europe & Emerging Markets**_   Senior Pre-Sales Customer Facing Data Scientist. |
+| 2021 - 2023 | _**DataRobot. Senior Data Scientist - Southern Europe & Emerging Markets**_   Senior pre-sales customer-facing data scientist. |
 | 2015 - 2021 | _**ESIC Business & Marketing School. Asoc. Professor**_   Associate professor at ESIC. Big Data, AI, Customer Intelligence, Data Science. |
-| 2017 - 2021 | _**Serendeepia Research & **Psicobōtica**. Partner & Co-founder**_   Innovative AI product development based on Machine Learning and Deep Learning. |
+| 2017 - 2021 | _**Serendeepia Research & Psicobōtica. Partner & Co-founder**_   Innovative AI product development based on machine learning and deep learning. |
 | 2015 - 2017 | **_Accenture. Analytics Senior Manager_**    Managing large Big Data Analytics projects. Accenture AI. |
 | 2014 - 2015 | _**Altran (Capgemini). Analytics & Insights Solution Manager**_   Solution Manager for Data Science, Analytics & Insights (cross-industry). |
 | 2014 - 2017 | _**MBIT School. Academic Director and Lecturer**_   Director of the Academic Department (until Oct. 2014). Lecturer in Data Science. |
@@ -77,22 +85,22 @@ _**In his current role as Senior Director Analyst at Gartner**_, Raúl delivers 
 | _07/2021_ | _**Personal development workshops** Embrace the light that comes through the wound. Resilience and Hope._ Summer School 2021. Ávila. UNED. |
 | _11-12/2020_ | _**Psychoanalysis of Sexuality**_. Grupo Cero / UNED. |
 | _03-07/2020_ | _**Expert in personality disorders**_. Spanish Association for the Promotion and Development of Psychotherapy. |
-| _03-06/2020_ | _**Grief Process Specialist**__._  Madrid Psychological Association (COP). |
-| _02/2020_ | _**Relationship**_ _**Conflict and Violence**._  Madrid Psychological Association (COP). |
+| _03-06/2020_ | _**Grief Process Specialist**_. Madrid Psychological Association (COP). |
+| _02/2020_ | _**Relationship Conflict and Violence**_. Madrid Psychological Association (COP). |
 | _02/2020_ | _**Advances and New Challenges in Child Sexual Abuse and Maltreatment**._  Madrid Psychological Association (COP). |
 | _09-12/19_ | _**MBSR-Based Mindfulness for Stress Reduction**._ Educare. |
 | _09-10/18_ | _**Data Protection in Psychology: Practical Guide**_. Colegio Oficial de Psicólogos. |
 | _08/2017_ | **_Intervention in Psycho-oncology, Sexuality, Family Mediation, NLP, Acceptance and Commitment Therapy and Coaching_.** Summer School 2017. Guadalajara. Positivamente. |
-| _07/2017_ | _**Personal development workshops** Trust and Compasion or Fear? Keys from positive psychology and integrative psychology_**.** Summer School 2017. Ávila. UNED. |
+| _07/2017_ | _**Personal development workshops: Trust and Compassion or Fear? Keys from positive psychology and integrative psychology**_. Summer School 2017. Ávila. UNED. |
 | _02/2017_ | _**E-Prime**_. Psychology Software Tools. Psychology of Perception. Departamento de Psicología Básica I. UNED. |
 | _01-05/17_ | _**Psychological First Aid**._ Universitat Autònoma de Barcelona. Coursera. |
-| _09/2016_ | _**Third Wave Psychotherapies for anxiety, depresion, chronic pain and couples therapy**_. Positivamente. Madrid. |
-| _07/2016_ | **_The Awakening of the Great Force... Love:_**Personal Growth Workshops. UNED Summer School. Barco de Ávila. |
+| _09/2016_ | _**Third Wave Psychotherapies for anxiety, depression, chronic pain and couples therapy**_. Positivamente. Madrid. |
+| _07/2016_ | _**The Awakening of the Great Force... Love: Personal Growth Workshops**_. UNED Summer School. Barco de Ávila. |
 | _07/2016_ | _**The Psychology of Seduction**._ UNED Summer School. Madrid. |
 | _04/2016_ | _**Advanced coaching for instructors**._ UNED Madrid-Sur Continuing Education Program. |
 | _12/2015_ | _**Storytelling. Using narrative to communicate and persuade**_. UNED Cont. Education. |
 | _04/2015_ | _**Concept and Treatment of Psychological Trauma and Dissociation**._ Fund. Cult. Santa Teresa, C.A. UNED Ávila. |
-| _12/2014_ | _**MBSR (Mindfulness Based Stress Reduction 8-Week training)**_ by Saki Santorelly and Florence Meleo-Meyer. University of Massachusets Medical School. |
+| _12/2014_ | _**MBSR (Mindfulness Based Stress Reduction 8-Week training)**_ by Saki Santorelli and Florence Meleo-Meyer. University of Massachusetts Medical School. |
 | _04/2013_ | _**Positive Psychology: Theoretical Framework and Practical Applications**_. UNED Cont. Education. |
 | _06/2008_ | _**Interpersonal Relations and Conflict Resolution**_. Universidad de Cádiz. |
 
@@ -381,22 +389,20 @@ FYP (Dec. 2007) "_Sistema de Detección Visual de Obstáculos para un Robot Móv
 
 ## Technical & Methodological Skills
 
-* * *
-
-_**Generative AI:**_ LLMs, Prompt Engineering, RAG, RLHF, Fine Tuning PEFT, Lang Chains, ReAct.  
-_**B2B Sales:**_ Pipeline Gen., MEDDIC, PoV planning & execution, Business Value Assessment.  
-_**Cognitive Science:**_ Cognitive/Clinical Psychology, Artificial Intelligence, Psychobiology.**  
-_Data Science_**: Research Design, NLP, Machine Learning, Deep Learning, TF, KNIME, Python.  
-_**BI & Big Data Analytics**:_ Hadoop, Spark, Spark MLlib, Hortonworks, Cloudera, etc.  
-_**Business Development**_: New Business Development, Strategy & Business Plan design.  
-_**Project Management and SCM**_: PMP. Agile SW Development, Scrum.  
-_**E-Learning & LMS**_: Moodle, Blackboard, BB Collaborate, Sakai, Adobe Connect, MOOCs.  
-_**Digital Media & Entertainment**_: VoD, IPTV, Gamification, Serious Games, Comp. Games.  
-_**Software Engineering**:_ ESA Sw Standards, UML.  
-_**Programming**_: Java, Python, C#, R, C++, RDS, JS, HTML, CSS, SQL, PHP.  
-_**Web applications and CMS**:_ Joomla, Drupal, Wordpress, MySQL.  
-_**Operating Systems**_: Linux, Transit, Solaris, Windows, CentOS, Android.  
-_**Internetworking & Cloud**_: TCP/IP, Web Services, RESTful API design, Google Cloud.
+- **Generative AI:** LLMs, prompt engineering, RAG, RLHF, PEFT fine-tuning, LangChain, ReAct
+- **B2B sales:** Pipeline generation, MEDDIC, PoV planning and execution, business value assessment
+- **Cognitive science:** Cognitive and clinical psychology, artificial intelligence, psychobiology
+- **Data science:** Research design, NLP, machine learning, deep learning, TensorFlow, KNIME, Python
+- **BI and big data analytics:** Hadoop, Spark, Spark MLlib, Hortonworks, Cloudera
+- **Business development:** New business development, strategy, business plan design
+- **Project management and SCM:** PMP, agile software development, Scrum
+- **E-learning and LMS:** Moodle, Blackboard, BB Collaborate, Sakai, Adobe Connect, MOOCs
+- **Digital media and entertainment:** VoD, IPTV, gamification, serious games, computer games
+- **Software engineering:** ESA software standards, UML
+- **Programming:** Java, Python, C#, R, C++, RDS, JavaScript, HTML, CSS, SQL, PHP
+- **Web applications and CMS:** Joomla, Drupal, WordPress, MySQL
+- **Operating systems:** Linux, Transit, Solaris, Windows, CentOS, Android
+- **Internetworking and cloud:** TCP/IP, web services, RESTful API design, Google Cloud
 
 ## Affiliations
 
@@ -412,16 +418,8 @@ _**Internetworking & Cloud**_: TCP/IP, Web Services, RESTful API design, Google 
 [EuCogII](http://www.eucognition.org/) - Member 2nd European Network for the Advancement of Artificial Cognitive Systems, Interaction and Robotics.  
 [Retecog](http://retecog.net/) - Member Red Temática de Ciencias Cognitivas.
 
-* * *
+<div class="cv-footer-card">
 
-## Publications
+Continue exploring related work on the [publications page](/en/pages/publications/) or connect via [LinkedIn](https://www.linkedin.com/in/raularrabales/).
 
-* * *
-
-\- Please see [publications page](http://www.conscious-robots.com/raul-arrabales/publications/).
-
-* * *
-
-<img src="/legacy-images/images/btn_viewmy_160x25.png" alt="See Raul Arrabales LinkedIn Profile" />
-
-[](https://es.linkedin.com/in/raularrabales/en)
+</div>

@@ -28,6 +28,7 @@ const isPodcastPage = slug === "podcast";
 const isMediaArchivePage = slug === "media-appearances" || slug === "medios";
 const isTalksArchivePage = slug === "invited-talks" || slug === "conferencias";
 const isEventsPage = slug === "upcoming-events" || slug === "proximos-eventos";
+const isCvPage = slug === "cv-english" || slug === "curriculum";
 const isBookLandingPage =
   slug === "mental-disorders-in-artificial-intelligence-book" ||
   slug === "los-trastornos-mentales-de-la-inteligencia-artificial-libro";
@@ -53,6 +54,7 @@ const mediaHubIntro =
       isMediaArchivePage && "is-media-archive-page",
       isTalksArchivePage && "is-talks-archive-page",
       isEventsPage && "is-events-page",
+      isCvPage && "is-cv-page",
       isBookLandingPage && "is-book-landing-page",
     ]}
   >
@@ -86,6 +88,232 @@ const mediaHubIntro =
       border: 0;
       background: transparent;
       box-shadow: none;
+    }
+
+    .page-panel.is-cv-page {
+      max-width: 72rem;
+    }
+
+    .page-panel.is-cv-page > h1 {
+      margin-bottom: 1.1rem;
+    }
+
+    .page-panel.is-cv-page :global(.cv-hero) {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(13rem, 17rem);
+      gap: 1.5rem;
+      align-items: start;
+      margin: 1.4rem 0 2rem;
+      padding: 1.4rem;
+      border: 1px solid var(--line);
+      border-radius: 1.4rem;
+      background:
+        radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 9%, transparent), transparent 54%),
+        linear-gradient(180deg, color-mix(in srgb, var(--surface) 95%, white 5%), var(--surface));
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-cv-page :global(.cv-hero-copy > :first-child),
+    .page-panel.is-cv-page :global(.cv-links > :first-child),
+    .page-panel.is-cv-page :global(.cv-links > p:first-child) {
+      margin-top: 0;
+    }
+
+    .page-panel.is-cv-page :global(.cv-kicker) {
+      margin: 0 0 0.7rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .page-panel.is-cv-page :global(.cv-summary) {
+      margin: 0 0 1rem;
+      font-size: clamp(1.15rem, 2vw, 1.45rem);
+      line-height: 1.35;
+    }
+
+    .page-panel.is-cv-page :global(.cv-mission) {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .page-panel.is-cv-page :global(.cv-photo-frame) {
+      justify-self: end;
+      width: min(100%, 16rem);
+      padding: 0.75rem;
+      border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--line));
+      border-radius: 1.35rem;
+      background: color-mix(in srgb, var(--surface) 88%, white 12%);
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-cv-page :global(.cv-photo-frame img) {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 1rem;
+      box-shadow: none;
+    }
+
+    .page-panel.is-cv-page :global(.cv-meta),
+    .page-panel.is-cv-page :global(.cv-links) {
+      margin: 1rem 0 0;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: color-mix(in srgb, var(--surface) 92%, white 8%);
+    }
+
+    .page-panel.is-cv-page :global(.cv-meta) {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.85rem;
+    }
+
+    .page-panel.is-cv-page :global(.cv-meta-item) {
+      margin: 0;
+    }
+
+    .page-panel.is-cv-page :global(.cv-meta-label) {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .page-panel.is-cv-page :global(.cv-links p) {
+      margin: 0;
+    }
+
+    .page-panel.is-cv-page :global(.cv-links a + a) {
+      margin-left: 0.9rem;
+    }
+
+    .page-panel.is-cv-page :global(.cv-note) {
+      margin: 0 0 1.5rem;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .page-panel.is-cv-page :global(h2) {
+      margin-top: 2.4rem;
+      padding-top: 0.35rem;
+      border-top: 1px solid var(--line);
+      font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+    }
+
+    .page-panel.is-cv-page :global(h3) {
+      margin-top: 1.8rem;
+      font-size: 1.15rem;
+    }
+
+    .page-panel.is-cv-page :global(hr) {
+      margin: 1rem 0 1.35rem;
+      opacity: 0.55;
+    }
+
+    .page-panel.is-cv-page :global(table) {
+      display: grid;
+      gap: 0;
+      border: 0;
+      border-radius: 0;
+      overflow: visible;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .page-panel.is-cv-page :global(td:first-child),
+    .page-panel.is-cv-page :global(th:first-child) {
+      width: 10rem;
+      white-space: nowrap;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .page-panel.is-cv-page :global(tbody),
+    .page-panel.is-cv-page :global(thead) {
+      display: grid;
+      gap: 0.10rem;
+    }
+
+    .page-panel.is-cv-page :global(tbody) {
+      margin-top: 0.10rem;
+    }
+
+    .page-panel.is-cv-page :global(tr) {
+      display: grid;
+      grid-template-columns: minmax(8rem, 10rem) minmax(0, 1fr);
+      gap: 0;
+      border: 1px solid var(--line);
+      border-radius: 1.1rem;
+      background:
+        linear-gradient(180deg, color-mix(in srgb, var(--surface) 95%, white 5%), var(--surface));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .page-panel.is-cv-page :global(th) {
+      padding: 1rem 1rem 1rem 1.1rem;
+      border: 0;
+      text-align: left;
+      vertical-align: top;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: normal;
+      color: var(--text);
+      text-transform: none;
+      background: transparent;
+    }
+
+    .page-panel.is-cv-page :global(th:first-child) {
+      font-weight: 700;
+      color: var(--muted);
+      border-right: 1px solid var(--line);
+      background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+    }
+
+    .page-panel.is-cv-page :global(td) {
+      padding: 1rem 1rem 1rem 1.1rem;
+      border: 0;
+      vertical-align: top;
+      background: transparent;
+    }
+
+    .page-panel.is-cv-page :global(td:first-child) {
+      border-right: 1px solid var(--line);
+      background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+    }
+
+    .page-panel.is-cv-page :global(th + th),
+    .page-panel.is-cv-page :global(td + td) {
+      min-width: 0;
+    }
+
+    .page-panel.is-cv-page :global(.cv-plain-link) {
+      display: inline-block;
+      margin-top: 0.2rem;
+    }
+
+    .page-panel.is-cv-page :global(.cv-footer-card) {
+      margin-top: 2rem;
+      padding: 1.2rem 1.25rem;
+      border: 1px solid var(--line);
+      border-radius: 1.2rem;
+      background:
+        radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 7%, transparent), transparent 55%),
+        var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-cv-page :global(.cv-footer-card p:last-child) {
+      margin-bottom: 0;
     }
 
     .media-hub {
@@ -152,6 +380,31 @@ const mediaHubIntro =
     }
 
     @media (max-width: 720px) {
+      .page-panel.is-cv-page :global(.cv-hero) {
+        grid-template-columns: 1fr;
+      }
+
+      .page-panel.is-cv-page :global(.cv-photo-frame) {
+        justify-self: start;
+        width: min(15rem, 58vw);
+      }
+
+      .page-panel.is-cv-page :global(.cv-meta) {
+        grid-template-columns: 1fr;
+      }
+
+      .page-panel.is-cv-page :global(tr) {
+        grid-template-columns: 1fr;
+      }
+
+      .page-panel.is-cv-page :global(td:first-child),
+      .page-panel.is-cv-page :global(th:first-child) {
+        width: auto;
+        white-space: normal;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
       .media-hub {
         grid-template-columns: 1fr;
       }
