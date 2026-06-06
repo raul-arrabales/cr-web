@@ -16,13 +16,14 @@ interface Props {
 }
 
 const { title, lang, description, navItems = getNavItems(lang), updatedAt = new Date() } = Astro.props;
+const faviconVersion = "cr-5";
 ---
 
 <html lang={lang}>
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="64x64" href={`/favicon.png?v=${faviconVersion}`} />
+    <link rel="shortcut icon" href={`/favicon.png?v=${faviconVersion}`} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     {description && <meta name="description" content={description} />}

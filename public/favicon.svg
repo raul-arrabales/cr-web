@@ -1,84 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
   <title>Conscious Robots CR monogram</title>
-  <desc>Rounded square logo with CR initials in a warm minimal style.</desc>
-  <defs>
-    <linearGradient id="bg-light" x1="10" x2="54" y1="8" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fbf7f0" />
-      <stop offset="1" stop-color="#efe6d9" />
-    </linearGradient>
-    <linearGradient id="bg-dark" x1="10" x2="54" y1="8" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#231d19" />
-      <stop offset="1" stop-color="#15120f" />
-    </linearGradient>
-    <linearGradient id="accent-light" x1="18" x2="49" y1="16" y2="47" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#c76c3d" />
-      <stop offset="1" stop-color="#8f4425" />
-    </linearGradient>
-    <linearGradient id="accent-dark" x1="18" x2="49" y1="16" y2="47" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f1b180" />
-      <stop offset="1" stop-color="#d78552" />
-    </linearGradient>
-  </defs>
+  <desc>Transparent favicon with centered CR initials in solid white.</desc>
   <style>
-    .tile {
-      fill: url(#bg-light);
-      stroke: rgba(55, 42, 34, 0.18);
-      stroke-width: 1.5;
-    }
-
-    .monogram-c {
-      stroke: url(#accent-light);
-    }
-
-    .monogram-r {
-      stroke: #1f1a17;
-    }
-
-    .node {
-      fill: #1f1a17;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .tile {
-        fill: url(#bg-dark);
-        stroke: rgba(239, 228, 214, 0.14);
-      }
-
-      .monogram-c {
-        stroke: url(#accent-dark);
-      }
-
-      .monogram-r {
-        stroke: #f4ede4;
-      }
-
-      .node {
-        fill: #f4ede4;
-      }
+    .glyph {
+      fill: #fff;
     }
   </style>
-  <rect class="tile" x="4" y="4" width="56" height="56" rx="15" />
   <path
-    class="monogram-c"
-    d="M28 18
-      C22 18 17.5 23 17.5 32
-      C17.5 41 22 46 28 46
-      C31.5 46 34 44.6 35.8 42.4"
-    fill="none"
-    stroke-linecap="round"
-    stroke-width="5.5"
+    class="glyph"
+    d="M26 14H9l-5 4v28l5 4h17v-6H12V20h14v-6Z"
   />
   <path
-    class="monogram-r"
-    d="M34.5 18v28
-      M34.5 18h8.1
-      C47 18 50 21 50 26
-      C50 31.2 46.9 34.3 42 34.3h-7.5
-      M42 34.3 50 46"
-    fill="none"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    stroke-width="4.4"
+    class="glyph"
+    d="M31 14v36h6V38h7l7 12h6v-3l-7-11 7-7v-5L47 14H31Zm6 6h8l4 4v3l-4 5h-8V20Z"
   />
-  <circle class="node" cx="16.5" cy="32" r="2.1" />
 </svg>
