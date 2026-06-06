@@ -112,7 +112,7 @@ Disponible en e-book y tapa blanda
 
 <p class="archive-intro">
   Artículos científicos y otras publicaciones de
-  <strong>Dr. Raúl Arrabales Moreno.</strong>
+  <strong>Dr. Raúl Arrabales Moreno.</strong><br>
   (<a href="https://scholar.google.es/citations?user=yFsC0SYAAAAJ">Google Scholar citations</a> |
   <a href="https://www.researchgate.net/profile/Raul_Arrabales">ResearchGate Profile</a>)
 </p>

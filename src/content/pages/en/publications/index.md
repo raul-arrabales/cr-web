@@ -111,7 +111,7 @@ Available in e-book and paperback
 
 <p class="archive-intro">
   Scientific papers and other publications of
-  <strong>Raúl Arrabales Moreno, Ph.D.</strong>
+  <strong>Raúl Arrabales Moreno, Ph.D.</strong><br>
   (<a href="https://scholar.google.es/citations?user=yFsC0SYAAAAJ">Google Scholar citations</a> |
   <a href="https://www.researchgate.net/profile/Raul_Arrabales">ResearchGate Profile</a>)
 </p>
