@@ -24,11 +24,20 @@ const slug = Astro.params.slug ?? "";
 const isMediaHub = slug === "media-presence" || slug === "presencia-en-medios";
 const isContactPage = slug === "contact-me" || slug === "contacto";
 const isPublicationsPage = slug === "publications" || slug === "publicaciones";
+const isBookLandingPage =
+  slug === "mental-disorders-in-artificial-intelligence-book" ||
+  slug === "los-trastornos-mentales-de-la-inteligencia-artificial-libro";
 const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
 ---
 
 <SiteLayout lang={lang} title={page.data.title}>
-  <article class:list={["panel prose page-panel", isPublicationsPage && "is-publications-page"]}>
+  <article
+    class:list={[
+      "panel prose page-panel",
+      isPublicationsPage && "is-publications-page",
+      isBookLandingPage && "is-book-landing-page",
+    ]}
+  >
     <h1>{page.data.title}</h1>
     {isMediaHub ? (
       <div class="media-hub">
@@ -99,6 +108,172 @@ const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
       .media-hub {
         grid-template-columns: 1fr;
       }
+    }
+
+    .page-panel.is-book-landing-page :global(.book-hero) {
+      display: grid;
+      grid-template-columns: minmax(13rem, 18rem) minmax(0, 1fr);
+      gap: 1.6rem;
+      align-items: start;
+      margin: 1.4rem 0 2rem;
+      padding: 1.3rem;
+      border: 1px solid var(--line);
+      border-radius: 1.3rem;
+      background:
+        radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 8%, transparent), transparent 50%),
+        var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-book-landing-page :global(.book-hero-cover),
+    .page-panel.is-book-landing-page :global(.book-inline-art),
+    .page-panel.is-book-landing-page :global(.author-portrait),
+    .page-panel.is-book-landing-page :global(.book-end-cover) {
+      margin: 0;
+    }
+
+    .page-panel.is-book-landing-page :global(.book-hero-cover img) {
+      width: min(100%, 18rem);
+      margin-inline: auto;
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-book-landing-page :global(.book-hero-copy) > :first-child,
+    .page-panel.is-book-landing-page :global(.book-purchase-card) > :first-child,
+    .page-panel.is-book-landing-page :global(.reader-voices) > :first-child,
+    .page-panel.is-book-landing-page :global(.author-card) > :first-child {
+      margin-top: 0;
+    }
+
+    .page-panel.is-book-landing-page :global(.book-kicker) {
+      margin: 0 0 0.8rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .page-panel.is-book-landing-page :global(.book-tagline) {
+      margin: 0 0 1rem;
+      font-size: clamp(1.3rem, 2.3vw, 1.75rem);
+      line-height: 1.2;
+    }
+
+    .page-panel.is-book-landing-page :global(.book-quote) {
+      margin: 1rem 0 0;
+      padding-left: 1rem;
+      border-left: 3px solid var(--accent);
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .page-panel.is-book-landing-page :global(.book-actions) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin: 1.2rem 0 0;
+    }
+
+    .page-panel.is-book-landing-page :global(.book-actions a) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--surface) 92%, transparent);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      transition:
+        transform 160ms ease,
+        border-color 160ms ease,
+        color 160ms ease;
+    }
+
+    .page-panel.is-book-landing-page :global(.book-actions a:hover) {
+      transform: translateY(-1px);
+      border-color: color-mix(in srgb, var(--accent) 32%, var(--line));
+      color: var(--accent);
+    }
+
+    .page-panel.is-book-landing-page :global(.book-purchase-card),
+    .page-panel.is-book-landing-page :global(.reader-voices),
+    .page-panel.is-book-landing-page :global(.author-card) {
+      margin: 1.5rem 0 2rem;
+      padding: 1.25rem;
+      border: 1px solid var(--line);
+      border-radius: 1.15rem;
+      background: color-mix(in srgb, var(--surface) 94%, transparent);
+      box-shadow: 0 12px 30px rgba(43, 29, 21, 0.05);
+    }
+
+    .page-panel.is-book-landing-page :global(.book-badges) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      align-items: center;
+      margin: 1rem 0;
+    }
+
+    .page-panel.is-book-landing-page :global(.book-badges a) {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .page-panel.is-book-landing-page :global(.book-badges img) {
+      width: auto;
+      height: 2.75rem;
+      max-width: 9rem;
+      border-radius: 0.45rem;
+      box-shadow: none;
+    }
+
+    .page-panel.is-book-landing-page :global(.book-inline-art) {
+      float: right;
+      width: min(38%, 15rem);
+      margin: 0.35rem 0 1rem 1.2rem;
+    }
+
+    .page-panel.is-book-landing-page :global(.book-inline-art img) {
+      width: 100%;
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-book-landing-page :global(.reader-voices blockquote) {
+      margin: 1rem 0;
+      padding: 0 0 0 1rem;
+      border-left: 3px solid color-mix(in srgb, var(--accent) 70%, transparent);
+      color: var(--text);
+    }
+
+    .page-panel.is-book-landing-page :global(.reader-voices hr) {
+      margin: 1.25rem 0;
+    }
+
+    .page-panel.is-book-landing-page :global(.author-card) {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(11rem, 14rem);
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    .page-panel.is-book-landing-page :global(.author-portrait img) {
+      width: 100%;
+      max-width: 14rem;
+      margin-left: auto;
+      box-shadow: var(--shadow);
+    }
+
+    .page-panel.is-book-landing-page :global(.book-end-cover) {
+      width: min(100%, 14rem);
+      margin: 2rem auto 0;
+    }
+
+    .page-panel.is-book-landing-page :global(.book-end-cover img) {
+      width: 100%;
+      box-shadow: var(--shadow);
     }
 
     .page-panel.is-publications-page :global(.contents-card) {
@@ -242,6 +417,40 @@ const mediaHubItems = isMediaHub ? getMediaHubItems(lang) : [];
     }
 
     @media (max-width: 720px) {
+      .page-panel.is-book-landing-page :global(.book-hero) {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+      }
+
+      .page-panel.is-book-landing-page :global(.book-hero-cover img) {
+        width: min(100%, 15rem);
+      }
+
+      .page-panel.is-book-landing-page :global(.book-inline-art) {
+        float: none;
+        width: min(100%, 16rem);
+        margin: 1rem auto;
+      }
+
+      .page-panel.is-book-landing-page :global(.author-card) {
+        grid-template-columns: 1fr;
+      }
+
+      .page-panel.is-book-landing-page :global(.author-portrait img) {
+        max-width: 12rem;
+        margin-left: 0;
+      }
+
+      .page-panel.is-book-landing-page :global(.book-badges) {
+        gap: 0.65rem;
+      }
+
+      .page-panel.is-book-landing-page :global(.book-badges img) {
+        height: 2.4rem;
+        max-width: 7.5rem;
+      }
+
       .page-panel.is-publications-page :global(.contents-card) {
         padding: 1rem;
       }

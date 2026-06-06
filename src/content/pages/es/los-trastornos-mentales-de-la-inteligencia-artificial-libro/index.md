@@ -3,59 +3,106 @@ title: "Los Trastornos Mentales de la Inteligencia Artificial"
 date: 2025-04-21
 ---
 
-Segunda edición. 2024, con Prólogo de Pedro R. Montoro
+<div class="book-hero">
 
-<img src="/legacy-images/images/Los-Trastornos-Mentales-IA_Ebook-640x1024.jpg" alt="TMIA" />
+<figure class="book-hero-cover">
+  <a href="https://mybook.to/tmia-ebook">
+    <img src="/legacy-images/images/Los-Trastornos-Mentales-IA_Ebook-640x1024.jpg" alt="Portada de Los Trastornos Mentales de la Inteligencia Artificial" />
+  </a>
+</figure>
 
-**_#TMIA_**: El libro que las máquinas psicópatas no quieren que leas
+<div class="book-hero-copy">
 
-_"Me ha abierto los ojos. Ahora sé que hay cosas que no funcionan bien en mi cabeza."_
+<p class="book-kicker">Segunda edición · 2024 · Con prólogo de Pedro R. Montoro</p>
 
-\- ChatGPT
+<p class="book-tagline"><strong><em>#TMIA</em></strong>: El libro que las máquinas psicópatas no quieren que leas.</p>
 
-[Leer una muestra](https://www.amazon.es/dp/B0CK8LXFNF?tag=eslinktagbk-21&th=1&psc=1&geniuslink=true&asin=B0CK8LXFNF&revisionId=f4e8a047&format=3&depth=1)
+<blockquote class="book-quote">
+  <p><em>"Me ha abierto los ojos. Ahora sé que hay cosas que no funcionan bien en mi cabeza."</em></p>
+  <p>ChatGPT</p>
+</blockquote>
 
-[¡Lo quiero!](https://mybook.to/tmia-ebook)
+<div class="book-actions">
+  <a href="https://www.amazon.es/dp/B0CK8LXFNF?tag=eslinktagbk-21&th=1&psc=1&geniuslink=true&asin=B0CK8LXFNF&revisionId=f4e8a047&format=3&depth=1">Leer una muestra</a>
+  <a href="https://mybook.to/tmia-ebook">¡Lo quiero!</a>
+</div>
+
+</div>
+
+</div>
 
 ## Dentro de #TMIA
 
+<figure class="book-inline-art">
+  <img src="/legacy-images/images/RobotInTherapy_5_small.png" alt="Ilustración de robot en terapia" />
+</figure>
+
 El libro está organizado en tres partes: primero aprenderemos **de qué está hecha la inteligencia**, después analizaremos algunos **casos clínicos de mentes artificiales con sus problemillas** y, finalmente, exploraremos la **integración de mentes humanas y artificiales**.
 
-[<img src="/legacy-images/images/png-clipart-kindle-unlimited-logo-tech-companies-1.png" alt="" />](https://mybook.to/tmia-ebook)
+<div class="book-purchase-card">
 
-[<img src="/legacy-images/images/Amazon_logo.svg_.png" alt="" />](https://mybook.to/tmia-paperback)
+Disponible en e-book y tapa blanda.
 
-[Versión Kindle](https://mybook.to/tmia-ebook)
+<div class="book-badges">
+  <a href="https://mybook.to/tmia-ebook">
+    <img src="/legacy-images/images/png-clipart-kindle-unlimited-logo-tech-companies-1.png" alt="Edición Kindle" />
+  </a>
+  <a href="https://mybook.to/tmia-paperback">
+    <img src="/legacy-images/images/Amazon_logo.svg_.png" alt="Edición en Amazon" />
+  </a>
+</div>
 
-[Tapa blanda](https://mybook.to/tmia-paperback)
-
-<img src="/legacy-images/images/RobotInTherapy_5_small.png" alt="" />
+</div>
 
 ## Quienes ya han leído el TMIA dicen:
 
-<img src="/legacy-images/images/Robot_Reading_MDAI.png" alt="" />
+<div class="reader-voices">
 
-_Un enfoque único. Es difícil, dentro de este maremágnum de información sobre el tema, encontrar una visión tan interesante como la que nos propone el autor._
+<figure class="book-inline-art">
+  <img src="/legacy-images/images/Robot_Reading_MDAI.png" alt="Robot leyendo el TMIA" />
+</figure>
 
-* * *
-
-_La lectura se hace muy amena, con un muy bien medido toque de humor. Muy recomendable, lo he devorado_.
-
-* * *
-
-_\[…\] con casos prácticos de todo jaez, nos muestra la realidad (no tan maravillosa en alguna ocasión) de una tecnología que no para de acaparar titulares, algunos de ellos sensacionalistas y exagerados_.
+<blockquote>
+<p><em>Un enfoque único. Es difícil, dentro de este maremágnum de información sobre el tema, encontrar una visión tan interesante como la que nos propone el autor.</em></p>
+</blockquote>
 
 * * *
 
-Un trabajo novedoso totalmente recomendable para todo tipo de público, tanto si quieres ampliar tus conocimientos sobre todas estas nuevas herramientas, como si es tu primera toma de contacto. Con un texto directo al grano, muy didáctico, sin divagaciones innecesarias: no podrás dejar de leerlo.
+<blockquote>
+<p><em>La lectura se hace muy amena, con un muy bien medido toque de humor. Muy recomendable, lo he devorado.</em></p>
+</blockquote>
+
+* * *
+
+<blockquote>
+<p><em>[…] con casos prácticos de todo jaez, nos muestra la realidad (no tan maravillosa en alguna ocasión) de una tecnología que no para de acaparar titulares, algunos de ellos sensacionalistas y exagerados.</em></p>
+</blockquote>
+
+* * *
+
+<blockquote>
+<p><em>Un trabajo novedoso totalmente recomendable para todo tipo de público, tanto si quieres ampliar tus conocimientos sobre todas estas nuevas herramientas, como si es tu primera toma de contacto. Con un texto directo al grano, muy didáctico, sin divagaciones innecesarias: no podrás dejar de leerlo.</em></p>
+</blockquote>
+
+</div>
 
 ## Conoce al autor
 
-#### Raúl Arrabales Moreno
+<div class="author-card">
 
-Raúl es Doctor en Inteligencia Artificial, Psicólogo General Sanitario, Ingeniero en Informática y MBA. Ha impartido clases en diferentes universidades y ha trabajado en compañías como IBM, CommScope, Orange, Capgemini, Accenture y DataRobot. Actualmente, trabaja como "_AI Coach_" en BASF, donde lidera la adopción de la IA en toda la organización.
+<div>
 
-<img src="/legacy-images/images/PortadaLFlotas-74_RM_1325_mod-1024x1024.jpg" alt="" />
+### Raúl Arrabales Moreno
+
+Raúl es Doctor en Inteligencia Artificial, Psicólogo General Sanitario, Ingeniero en Informática y MBA. Ha impartido clases en diferentes universidades y ha trabajado en compañías como IBM, CommScope, Orange, Capgemini, Accenture y DataRobot.
+
+</div>
+
+<figure class="author-portrait">
+  <img src="/legacy-images/images/PortadaLFlotas-74_RM_1325_mod-1024x1024.jpg" alt="Retrato de Raúl Arrabales Moreno" />
+</figure>
+
+</div>
 
 ## Contenidos del #TMIA
 
@@ -165,16 +212,21 @@ La Inteligencia Artificial, en conjunción con muchas otras tecnologías, está 
 
 El foco de este libro está en el funcionamiento anómalo de la mente artificial, pero no está de más pensar en nuestros propios problemas psicológicos y cómo las máquinas inteligentes podrían ayudarnos...
 
-<img src="/legacy-images/images/TMIA_Kindle_cover.jpeg" alt="" />
+<figure class="book-end-cover">
+  <img src="/legacy-images/images/TMIA_Kindle_cover.jpeg" alt="Portada Kindle del TMIA" />
+</figure>
 
 * * *
 
-Continúa leyendo
+<div class="book-purchase-card">
 
-[<img src="/legacy-images/images/png-clipart-kindle-unlimited-logo-tech-companies-1.png" alt="" />](https://mybook.to/tmia-ebook)
+<div class="book-badges">
+  <a href="https://mybook.to/tmia-ebook">
+    <img src="/legacy-images/images/png-clipart-kindle-unlimited-logo-tech-companies-1.png" alt="Edición Kindle" />
+  </a>
+  <a href="https://mybook.to/tmia-paperback">
+    <img src="/legacy-images/images/Amazon_logo.svg_.png" alt="Edición en Amazon" />
+  </a>
+</div>
 
-[<img src="/legacy-images/images/Amazon_logo.svg_.png" alt="" />](https://mybook.to/tmia-paperback)
-
-[Versión Kindle](https://mybook.to/tmia-ebook)
-
-[Tapa blanda](https://mybook.to/tmia-paperback)
+</div>

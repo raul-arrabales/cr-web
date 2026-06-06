@@ -3,57 +3,106 @@ title: "Mental Disorders in Artificial Intelligence (book)"
 date: 2025-04-21
 ---
 
-[<img src="/legacy-images/images/Mental-Disorders-in-Artificial-Intelligence_EBook_small.jpg" alt="" />](https://mybook.to/mental-disorders-ai)
+<div class="book-hero">
 
-**_#MDAI_**: The book that psychopathic machines don't want you to read
+<figure class="book-hero-cover">
+  <a href="https://mybook.to/mental-disorders-ai">
+    <img src="/legacy-images/images/Mental-Disorders-in-Artificial-Intelligence_EBook_small.jpg" alt="Mental Disorders in Artificial Intelligence book cover" />
+  </a>
+</figure>
 
-_"I had a bit of an epiphany — apparently, my mind has a few… quirky settings I hadn’t noticed before"_.
+<div class="book-hero-copy">
 
-\- Book review by ChatGPT.
+<p class="book-kicker">Psychobotics Books · 2024 edition</p>
 
-[Look Inside!](https://www.amazon.es/Mental-Disorders-Artificial-Intelligence-Understanding/dp/8409640171/?asin=B0DC6XVG96&revisionId=b2ad0dc3&format=3&depth=1)
+<p class="book-tagline"><strong><em>#MDAI</em></strong>: The book that psychopathic machines don't want you to read.</p>
 
-[Get it now!](https://mybook.to/mental-disorders-ai)
+<blockquote class="book-quote">
+  <p><em>"I had a bit of an epiphany — apparently, my mind has a few… quirky settings I hadn’t noticed before".</em></p>
+  <p>Book review by ChatGPT.</p>
+</blockquote>
+
+<div class="book-actions">
+  <a href="https://www.amazon.es/Mental-Disorders-Artificial-Intelligence-Understanding/dp/8409640171/?asin=B0DC6XVG96&revisionId=b2ad0dc3&format=3&depth=1">Look inside</a>
+  <a href="https://mybook.to/mental-disorders-ai">Get it now</a>
+</div>
+
+</div>
+
+</div>
 
 ## Inside #MDAI
 
+<figure class="book-inline-art">
+  <img src="/legacy-images/images/RobotInTherapy_5_small.png" alt="Robot in therapy illustration" />
+</figure>
+
 The book is organized in three parts: first we will **learn what intelligence is made of**, then we will analyze some **clinical cases of artificial minds** with their little problems and, finally, we will explore the **integration of human and artificial minds**.
 
-[<img src="/legacy-images/images/png-clipart-kindle-unlimited-logo-tech-companies-1.png" alt="" />](https://mybook.to/mental-disorders-ai)
+<div class="book-purchase-card">
 
-[<img src="/legacy-images/images/Amazon_logo.svg_.png" alt="" />](https://mybook.to/mdai-paperback)
+Available in e-book and paperback.
 
-[Kindle Version](https://mybook.to/mental-disorders-ai)
+<div class="book-badges">
+  <a href="https://mybook.to/mental-disorders-ai">
+    <img src="/legacy-images/images/png-clipart-kindle-unlimited-logo-tech-companies-1.png" alt="Kindle version" />
+  </a>
+  <a href="https://mybook.to/mdai-paperback">
+    <img src="/legacy-images/images/Amazon_logo.svg_.png" alt="Paperback on Amazon" />
+  </a>
+</div>
 
-[Paperback](https://mybook.to/mdai-paperback)
-
-<img src="/legacy-images/images/RobotInTherapy_5_small.png" alt="" />
+</div>
 
 ## What readers say about #MDAI
 
-<img src="/legacy-images/images/Robot_Reading_MDAI.png" alt="" />
+<div class="reader-voices">
 
-_It sparks curiosity and makes us think about AI in a completely new way. The examples and explanations are excellent. Its focus on the mental problems of AI is unique and insightful._
+<figure class="book-inline-art">
+  <img src="/legacy-images/images/Robot_Reading_MDAI.png" alt="Robot reading Mental Disorders in Artificial Intelligence" />
+</figure>
 
-* * *
-
-_The reading is very enjoyable, with a very well-measured touch of humor. Highly recommended, I devoured it_
-
-* * *
-
-_I found this book refreshing and enlightening. The author challenges conventional notions and invites us to explore lesser-known aspects of AI_
+<blockquote>
+<p><em>It sparks curiosity and makes us think about AI in a completely new way. The examples and explanations are excellent. Its focus on the mental problems of AI is unique and insightful.</em></p>
+</blockquote>
 
 * * *
 
-... left me thinking deeply about AI and its impact on society. The way the author explores the mental health of machines is innovative and essential. If you want to expand your understanding of AI and its role in the world, this is your book
+<blockquote>
+<p><em>The reading is very enjoyable, with a very well-measured touch of humor. Highly recommended, I devoured it.</em></p>
+</blockquote>
+
+* * *
+
+<blockquote>
+<p><em>I found this book refreshing and enlightening. The author challenges conventional notions and invites us to explore lesser-known aspects of AI.</em></p>
+</blockquote>
+
+* * *
+
+<blockquote>
+<p><em>... left me thinking deeply about AI and its impact on society. The way the author explores the mental health of machines is innovative and essential. If you want to expand your understanding of AI and its role in the world, this is your book.</em></p>
+</blockquote>
+
+</div>
 
 ## About the author
 
-#### Raúl Arrabales Moreno
+<div class="author-card">
 
-Raúl Arrabales Moreno holds a PhD in Computer Science and Artificial Intelligence and is a Licensed General Psychologist. He is also a Computer Engineer and an MBA graduate. With a career that bridges AI and Psychology, Raúl has worked with international companies including IBM, Orange, Capgemini, Accenture, and DataRobot. Currently, he serves as AI Coach at BASF, where he drives large-scale AI adoption.
+<div>
 
-<img src="/legacy-images/images/PortadaLFlotas-74_RM_1325_mod-1024x1024.jpg" alt="" />
+### Raúl Arrabales Moreno
+
+Raúl Arrabales Moreno holds a PhD in Computer Science and Artificial Intelligence and is a Licensed General Psychologist. He is also a Computer Engineer and an MBA graduate. With a career that bridges AI and Psychology, Raúl has worked with international companies including IBM, Orange, Capgemini, Accenture, and DataRobot. 
+
+</div>
+
+<figure class="author-portrait">
+  <img src="/legacy-images/images/PortadaLFlotas-74_RM_1325_mod-1024x1024.jpg" alt="Portrait of Raúl Arrabales Moreno" />
+</figure>
+
+</div>
 
 ## #MDAI Book Contents
 
@@ -163,16 +212,21 @@ Artificial Intelligence, in conjunction with advancements in biotechnology and o
 
 Although this book mainly addresses the abnormal functioning of artificial minds, it’s also important to think about our own psychological issues and how intelligent machines can assist us. For instance, in the second part of this book, wediscuss SR, an assistive robot designed to help children with autism, showcasing AI’s potential to enhance human mental health. Beyond robots like SR, which engage in therapeutic activities and provide companionship to the elderly or disabled, numerous chatbots are also available. These chatbots are specifically designed to support individuals dealing with psychological issues such as anxiety and depression…
 
-<img src="/legacy-images/images/Mental-Disorders-in-Artificial-Intelligence_EBook_small-640x1024.jpg" alt="" />
+<figure class="book-end-cover">
+  <img src="/legacy-images/images/Mental-Disorders-in-Artificial-Intelligence_EBook_small-640x1024.jpg" alt="Mental Disorders in Artificial Intelligence Kindle cover" />
+</figure>
 
 * * *
 
-Continue reading:
+<div class="book-purchase-card">
 
-[<img src="/legacy-images/images/png-clipart-kindle-unlimited-logo-tech-companies-1.png" alt="" />](https://mybook.to/mental-disorders-ai)
+<div class="book-badges">
+  <a href="https://mybook.to/mental-disorders-ai">
+    <img src="/legacy-images/images/png-clipart-kindle-unlimited-logo-tech-companies-1.png" alt="Kindle version" />
+  </a>
+  <a href="https://mybook.to/mdai-paperback">
+    <img src="/legacy-images/images/Amazon_logo.svg_.png" alt="Paperback on Amazon" />
+  </a>
+</div>
 
-[<img src="/legacy-images/images/Amazon_logo.svg_.png" alt="" />](https://mybook.to/mdai-paperback)
-
-[Kindle Version](https://mybook.to/mental-disorders-ai)
-
-[Paperback](https://mybook.to/mdai-paperback)
+</div>

@@ -86,7 +86,7 @@ This is more than just a book about technology — it’s an invitation to refle
 
 Gain a deep understanding of AI by exploring its psychological quirks, blunders, mistakes, and failure cases.
 
-👉 [Learn more about this book](https://www.conscious-robots.com/publications/mental-disorders-in-artificial-intelligence-book/)
+👉 [Learn more about this book](/en/pages/mental-disorders-in-artificial-intelligence-book)
 
 Available in e-book and paperback
 
