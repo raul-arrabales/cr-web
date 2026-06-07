@@ -5,13 +5,13 @@ date: 2016-01-03
 
 <div class="cv-hero">
   <div class="cv-hero-copy">
-    <p class="cv-kicker">Estrategia IA • Psicología • Investigación • Docencia</p>
-    <p class="cv-summary"><strong>Dr. Raúl Arrabales Moreno</strong> es estratega de IA, psicólogo, investigador y docente, centrado en ayudar a las organizaciones a convertir la inteligencia artificial en valor práctico y responsable.</p>
-    <p class="cv-mission"><strong>Misión:</strong> Promover el uso responsable de la Inteligencia Artificial para incrementar la generación de valor en las organizaciones.</p>
+    <p class="cv-kicker">Inteligencia Artificial • Psicología • Investigación</p>
+    <p class="cv-summary"><strong>Dr. Raúl Arrabales Moreno</strong> es experto en IA, psicólogo, investigador y docente, centrado en ayudar a las organizaciones a convertir la Inteligencia Artificial en valor de forma responsable.</p>
+    <p class="cv-mission"><strong>Misión:</strong> Promover el desarrollo responsable de la Inteligencia Artificial para incrementar la generación de valor en las organizaciones.</p>
     <p>Raúl Arrabales es Doctor en Inteligencia Artificial, Psicólogo General Sanitario, Ingeniero en Informática y MBA. Cuenta con más de 20 años de experiencia en entornos académicos, empresariales y sanitarios, y ha desempeñado diferentes roles en compañías internacionales como IBM, CommScope, Orange, Capgemini, Accenture, DataRobot, BASF y Gartner.</p>
     <div class="cv-meta">
       <p class="cv-meta-item"><span class="cv-meta-label">Rol actual</span>Director Senior de Análisis, Gartner</p>
-      <p class="cv-meta-item"><span class="cv-meta-label">Especialidad</span>IA generativa, adopción de IA, psicología</p>
+      <p class="cv-meta-item"><span class="cv-meta-label">Especialidad</span>GenAI, LLMs, RAG, Agentes IA</p>
       <p class="cv-meta-item"><span class="cv-meta-label">Trayectoria</span>20+ años entre industria y universidad</p>
     </div>
   </div>
@@ -20,27 +20,56 @@ date: 2016-01-03
   </figure>
 </div>
 
+<nav class="cv-index" aria-label="Indice de secciones del currículum">
+  <p class="cv-index-title">Ir a una sección</p>
+  <div class="cv-index-grid">
+    <a href="#formacion-universitaria">Formación Universitaria</a>
+    <a href="#experiencia-profesional">Experiencia Profesional</a>
+    <a href="#experiencia-en-psicologia-clinica">Experiencia en Psicología Clínica</a>
+    <a href="#formacion-especializada-en-psicologia">Formación Especializada en Psicología</a>
+    <a href="#formacion-doctoral-internacional">Formación Doctoral Internacional</a>
+    <a href="#premios-reconocimientos-concursos-y-becas">Premios, Reconocimientos, Concursos y Becas</a>
+    <a href="#proyectos-de-investigacion">Proyectos de Investigación</a>
+    <a href="#proyectos-de-innovacion-docente">Proyectos de Innovación Docente</a>
+    <a href="#certificaciones-y-acreditaciones-oficiales">Certificaciones y Acreditaciones Oficiales</a>
+    <a href="#experiencia-docente">Experiencia Docente</a>
+    <a href="#comites-cientificos-de-conferencias">Comités Científicos de Conferencias</a>
+    <a href="#comites-organizadores-de-conferencias">Comités Organizadores de Conferencias</a>
+    <a href="#comites-cientificos-de-revistas">Comités Científicos de Revistas</a>
+    <a href="#miembro-del-consejo-editorial-de-revistas">Miembro del Consejo Editorial de Revistas</a>
+    <a href="#comites-de-evaluacion-de-proyectos">Comités de Evaluación de Proyectos</a>
+    <a href="#miembro-de-tribunal-de-tesis-doctoral">Miembro de Tribunal de Tesis Doctoral</a>
+    <a href="#tutoria-academica">Tutoría Académica</a>
+    <a href="#actividades-corporativas-adicionales">Actividades Corporativas Adicionales</a>
+    <a href="#paginas-web-y-servicios-online">Páginas Web y Servicios Online</a>
+    <a href="#proyectos-software-de-codigo-libre">Proyectos Software de Código Libre</a>
+    <a href="#formacion-adicional">Formación Adicional</a>
+    <a href="#competencias-tecnicas-y-metodologicas">Competencias Técnicas y Metodológicas</a>
+    <a href="#afiliaciones">Afiliaciones</a>
+  </div>
+</nav>
+
 * * *
 
-## Formación Universitaria
+<h2 id="formacion-universitaria">Formación Universitaria</h2>
 
 * * *
 
-| _2017-2019_ | **_Máster Universitario en Psicología General Sanitaria_**   Universidad Internacional de la Rioja (UNIR). |
+| _2017-2019_ | **_Máster en Psicología General Sanitaria_**   Universidad Internacional de la Rioja (UNIR). |
 | :-- | --- |
 | _2017-2018_ | _**Programa Superior de Coaching Psicológico**_   Universidad Complutense de Madrid (UCM). |
 | _2012-2017_ | _**Graduado en Psicología**_    Psicología de la Salud e Intervención en Trastornos Mentales (UNED). |
 | _2011-2012_ | _**Executive MBA**_   Máster en Dirección de Empresas (Escuela de Organización Industrial). |
-| _2006-2011_ | _**Doctor en Inteligencia Artificial**_   Universidad Carlos III de Madrid. Ciencia y Tecnología Informática.   Distinciones _Summa Cum Laude_, _Calidad_ y _Doctorado Europeo_. |
+| _2006-2011_ | _**Doctor en Inteligencia Artificial**_   Universidad Carlos III de Madrid (UC3M). |
 | _2004-2005_ | _**Máster en Ciencia y Tecnología Informática (DEA)**_   Universidad Carlos III de Madrid (UC3M). |
 | _1999-2001_ | _**Ingeniero en Informática**_   Universidad Carlos III de Madrid (UC3M). |
 | _1994-1998_ | _**Ingeniero Técnico en Informática de Sistemas**_   Universidad Politécnica de Madrid (UPM). |
 
-## Experiencia Profesional
+<h2 id="experiencia-profesional">Experiencia Profesional</h2>
 
 * * *
 
-| 2025 - Hoy | _**Gartner. Director Senior de Análisis - IA Generativa**_   Responsable de proporcionar análisis objetivos y recomendaciones accionables a líderes empresariales y tecnológicos para apoyar la toma de decisiones estratégicas. |
+| 2025 - Hoy | _**Gartner. Director Senior de Análisis - IA Generativa**_ Proporcionando análisis objetivos y recomendaciones a líderes tecnológicos para apoyar la toma de decisiones sobre IA. |
 | :-- | --- |
 | 2024 - 2025 | _**BASF. Global Digital Services. AI Technical Experts Advisory Lead**_   Impulsando la generación de valor a través de la IA. |
 | 2023 - 2024 | _**Psicobōtica. Socio fundador y CEO**_   IA generativa aplicada a la psicología. |
@@ -61,7 +90,7 @@ date: 2016-01-03
 | _2002-2003_ | _**Krop Audiovisual. (EADS Group). Ingeniero de sistemas**_   Ingeniero de vídeo bajo demanda y middleware para soluciones de TV digital. |
 | _2000-2001_ | _**IBM España. Técnico E-Commerce**_   Implantación de E-Catalogues y Gestores de Contenido Web B2B en España. |
 
-## Experiencia en Psicología Clínica
+<h2 id="experiencia-en-psicologia-clinica">Experiencia en Psicología Clínica</h2>
 
 * * *
 
@@ -76,7 +105,7 @@ date: 2016-01-03
 | _2018 - 2019_ | _**Prácticum Coaching Psicológico**._ Universidad Complutense de Madrid (UCM). Curso Superior de Coaching Psychology. |
 | _2016- 2017_  | _**Prácticum de Formación de Psicoterapeutas**_. Gestalt, TCC y Sistémica. AVT. Madrid. |
 
-## Formación Especializada en Psicología
+<h2 id="formacion-especializada-en-psicologia">Formación Especializada en Psicología</h2>
 
 * * *
 
@@ -108,7 +137,7 @@ date: 2016-01-03
 | _04/2013_ | _**Psicología Positiva: Fundamentos Teóricos y Aplicaciones**_. UNED Ext. Universitaria. |
 | _06/2008_ | _**Relaciones Interpersonales y Resolución de Conflictos en el Aula**._ Universidad de Cádiz. |
 
-## Formación Doctoral Internacional
+<h2 id="formacion-doctoral-internacional">Formación Doctoral Internacional</h2>
 
 * * *
 
@@ -117,10 +146,10 @@ date: 2016-01-03
 | _Verano   2011_ | _**Extending Sensorymotor Contingencies to Cognition**_. eSMCs Summer School 2011. The Future of Embodied Mind. San Sebastián (09/2011). EU FP7/EuCog II. |
 | _Otoño   2010_ | _**Neuronal Dynamics Approaches to Cognitive Robotics**_. Fall School at the Institut für Neuroinformatik - Rhur Universität Bochum. Alemania (10/2010). |
 | _Semestre   2009_ | Investigador visitante en el _**Sackler Center for Consciousness Science**_. (Supervisors: Anil Seth and Owen Holland). University of Sussex. Reino Unido. (06-10/2019). |
-| _Verano   2008_ | Beca doctoral en el _**Nokia Research Center**_. Machine Consciousess Research Programme (Supervisor: Pentti Haikonen). Helsinki. Finlandia. (08/2008). |
-| _Curso   2001/02   _ | Beca de investigador visitante en el _**Mobile and Marine Robotics Research Center**_ (Supervisor: Daniel Toal). ECE. University of Limerick. Irlanda. (09/2001-06/2002). |
+| _Verano 2008_ | Beca doctoral en el _**Nokia Research Center**_. Machine Consciousess Research Programme (Supervisor: Pentti Haikonen). Helsinki. Finlandia. (08/2008). |
+| _Curso 2001/02_ | Beca de investigador visitante en el _**Mobile and Marine Robotics Research Center**_ (Supervisor: Daniel Toal). ECE. University of Limerick. Irlanda. (09/2001-06/2002). |
 
-## Premios, Reconocimientos, Concursos y Becas
+<h2 id="premios-reconocimientos-concursos-y-becas">Premios, Reconocimientos, Concursos y Becas</h2>
 
 * * *
 
@@ -144,7 +173,7 @@ date: 2016-01-03
 | _2008_ | Beca doctoral de Nokia Research Center. Finlandia. Agosto. 2008. |
 | _2001_ | Beca Erasmus de la Comisión Europea para la Educación. Irlanda. 2001. |
 
-## Proyectos de Investigación
+<h2 id="proyectos-de-investigacion">Proyectos de Investigación</h2>
 
 * * *
 
@@ -158,7 +187,7 @@ date: 2016-01-03
 | _2007 - 2010_ | _**Sistema de Detección de Peatones, Ciclistas y Motoristas**_ - Fusión Sensorial. Plan Nacional de I+D+I. Ministerio de Educación y Ciencia. Referencia TRA-2007-67374-C02-02. Investigator. |
 | _2001 - 2002_ | _**Autonomous Underwater Vehicle Artificial Intelligence**_ for Underwater Filming and Inspection. Enterprise Ireland Strategic Research. Grant 2000-2002. Undergraduate investigator. |
 
-## Proyectos de Innovación Docente
+<h2 id="proyectos-de-innovacion-docente">Proyectos de Innovación Docente</h2>
 
 * * *
 
@@ -168,7 +197,7 @@ date: 2016-01-03
 | _2010/11_ | Implementación de un Sistema de Calificación Recíproca durante el Proceso de Evaluación Continua en una asignatura de Orientación Práctica. Participante. 2010-2011. |
 | _2009/10_ | Espacio Virtual Europeo: agentes virtuales para el proceso de enseñanza-aprendizaje en competencias. Participante. 2009-2010. |
 
-## Certificaciones y Acreditaciones Oficiales
+<h2 id="certificaciones-y-acreditaciones-oficiales">Certificaciones y Acreditaciones Oficiales</h2>
 
 * * *
 
@@ -186,7 +215,7 @@ date: 2016-01-03
 | [ANECA](http://www.aneca.es/) | Profesor Colaborador. 2011. |
 | [PMI](https://www.pmi.org/) | Project Management Professional, PMP Certificado 2006. |
 
-## Experiencia Docente
+<h2 id="experiencia-docente">Experiencia Docente</h2>
 
 * * *
 
@@ -226,7 +255,7 @@ date: 2016-01-03
 | _Grado_ | _**Procesadores del Lenguaje II**._ Grado en Ingeniería Informática. UC3M. Cursos académicos: 2006-07; 2007-08; 2008-09; 2009-10; 2010-11; 2011-12. |
 | _Grado_ | _**Tecnología para Diseñadores**_. Grado en Diseño de Productos Interactivos. Universidad Camilo José Cela. Cursos académicos: 2013-14. |
 
-## Comités Científicos de Conferencias
+<h2 id="comites-cientificos-de-conferencias">Comités Científicos de Conferencias</h2>
 
 * * *
 
@@ -240,7 +269,7 @@ date: 2016-01-03
 | _MSM 2009_ | 1st International Workshop on Mining Social Media (MSM09 - CAEPIA 2009). |
 | _IMETI 2008-11_       | International Multi-Conference on Engineering and Technological Innovation (IMETI 2008, 2010, 2011). |
 
-## Comités Organizadores de Conferencias
+<h2 id="comites-organizadores-de-conferencias">Comités Organizadores de Conferencias</h2>
 
 * * *
 
@@ -250,33 +279,33 @@ date: 2016-01-03
 | BICA 2012 | Biologically Inspired Cognitive Architectures 2012. |
 | ECAL 2013 | Artificial Consciousness Workshop at ECAL 2013. |
 
-## Comités Científicos de Revistas
+<h2 id="comites-cientificos-de-revistas">Comités Científicos de Revistas</h2>
 
 * * *
 
-| IEEE Transactions on Systems, Man, and Cybernetics - Part C: Applications and Reviews. |
-| --- |
-| IEEE Transactions on Computational Intelligence and AI in Games. |
-| Journal of Consciousness Studies. |
-| Springer - Evolving Systems. |
-| IEEE Access. |
+| IEEE | IEEE Transactions on Systems, Man, and Cybernetics - Part C: Applications and Reviews. |
+| --- | --- |
+| IEEE | IEEE Transactions on Computational Intelligence and AI in Games. |
+| Imprint | Journal of Consciousness Studies. |
+| Springer | Springer - Evolving Systems. |
+| IEEE | IEEE Access. |
 
-## Miembro del Consejo Editorial de Revistas
+<h2 id="miembro-del-consejo-editorial-de-revistas">Miembro del Consejo Editorial de Revistas</h2>
 
 * * *
 
-| International Journal of Interactive Multimedia and Artificial Intelligence ([IJIMAI](http://www.ijimai.org/journal/index.php?q=editorial-team)). |
-| --- |
-| International Journal of Machine Consciousness ([IJMC](http://www.worldscientific.com/worldscinet/ijmc)). |
+| IJIMAI | International Journal of Interactive Multimedia and Artificial Intelligence ([IJIMAI](http://www.ijimai.org/journal/index.php?q=editorial-team)). |
+| --- | --- |
+| World Scientific | International Journal of Machine Consciousness ([IJMC](http://www.worldscientific.com/worldscinet/ijmc)). |
 
-## Comités de Evaluación de Proyectos
+<h2 id="comites-de-evaluacion-de-proyectos">Comités de Evaluación de Proyectos</h2>
 
 * * *
 
 | _2008-2009_ | Evaluador externo para proyectos de Investigación Básica del Plan Gallego de Investigación, Desarrollo e Innovación Tecnológica (INCITE) de la Xunta de Galicia (2008, 2009). |
 | --- | --- |
 
-## Miembro de Tribunal de Tesis Doctoral
+<h2 id="miembro-de-tribunal-de-tesis-doctoral">Miembro de Tribunal de Tesis Doctoral</h2>
 
 * * *
 
@@ -284,44 +313,29 @@ date: 2016-01-03
 | --- | --- |
 | 2013 | Jesús Oliva Gonzalo. Modelo Computacional Cognitivo de la Adquisición de la Morfología Verbal. Aplicación a la Caracterización y Diagnóstico de Transtornos Cognitivos. Universidad Nacional de Educación a Distancia (UNED). |
 
-## Tutoría Académica
+<h2 id="tutoria-academica">Tutoría Académica</h2>
 
 * * *
 
-TFM (Oct. 2018) "_Soluciones de Inteligencia Artificial para la Asistencia a Personas con Ansiedad y Depresión_". Iván Serrano de Luz, Carmen González-Conde Máiz, Miguel Ángel García Angarita, Álvaro Muñoz Gómez (Máster en Business Intelligence and Data Science. UAH).
+| TFM (Oct. 2018) | "_Soluciones de Inteligencia Artificial para la Asistencia a Personas con Ansiedad y Depresión_". Iván Serrano de Luz, Carmen González-Conde Máiz, Miguel Ángel García Angarita, Álvaro Muñoz Gómez (Máster en Business Intelligence and Data Science. UAH). |
+| --- | --- |
+| TFM (Sep. 2017) | "_Smart Cities and Big Data. Transformación Digital de las Ciudades_". Javier Arranz (Máster Marketing Digital. ESIC). |
+| TFM (Nov. 2016) | "_Big Data. Tecnología Wearable en el Calzado Deportivo_". Javier Castell Velasco y Francisco Fraile Sainz (Máster Marketing Digital. ESIC). |
+| TFG (Feb. 2012) | "_Sistema de Realidad Aumentada para Aplicaciones Android_". Natalia Mercedes Fernández Sánchez (Ingeniero Técnico de Telecomunicación). |
+| TFG (Ene. 2012) | "_Desarrollo de la lógica de un videojuego de plataformas en Android_". Juan Luís Campins Frau (Ingeniero Técnico de Telecomunicación). |
+| TFG (Ene. 2012) | "_Desarrollo de un Motor Gráfico 3D para Videojuegos de Plataformas en Android_". Autor: Cristina Mingueza Balsalobre (Ingeniero Técnico de Telecomunicación). |
+| TFG (Nov. 2011) | "_Diseño y Desarrollo en Java de una herramienta de gobierno y cumplimiento TI basada en COBIT e ITIL_". José Alejandro Parreño Olivas (Ingeniero en Informática). |
+| TFG (Abr. 2011) | "_Detección Automática de Peatones para la Asistencia a la Conducción Utilizando Fusión Sensorial_". Almudena Dominguez Fernández (Ingeniero en Informática). |
+| TFG (Nov. 2009) | "_Sistema de Navegación Local en Entornos Urbanos para un Vehículo Autónomo_". Juan José Rodríguez Castaño (Ingeniero Técnico en Informática de Gestión). |
+| TFG (Sep. 2009) | "_Sistema de Atención Visual para la Detección de Puntos Topológicos de Referencia_". Andrés Duque Fernández (Ingeniero en Informática). |
+| TFG (Jul. 2009) | "_Diseño e Implementación de un Personaje Sintético Inteligente para un Videojuego de Acción en Primera Persona_". Francisco Jesús González López (Ingeniero en Informática). |
+| TFG (Jul. 2009) | "_Creación de un Entorno 3D para Simulación de Tráfico Urbano_". Víctor Romero Pérez (Ingeniero en Informática). |
+| TFG (Jul. 2009) | "_Utilización de la Herramienta Microsoft Robotics Developer Studio en la Competición Imagine Cup '09_". Álvaro Fernández Díaz (Ingeniero en Informática). |
+| TFG (Abr. 2009) | "_Diseño y Simulación de un Robot Asistente para Personas Invidentes_". Paula Berrio Martínez (Ingeniero Técnico de Telecomunicación, esp. Sistemas de Telecom.). |
+| TFG (Abr. 2009) | "_Diseño y Desarrollo de una Aplicación Web para Gestión Docente". Autor: Luís Álvarez Álvarez (Ingeniero Técnico de Telecomunicación, especialidad Telemática). |
+| TFG (Dic. 2007) | "_Sistema de Detección Visual de Obstáculos para un Robot Móvil Autónomo_". Iván Bernabé Sánchez (Ingeniero en Informática). |
 
-TFM (Sep. 2017) "_Smart Cities and Big Data. Transformación Digital de las Ciudades_". Javier Arranz (Máster Marketing Digital. ESIC).
-
-TFM (Nov. 2016) "_Big Data. Tecnología Wearable en el Calzado Deportivo_". Javier Castell Velasco y Francisco Fraile Sainz (Máster Marketing Digital. ESIC).
-
-TFG (Feb. 2012) "_Sistema de Realidad Aumentada para Aplicaciones Android_". Natalia Mercedes Fernández Sánchez (Ingeniero Técnico de Telecomunicación).
-
-TFG (Ene. 2012) "_Desarrollo de la lógica de un videojuego de plataformas en Android_". Juan Luís Campins Frau (Ingeniero Técnico de Telecomunicación).
-
-TFG (Ene. 2012) "_Desarrollo de un Motor Gráfico 3D para Videojuegos de Plataformas en Android_".  
-Autor: Cristina Mingueza Balsalobre (Ingeniero Técnico de Telecomunicación).
-
-TFG (Nov. 2011) "_Diseño y Desarrollo en Java de una herramienta de gobierno y cumplimiento TI basada en COBIT e ITIL_". José Alejandro Parreño Olivas (Ingeniero en Informática).
-
-TFG (Abr. 2011) "_Detección Automática de Peatones para la Asistencia a la Conducción Utilizando Fusión Sensorial_". Almudena Dominguez Fernández (Ingeniero en Informática).
-
-TFG (Nov. 2009) "_Sistema de Navegación Local en Entornos Urbanos para un Vehículo Autónomo_". Juan José Rodríguez Castaño (Ingeniero Técnico en Informática de Gestión).
-
-TFG (Sep. 2009) "_Sistema de Atención Visual para la Detección de Puntos Topológicos de Referencia_". Andrés Duque Fernández (Ingeniero en Informática).
-
-TFG (Jul. 2009) "_Diseño e Implementación de un Personaje Sintético Inteligente para un Videojuego de Acción en Primera Persona_". Francisco Jesús González López (Ingeniero en Informática).
-
-TFG (Jul. 2009) "_Creación de un Entorno 3D para Simulación de Tráfico Urbano_". Víctor Romero Pérez (Ingeniero en Informática).  
-TFG (Jul. 2009) "_Utilización de la Herramienta Microsoft Robotics Developer Studio en la Competición Imagine Cup '09_". Álvaro Fernández Díaz (Ingeniero en Informática).
-
-TFG (Abr. 2009) "_Diseño y Simulación de un Robot Asistente para Personas Invidentes_". Paula Berrio Martínez (Ingeniero Técnico de Telecomunicación, esp. Sistemas de Telecom.).
-
-TFG (Abr. 2009) "_Diseño y Desarrollo de una Aplicación Web para Gestión Docente"_.  
-Autor: Luís Álvarez Álvarez (Ingeniero Técnico de Telecomunicación, especialidad Telemática).
-
-TFG (Dic. 2007) "_Sistema de Detección Visual de Obstáculos para un Robot Móvil Autónomo_". Iván Bernabé Sánchez (Ingeniero en Informática).
-
-## Actividades Corporativas Adicionales
+<h2 id="actividades-corporativas-adicionales">Actividades Corporativas Adicionales</h2>
 
 * * *
 
@@ -329,7 +343,7 @@ TFG (Dic. 2007) "_Sistema de Detección Visual de Obstáculos para un Robot Móv
 | --- | --- |
 | _2008-2010_ | Representante institucional en el programa de promoción en centros de educación secundaria. UC3M (curso 2008/09 - 2009/10). |
 
-## Páginas Web y Servicios Online
+<h2 id="paginas-web-y-servicios-online">Páginas Web y Servicios Online</h2>
 
 * * *
 
@@ -339,87 +353,91 @@ TFG (Dic. 2007) "_Sistema de Detección Visual de Obstáculos para un Robot Móv
 | 2008/14 | Fundador y coordinador de  [MC-Papers Online Database](../index.php?option=com_jombib&Itemid=106&lang=en), a searchable compilation of selected papers on Machine Consciousness |
 | 2010/14 | Fundador y editor de www.ConsScale.com |
 
-## Proyectos Software de Código Libre
+<h2 id="proyectos-software-de-codigo-libre">Proyectos Software de Código Libre</h2>
 
 * * *
 
-| Repositorios de código disponibles en: [https://github.com/raul-arrabales/](https://github.com/raul-arrabales/) |
-| --- |
+| GitHub | Repositorios de código disponibles en: [https://github.com/raul-arrabales/](https://github.com/raul-arrabales/) |
+| --- | --- |
 
-## Formación Adicional
+<h2 id="formacion-adicional">Formación Adicional</h2>
 
-| Evaluating and Debugging Generative AI. DeepLearning.AI (08/2023). |
-| --- |
-| Mastering RLHF with AWS: A Hands-on Workshop on Reinforcement Learning from Human Feedback. DeepLearning.AI (08/2023). |
-| Generative AI with Large Language Models. Coursera (08/2023). |
-| LangChain: Chat with Your Data. DeepLearning.AI (04/2023). |
-| LangChain for LLM Application Development. DeepLearning.AI (07/2023). |
-| Building Systems with the ChatGPT API. DeepLearning.AI (04/2023). |
-| ChatGPT Prompt Engineering for Developers. DeepLearning.AI (04/2023). |
-| Dog Emotion and Cognition. Duke University (03/2023). |
-| What is the Metaverse? Meta (02/2023). |
-| Git and GitHub. Google (03/2023). |
-| Validez: Análisis Factorial y Modelos de Ecuaciones Estructurales. UNIR (04/2020 - 06/2020). |
-| La Voz como Herramienta. Técnica Conectiva. UNED Extensión Universitaria  (03/2020 - 04/2020). |
-| Educación y Universidad, un enfoque interdisciplinar. Reflexiones en torno a la ciencia, ingeniería, humanidades y sociedad. Universidad de Zaragoza (07/2016). |
-| Introducción a la Astronomía. UNED Extensión Universitaria (06/2016). |
-| Health & Safety Training. Accenture Training (08/2015). |
-| Code of Business Ethics. Accenture Training (07/2015). |
-| Avoiding Insider Trading. Accenture Training (07/2015). |
-| Information Security Course. Accenture Training (07/2015). |
-| Social Media Training. Accenture Training (07/2015). |
-| Speaking Analytics Series. IoT Analytics. Accenture Digital (05/2015). |
-| Avoiding corruption. Accenture Training. (04/2015). |
-| Competing fairly: avoiding unfair competition. Accenture Training (04/2015). |
-| Taller Formativo de Creación de Empresas de base Científica y Tecnológica. EOI - Trikarti - Parque UC3M (09/2011 - 01/2012). |
-| R: Una herramienta para el análisis estadístico de datos. UC3M. Madrid (04/2010). |
-| La Propiedad Intelectual y los Derechos de Autor en un Entorno de Publicación Digital. UC3M. Madrid (04/2009). |
-| Recursos de Información Especializada. UC3M Library. Madrid (02/2009). |
-| Herramientas Colaborativas y Distribución de Vídeo por Internet. Audiovisual Services. UC3M. Madrid (07/2008). |
-| A Day at a Conference. Intensive English Course. L\*T\*S and Human Resources UC3M. Madrid (02/2008). |
-| Protección de la propiedad industrial e intelectual. Patentes. Parque Científico UC3M. Madrid (05/2007). |
-| La enseñanza a través de Internet. UC3M. Madrid (03/2007). |
-| Seminario de mejores prácticas docentes. UC3M. Madrid (02/2007). |
-| Jornadas de orientación docente. UC3M. Madrid (02/2007). |
-| Microsoft TV IPTV Edition 1.1. Alcatel University. Alcatel Spain. Madrid (04/2006). |
-| PMI PMP® Certification programme. International Institute for Learning. Madrid (07/2005). |
-| Video on Demand Technology – nCUBE Solutions. nCUBE Headquarters. Portland, OR. (08/2002). |
-| Analysis of Consumer Behaviour. Consumer Motivation and Values. Smart Force Ltd. Dublin. (08/2001). |
-| E-Commerce Strategy for Large Account Extranets. IBM Sales & Support Centre. Dublin. (04/2001). |
-| TCP/IP and Web applications development. Arenal Informática, S.A. Madrid (12/1998). |
-| Business processes of a dot.com business. Universidad Oberta de Cataluña. Madrid (09/1998). |
+| 08/2023 | Evaluating and Debugging Generative AI. DeepLearning.AI |
+| --- | --- |
+| 08/2023 | Mastering RLHF with AWS: A Hands-on Workshop on Reinforcement Learning from Human Feedback. DeepLearning.AI |
+| 08/2023 | Generative AI with Large Language Models. Coursera |
+| 08/2023 | LangChain: Chat with Your Data. DeepLearning.AI |
+| 07/2023 | LangChain for LLM Application Development. DeepLearning.AI |
+| 04/2023 | Building Systems with the ChatGPT API. DeepLearning.AI |
+| 04/2023 | ChatGPT Prompt Engineering for Developers. DeepLearning.AI |
+| 03/2023 | Dog Emotion and Cognition. Duke University |
+| 02/2023 | What is the Metaverse? Meta |
+| 03/2023 | Git and GitHub. Google |
+| 06/2020 | Validity: Factor Analysis & Structural Equation Modeling. UNED |
+| 04/2020 | The Voice as a Tool. Connective Technique. UNED Continuing Education |
+| 07/2016 | Education and University. An interdisciplinary approach. Science, Engineering, Humanities and Society. University of Zaragoza |
+| 06/2016 | Introduction to Astronomy. UNED Continuing Education |
+| 08/2015 | Health & Safety Training. Accenture Training |
+| 07/2015 | Code of Business Ethics. Accenture Training |
+| 07/2015 | Avoiding Insider Trading. Accenture Training |
+| 07/2015 | Information Security Course. Accenture Training |
+| 07/2015 | Social Media Training. Accenture Training |
+| 05/2015 | Speaking Analytics Series. IoT Analytics. Accenture Digital |
+| 04/2015 | Avoiding corruption. Accenture Training |
+| 04/2015 | Competing fairly: avoiding unfair competition. Accenture Training |
+| 01/2012 | Tech-based Entrepreneurship Training Workshops. EOI UC3M |
+| 04/2010 | R: A tool for statistical data analysis. UC3M. |
+| 04/2009 | Intellectual Property and Copyright in Digital Publications. UC3M |
+| 02/2009 | Specialized Information Resources. UC3M |
+| 07/2008 | Collaborative Tools and Internet Video Streaming. Audiovisual Services. UC3M |
+| 02/2008 | Intensive English Course. L\*T\*S and Human Resources UC3M |
+| 05/2007 | Intelectual and Industrial Property Protection. Patents. UC3M |
+| 03/2007 | Teaching with the Internet. UC3M |
+| 02/2007 | Best teaching practices semminar. UC3M |
+| 03/2007 | Teaching Skills Workshop. UC3M |
+| 04/2006 | Microsoft TV IPTV Edition 1.1. Alcatel University. Alcatel |
+| 07/2005 | PMI PMP® Certification programme. International Institute for Learning |
+| 08/2002 | Video on Demand Technology – nCUBE Solutions |
+| 08/2001 | Analysis of Consumer Behaviour. Consumer Motivation and Values. Smart Force |
+| 04/2001 | E-Commerce Strategy for Large Account Extranets. IBM |
+| 12/1998 | TCP/IP and Web applications development. Arenal Informática |
+| 09/1998 | Business processes of a dot.com business. UOC |
 
-* * *
-
-## Competencias Técnicas y Metodológicas
-
-- **IA generativa:** LLMs, prompt engineering, RAG, RLHF, PEFT fine-tuning, LangChain, ReAct
-- **Ventas B2B:** Pipeline generation, MEDDIC, planificación y ejecución de PoV, business value assessment
-- **Ciencia cognitiva:** Psicología cognitiva y clínica, inteligencia artificial, psicobiología
-- **Data science:** Diseños de investigación, PLN, machine learning, deep learning, TensorFlow, KNIME
-- **BI y big data analytics:** Hadoop, Spark, Spark MLlib, Hortonworks, Cloudera
-- **Dirección de proyectos y SCM:** PMP, metodologías ágiles, Lean, Scrum
-- **Desarrollo de negocio:** New business development, estrategia y planes de negocio
-- **E-learning y LMS:** Moodle, Sakai, Blackboard, BB Collaborate, Adobe Connect, MOOCs
-- **Ocio digital:** VoD, IPTV, 3PiP, NPVR, RRSS, gamificación, serious games, computer games
-- **Web y CMS:** Joomla, Drupal, WordPress, MySQL, PHP, JavaScript, HTML
-- **Programación:** Java, Python, C#, R, JavaScript, C++, XML, Robotics Developer Studio
-- **Internetworking y cloud:** TCP/IP, web services, diseño de APIs RESTful, Google Cloud
-- **Sistemas operativos:** Linux, Transit, Solaris, macOS, Windows, CentOS, Android
-
-## Afiliaciones
 
 * * *
 
-[Sanitas (BUPA)](https://corporativo.sanitas.es/). Miembro del Customer Advisory Board D2020 - Innovación disruptiva en el sector salud.  
-[COP / Sección de Psicología Clínica y de la Salud](http://www.copmadrid.org/web/el-colegio/secciones-colegio) - Colegio Oficial de Psicólogos de Madrid: M-32807. 
-[COP](http://www.copmadrid.org/) - Colegio Oficial de Psicólogos de Madrid - Psicólogo Colegiado M-32807. 
-[EuCogIII](http://www.eucognition.org/) - Miembro 3rd European Network for the Advancement of Artificial Cognitive Systems, Interaction and Robotics.  
-[Project Management Institute](http://www.pmi.org). PMI ID: 614238. 
-[IEEE](http://www.ieee-cis.org/) Computational Intelligence Society. Member of the [Task Force on Towards Human-Like Intelligence](http://www.mini.pw.edu.pl/~mandziuk/cis_tf_thli/?page=main).  
-[AAAI](http://www.aaai.org/) - Association for the Advancement of Artificial Intelligence.  
-[EuCogII](http://www.eucognition.org/) - Miembro 2nd European Network for the Advancement of Artificial Cognitive Systems, Interaction and Robotics.  
-[Retecog](http://retecog.net/) - Miembro Red Temática de Ciencias Cognitivas.
+<h2 id="competencias-tecnicas-y-metodologicas">Competencias Técnicas y Metodológicas</h2>
+
+| **IA Generativa** | LLMs, RAG, MCP, AI Agents, Coding Agents | 
+| --- | --- |
+| **Ventas B2B** | Pipeline generation, MEDDIC, PoV planning and execution, business value assessment |
+| **Ciencia Cognitiva** | Cognitive and clinical psychology, artificial intelligence, psychobiology |
+| **Ciencia de Datos** | Research design, NLP, machine learning, deep learning, TensorFlow, KNIME, Python |
+| **BI and Gig Data** | Hadoop, Spark, Spark MLlib, Databricks |
+| **Desarrollo de Negocio** | New business development, strategy, business plan design |
+| **Dirección de Proyectos** | PMP, agile software development, Scrum |
+| **E-learning y LMS** | Moodle, Blackboard, BB Collaborate, Sakai, Adobe Connect, MOOCs |
+| **Medios digitales** | VoD, IPTV, gamification, serious games, computer games |
+| **Desarrollo SW** | ESA software standards, UML |
+| **Programación** | Java, Python, C#, R, C++, RDS, JavaScript, HTML, CSS, SQL, PHP |
+| **Desarrollo Web** | Joomla, Drupal, WordPress, JS, Astro |
+| **Sistemas Operativos** | Linux, Transit, Solaris, Windows, CentOS, Android |
+| **Redes y nube** | TCP/IP, RESTful API design, GCP, Azure |
+
+<h2 id="afiliaciones">Afiliaciones</h2>
+
+* * *
+
+| 2020 | [Sanitas (BUPA)](https://corporativo.sanitas.es/). Miembro de consejo asesor Customer Advisory Board D2020 - Disruptive innovation in health. |
+| --- | --- |
+| 2019-25 | [COP / Sección de Psicología Clínica y de la Salud](http://www.copmadrid.org/web/el-colegio/secciones-colegio) - Colegio de la Psicología de Madrid: M-32807. |
+| 2019-25 | [COP](http://www.copmadrid.org/) - Colegio de la Psicología de Madrid: M-32807. |
+| 2006-12 | [EuCogIII](http://www.eucognition.org/) - Member 3rd European Network for the Advancement of Artificial Cognitive Systems, Interaction and Robotics. |
+| 2006-11 | [Project Management Institute](http://www.pmi.org). PMI ID: 614238. |
+| 2006-12 | [IEEE](http://www.ieee-cis.org/) Computational Intelligence Society. Member of the [Task Force on Towards Human-Like Intelligence](http://www.mini.pw.edu.pl/~mandziuk/cis_tf_thli/?page=main).  |
+| 2006-12 | [AAAI](http://www.aaai.org/) - Association for the Advancement of Artificial Intelligence.  |
+| 2006-12 | [EuCogII](http://www.eucognition.org/) - Member 2nd European Network for the Advancement of Artificial Cognitive Systems, Interaction and Robotics.  |
+| 2010-2018 | [Retecog](http://retecog.net/) - Miembro de la Red Temática de Ciencias Cognitivas. |
 
 <div class="cv-footer-card">
 

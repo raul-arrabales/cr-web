@@ -92,6 +92,7 @@ const mediaHubIntro =
 
     .page-panel.is-cv-page {
       max-width: 72rem;
+      --cv-label-column-width: 10rem;
     }
 
     .page-panel.is-cv-page > h1 {
@@ -160,6 +161,7 @@ const mediaHubIntro =
     }
 
     .page-panel.is-cv-page :global(.cv-meta),
+    .page-panel.is-cv-page :global(.cv-index),
     .page-panel.is-cv-page :global(.cv-links) {
       margin: 1rem 0 0;
       padding: 1rem 1.1rem;
@@ -202,6 +204,50 @@ const mediaHubIntro =
       font-size: 0.98rem;
     }
 
+    .page-panel.is-cv-page :global(.cv-index) {
+      margin-top: 0;
+      margin-bottom: 1.35rem;
+      padding: 0.9rem 1rem;
+    }
+
+    .page-panel.is-cv-page :global(.cv-index-title) {
+      margin: 0 0 0.6rem;
+      color: var(--muted);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .page-panel.is-cv-page :global(.cv-index-grid) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(11.5rem, 1fr));
+      gap: 0.45rem;
+    }
+
+    .page-panel.is-cv-page :global(.cv-index-grid a) {
+      display: block;
+      padding: 0.5rem 0.7rem;
+      border: 1px solid color-mix(in srgb, var(--accent) 16%, var(--line));
+      border-radius: 0.7rem;
+      background: color-mix(in srgb, var(--surface) 94%, white 6%);
+      color: var(--text);
+      font-size: 0.88rem;
+      line-height: 1.25;
+      text-decoration: none;
+      transition:
+        border-color 160ms ease,
+        transform 160ms ease,
+        background-color 160ms ease;
+    }
+
+    .page-panel.is-cv-page :global(.cv-index-grid a:hover),
+    .page-panel.is-cv-page :global(.cv-index-grid a:focus-visible) {
+      border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+      background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+      transform: translateY(-1px);
+    }
+
     .page-panel.is-cv-page :global(h2) {
       margin-top: 2.4rem;
       padding-top: 0.35rem;
@@ -231,8 +277,11 @@ const mediaHubIntro =
 
     .page-panel.is-cv-page :global(td:first-child),
     .page-panel.is-cv-page :global(th:first-child) {
-      width: 10rem;
-      white-space: nowrap;
+      width: var(--cv-label-column-width);
+      min-width: 0;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      hyphens: auto;
       color: var(--muted);
       font-weight: 700;
     }
@@ -249,7 +298,7 @@ const mediaHubIntro =
 
     .page-panel.is-cv-page :global(tr) {
       display: grid;
-      grid-template-columns: minmax(8rem, 10rem) minmax(0, 1fr);
+      grid-template-columns: minmax(0, var(--cv-label-column-width)) minmax(0, 1fr);
       gap: 0;
       border: 1px solid var(--line);
       border-radius: 1.1rem;
