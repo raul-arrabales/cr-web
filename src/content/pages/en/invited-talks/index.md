@@ -8,38 +8,33 @@ date: 2015-12-27
   <p class="talks-note">As of July 2025, all of my public speaking on AI can be found on <a href="https://www.gartner.com/en/conferences">Gartner Conferences</a>.</p>
 </div>
 
-<div class="talks-contents">
-  <p>This page starts with the most recent conference appearances and then moves through the earlier archive by year.</p>
-  <ul>
-    <li><a href="#invited-talks-2025-2026">Invited talks 2025-2026</a></li>
-    <li><a href="#older-invited-talks">Older invited talks</a></li>
-    <li><a href="#invited-talks-2024">Invited talks 2024</a></li>
-    <li><a href="#invited-talks-2023">Invited talks 2023</a></li>
-    <li><a href="#invited-talks-2022">Invited talks 2022</a></li>
-    <li><a href="#invited-talks-2021">Invited talks 2021</a></li>
-    <li><a href="#invited-talks-2020">Invited talks 2020</a></li>
-    <li><a href="#invited-talks-2019">Invited talks 2019</a></li>
-    <li><a href="#invited-talks-2018">Invited talks 2018</a></li>
-    <li><a href="#invited-talks-2017">Invited talks 2017</a></li>
-    <li><a href="#invited-talks-2016">Invited talks 2016</a></li>
-    <li><a href="#invited-talks-2015">Invited talks 2015</a></li>
-    <li><a href="#invited-talks-2014">Invited talks 2014</a></li>
-    <li><a href="#invited-talks-2013">Invited talks 2013</a></li>
-    <li><a href="#invited-talks-2012">Invited talks 2012</a></li>
-    <li><a href="#invited-talks-2011">Invited talks 2011</a></li>
-    <li><a href="#invited-talks-up-to-2010">Invited talks up to 2010</a></li>
-  </ul>
-</div>
-
 ### Invited Talks 2025 - 2026
 
-- Gartner Data & Analytics Summit 2026 conference. London. UK ([Gartner Conferences](https://www.gartner.com/en/conferences/emea/symposium-spain))
+- Gartner **Data & Analytics Summit 2026** conference. **London**. UK ([Gartner Conferences](https://www.gartner.com/en/conferences/emea/symposium-spain))
 
-- Gartner Data & Analytics Summit 2026 conference. Sao Paulo. Brazil ([Gartner Conferences](https://www.gartner.com/en/conferences/emea/symposium-spain))
+- Gartner **Data & Analytics Summit 2026** conference. **Sao Paulo**. Brazil ([Gartner Conferences](https://www.gartner.com/en/conferences/emea/symposium-spain))
 
-- Gartner IT Symposium/Xpo™ 2025 conference. Barcelona. Spain ([Gartner Conferences](https://www.gartner.com/en/conferences/emea/symposium-spain))
+- Gartner **IT Symposium/Xpo™ 2025** conference. **Barcelona**. Spain ([Gartner Conferences](https://www.gartner.com/en/conferences/emea/symposium-spain))
 
 ## Older invited talks:
+
+<div class="talks-contents">
+    <a href="#invited-talks-2024">2024</a> • 
+    <a href="#invited-talks-2023">2023</a> • 
+    <a href="#invited-talks-2022">2022</a> • 
+    <a href="#invited-talks-2021">2021</a> • 
+    <a href="#invited-talks-2020">2020</a> • 
+    <a href="#invited-talks-2019">2019</a> • 
+    <a href="#invited-talks-2018">2018</a> • 
+    <a href="#invited-talks-2017">2017</a> • 
+    <a href="#invited-talks-2016">2016</a> • 
+    <a href="#invited-talks-2015">2015</a> • 
+    <a href="#invited-talks-2014">2014</a> • 
+    <a href="#invited-talks-2013">2013</a> • 
+    <a href="#invited-talks-2012">2012</a> • 
+    <a href="#invited-talks-2011">2011</a> • 
+    <a href="#invited-talks-up-to-2010">Up to 2010</a>
+</div>
 
 ### Invited Talks 2024
 

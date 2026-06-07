@@ -8,22 +8,7 @@ date: 2016-01-03
   <p class="media-note">Desde julio de 2025, todas mis intervenciones públicas sobre Inteligencia Artificial están disponibles en <a href="https://www.gartner.com/en/experts/raul-arrabales">Gartner</a>.</p>
 </div>
 
-<div class="media-contents">
-  <p>La página comienza con los contenidos más recientes y después recorre el archivo por años.</p>
-  <ul>
-    <li><a href="#entrevistas-destacadas">Entrevistas destacadas</a></li>
-    <li><a href="#medios-2018">Medios 2018</a></li>
-    <li><a href="#medios-2017">Medios 2017</a></li>
-    <li><a href="#medios-2016">Medios 2016</a></li>
-    <li><a href="#medios-2015">Medios 2015</a></li>
-    <li><a href="#medios-2014">Medios 2014</a></li>
-    <li><a href="#medios-2012-2013">Medios 2012-2013</a></li>
-    <li><a href="#medios-2011">Medios 2011</a></li>
-    <li><a href="#apariciones-en-los-medios-hasta-2010">Apariciones en los medios hasta 2010</a></li>
-  </ul>
-</div>
-
-## Entrevistas Destacadas
+## Entrevistas destacadas
 
 - "Los Trastornos mentales de las Inteligencias Artificiales con Raúl Arrabales". **_La Tertul-IA_**. Sep. 2024 [\[Spotify\]](https://open.spotify.com/episode/70HDHe0IiC9IT2G5WgaJud).
 
@@ -73,9 +58,20 @@ Raúl Arrabales. La 2 Noticias
 
 </figure>
 
-* * *
+## Apariciones anteriores en medios:
 
-### Medios 2018
+<div class="media-contents">
+    <a href="#medios-2018">2018</a> • 
+    <a href="#medios-2017">2017</a> • 
+    <a href="#medios-2016">2016</a> • 
+    <a href="#medios-2015">2015</a> • 
+    <a href="#medios-2014">2014</a> • 
+    <a href="#medios-2012-2013">2012-2013</a> • 
+    <a href="#medios-2011">2011</a> • 
+    <a href="#apariciones-en-los-medios-hasta-2010">Hasta 2010</a>
+</div>
+
+### Medios 2018
 
 - La Inteligencia Artificial y el Aprendizaje Automático Serán Tendencia . Dic. 2018. \[[Marketing Directo](https://www.marketingdirecto.com/especiales/recopilatorios-2018-tendencias-2019/la-inteligencia-artificial-y-el-machine-learning-seran-tendencia)\].
 
@@ -91,9 +87,7 @@ Raúl Arrabales. La 2 Noticias
 
 - Entrevista a Raúl Arrabales."¿Tienen que tener los robots los mismos derechos y obligaciones que nosotros?".  Ene. 2018. \[[La Información](https://www.lainformacion.com/economia-negocios-y-finanzas/tienen-que-tener-los-robots-los-mismos-derechos-y-obligaciones-que-nosotros/6340964)\].
 
-* * *
-
-### Medios 2017
+### Medios 2017
 
 - Entrevista a Raúl Arrabales."El aprendizaje automático no creará máquinas más inteligentes que nosotros".  Dic. 2017. \[[El País / Retina](https://retina.elpais.com/retina/2017/12/26/innovacion/1514273464_351363.html)\].
 
@@ -117,9 +111,7 @@ Raúl Arrabales. La 2 Noticias
 
 - Raúl Arrabales. "Todo lo que podemos esperar de los asistentes con lenguaje natural". 18 Jan. 2017. Tribuna. \[[El Economista](http://www.eleconomista.es/)\].
 
-* * *
-
-### Medios 2016
+### Medios 2016
 
 - Goldhill, O. "Algunos viven creyendo que no existen... Y esta ilusión podría usarse en el desarrollo de la Inteligencia Artificial". Oct. 2016. \[[Artículo](http://pijamasurf.com/2016/11/esta_extrana_condicion_medica_hace_creer_a_las_personas_que_estan_muertas/)\] \[[Original article at Quartz](http://qz.com/798315/cotards-syndrome-the-rare-medical-condition-in-which-people-believe-theyre-dead-or-dont-exist-could-provide-clues-to-self-awareness-for-ai-experts-building-robots/)\].
 
@@ -137,9 +129,7 @@ Raúl Arrabales. La 2 Noticias
 
 - Computación Cognitiva: La Nueva Revolución del Big Data. Ene 2016. [El Confidencial](http://blogs.elconfidencial.com/espana/tribuna/2016-01-25/computacion-cognitiva-la-nueva-revolucion-del-big-data_1140814/).
 
-* * *
-
-### Medios 2015
+### Medios 2015
 
 - Entrevista a Raúl Arrabales en OMExpo 2015. "The Chief Data Officer". Jun 2015. \[[Youtube](https://youtu.be/M-NjoDiExLA)\].
 
@@ -161,9 +151,7 @@ Entrevista con Raúl Arrabales en OMExpo 2015
 
 - Entrevista a Raúl Arrabales sobre Big Data. Marketingdirecto.com (27/02/2015). \[[Marketingdirecto.com](http://www.marketingdirecto.com/actualidad/digital/raul-arrabales-altran-las-nuevas-tecnologias-de-big-data-permiten-tomar-decisiones-en-tiempo-real/)\].
 
-* * *
-
-### Medios 2014
+### Medios 2014
 
 - "La Singladura". Entrevista a Raúl Arrabales". Radio Intereconomía (20/06/2014). \[[Podcast](http://www.gaceta.es/playlist-la-singladura)\] \[[Audio](http://www.radiointereconomia.com/la-singladura-entrevista-con-raul-arrabales-director-academico-en-mbit-school-20062014/)\].
 
@@ -191,9 +179,7 @@ Desafío Educativo: Raúl Arrabales. Fundación Telefónica
 
 - "Prepárate para trabajar en las profesiones con más futuro" (07/02/2014). [Expansión](http://www.expansion.com/2014/02/07/emprendedores-empleo/mercado-laboral/1391797710.html).
 
-* * *
-
-### Medios 2012-2013
+### Medios 2012-2013
 
 - Simuloidut maailmat. Sähkö & Tele (electricity and telecom).Findland. no. 2. 2013.
 
@@ -227,7 +213,7 @@ Livingroom Festival Madrid 2012
 
 - "50 Consejos para Emprender" (Feb. 2012). Portada [Revista Emprendedores No. 173](http://www.emprendedores.es/crear_una_empresa/informacion/emprender/emprender2).
 
-### Medios 2011
+### Medios 2011
 
 - "Conciencia Artificial en la UC3M" (30 Nov. 2011). [Madrid Educación](http://madrideducacion.es/blog/2011/11/conciencia-artificial-en-la-uc3m/).
 

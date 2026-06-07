@@ -8,43 +8,43 @@ date: 2016-01-03
   <p class="talks-note">Desde julio de 2025, todas mis intervenciones públicas sobre inteligencia artificial están disponibles en <a href="https://www.gartner.com/en/conferences">Gartner Conferences</a>.</p>
 </div>
 
-<div class="talks-contents">
-  <p>La página comienza con las apariciones más recientes y después recorre el archivo histórico por años.</p>
-  <ul>
-    <li><a href="#conferencias-2025-2026">Conferencias 2025-2026</a></li>
-    <li><a href="#contenido-previo">Contenido previo</a></li>
-    <li><a href="#2023-24">2023-24</a></li>
-    <li><a href="#2022">2022</a></li>
-    <li><a href="#2021">2021</a></li>
-    <li><a href="#2020">2020</a></li>
-    <li><a href="#2019">2019</a></li>
-    <li><a href="#2018">2018</a></li>
-    <li><a href="#2017">2017</a></li>
-    <li><a href="#2016">2016</a></li>
-    <li><a href="#2015">2015</a></li>
-    <li><a href="#2014">2014</a></li>
-    <li><a href="#2013">2013</a></li>
-    <li><a href="#2012">2012</a></li>
-    <li><a href="#2011">2011</a></li>
-    <li><a href="#ponencias-hasta-2010">Ponencias hasta 2010</a></li>
-  </ul>
-</div>
-
 ### Conferencias 2025 - 2026
 
-- Gartner Data & Analytics Summit 2026 conference. London. UK ([Gartner Conferences](https://www.gartner.com/en/conferences/emea/symposium-spain))
+- Gartner **Data & Analytics Summit 2026** conference. **London**. UK ([Gartner Conferences](https://www.gartner.com/en/conferences/emea/symposium-spain))
 
-- Gartner Data & Analytics Summit 2026 conference. Sao Paulo. Brazil ([Gartner Conferences](https://www.gartner.com/en/conferences/emea/symposium-spain))
+- Gartner **Data & Analytics Summit 2026** conference. **Sao Paulo**. Brazil ([Gartner Conferences](https://www.gartner.com/en/conferences/emea/symposium-spain))
 
-- Gartner IT Symposium/Xpo™ 2025 conference. Barcelona. Spain ([Gartner Conferences](https://www.gartner.com/en/conferences/emea/symposium-spain))
+- Gartner **IT Symposium/Xpo™ 2025** conference. **Barcelona**. Spain ([Gartner Conferences](https://www.gartner.com/en/conferences/emea/symposium-spain))
 
-## Contenido previo:
+## Conferencias anteriores:
 
-### 2023-24
+<div class="talks-contents">
+    <a href="#conferencias-2024">2024</a> • 
+    <a href="#conferencias-2023">2023</a> • 
+    <a href="#conferencias-2022">2022</a> • 
+    <a href="#conferencias-2021">2021</a> • 
+    <a href="#conferencias-2020">2020</a> • 
+    <a href="#conferencias-2019">2019</a> • 
+    <a href="#conferencias-2018">2018</a> • 
+    <a href="#conferencias-2017">2017</a> • 
+    <a href="#conferencias-2016">2016</a> • 
+    <a href="#conferencias-2015">2015</a> • 
+    <a href="#conferencias-2014">2014</a> • 
+    <a href="#conferencias-2013">2013</a> • 
+    <a href="#conferencias-2012">2012</a> • 
+    <a href="#conferencias-2011">2011</a> • 
+    <a href="#conferencias-hasta-2010">Hasta 2010</a>
+</div>
+
+### Conferencias 2024
 
 - AI and Emotions (_**Emociones e Inteligencia Artificial**_). BASF Global AI Enablement Program for all employees.
 
 - Introduction to AI Agents (_**Introducción a los Agentes de IA**_). BASF internal conference for senior executives.
+
+- **_Taller Práctico de IA aplicada a la Psicología_**. Universidad Europea y Psicobótica. Postgrados de Psicología. Mar. 2024. [Universidad Europea](https://universidadeuropea.com/).
+
+### Conferencias 2023
 
 - **_Cómo la Inteligencia Artificial está impactando en la Psicología del Trabajo y de las Organizaciones_**. COLPSIC - Colegio Colombiano de Psicólogos. Bogotá. Colombia. Nov. 2023. [COLPSIC](https://www.colpsic.org.co/).
 
@@ -54,11 +54,7 @@ date: 2016-01-03
 
 - **_¿Por qué necesitamos traductores de datos?_**. SegurCaixa Adeslas. Advanced Analytics. Nov. 2023. [SegurCaixa Adeslas](https://www.segurcaixaadeslas.es/).
 
-- **_Taller Práctico de IA aplicada a la Psicología_**. Universidad Europea y Psicobótica. Postgrados de Psicología. Mar. 2024. [Universidad Europea](https://universidadeuropea.com/).
-
-* * *
-
-### 2022
+### Conferencias 2022
 
 - "**_El Mundo Replicado_**". Desafíos para un nuevo modelo de gestión sanitaria II. IE University, Hospital La Paz, UCB. May. 2022. [UCB](https://www.ucb-iberia.com/).
 
@@ -66,7 +62,7 @@ date: 2016-01-03
 
 * * *
 
-### 2021
+### Conferencias 2021
 
 - "**_Inteligencia Artificial para la mejora del bienestar psicológico_**". HEM 2021. Hoy Es Marketing. Nov. 2021. [Conferencia HEM](https://www.hoyesmarketing.com/).
 
@@ -76,7 +72,7 @@ date: 2016-01-03
 
 * * *
 
-### 2020
+### Conferencias 2020
 
 - "_**How Business is shaped by Artificial Intelligence**_". International Exchange Alumni Meeting. Oct. 2020. ESIC.
 
@@ -85,8 +81,19 @@ date: 2016-01-03
 - "_**La Inteligencia Artificial aplicada al Bienestar Psicológico**_". Mapfre Innovación. Jun. 2020.
 
 - "_**Descubre el potencial del Big Data y la Ciencia de Datos**_". ESIC Open Day. Jun. 2020. [ESIC](https://www.esic.edu/eventos/open-day-descubre-el-potencial-del-big-data-y-la-ciencia-de-datos).
-    <img src="/legacy-images/images/IAB_inspirational_2020.jpg" alt="IAB\_inspirational\_2020" />
+
     
+<figure>
+
+<img src="/legacy-images/images/IAB_inspirational_2020.jpg" alt="" />
+
+<figcaption>
+
+IAM Inspirational - 2020
+
+</figcaption>
+
+</figure>
 
 - "Café para Todos. Y tú ¿qué haces? **_La Responsabilidad Emocional_**". Instituto Europeo de Inteligencia Emocional. Abril 2020. [IEIE](https://ie-inteligenciaemocional.com/event/y-tu-que-haces/).
 
@@ -100,7 +107,7 @@ date: 2016-01-03
 
 * * *
 
-### 2019
+### Conferencias 2019
 
 - "**_Inteligencia Artificial. Promesas, realidades, riesgos y oportunidades_**". Sanitas Meetup IA. Dic. 2019. [SANITAS](https://www.sanitas.es/).
 
@@ -143,7 +150,7 @@ Big Things - Data & AI Conference - 2019
 
 * * *
 
-### 2018
+### Conferencias 2018
 
 - "**_IA en Negocios: Una Visión a Corto Plazo_**". Digital & Beers Madrid. S|NGULAR. Madrid. Dic. 2018. [Digital&Beers](https://www.meetup.com/es-ES/DigitalBeersMadrid/events/256466165/).
 
@@ -184,7 +191,7 @@ APD Barcelona 2018
 
 * * *
 
-### 2017
+### Conferencias 2017
 
 - "**_Los límites de la Inteligencia Artificial_**". Seminario Retos Éticos del Futuro. Universidad CEU San Pablo. Facultad de Humanidades y CC de la Comunicación. Dec. 2017. [CEU](http://www.uspceu.com/).
 
@@ -254,7 +261,7 @@ Big Data Analytics Summit Perú 2017
 
 * * *
 
-### 2016
+### Conferencias 2016
 
 - EBE 2016. "**_Dime que me quieres. De los Bots a la Internet Cognitiva_**". Sevilla. Nov. 2016. \[[EBE 2016](http://eventoblog.com/sessions/dime-me-quieres-los-bots-la-internet-cognitiva/)\].
 
@@ -297,7 +304,7 @@ Talk at Machine Learning Spain - Google Campus
 
 * * *
 
-### 2015
+### Conferencias 2015
 
 - **_Cognitive Computing._** Máster en Investigación e Innovación en las TIC. UAM - Universidad Autónoma de Madrid. Dic. 2015. \[[UAM](http://www.uam.es/ss/Satellite/EscuelaPolitecnica/es/home.htm)\].
 
@@ -347,7 +354,7 @@ Lifelong Learning Workshop at ICEMD. Big Data & Business Analytics. 2015.
 
 * * *
 
-### 2014
+### Conferencias 2014
 
 - Executive MBI "_**Big Data Open Source Ecosystems and Service Delivery Models**_". MBIT School. Madrid. Oct. 2014.
 
@@ -380,7 +387,7 @@ Mind and Cognition Workshop: current approaches. Teruel Summer University. 2014\
 
 * * *
 
-### 2013
+### Conferencias 2013
 
 - Universidad de Zaragoza. Dpto Informática. Sistemas Cognitivos. "**_Introducción a los Procesos Psicológicos Básicos y su Aplicación en Sistemas Cognitivos Artificiales_**". May 2013.
 
@@ -390,7 +397,7 @@ Mind and Cognition Workshop: current approaches. Teruel Summer University. 2014\
 
 * * *
 
-### 2012
+### Conferencias 2012
 
 - Livingroom Festival Madrid. "_**Sólo porque lo sientas, no quiere decir que exista**_. Diálogos desde un Universo Paralelo". Dec. 2012.
 
@@ -410,7 +417,7 @@ Mind and Cognition Workshop: current approaches. Teruel Summer University. 2014\
 
 * * *
 
-### 2011
+### Conferencias 2011
 
 - Coloquio de Divulgación Científica La BIOthèque. "**_¿Quieres vivir para siempre? Transfiere tu mente a un ordenador_**". Dec 2011. \[[Link](http://labiotheque.blogspot.com/2011/12/poster-definitivo-del-coloquio.html)\].
 
@@ -447,7 +454,7 @@ Inteligencia Artificial: ¿ciencia ficción o realidad? Instituto Cervantes. 201
 
 * * *
 
-### Ponencias hasta 2010
+### Conferencias hasta 2010
 
 - X Semana de la Ciencia. UC3M. "**_Midiendo el Nivel de Conciencia en Humanos, Animales y Máquinas_**". Nov. 2010.
 
