@@ -143,6 +143,11 @@ function addParagraphClass(node, className) {
 export default function remarkLegacyContentMedia() {
   return function transformer(tree) {
     for (const node of tree.children) {
+      if (isHtmlImage(node)) {
+        Object.assign(node, createFigureHtmlNode(node));
+        continue;
+      }
+
       if (node.type !== "paragraph") {
         continue;
       }

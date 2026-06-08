@@ -1,0 +1,234 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Conscious Robots" [ref=e5] [cursor=pointer]:
+        - /url: /en/
+        - generic [ref=e6]: Conscious Robots
+      - generic [ref=e7]:
+        - navigation "Main menu" [ref=e8]:
+          - list [ref=e9]:
+            - listitem [ref=e10]:
+              - link "Blog" [ref=e11] [cursor=pointer]:
+                - /url: /en/blog/
+            - listitem [ref=e12]:
+              - link "Books" [ref=e13] [cursor=pointer]:
+                - /url: /en/pages/publications/
+            - listitem [ref=e14]:
+              - link "Media" [ref=e15] [cursor=pointer]:
+                - /url: /en/pages/media-presence/
+            - listitem [ref=e16]:
+              - link "CV" [ref=e17] [cursor=pointer]:
+                - /url: /en/pages/cv-english/
+        - generic [ref=e18]:
+          - button "Switch to dark mode" [ref=e19] [cursor=pointer]:
+            - img [ref=e20]
+          - navigation "Language selector" [ref=e23]:
+            - generic [ref=e24]: EN
+            - link "ES" [ref=e25] [cursor=pointer]:
+              - /url: /es/
+  - main [ref=e26]:
+    - article [ref=e27]:
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: September 29, 2020
+        - generic "Post taxonomy" [ref=e30]:
+          - link "artificial-intelligence" [ref=e31] [cursor=pointer]:
+            - /url: /en/blog/categories/artificial-intelligence/
+            - generic [ref=e32]: artificial-intelligence
+          - link "games" [ref=e33] [cursor=pointer]:
+            - /url: /en/blog/categories/games/
+            - generic [ref=e34]: games
+          - link "machine-consciousness" [ref=e35] [cursor=pointer]:
+            - /url: /en/blog/categories/machine-consciousness/
+            - generic [ref=e36]: machine-consciousness
+          - link "botprize" [ref=e37] [cursor=pointer]:
+            - /url: /en/search/?tag=botprize
+            - generic [ref=e38]: botprize
+          - link "ccbot" [ref=e39] [cursor=pointer]:
+            - /url: /en/search/?tag=ccbot
+            - generic [ref=e40]: ccbot
+          - link "ccbot2" [ref=e41] [cursor=pointer]:
+            - /url: /en/search/?tag=ccbot2
+            - generic [ref=e42]: ccbot2
+          - link "cera" [ref=e43] [cursor=pointer]:
+            - /url: /en/search/?tag=cera
+            - generic [ref=e44]: cera
+          - link "cranium" [ref=e45] [cursor=pointer]:
+            - /url: /en/search/?tag=cranium
+            - generic [ref=e46]: cranium
+          - link "turing-test" [ref=e47] [cursor=pointer]:
+            - /url: /en/search/?tag=turing-test
+            - generic [ref=e48]: turing-test
+      - heading "The awakening of conscious bots" [level=1] [ref=e49]
+      - heading "Conscious-Robots team, winner of the 2K BotPrize 2010 contest, explains how their bot is designed." [level=2] [ref=e50]
+      - heading "Originally published at AIGameDev (2010)" [level=4] [ref=e51]
+      - paragraph [ref=e52]: Most of current efforts in the development of believable bots – bots that behave like human players – are based on classical AI techniques. These techniques are based on relatively old principles, which nevertheless are being progressively improved or wisely adapted increasing their performance in order to satisfy new game requirements. Taking a different perspective, the approach that we adopted for the design of our bot (CC-Bot2) was rather opposed to this trend. Specifically, we implemented a computational model of the Global Workspace Theory (Baars, 1988), a kind of shared memory space where different agents – that we call specialized processors - can collaborate and compete with each other dynamically (see Figure 1). We believe that applying new techniques from the field of Machine Consciousness might also provide good results, even in the short term.
+      - paragraph [ref=e53]: In this article we briefly describe the design of CC-Bot2, the winning Unreal Tournament bot developed by the Conscious-Robots team for the third edition of the 2K BotPrize. The BotPrize competition is a version of the Turing test adapted to the domain of FPS video games (Hingston, 2009). The ultimate goal of the contest is to develop a computer game bot able to behave the same way humans do. Furthermore, a bot would be considered to pass the Turing test (in this particular domain) if it is undistinguishable from human players.
+      - heading "CERA-CRANIUM Cognitive Architecture and CC-Bot2" [level=2] [ref=e54]
+      - paragraph [ref=e55]: As a result of our research line on Machine Consciousness we have developed a new cognitive architecture called CERA-CRANIUM (Arrabales et al. 2009), which has been the basis for the development of CC-Bot2 (CERA-CRANIUM Bot 2). CERA-CRANIUM is a cognitive architecture, designed to control autonomous agents, like physical mobile robots or Unreal Tournament bots, and based on a computational model of consciousness. The main inspiration of CERACRANIUM is the Global Workspace Theory (Baars, 1988). CC-Bot2 is a Java implementation of the CERA-CRANIUM architecture specifically developed for the 2K BotPrize competition.
+      - paragraph [ref=e56]: "CERA-CRANIUM consists of two main components (see Figure 2):"
+      - list [ref=e57]:
+        - listitem [ref=e58]: CERA, a control architecture structured in layers, and
+        - listitem [ref=e59]: CRANIUM, a tool for the creation and management of high amounts of parallel processes in shared workspaces.
+      - paragraph [ref=e60]: As we explain below, CERA uses the services provided by CRANIUM with the aim of generating a highly dynamic and adaptable perception processes orchestrated by a computational model of consciousness.
+      - paragraph [ref=e61]
+      - paragraph [ref=e62]
+      - paragraph [ref=e63]:
+        - strong [ref=e64]: Basically, in terms of controlling a bot, CERA-CRANIUM provides a mechanism to synchronize and orchestrate a number of different specialized processors that run concurrently.
+      - paragraph [ref=e65]: These processors can be of many kinds, usually they are detectors for given sensory conditions, like the “player approaching detector” processor, or they are behavior generators, like the “run away from that bully” processor.
+      - paragraph [ref=e66]
+      - heading "CERA" [level=2] [ref=e67]
+      - paragraph [ref=e68]: "CERA is a layered cognitive architecture designed to implement a flexible control system for autonomous agents. Current definition of CERA is structured in four layers (see Figure 3): sensory-motor services layer, physical layer, mission-specific layer, and core layer. As in classical robot subsumption architectures, higher layers are assigned more abstract meaning; however, the definition of layers in CERA is not directly associated to specific behaviors. Instead, they manage any specialized processors that operate on the sorts of representations that are handled at that particular level, i.e. physical layer deals with data representations closely related to raw sensory data, while mission layer deals with more high-level task-oriented representations."
+      - paragraph [ref=e69]:
+        - strong [ref=e70]: CERA sensory-motor services layer
+        - text: comprises a set of interfacing and communication services which implement the required access to both sensor readings and actuator commands. These services provide the physical layer with a uniform access interface to agent’s physical (or simulated) machinery. In the case of CC-Bot2, the CERA sensory-motor layer is basically an adaptation layer to Pogamut 3.
+      - paragraph [ref=e71]:
+        - strong [ref=e72]: CERA physical layer
+        - text: encloses agent’s sensors and actuators low-level representations. Additionally, according to the nature of acquired sensory data, the physical layer performs data preparation and preprocessing. Analogous mechanisms are implemented at this level with actuator commands, making sure for instance that command parameters are within safety limits. The representation we have used for sensory data and commands in CC-Bot2 physical layer is, in most of the cases, actually that of Pogamut 3, like “player appeared in my field of view” or “I am being damaged”.
+      - paragraph [ref=e73]:
+        - strong [ref=e74]: CERA mission-specific layer
+        - text: produces and manages elaborated sensory-motor content related to both agent’s vital behaviors and particular missions (in the case of a deathmatch game the mission is relatively clear and simple). At this stage single contents acquired and preprocessed by the physical layer are combined into more complex pieces of content, which have some specific meaning related to agent’s goals (like “this player is my enemy” or “enemy x is attacking me”). The mission-specific layer can be modified independently of the other CERA layers according to assigned tasks and agent’s needs for functional integrity. CERA core layer, the highest control level in CERA, encloses a set of modules that perform higher cognitive functions. The definition and interaction between these modules can be adjusted in order to implement a particular cognitive model. In the case of CC-Bot2, the core layer contains the code for the attention mechanism (many other modules could be added in the future). The main objective of these core modules is to regulate the way CERA lower layers work (the way specialized processors run and interact with each other).
+      - paragraph [ref=e75]
+      - paragraph [ref=e76]
+      - paragraph [ref=e77]: "Physical and mission-specific layers are characterized by the inspiration on cognitive theories of consciousness, where large sets of parallel processes compete and collaborate in a shared workspace in the search of a global solution. Actually, a CERA controlled agent is endowed with two hierarchically arranged workspaces which operate in coordination with the aim to find two global and interconnected solutions: one is related to perception and the other is related to action. In short, CERA has to provide an answer for the following questions continuously:"
+      - list [ref=e78]:
+        - listitem [ref=e79]: What must be the next content of agent’s conscious perception?
+        - listitem [ref=e80]: What must be the next action to execute?
+      - paragraph [ref=e81]:
+        - text: Typical agent control architectures are focused on the second question while neglecting the first one. Here we argue that a
+        - strong [ref=e82]: proper mechanism to answer the first question is required in order to successfully answer the second question in a human-like fashion
+        - text: . Anyhow, both questions have to be answered taking into account safety operation criteria and the mission assigned to the agent. Consequently, CERA is expected to find optimal answers that will eventually lead to human-like behavior. As explained below, CRANIUM is used for the implementation of the workspaces that fulfill the needs established by the CERA architecture.
+      - paragraph [ref=e83]
+      - heading "CRANIUM" [level=2] [ref=e84]
+      - paragraph [ref=e85]: CRANIUM provides a subsystem in which CERA can execute many asynchronous but coordinated concurrent processes. In the CC-Bot2 implementation (Java), CRANIUM is based on a task dispatcher that dynamically creates a new execution thread for each active processor. A CRANIUM workspace can be seen as a particular implementation of a pandemonium, where daemons compete with each other for activation. Each of these daemons or specialized processors is designed to perform a specific function on certain types of data. At any given time the level of activation of a particular processor is calculated based on a heuristic estimation of how much it can contribute to the global solution currently sought in the workspace. The concrete parameters used for this estimation are established by the CERA core layer. As a general rule, CRANIUM workspace operation is constantly modulated by commands sent from the CERA core layer.
+      - paragraph [ref=e86]: In CC-Bot2 we use two separated but connected CRANIUM workspaces integrated within the CERA architecture. The lower level workspace is located in the CERA physical layer, where specialized processors are fed with data coming from CERA sensor services (Pogamut). The second workspace, located in the CERA mission-specific layer, is populated with higher-level specialized processors that take as input either the information coming from the physical layer or information produced in the workspace itself (see Figure 4). The perceptual information flow is organized in packages called single percepts, complex percepts, and mission percepts.
+      - paragraph [ref=e87]
+      - paragraph [ref=e88]
+      - paragraph [ref=e89]: In addition to the bottom-up flow involving perception processes, a top-down flow takes place simultaneously in the same workspaces in order to generate bot’s actions. Physical layer and mission-specific layer workspaces include single actions (directly translated into Pogamut commands), simple behaviors, and mission behaviors (see Figure 5).
+      - paragraph [ref=e90]: One of the key differences between CERA-CRANIUM bottom-up and top-down flows is that while percepts are being iteratively composed in order to obtain more complex and meaningful representations, high level behaviors are iteratively decomposed until a sequence of atomic actions is obtained. Top-down flow could be considered, to some extent, to be equivalent to behavior trees, in the sense that behaviors are associated to given contexts or scopes. However, the way CERA-CRANIUM selects the next action is quite different, as current active context is periodically updated by the CERA Core layer. At the same time, the active context is calculated based on input from the sensory bottom-up flow. Having an active context mechanism implies that out of the set of possible actions that could be potentially executed; only the one which is located closer to the active context will be selected for execution. In the next subsection, we describe how the behavior of the agent is generated using this approach.
+      - paragraph [ref=e91]
+      - heading "Behavior Generation" [level=3] [ref=e92]
+      - paragraph [ref=e93]: Having a shared workspace, where sensory and motor flows converge, facilitates the implementation of the multiple feedback loops required for adapted and effective behavior. The winning simple behavior is continuously confronted to new options generated in the physical layer, thus providing a mechanism for interrupting behaviors in progress as soon as they are no longer considered the best option. In general terms, the activation or inhibition of perception and behavior generation processes is modulated by CERA according to the implemented cognitive model of consciousness. In other words, behaviors are assigned an activation level according to their distance to the active context in terms of the available sensorimotor space. Only the most active action is the one executed at the end of each “cognitive cycle”.
+      - paragraph [ref=e94]: "Distance to a given context is calculated based on sensory criteria like relative location and time. For instance, if we have two actions: Action A: “shoot to the left” and Action B: “shoot to the right”, and an active context pointing to the left side of the bot (because there is an enemy there), action A will be most likely selected for execution, and action B will be either discarded or kept in the execution queue (while it is not too old)."
+      - paragraph [ref=e95]: Figure 6 shows a schematic representation of typical feedback loops produced in the CERA architecture. These loops are closed when the consequences of actions are perceived by the bot, triggering adaptive responses at different levels.
+      - paragraph [ref=e96]: Curve (a) in Figure 6 represents the feedback loop produced when an instinctive reflex is triggered. Figure 6 curve (b) corresponds to a situation in which a mission-specific behavior is being performed unconsciously. Finally, curve (c) symbolizes the higher level control loop, in which a task is being performed consciously. These three types of control loops are not mutually exclusive; in fact, same percepts will typically contribute to simultaneous loops taking place at different levels.
+      - paragraph [ref=e97]: "CRANIUM workspaces are not passive short-term memory mechanisms. Instead, their operation is affected by a number of workspace parameters that influence the way the pandemonium works. These parameters are set by commands sent to physical and missionspecific layers from the CERA core layer. In other words, while CRANIUM provides the mechanism for specialized functions to be combined and thus generate meaningful representations, CERA establishes a hierarchical structure and modulates the competition and collaboration processes according to the model of consciousness specified in the core layer. This mechanism closes the feedback loop between the core layer and the rest of the architecture: core layer input (perception) is shaped by its own output (workspace modulation), which in turn determines what is perceived."
+      - heading "The CC-Bot2 Implementation" [level=3] [ref=e98]
+      - paragraph [ref=e99]: In the following list some of the main specialized processors implemented in CC-Bot2 are briefly described (note that a number of processors performing the very same task but using different techniques might coexist in the same workspace).
+      - paragraph [ref=e100]: "Each of the following list items specifiy: (1) Name of the specialized Processor, (2) CERA Layer in which it is located, (3) Assigned task."
+      - separator [ref=e101]
+      - paragraph [ref=e102]:
+        - emphasis [ref=e103]:
+          - strong [ref=e104]: AttackDetector
+        - text: (Physical) To detect conditions compatible with enemy attacks (health level decreasing,enemy fire, etc.).
+      - paragraph [ref=e105]:
+        - strong [ref=e106]:
+          - emphasis [ref=e107]: AvoidObstacle
+        - text: (Physical) To generate a simple avoiding obstacle behavior.
+      - paragraph [ref=e108]:
+        - strong [ref=e109]:
+          - emphasis [ref=e110]: BackupReflex
+        - text: (Physical) To generate a simple backup movement in response to an unexpected collision.
+      - paragraph [ref=e111]:
+        - strong [ref=e112]:
+          - emphasis [ref=e113]: ChasePlayer
+        - text: (Mission) To generate a complex chasing player behavior.
+      - paragraph [ref=e114]:
+        - strong [ref=e115]:
+          - emphasis [ref=e116]: EnemyDetector
+        - text: (Physical) To detect the presence of an enemy based on given conditions, like previous detection of an attack and presence of other players using their weapons.
+      - paragraph [ref=e117]:
+        - strong [ref=e118]:
+          - emphasis [ref=e119]: GazeGenerator
+        - text: (Physical) To generate a simple gaze movement directed towards the focus of attention.
+      - paragraph [ref=e120]:
+        - strong [ref=e121]:
+          - emphasis [ref=e122]: JumpObstacle
+        - text: (Physical) To generate a simple jump movement in order to avoid an obstacle.
+      - paragraph [ref=e123]:
+        - strong [ref=e124]:
+          - emphasis [ref=e125]: KeepEnemiesFar
+        - text: (Mission) To generate a complex run away movement in order to maximize the distance to detected enemies.
+      - paragraph [ref=e126]:
+        - strong [ref=e127]:
+          - emphasis [ref=e128]: LocationReached
+        - text: (Physical) To detect if bot has reached the spatial position marked as goal location.
+      - paragraph [ref=e129]:
+        - strong [ref=e130]:
+          - emphasis [ref=e131]: MoveLooking
+        - text: (Physical) To generate a complex movement combining gaze and locomotion.
+      - paragraph [ref=e132]:
+        - strong [ref=e133]:
+          - emphasis [ref=e134]: MoveToPoint
+        - text: (Physical) To generate a simple movement towards a given location.
+      - paragraph [ref=e135]:
+        - strong [ref=e136]:
+          - emphasis [ref=e137]: ObstacleDetector
+        - text: (Physical) To detect the presence of an obstacle (which might prevent the bot to follow her path).
+      - paragraph [ref=e138]:
+        - strong [ref=e139]:
+          - emphasis [ref=e140]: RandomNavigation
+        - text: (Physical) To generate a complex random wandering movement.
+      - paragraph [ref=e141]:
+        - strong [ref=e142]:
+          - emphasis [ref=e143]: RunAwayFromPlayers
+        - text: (Mission) To generate a complex movement to run away from certain players.
+      - paragraph [ref=e144]:
+        - strong [ref=e145]:
+          - emphasis [ref=e146]: SelectBestWeapon
+        - text: (Mission) To select the best weapon currently available.
+      - paragraph [ref=e147]:
+        - strong [ref=e148]:
+          - emphasis [ref=e149]: SelectEnemyToShoot
+        - text: (Mission) To decide who is the best enemy to attack to.
+      - separator [ref=e150]
+      - paragraph [ref=e151]: In our current implementation, specialized processors are created programmatically (see sample code below), and they are also assigned dynamically to their corresponding CERA layer. It is our intention to create a more elegant mechanism for the programmer to define the processors layout (configuration text file or even a GUI).
+      - paragraph [ref=e152]: "[…] // ** ATTACK DETECTOR * // Generates a BeingDamaged percept every time the health level decreases _CeraPhysical.RegisterProcessor( new AttackDetector() ); // ** OBSTACLE DETECTOR ** // Generates a Obstacle single percept if there is any obstacle in the // direction of the movement _CeraPhysical.RegisterProcessor( new ObstacleDetector() ); // ** EMEMY DETECTOR ** // Generates a Enemy Attacking complex percept every time the bot is // being damaged and possible culprit/s are detected. _CeraMission.RegisterProcessor( new EnemyDetector() ); […]"
+      - heading "Conscious-Robots Bot in action" [level=2] [ref=e153]
+      - paragraph [ref=e154]: "The following is an excerpt of a typical flow of percepts that ultimately generates the bot’s behavior (see Figure 7):"
+      - list [ref=e155]:
+        - listitem [ref=e156]: The processor EnemyDetector detects a new enemy, and creates a new “enemy detected” percept.
+        - listitem [ref=e157]: The “enemy detected” percept is in turn received by the SelecEnemyToShoot processor, which is in charge of selecting the enemy to shoot. When an enemy is selected, the corresponding fire action is generated.
+        - listitem [ref=e158]: Two processors receive the fire action, one in charge of aiming at the enemy and shoot, and other that creates new movement actions to avoid enemy fire.
+        - listitem [ref=e159]: As the new movement actions have more priority than actions triggered by other processors, like the RandomMove processor, these actions are more likely to be executed.
+      - paragraph [ref=e160]: This is a very simple example that how the bot works. However, it is usual to have much more complex scenarios in which several enemies are attacking the bot simultaneously, and the selected target might be any of them. In these cases, the attention mechanism plays a key role. CERA-CRANIUM implements an attention mechanism based on active contexts. Percepts that are closer to currently active context are more likely to be selected and further processed. This helps maintaining more coherent sequences of actions.
+      - paragraph [ref=e161]:
+        - text: "The following video shows the bot in action:"
+        - link "https://www.youtube.com/watch?v=9pmYPROqoxM" [ref=e162] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=9pmYPROqoxM
+      - paragraph [ref=e163]
+      - heading "Future Work" [level=2] [ref=e164]
+      - paragraph [ref=e165]: CC-Bot2 is actually a partial implementation of the CERA-CRANIUM model. Our Machine Consciousness model includes much more cognitive functionality that is unimplemented so far. It is our aim to enhance the current implementation with new features like a model of emotions, episodic memory, different types of learning mechanisms, and even a model of the self. After a hard work, we expect CC-Bot3 to be a much more human-like bot. We also plan to use the same design for other games like TORCS or Mario.
+      - paragraph [ref=e166]: Although CC-Bot2 could not completely pass the Turing test, it achieved the highest humanness rating (31.8%). As of today, the Turing test level intelligence has never been achieved by a machine. There is still a long way to go in order to build artificial agents that are clever enough to parallel human behavior. Nevertheless, we think we are working in a very promising research line to achieve this ambitious goal.
+      - heading "Acknowledgements" [level=3] [ref=e167]
+      - paragraph [ref=e168]: We wish to thank Alex J. Champandard for his helpful suggestions and comments on the drafts of this article.
+      - heading "References" [level=3] [ref=e169]
+      - paragraph [ref=e170]: Philip Hingston. A Turing Test for Computer Game Bots, IEEE Transactions on Computational Intelligence and AI In Games, Vol. 1, No. 3, pp 169-186, September 2009.
+      - paragraph [ref=e171]: "Arrabales, R. Ledezma, A. and Sanchis, A. “CERA-CRANIUM: A Test Bed for Machine Consciousness Research”. International Workshop on Machine Consciousness 2009. Hong Kong. June 2009."
+      - paragraph [ref=e172]: "Baars, B.J. 1988. A Cognitive Theory of Consciousness: Cambridge University Press (About GWT)."
+      - paragraph [ref=e173]: Arrabales, R. Ledezma, A. and Sanchis, A. “Towards Conscious-like Behavior in Computer Game Characters”, in Proceedings of the IEEE Symposium on Computational Intelligence and Games 2009 (CIG-2009) pp. 217-224. ISBN 978-1-4244-4815-9.
+  - contentinfo [ref=e174]:
+    - navigation "Footer links" [ref=e175]:
+      - link "Back to Top" [ref=e176] [cursor=pointer]:
+        - /url: "#top"
+      - link "Welcome" [ref=e177] [cursor=pointer]:
+        - /url: /
+      - link "Home" [ref=e178] [cursor=pointer]:
+        - /url: /en/
+      - link "Search" [ref=e179] [cursor=pointer]:
+        - /url: /en/search/
+      - link "Contact" [ref=e180] [cursor=pointer]:
+        - /url: /en/pages/contact-me/
+      - link "LinkedIn" [ref=e181] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/raularrabales/
+      - link "GitHub" [ref=e182] [cursor=pointer]:
+        - /url: https://github.com/raul-arrabales
+    - generic [ref=e183]:
+      - paragraph [ref=e184]:
+        - text: "Last updated:"
+        - time [ref=e185]: June 8, 2026
+      - paragraph [ref=e186]:
+        - text: by Raúl Arrabales Moreno. Work licensed under a
+        - link "Creative Commons Licence (CC BY-NC-SA 3.0)" [ref=e187] [cursor=pointer]:
+          - /url: https://creativecommons.org/licenses/by-nc-sa/3.0/
+        - text: . All logos and trademarks are property of their respective owner.
+      - paragraph [ref=e188]: My posts are my own views and do not necessarily represent the views of my employer.

@@ -29,7 +29,7 @@ const faviconVersion = "cr-5";
     {description && <meta name="description" content={description} />}
     <title>{title}</title>
     <ThemeBoot />
-    <style>
+    <style is:global>
       .prose {
         font-size: 1.05rem;
         line-height: 1.75;
@@ -68,6 +68,7 @@ const faviconVersion = "cr-5";
       .prose img {
         display: block;
         max-width: 100%;
+        width: auto;
         height: auto;
         border-radius: 1rem;
       }
@@ -75,7 +76,8 @@ const faviconVersion = "cr-5";
       .prose figure {
         --content-media-max-width: min(100%, 42rem);
         margin: 2rem auto;
-        width: min(100%, var(--content-media-max-width));
+        width: 100%;
+        max-width: 42rem;
       }
 
       .prose figure.content-media {
@@ -121,7 +123,8 @@ const faviconVersion = "cr-5";
       .prose > p > img:first-child,
       .prose > p > a:first-child:only-child,
       .prose > p.media-leading-paragraph > a:first-child {
-        width: min(100%, 42rem);
+        width: 100%;
+        max-width: 42rem;
         margin: 2rem auto;
       }
 
@@ -148,7 +151,8 @@ const faviconVersion = "cr-5";
 
       .prose > p.media-leading-paragraph > img:first-child,
       .prose > p.media-leading-paragraph > a:first-child > img {
-        width: min(100%, 42rem);
+        width: 100%;
+        max-width: 42rem;
         margin-inline: auto;
       }
 
@@ -236,6 +240,26 @@ const faviconVersion = "cr-5";
       @media (max-width: 720px) {
         .prose {
           font-size: 1rem;
+        }
+
+        .prose figure {
+          --content-media-max-width: 100%;
+          margin: 1.5rem 0;
+        }
+
+        .prose > img,
+        .prose > p > img:first-child,
+        .prose > p > a:first-child:only-child,
+        .prose > p.media-leading-paragraph > a:first-child,
+        .prose > p.media-leading-paragraph > img:first-child,
+        .prose > p.media-leading-paragraph > a:first-child > img {
+          width: 100%;
+          max-width: 100%;
+          margin-inline: 0;
+        }
+
+        .prose > p.media-leading-paragraph {
+          margin: 1.5rem 0;
         }
       }
     </style>
