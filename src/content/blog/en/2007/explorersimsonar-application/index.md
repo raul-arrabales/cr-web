@@ -15,13 +15,13 @@ Most of the code is based on Trevor Taylor's QUT Applications for Robotics Studi
 
 ## Background
 
-ARCOS based robots (like the [Pioneer 3 DX](http://www.conscious-robots.com/en/reviews/robots/mobilerobots-pioneer-3-p3-dx-8.html)) can integrate up to four Sonar rings, each with eight transducers. These sensors provide object detection and distance information. The Robotics Studio platform comes with a sample service called Explorer that uses the Laser Range Finder as sensing device. However, as I don't have such a device, I wanted to use the P3DX frontal sonar ring instead.
+ARCOS based robots (like the [Pioneer 3 DX](/en/blog/2007/mobilerobots-pioneer-3-p3-dx/)) can integrate up to four Sonar rings, each with eight transducers. These sensors provide object detection and distance information. The Robotics Studio platform comes with a sample service called Explorer that uses the Laser Range Finder as sensing device. However, as I don't have such a device, I wanted to use the P3DX frontal sonar ring instead.
 
-The original ExplorerSim service written by Trevor Taylor builds a map using the laser scans that the explorer is retrieving as the robot wanders around. In this version (ExplorerSimSonar) I've added support for a [simulated sonar](http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/simulated-sonar-service-10.html). Therefore, the map is created based on frontal sonar scans.
+The original ExplorerSim service written by Trevor Taylor builds a map using the laser scans that the explorer is retrieving as the robot wanders around. In this version (ExplorerSimSonar) I've added support for a [simulated sonar](/en/blog/2007/simulated-sonar-service/). Therefore, the map is created based on frontal sonar scans.
 
 ## Services included in this Application:
 
-\- [SimulatedSonar](http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/simulated-sonar-service-10.html) -> Implements a simulated Sonar. - [CraniumDashBoard](http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/control-panel-service-dashb-10.html) -> Control panel window (formelly known as Control Panel service). - [MazeSimulatorRA](http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/maze-simulator-service-3.html) -> a version of Maze Simulator. - [ExplorerSimSonar](http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/explorer-sim-sonar-2.html) -> Autonomous robot control. - [DifferentialDriveTT](http://sky.fit.qut.edu.au/~taylort2/MSRS/DifferentialDriveTT/DiffDrive.htm) -> Trevor's DifferentialDrive.
+\- [SimulatedSonar](/en/blog/2007/simulated-sonar-service/) -> Implements a simulated Sonar. - [CraniumDashBoard](/en/blog/2007/control-panel-service-dashboard/) -> Control panel window (formelly known as Control Panel service). - [MazeSimulatorRA](/en/blog/2007/maze-simulator-service/) -> a version of Maze Simulator. - [ExplorerSimSonar](/en/blog/2007/explorer-sim-sonar-service/) -> Autonomous robot control. - [DifferentialDriveTT](http://sky.fit.qut.edu.au/~taylort2/MSRS/DifferentialDriveTT/DiffDrive.htm) -> Trevor's DifferentialDrive.
 
 ## Application Download
 
@@ -59,4 +59,4 @@ I hope to release a future set of services including the vision processing stuff
 
 ## DISCLAIMER:
 
-This program is free software; you can redistribute it and/or modify it. (If you build any application using this software, I'd like to know it, please [provide feedback](http://www.conscious-robots.com/en/contact-us/index.php)). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+This program is free software; you can redistribute it and/or modify it. (If you build any application using this software, I'd like to know it, please [provide feedback](/en/pages/contact-me/)). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.

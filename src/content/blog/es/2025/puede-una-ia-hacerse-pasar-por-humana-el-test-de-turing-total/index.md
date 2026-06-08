@@ -16,7 +16,7 @@ coverImage: "TiposTestTuring.jpg"
 
 # ¿Puede una IA engañarnos? 🤔🧠
 
-En el episodio #6 del **[Podcast de Iria y Raúl](https://www.conscious-robots.com/es/presencia-en-medios/podcast/)** nos hemos lanzado a charlar sobre un tema que nos encanta: **el Test de Turing**.
+En el episodio #6 del **[Podcast de Iria y Raúl](/es/pages/podcast/)** nos hemos lanzado a charlar sobre un tema que nos encanta: **el Test de Turing**.
 
 ¿Qué es exactamente este famoso test? ¿Sirve todavía en 2025 para medir si una inteligencia artificial es realmente "inteligente"? ¿Y qué pasa con esos momentos en que ni siquiera nosotros mismos parecemos muy coherentes? 😜
 

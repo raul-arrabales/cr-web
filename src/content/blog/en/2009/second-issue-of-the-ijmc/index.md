@@ -10,7 +10,7 @@ tags:
 
 **Second Issue of the _International Journal of Machine Consciousness_ Available**
 
-The second issue of the [International Journal of Machine Consciousness](http://www.conscious-robots.com/en/publications/journals-on-consciousness-machine-consciousness/international-journal-of-machine-consciou.html) is available [online](http://www.worldscinet.com/ijmc/) (Vol. 1. Issue 2. December 2009)! The second issue of IJMC is a collection of selected papers from the [2008 Nokia Workshop on Machine Consciousness](http://www.conscious-robots.com/en/publications/conferences/nokia-workshop-on-machine-consciousness.html); Guest editor: P.O.A. Haikonen.
+The second issue of the [International Journal of Machine Consciousness](/en/blog/2008/international-journal-of-machine-consciousness/) is available [online](http://www.worldscinet.com/ijmc/) (Vol. 1. Issue 2. December 2009)! The second issue of IJMC is a collection of selected papers from the [2008 Nokia Workshop on Machine Consciousness](/en/blog/2008/nokia-workshop-on-machine-consciousness-2008/); Guest editor: P.O.A. Haikonen.
 
 <!--more-->
 

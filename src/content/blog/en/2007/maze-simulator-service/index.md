@@ -11,7 +11,7 @@ This Maze Simulator Service for Microsoft Robotics Studio is 99% based on the MS
 
 Please check original documentation available at the link provided above for a complete overview of this service. Basically this service allows you to simulate a maze composed of walls and blocks in the MSRS Visual Environment. I am using it to simulate a Pioneer 3 DX robot in a building-like environment. The service builds the 3D maze from a 2D color bitmap that especifies the position and color of the walls. I am using a bitmap image that resembles to my lab environment so I can test exploration and SLAM algorithms in the MSRS simulator.
 
-As I am currently using SONAR sensors instead of a LRF I commented out the laser part of the original service and included my [simulated sonar service](http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/simulated-sonar-service-2.html).
+As I am currently using SONAR sensors instead of a LRF I commented out the laser part of the original service and included my [simulated sonar service](/en/blog/2007/simulated-sonar-service/).
 
 **Service Download**
 

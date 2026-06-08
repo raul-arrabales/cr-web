@@ -14,7 +14,7 @@ tags:
 coverImage: "humor_artificial.jpg"
 ---
 
-💬 ¿Puede una inteligencia artificial hacernos reír? ¿Tiene sentido del humor o simplemente repite fórmulas? En el nuevo episodio de [nuestro podcast _Iria y Raúl_](https://www.conscious-robots.com/es/presencia-en-medios/podcast/), nos sumergimos en un tema tan curioso como divertido: el humor en la era de las máquinas.
+💬 ¿Puede una inteligencia artificial hacernos reír? ¿Tiene sentido del humor o simplemente repite fórmulas? En el nuevo episodio de [nuestro podcast _Iria y Raúl_](/es/pages/podcast/), nos sumergimos en un tema tan curioso como divertido: el humor en la era de las máquinas.
 
 🎧 Bajo el título **“Humor Artificial”**, Iria y yo nos lanzamos a una conversación desenfadada sobre cómo la IA intenta, a veces con más éxito del esperado, hacernos reír. Charlamos sobre chistes generados por IA, el papel del contexto, el desarrollo del sentido del humor desde la infancia… y sí, ¡también contamos unos cuantos chistes malos! Todo en un tono ligero, informal y con la complicidad de una oyente muy especial que nos lanza sus propios retos humorísticos.
 

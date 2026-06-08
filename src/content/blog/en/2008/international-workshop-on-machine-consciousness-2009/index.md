@@ -8,7 +8,7 @@ categories:
 
 ##### INTERNATIONAL WORKSHOP ON MACHINE CONSCIOUSNESS, Hong Kong 14th June 2009
 
-This workshop organized by Gino Yu and Ben Goertzel will be co-colocated with [Toward a Science of Consciousness](http://www.conscious-robots.com/en/publications/conferences/toward-a-science-of-consciousness-2009.html) conference (to be held 12th~-14th JUNE 2009). This workshop will explore issues at the intersection of consciousness studies with cognitive robotics and artificial general intelligence.
+This workshop organized by Gino Yu and Ben Goertzel will be co-colocated with [Toward a Science of Consciousness](/en/blog/2008/toward-a-science-of-consciousness-2009/) conference (to be held 12th~-14th JUNE 2009). This workshop will explore issues at the intersection of consciousness studies with cognitive robotics and artificial general intelligence.
 
 Among the many important questions lying in this intersection, are the following:
 

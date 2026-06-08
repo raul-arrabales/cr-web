@@ -25,4 +25,4 @@ It seems that the dawn of the age of robots is coming as predicted by Bill Gates
 - Year 2004: 1.500.000 Robots Worldwide. \[3\]
 - Forecast for 2006-2009: It is projected that sales of all types of domestic robots (vacuum cleaning, lawn-mowing, window cleaning and other types) in the period 2006-2009 could reach some 3.9 million units. The market for entertainment and leisure robots, which includes toy robots, is forecast at about 1.6 million units, most of which, of course, are very low cost. \[4\].
 
-\[1\] http://www.conscious-robots.com/en/reviews/robots/a-robot-in-every-home.html \[2\] UNITED NATIONS ECONOMIC COMMISSION FOR EUROPE. UN/ECE News. \[3\] UN/ECE. Press release ECE/STAT/03/P03 \[4\] www.ifr.org
+\[1\] /en/blog/2007/a-robot-in-every-home/ \[2\] UNITED NATIONS ECONOMIC COMMISSION FOR EUROPE. UN/ECE News. \[3\] UN/ECE. Press release ECE/STAT/03/P03 \[4\] www.ifr.org

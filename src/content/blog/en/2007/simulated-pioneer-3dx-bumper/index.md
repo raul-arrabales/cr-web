@@ -11,7 +11,7 @@ Microsoft Robotics Studio comes with a simulated Pioneer 3DX entity that can be 
 
 ## Background
 
-Given the need to use more accurate models of the real sensors, we have been working in additional simulation services, like the [Simulated Sonar Service](http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/simulated-sonar-service-3.html). In this case, we wanted to accurately simulate the frontal and rear bumper rings of the Pioneer Arcos robot base. The Simulated Pioneer Bumper service models the ten bumper panels using ten BoxShapes located approximately at the same possition that corresponds to the real robot. Note the boxes that represent the simulated contact sensors in the following pictures:
+Given the need to use more accurate models of the real sensors, we have been working in additional simulation services, like the [Simulated Sonar Service](/en/blog/2007/simulated-sonar-service/). In this case, we wanted to accurately simulate the frontal and rear bumper rings of the Pioneer Arcos robot base. The Simulated Pioneer Bumper service models the ten bumper panels using ten BoxShapes located approximately at the same possition that corresponds to the real robot. Note the boxes that represent the simulated contact sensors in the following pictures:
 
 **NOTE:** _the boxshapes arranges at angles around the robot are used to calculate the physics collisions with other elements of the simulated world. Altering their positions will impact robot physical behavior._
 
@@ -50,7 +50,7 @@ Additionally, we've added a graphical representation of the bumpers state in the
 
 ## Disclaimer and License
 
-This program is licensed under the terms of Creative Commons _**Attribution-Noncommercial-Share Alike**_ 3.0 Unported License; you can redistribute it and/or modify it. (If you build any application using this software, I'd like to know it, please [provide feedback](http://www.conscious-robots.com/en/contact-us/index.php)).
+This program is licensed under the terms of Creative Commons _**Attribution-Noncommercial-Share Alike**_ 3.0 Unported License; you can redistribute it and/or modify it. (If you build any application using this software, I'd like to know it, please [provide feedback](/en/pages/contact-me/)).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 

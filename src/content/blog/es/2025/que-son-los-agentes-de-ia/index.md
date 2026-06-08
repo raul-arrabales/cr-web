@@ -21,7 +21,7 @@ Un agente de inteligencia artificial es, básicamente, **_un sistema autónomo q
 
 Durante el evento Google Cloud Next 2025, se presentó el protocolo **Agent2Agent (A2A)**, diseñado para que diferentes agentes puedan interactuar directamente entre ellos, sin intervención humana. Esto supone una evolución interesante en la automatización, la coordinación entre sistemas y, por supuesto, en la forma en que las empresas pueden delegar tareas cada vez más complejas a sus sistemas de IA.
 
-En nuestro último episodio del **[Podcast de Iria y Raúl](https://www.conscious-robots.com/es/presencia-en-medios/podcast/)**, charlamos sobre este tema desde una perspectiva cercana: ¿pueden los agentes tener discusiones entre ellos?, ¿deberíamos fiarnos de sus decisiones?, ¿están a punto de montar su propio sindicato? 😜
+En nuestro último episodio del **[Podcast de Iria y Raúl](/es/pages/podcast/)**, charlamos sobre este tema desde una perspectiva cercana: ¿pueden los agentes tener discusiones entre ellos?, ¿deberíamos fiarnos de sus decisiones?, ¿están a punto de montar su propio sindicato? 😜
 
 🔗 **Enlace al episodio del podcast**: \[[ivoox](https://go.ivoox.com/rf/144810731)\] \[[Spotify](https://open.spotify.com/episode/3HEEGZaLppRQPCK9FUgaZe?si=mzqvRarxR7qbnOF1loVCAw)\] \[[YouTube](https://www.youtube.com/watch?v=bAmkl1Nimjk)\]
 

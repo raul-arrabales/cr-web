@@ -17,7 +17,7 @@ Pan Tilt Cam service source code is available at: [MRDS 2008 R2 Download section
 
 **Service Details and Instructions**
 
-{mosimage} To illustrate how the service works I've added Pan Tilt control buttons to the CRANIUM Dashboard service included in [CRUBOTS](http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/crubots.html). As far as I know there is no simulated web cam that supports pan-tilt functions, therefore it can only be used with a real Logitech cam.
+{mosimage} To illustrate how the service works I've added Pan Tilt control buttons to the CRANIUM Dashboard service included in [CRUBOTS](/en/blog/2010/crubots/). As far as I know there is no simulated web cam that supports pan-tilt functions, therefore it can only be used with a real Logitech cam.
 
 The CRANIUM Dashboard service is able to subscribe to a generic Pan Tilt Service, and expose the functionality of such a service in the form of Up, Down, Left, Right buttons. Every time you press these buttons the corresponding commands are sent to the Pan Tilt services you connected to.
 

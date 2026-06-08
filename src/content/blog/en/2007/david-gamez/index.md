@@ -6,6 +6,6 @@ categories:
   - "researchers"
 ---
 
-David Gamez is a researcher on Machine Consciousness at the University of Essex, UK. He is working with Prof. [Owen Holland](http://www.conscious-robots.com/en/researchers-and-associations/researchers/owen-holland.html) and participating in [CRONOS Project](http://www.conscious-robots.com/en/conscious-machines/machine-consciousness-projects/cronos-project.html).
+David Gamez is a researcher on Machine Consciousness at the University of Essex, UK. He is working with Prof. [Owen Holland](/en/blog/2007/owen-holland/) and participating in [CRONOS Project](/en/blog/2007/cronos-project/).
 
 - [David Gamez Homepage](http://www.davidgamez.eu/)

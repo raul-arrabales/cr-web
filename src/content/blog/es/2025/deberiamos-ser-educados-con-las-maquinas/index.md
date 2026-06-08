@@ -16,7 +16,7 @@ tags:
 coverImage: "IA_Cortesia.jpg"
 ---
 
-En el episodio #5 del [podcast de **Iria y Raúl**](https://www.conscious-robots.com/es/presencia-en-medios/podcast/), abordamos una cuestión controvertida en la intersección entre la psicología y la inteligencia artificial:  
+En el episodio #5 del [podcast de **Iria y Raúl**](/es/pages/podcast/), abordamos una cuestión controvertida en la intersección entre la psicología y la inteligencia artificial:  
 **¿Qué impacto tiene nuestra forma de comunicarnos con las máquinas en nuestros hábitos sociales y cognitivos?**
 
 ### 📌 Temas que tratamos:

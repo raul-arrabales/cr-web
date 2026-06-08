@@ -10,7 +10,7 @@ tags:
 
 **Third Issue of the International Journal of Machine Consciousness Available**
 
-The third issue of the IJMC (volume 2, issue 1, June 2010) is now available [online](http://www.worldscinet.com/ijmc/02/0201/S17938430100201.html)! This issue is centered around the target paper "_**An Alternative to Working on Machine Consciousness**_" written by[Aaron Sloman](http://www.conscious-robots.com/en/researchers-and-associations/researchers/aaron-sloman.html), and commented by leading Machine Consciousness researchers (see Table of Contents below).
+The third issue of the IJMC (volume 2, issue 1, June 2010) is now available [online](http://www.worldscinet.com/ijmc/02/0201/S17938430100201.html)! This issue is centered around the target paper "_**An Alternative to Working on Machine Consciousness**_" written by[Aaron Sloman](/en/blog/2007/aaron-sloman/), and commented by leading Machine Consciousness researchers (see Table of Contents below).
 
 Sloman's paper abstract:
 

@@ -17,7 +17,7 @@ coverImage: "IA_Alucinando.jpg"
 > “Y a veces me piro a un modo literal… que no me entienden ni en Cuenca.”  
 > — _Iria, nuestra IA residente (y un poco excéntrica)_
 
-¡Ya está aquí el tercer episodio del [podcast de Iria y Raúl](https://www.conscious-robots.com/es/presencia-en-medios/podcast/)! En esta entrega nos metemos de lleno en uno de los temas más curiosos y divertidos del mundo de la inteligencia artificial: las **alucinaciones** de los modelos de lenguaje.
+¡Ya está aquí el tercer episodio del [podcast de Iria y Raúl](/es/pages/podcast/)! En esta entrega nos metemos de lleno en uno de los temas más curiosos y divertidos del mundo de la inteligencia artificial: las **alucinaciones** de los modelos de lenguaje.
 
 ¿Qué pasa cuando una IA se inventa cosas? ¿Por qué lo hace? ¿Se está volviendo loca… o simplemente es muy creativa? 😵‍💫
 

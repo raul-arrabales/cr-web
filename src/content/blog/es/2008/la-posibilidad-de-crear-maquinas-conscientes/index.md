@@ -8,7 +8,7 @@ categories:
 
 ### En 30 años tendremos una alternativa a la muerte: ser un fantasma dentro de una máquina.
 
-En un reciente artículo escrito por Christof Koch y Giulio Tononi \[1\], los autores argumentan que en 30 años podremos cargar nuestra mente en un ordenador. De hecho, ya podemos empezar a crear nuestros "archivos de mente" usando servicios como [Lifenaut](http://www.conscious-robots.com/es/maquinas-conscientes/proyectos-de-conciencia-artificial/inmortalizando-la-conciencia-con-inteligencia-artif.html).
+En un reciente artículo escrito por Christof Koch y Giulio Tononi \[1\], los autores argumentan que en 30 años podremos cargar nuestra mente en un ordenador. De hecho, ya podemos empezar a crear nuestros "archivos de mente" usando servicios como [Lifenaut](/es/blog/2008/inmortalizando-la-conciencia-con-inteligencia-artificial/).
 
 A pesar del optimismo de esta afirmación, Koch y Tononi nos recuerdan que todavía no sabemos bien qué es exactamente la consciencia. Ellos creen que la consciencia llegará a recrearse de forma artificial en un futuro no muy lejano, sin embargo puede que no sea el mismo tipo de consciencia en el que estamos pensando.
 

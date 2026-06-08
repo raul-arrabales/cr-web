@@ -10,7 +10,7 @@ tags:
 
 **First Issue of the _International Journal of Machine Consciousness_ Available**
 
-The first issue of the [International Journal of Machine Consciousness](http://www.conscious-robots.com/en/publications/journals-on-consciousness-machine-consciousness/international-journal-of-machine-consciou.html) is available [online](http://www.worldscinet.com/ijmc/) (Vol. 1. Issue 1. June 2009)! This new journal, exclusively dedicated to the field of Machine Consciousness (aka Artificial Consciousness), has started its publication with an outstanding collection of papers from the leading MC researchers in the world.
+The first issue of the [International Journal of Machine Consciousness](/en/blog/2008/international-journal-of-machine-consciousness/) is available [online](http://www.worldscinet.com/ijmc/) (Vol. 1. Issue 1. June 2009)! This new journal, exclusively dedicated to the field of Machine Consciousness (aka Artificial Consciousness), has started its publication with an outstanding collection of papers from the leading MC researchers in the world.
 
 This very first issue of IJMC includes papers from Igor Aleksander, John G. Taylor, Bernard J. Baars, Stan Franklin, Antonio Chella, Riccardo Manzotti, Ron Chrisley, Anil Seth, Carlos Hernández, Ignacio López, Ricardo Sanz, Sidney D’Mello, Uma Ramamurthy, Alexei V. Samsonovich, Kenneth A. De Jong, Anastasia Kitsantas, Eva Hudlicka, and Piotr Boltuc. See below for the complete table of contents.
 

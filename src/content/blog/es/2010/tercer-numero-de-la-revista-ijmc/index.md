@@ -8,7 +8,7 @@ categories:
 
 **Publicado el Tercer Número de la revista International Journal of Machine Consciousness**
 
-¡El tercer número de la revista IJMC (volumen 2, número 1, Junio 2010) está disponible [online](http://www.worldscinet.com/ijmc/02/0201/S17938430100201.html)! Este número gira en torno al artículo "_**An Alternative to Working on Machine Consciousness**_" escrito por [Aaron Sloman](http://www.conscious-robots.com/es/investigadores-y-asociaciones/investigadores/aaron-sloman.html), y comentado por los principales investigadores actuales en Conciencia Artificial (ver tabla de contenidos más abajo).
+¡El tercer número de la revista IJMC (volumen 2, número 1, Junio 2010) está disponible [online](http://www.worldscinet.com/ijmc/02/0201/S17938430100201.html)! Este número gira en torno al artículo "_**An Alternative to Working on Machine Consciousness**_" escrito por [Aaron Sloman](/es/blog/2007/aaron-sloman/), y comentado por los principales investigadores actuales en Conciencia Artificial (ver tabla de contenidos más abajo).
 
 El resumen del artículo de Sloman (traducido a español):
 

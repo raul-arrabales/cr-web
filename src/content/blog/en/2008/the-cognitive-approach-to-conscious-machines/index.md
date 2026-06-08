@@ -21,4 +21,4 @@ Novel views on consciousness and the mind–body problem are presented. This boo
     
 - [Chapter 1. Introduction. PDF](http://www.imprint.co.uk/books/haikonen_intro.pdf).
     
-- [About Pentti O Haikonen](http://www.conscious-robots.com/en/researchers-and-associations/researchers/pentti-o-a-haikonen.html).
+- [About Pentti O Haikonen](/en/blog/2008/pentti-o-a-haikonen/).

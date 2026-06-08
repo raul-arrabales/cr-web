@@ -8,11 +8,11 @@ tags:
   - "haikonen"
 ---
 
-[Pentti Haikonen](http://www.conscious-robots.com/en/researchers-and-associations/researchers/pentti-o-a-haikonen.html) is one of the most salient researchers on Machine Consciousness. His PhD Thesis entitled:
+[Pentti Haikonen](/en/blog/2008/pentti-o-a-haikonen/) is one of the most salient researchers on Machine Consciousness. His PhD Thesis entitled:
 
 ##### "An Artificial Cognitive Neural System Based on a Novel Neuron Structure and a Reentrant Modular Architecture with Implications to Machine Consciousness"
 
-is one of the first doctoral dissertations in the field of Machine Consciousness. In this thesis, Haikonen introduces the Haikonen Associative Neurons and his [Cognitive Architecture](http://www.conscious-robots.com/en/conscious-machines/theories-of-consciousness/pentti-haikonens-architecture-for-conscious-mac.html).
+is one of the first doctoral dissertations in the field of Machine Consciousness. In this thesis, Haikonen introduces the Haikonen Associative Neurons and his [Cognitive Architecture](/en/blog/2009/pentti-haikonens-architecture-for-conscious-machines/).
 
 Part III of Haikonen's thesis is available here:
 

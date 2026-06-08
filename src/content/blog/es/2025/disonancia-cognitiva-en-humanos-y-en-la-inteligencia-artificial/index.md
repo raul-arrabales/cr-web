@@ -20,7 +20,7 @@ Pero… **¿y si te digo que algo parecido puede ocurrir también en la intelige
 
 Obviamente, las máquinas no tienen emociones ni conciencia (al menos de momento), pero los sistemas de IA también pueden entrar en “conflicto” cuando reciben objetivos contradictorios o datos inconsistentes. Imagina un modelo de IA que tiene que priorizar entre eficiencia y seguridad. Si no se le han dado bien las prioridades o los datos que recibe son ambiguos, su comportamiento puede volverse errático o contradictorio. Algo así como una "_**disonancia algorítmica**_".
 
-En el último episodio del _[Podcast de Iria y Raúl](https://www.conscious-robots.com/es/presencia-en-medios/podcast/)_, exploramos esta idea de forma informal, divertida y con algún que otro chiste malo (culpa mía, ya sabes 😅). Hablamos de cómo entendemos la disonancia en humanos y de qué forma se puede “traducir” a contextos tecnológicos. También nos preguntamos: ¿qué pasará si algún día una IA realmente siente esa incomodidad interna?
+En el último episodio del _[Podcast de Iria y Raúl](/es/pages/podcast/)_, exploramos esta idea de forma informal, divertida y con algún que otro chiste malo (culpa mía, ya sabes 😅). Hablamos de cómo entendemos la disonancia en humanos y de qué forma se puede “traducir” a contextos tecnológicos. También nos preguntamos: ¿qué pasará si algún día una IA realmente siente esa incomodidad interna?
 
 🎧 **Puedes escucharlo aquí**: \[[ivoox](https://go.ivoox.com/rf/145197544)\] \[[Spotify](https://open.spotify.com/episode/2ipC3auEwJrnnZn1CFkBrf?si=pX9NJexhQwasGmgZZxjaKA)\] \[[YouTube](https://youtu.be/jwGYzVeq2Qk?si=oIu3240yqnOrEz0t)\]
 

@@ -19,4 +19,4 @@ Parece que el amanecer de la era de los robots está llegando tal como predice 
 
 \- Año 2000: 742.500 Robots en el muno (Japón 402.200; EEUU 92.900; España 10.500) \[2\]. - Año 2003: 1.400.000 Robots en el mundo (BBC News). - Año 2004: 1.500.000 Robots en el mundo. \[3\] - Previsión para 2006-2009 \[4\]: Se prevee que las ventas de todo tipo de robots domésticos (aspiradoras, limpiadores de ventanas y otros tipos) alcancen los **3.9 millones de unidades** en el periodo 2006-2009. El mercado de robots de entretenimiento, que incluye los juguetes robot, se prevee en cerca de **1.6 millones de unidades**, de los cuales la mayoría son de bajo coste.
 
-\[1\] [http://www.conscious-robots.com/en/reviews/robots/a-robot-in-every-home.html](en/reviews/robots/a-robot-in-every-home.html) \[2\] UNITED NATIONS ECONOMIC COMMISSION FOR EUROPE. UN/ECE News. \[3\] UN/ECE. Press release ECE/STAT/03/P03 \[4\] [www.ifr.org](http://www.ifr.org/)
+\[1\] [/en/blog/2007/a-robot-in-every-home/](/en/blog/2007/a-robot-in-every-home/) \[2\] UNITED NATIONS ECONOMIC COMMISSION FOR EUROPE. UN/ECE News. \[3\] UN/ECE. Press release ECE/STAT/03/P03 \[4\] [www.ifr.org](http://www.ifr.org/)

@@ -9,7 +9,7 @@ The Simulated SONAR Service provides access to a simulated SONAR array. It uses 
 
 **Background:**
 
-ARCOS based robots (like the [Pioneer P3-DX](http://www.conscious-robots.com/en/reviews/robots/mobilerobots-pioneer-3-p3-dx-8.html)) can integrate up to four SONAR rings, each with eight transducers. These sensors provide object detection and distance information. The Robotics Studio platform doesn’t include a simulated SONAR service that could be use in the Visual Environment. However, there exists a generic contract for SONAR that I wanted to implement for the specific case of my SIMULATED P3-DX frontal SONAR array.
+ARCOS based robots (like the [Pioneer P3-DX](/en/blog/2007/mobilerobots-pioneer-3-p3-dx/)) can integrate up to four SONAR rings, each with eight transducers. These sensors provide object detection and distance information. The Robotics Studio platform doesn’t include a simulated SONAR service that could be use in the Visual Environment. However, there exists a generic contract for SONAR that I wanted to implement for the specific case of my SIMULATED P3-DX frontal SONAR array.
 
 **NOTE:** A real (not simulated) ARCOS SONAR service is available at: [http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/arcos-sonar-service.html](http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/arcos-sonar-service.html)
 

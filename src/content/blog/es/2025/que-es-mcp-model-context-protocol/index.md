@@ -12,7 +12,7 @@ tags:
 coverImage: "mcp.jpg"
 ---
 
-En este primer episodio del _[Podcast de Iria y Raúl](https://www.conscious-robots.com/es/presencia-en-medios/podcast/)_, nos metimos en un tema que empieza a sonar fuerte en el mundillo de la IA: el **Model Context Protocol (MCP)**. Si todavía no sabes lo que es, no te preocupes, aquí te lo explicamos con gracia y algo de chicha técnica 🧠💥
+En este primer episodio del _[Podcast de Iria y Raúl](/es/pages/podcast/)_, nos metimos en un tema que empieza a sonar fuerte en el mundillo de la IA: el **Model Context Protocol (MCP)**. Si todavía no sabes lo que es, no te preocupes, aquí te lo explicamos con gracia y algo de chicha técnica 🧠💥
 
 🎧 **Escúchalo aquí**: \[[ivoox](https://go.ivoox.com/rf/144455677)\] \[[Spotify](https://open.spotify.com/episode/05hT441yb3cRib6A8bxTvD?si=tBareIndTC-AQrLuJbzQ8g)\] \[[Youtube](https://youtu.be/e_LugVqZxG0?si=8c_jOeiDlT32Uws8)\]
 

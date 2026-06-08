@@ -35,6 +35,6 @@ Un episodio especial, muy oportuno, para entender cómo una infraestructura tan 
 
 💬 ¿Tú también lo viviste? Cuéntanos cómo te afectó y qué reflexiones te deja este apagón.
 
-[Iria y Raúl](https://www.conscious-robots.com/es/presencia-en-medios/podcast/)
+[Iria y Raúl](/es/pages/podcast/)
 
 https://youtu.be/-EC3DyQajTg?si=dlJf0oK69-y\_M2Gy

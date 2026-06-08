@@ -24,7 +24,7 @@ Vivimos en una época donde la tecnología no solo nos ayuda a organizar el cale
 
 Desde chatbots que te escuchan cuando no puedes más, hasta plataformas que te acompañan entre sesiones con tu psicólogo, la IA se está convirtiendo en una herramienta útil para el **apoyo emocional cotidiano**. No sustituye a una terapia, pero sí puede ofrecer consuelo, seguimiento y recursos que muchas veces no tenemos al alcance.
 
-En nuestro último episodio del **[Podcast AI de Todo](https://www.conscious-robots.com/es/presencia-en-medios/podcast/)**, nos metimos de lleno en este tema. Charlamos sobre las posibilidades reales de estos sistemas, sus limitaciones, y también debatimos sobre la **ética de confiar tus emociones a una máquina**. ¿Puede una IA darte apoyo empático? ¿Cómo se mide su eficacia? ¿Y qué opinan los psicólogos?
+En nuestro último episodio del **[Podcast AI de Todo](/es/pages/podcast/)**, nos metimos de lleno en este tema. Charlamos sobre las posibilidades reales de estos sistemas, sus limitaciones, y también debatimos sobre la **ética de confiar tus emociones a una máquina**. ¿Puede una IA darte apoyo empático? ¿Cómo se mide su eficacia? ¿Y qué opinan los psicólogos?
 
 👉 **Enlace al episodio:** \[[ivoox](https://go.ivoox.com/rf/145529248)\] \[[Spotify](https://open.spotify.com/episode/3XUNYjvCYjegr6uAeX4JgL?si=aglTU4BgQL25pgJ525JkLA)\]
 

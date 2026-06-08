@@ -11,7 +11,7 @@ Microsoft Robotics Studio viene con un modelo simulado del robot Pioneer 3DX que
 
 ## Introducción
 
-Dada la necesidad de usar un modelo más exacto de los sensores reales, hemos estado trabajando en servicios adicionales de simulación, como el [servicio de Sonar Simulado](http://www.conscious-robots.com/es/robotics-studio/servicios-de-robotics-studio/servicio-de-sonar-sim.html).  En este caso, queríamos simular de forma precisa los anillos de paragolpes frontal y trasero de la base Pioneer Arcos. El servicio Simulated Pioneer Bumper modela los 10 paneles usando 10 cajas tridimensionales situadas aproximadamente a la misma posición que corresponde a los paragolpes del robot real. Vea las cajas que respresentan los sensores de contacto en las siguientes figuras:
+Dada la necesidad de usar un modelo más exacto de los sensores reales, hemos estado trabajando en servicios adicionales de simulación, como el [servicio de Sonar Simulado](/es/blog/2009/servicio-de-sonar-simulado/).  En este caso, queríamos simular de forma precisa los anillos de paragolpes frontal y trasero de la base Pioneer Arcos. El servicio Simulated Pioneer Bumper modela los 10 paneles usando 10 cajas tridimensionales situadas aproximadamente a la misma posición que corresponde a los paragolpes del robot real. Vea las cajas que respresentan los sensores de contacto en las siguientes figuras:
 
 **NOTA:**  _los "boxshapes" distribuidos alrededor del robot se usan para calcular las colisiones físicas con otros elementos del mundo virtual. Por lo tanto, la modificación de sus posiciones afectaría al comportamiento físico del robot._
 

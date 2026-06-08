@@ -18,7 +18,7 @@ En contraposición a la IA débil, la rama dura de la IA (IA fuerte) establece q
 
 Incluso aunque la conciencia artificial se puede identificar fácilmente como un paradigma de la ciencia ficción, creo que puede tener un papel importante en el dominio de la IA débil. La aplicación de modelos de la conciencia humana a máquinas y su programación es una forma de bioinspiración. Podemos estudiar los procesos cognitivos relacionados con la conciencia (como la atención o la propiocepción), y utilizar los mismos principios en máquinas artificiales. Un asunto mucho más arduo es la dimensión fenomenológica de la conciencia, cuyos fundamentos biológicos subyacentes no son conocidos. Este es uno de los huecos que quedan por llenar en el campo de la IA fuerte.
 
-\[1\] http://www.conscious-robots.com/en/conscious-machines/the-field-of-machine-consciousness/what-is-machine-conscious.html
+\[1\] /en/blog/2006/what-is-machine-consciousness/
 
 \[2\] [http://consc.net/zombies.html](http://consc.net/zombies.html)
 

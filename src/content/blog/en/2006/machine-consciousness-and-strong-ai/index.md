@@ -16,7 +16,7 @@ Even though machine consciousness can be easily identified as a science fiction 
 
  
 
-\[1\] http://www.conscious-robots.com/en/conscious-machines/the-field-of-machine-consciousness/what-is-machine-conscious.html
+\[1\] /en/blog/2006/what-is-machine-consciousness/
 
 \[2\] [http://consc.net/zombies.html](http://consc.net/zombies.html)
 

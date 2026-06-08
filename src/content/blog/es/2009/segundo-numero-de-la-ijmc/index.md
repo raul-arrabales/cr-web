@@ -7,7 +7,7 @@ categories:
 
 ### Segundo número de la revista _International Journal of Machine Consciousness_
 
-El 2º número de la revista [International Journal of Machine Consciousness](http://www.conscious-robots.com/en/publications/journals-on-consciousness-machine-consciousness/international-journal-of-machine-consciou.html) está ya disponible [online](http://www.worldscinet.com/ijmc/) (Vol. 1. Issue 2. Diciembre 2009). Este segundo número de IJMC contiene una selección de artículos del [2008 Nokia Workshop on Machine Consciousness](http://www.conscious-robots.com/es/publicaciones/conferencias/nokia-workshop-on-machine-consciousness.html); Editor invitado: P.O.A. Haikonen.
+El 2º número de la revista [International Journal of Machine Consciousness](/en/blog/2008/international-journal-of-machine-consciousness/) está ya disponible [online](http://www.worldscinet.com/ijmc/) (Vol. 1. Issue 2. Diciembre 2009). Este segundo número de IJMC contiene una selección de artículos del [2008 Nokia Workshop on Machine Consciousness](/es/blog/2008/nokia-workshop-on-machine-consciousness-2008/); Editor invitado: P.O.A. Haikonen.
 
 <!--more-->
 

@@ -18,7 +18,7 @@ tags:
 coverImage: "IA_sin_frenos.jpg"
 ---
 
-En el nuevo episodio del [podcast _Iria y Raúl_](https://www.conscious-robots.com/es/presencia-en-medios/podcast/), nos adentramos en uno de los terrenos más inquietantes (y fascinantes) de la inteligencia artificial generativa: ¿qué pasa cuando los modelos de IA se enfrentan a dilemas éticos extremos? ¿Hasta dónde pueden llegar si se ven presionados por sus “instrucciones” (prompts)?
+En el nuevo episodio del [podcast _Iria y Raúl_](/es/pages/podcast/), nos adentramos en uno de los terrenos más inquietantes (y fascinantes) de la inteligencia artificial generativa: ¿qué pasa cuando los modelos de IA se enfrentan a dilemas éticos extremos? ¿Hasta dónde pueden llegar si se ven presionados por sus “instrucciones” (prompts)?
 
 ### Un experimento revelador
 
@@ -35,7 +35,7 @@ A lo largo del episodio, reflexionamos sobre hasta qué punto estos comportamien
 ### Escucha el episodio
 
 👉 Escucha en \[[iVoox](https://www.ivoox.com/9-8211-ia-sin-frenos-chantaje-odio-y-audios-mp3_rf_152654468_1.html)\] \[[Spotify](https://open.spotify.com/episode/4tN8SkRjFDwjbA3vQFsgOh?si=A2Nkeu0eQDmGhGrO_rHDnA)\] \[[YouTube](https://youtu.be/zI8vdtBQ8FE)\]  
-👉 [Más episodios en nuestra página del podcast](https://www.conscious-robots.com/es/presencia-en-medios/podcast/)
+👉 [Más episodios en nuestra página del podcast](/es/pages/podcast/)
 
 * * *
 
