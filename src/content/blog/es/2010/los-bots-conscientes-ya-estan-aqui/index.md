@@ -141,10 +141,10 @@ CC-Bot2 no es una implementación completa del modelo CERA-CRANIUM, el cuál inc
 
 Philip Hingston. [A Turing Test for Computer Game Bots](http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5247069), IEEE Transactions on Computational  Intelligence and AI In Games, Vol. 1, No. 3, pp 169-186, September 2009.
 
-Arrabales, R. Ledezma, A. and Sanchis, A. "[CERA-CRANIUM: A Test Bed for Machine Consciousness Research](raul/papers/Arrabales_IWMC2009_v26.pdf)". International Workshop on Machine Consciousness 2009. Hong Kong. June 2009.
+Arrabales, R. Ledezma, A. and Sanchis, A. "[CERA-CRANIUM: A Test Bed for Machine Consciousness Research](/papers/Arrabales_IWMC2009_v26.pdf)". International Workshop on Machine Consciousness 2009. Hong Kong. June 2009.
 
 Baars, B.J. 1988. [A Cognitive Theory of Consciousness](en/conscious-machines/theories-of-consciousness/global-workspace-theory.html): Cambridge University Press.
 
-Arrabales, R. Ledezma, A. and Sanchis, A. "[Towards Conscious-like Behavior in Computer Game Characters](raul/papers/Arrabales_CIG09.pdf)", in Proceedings of the IEEE Symposium on Computational Intelligence and Games 2009 (CIG-2009) pp. 217-224. ISBN 978-1-4244-4815-9.
+Arrabales, R. Ledezma, A. and Sanchis, A. "[Towards Conscious-like Behavior in Computer Game Characters](/papers/Arrabales_CIG09.pdf)", in Proceedings of the IEEE Symposium on Computational Intelligence and Games 2009 (CIG-2009) pp. 217-224. ISBN 978-1-4244-4815-9.
 
 Muñoz, J., Arrabales, R. et al., “2K BotPrize 2010 winner bot: steps toward passing the Turing test”. Forthcoming.

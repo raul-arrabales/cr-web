@@ -14,17 +14,17 @@ tags:
 
  
 
-[](images/stories/pdf/Nokia_Machine_Consciousness_Cover.pdf)Booklet Cover ([pdf](images/stories/pdf/Nokia_Machine_Consciousness_Cover.pdf))
+Booklet Cover (PDF unavailable)
 
-[](images/stories/pdf/Nokia_Machine_Consciousness_Contents.pdf)Table of Contents ([pdf](images/stories/pdf/Nokia_Machine_Consciousness_Contents.pdf))
+Table of Contents (PDF unavailable)
 
-[](images/stories/pdf/Nokia_Machine_Consciousness_Preface.pdf)_Big Visions_. Preface by Pentti Haikonen ([pdf](images/stories/pdf/Nokia_Machine_Consciousness_Preface.pdf)).
+_Big Visions_. Preface by Pentti Haikonen (PDF unavailable).
 
-[](images/stories/pdf/Nokia_Machine_Consciousness_Acknowledgements.pdf)Acknowledgements ([pdf](images/stories/pdf/Nokia_Machine_Consciousness_Acknowledgements.pdf)).
+Acknowledgements (PDF unavailable).
 
-[](images/stories/pdf/Nokia_Machine_Consciousness_InvitedSpeakers.pdf)Invited Spearkers ([pdf](images/stories/pdf/Nokia_Machine_Consciousness_InvitedSpeakers.pdf)).
+Invited Spearkers (PDF unavailable).
 
-[](images/stories/pdf/Nokia_Machine_Consciousness_Program.pdf)Workshop Program ([pdf](images/stories/pdf/Nokia_Machine_Consciousness_Program.pdf)).
+Workshop Program (PDF unavailable).
 
  
 

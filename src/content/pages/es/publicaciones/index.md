@@ -272,7 +272,7 @@ Arrabales, R. Ledezma, A. and Sanchis, A. "**CERA-CRANIUM: A Test Bed for Machin
 \[[PDF](/papers/Arrabales_IWMC2009_v26.pdf)\] \[[PPT](/papers/PPT_Arrabales_IWMC2009_v7.pdf)\] \[[BibTeX](/papers/iwmc_09_Arrabales_bibtex.txt)\] \[[Workshop Website](http://novamente.net/machinecs/index.html)\]
 
 Arrabales, R. Ledezma, A. and Sanchis, A. "**ConsScale: A Plausible Test for Machine Consciouness?**". Proceedings of the Nokia Workshop on Machine Consciousness - 13th Finnish Artificial Intelligence Conference (STeP 2008). Helsinki. Finland. Pages 49-57. 
-\[[BibTeX](/papers/Nokia_08_Arrabales.txt)\] \[[Conference Website](../en/publications/papers/nokia-workshop-on-machine-consciousness-procee.html)\] \[[Pics](http://picasaweb.google.com/raul.arrabales/NokiaWorkshop2008)\]
+\[[BibTeX](/papers/Nokia_08_Arrabales.txt)\] \[[Conference Website](/es/blog/2008/actas-del-nokia-workshop-on-machine-consciousness/)\] \[[Pics](http://picasaweb.google.com/raul.arrabales/NokiaWorkshop2008)\]
 
 Arrabales, R. Ledezma, A. and Sanchis, A. "**A Multimodal Attention Mechanism for Autonomous Mobile Robotics**". IX Workshop on Physical Agents 2008. Joaquín Lopez and Matías García (Eds.) Vigo. Spain. September 2008. Pages 121-128. 
 \[[PDF](/papers/Arrabales_WAF2008_v16.pdf)\] \[[BibTeX](/papers/WAF_08_Arrabales.txt)\] \[[Workshop Website](http://www.waf2008.uvigo.es/)\] \[[Pics](http://picasaweb.google.com/raul.arrabales/WAF2008)\]

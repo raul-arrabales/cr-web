@@ -14,7 +14,7 @@ Esta entrada del blog es un resumen divulgativo del artículo:
 
 > _Arrabales, R. (2020). Perla: A Conversational Agent for Depression Screening in Digital Ecosystems. Design, Implementation and Validation. arXiv preprint arXiv:2008.12875._
 
-Para conocer todos los detalles de la investigación, consultar el artículo completo en inglés: [https://arxiv.org/abs/2008.12875](https://arxiv.org/abs/2008.12875) (o la [versión traducida al español](https://www.conscious-robots.com/papers/Perla-Paper-Aug2020_v1_ES.pdf)).
+Para conocer todos los detalles de la investigación, consultar el artículo completo en inglés: [https://arxiv.org/abs/2008.12875](https://arxiv.org/abs/2008.12875) (o la [versión traducida al español](/papers/Perla-Paper-Aug2020_v1_ES.pdf)).
 
 El principal objetivo de este proyecto era comprobar si es posible **hacer un cribado de depresión en plataformas digitales** sin tener que recurrir a las técnicas clásicas de autoinforme.
 

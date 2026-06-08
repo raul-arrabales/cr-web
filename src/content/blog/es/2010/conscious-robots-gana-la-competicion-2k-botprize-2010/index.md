@@ -50,8 +50,8 @@ Sesión final de la competición 2K BotPrize en el  ITU de Copenhague durante 
 
 \[1\] Philip Hingston. [A Turing Test for Computer Game Bots](http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5247069), IEEE Transactions on Computational  Intelligence and AI In Games, Vol. 1, No. 3, pp 169-186, September 2009.
 
-\[2\] Arrabales, R. Ledezma, A. and Sanchis, A. "[CERA-CRANIUM: A Test Bed for Machine Consciousness Research](raul/papers/Arrabales_IWMC2009_v26.pdf)". International Workshop on Machine Consciousness 2009. Hong Kong. June 2009.
+\[2\] Arrabales, R. Ledezma, A. and Sanchis, A. "[CERA-CRANIUM: A Test Bed for Machine Consciousness Research](/papers/Arrabales_IWMC2009_v26.pdf)". International Workshop on Machine Consciousness 2009. Hong Kong. June 2009.
 
 \[3\] Baars, B.J. 1988. A Cognitive Theory of Consciousness: Cambridge University Press. ([Acerca de la teoría ETG](es/maquinas-conscientes/teorias-de-la-consciencia/teoria-del-espacio-de-trabajo-g.html)).
 
-\[4\] Arrabales, R. Ledezma, A. and Sanchis, A. "[Towards Conscious-like Behavior in Computer Game Characters](raul/papers/Arrabales_CIG09.pdf)", in Proceedings of the IEEE Symposium on Computational Intelligence and Games 2009 (CIG-2009) pp. 217-224. ISBN 978-1-4244-4815-9.
+\[4\] Arrabales, R. Ledezma, A. and Sanchis, A. "[Towards Conscious-like Behavior in Computer Game Characters](/papers/Arrabales_CIG09.pdf)", in Proceedings of the IEEE Symposium on Computational Intelligence and Games 2009 (CIG-2009) pp. 217-224. ISBN 978-1-4244-4815-9.

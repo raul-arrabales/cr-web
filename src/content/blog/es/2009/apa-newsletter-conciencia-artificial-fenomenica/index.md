@@ -20,4 +20,4 @@ La APA (American Philosophical Association) publica en su Newsletters de Filoso
 
 [Slippery Steps Towards Phenomenally Conscious Robots](http://www.apaonline.org/publications/newsletters/v08n2_Computers_04.aspx) Pentti O.A. Haikonen
 
-Puedes ver también los artículos relacionados en un número especial sobre [Robot Consciousness](en/publications/papers/the-apa-newsletter-on-philosophy-and-comp.html).
+Puedes ver también los artículos relacionados en un número especial sobre Robot Consciousness.
