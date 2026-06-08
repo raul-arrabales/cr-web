@@ -77,7 +77,7 @@ This is more than just a book about technology — it’s an invitation to refle
 <div class="featured-book-section">
 
 <div class="featured-book-cover">
-  <a href="https://www.conscious-robots.com/publications/mental-disorders-in-artificial-intelligence-book/">
+  <a href="/en/pages/mental-disorders-in-artificial-intelligence-book/">
     <img src="/legacy-images/images/Book_3D_MDAI.png" alt="Mental Disorders in Artificial Intelligence book cover" />
   </a>
 </div>

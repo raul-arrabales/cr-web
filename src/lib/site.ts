@@ -11,6 +11,9 @@ export const languages = [
   },
 ] as const;
 
+export const siteUrl = "https://conscious-robots.com";
+export const siteTitle = "Conscious Robots";
+
 export type Lang = (typeof languages)[number]["code"];
 
 export type NavItem = {

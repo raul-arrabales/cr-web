@@ -5,7 +5,7 @@ import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import ThemeBoot from "../components/ThemeBoot.astro";
 import type { Lang, NavItem } from "../lib/site";
-import { getNavItems } from "../lib/site";
+import { getNavItems, siteTitle, siteUrl } from "../lib/site";
 
 interface Props {
   title: string;
@@ -13,10 +13,20 @@ interface Props {
   description?: string;
   navItems?: NavItem[];
   updatedAt?: Date;
+  noindex?: boolean;
 }
 
-const { title, lang, description, navItems = getNavItems(lang), updatedAt = new Date() } = Astro.props;
+const {
+  title,
+  lang,
+  description,
+  navItems = getNavItems(lang),
+  updatedAt = new Date(),
+  noindex = false,
+} = Astro.props;
 const faviconVersion = "cr-5";
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? siteUrl).toString();
+const pageTitle = title.includes(siteTitle) ? title : `${title} | ${siteTitle}`;
 ---
 
 <html lang={lang}>
@@ -27,7 +37,14 @@ const faviconVersion = "cr-5";
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     {description && <meta name="description" content={description} />}
-    <title>{title}</title>
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:site_name" content={siteTitle} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:url" content={canonicalUrl} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:type" content="website" />
+    {noindex && <meta name="robots" content="noindex,follow" />}
+    <title>{pageTitle}</title>
     <ThemeBoot />
     <style is:global>
       .prose {

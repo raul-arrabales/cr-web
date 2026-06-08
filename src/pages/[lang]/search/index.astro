@@ -17,7 +17,12 @@ const posts = await getCollection("blog");
 const taxonomy = getBlogTaxonomy(posts, lang);
 ---
 
-<SiteLayout lang={lang} title={`Raúl Arrabales | ${copy.searchLabel}`} description={copy.searchIntro}>
+<SiteLayout
+  lang={lang}
+  title={`Raúl Arrabales | ${copy.searchLabel}`}
+  description={copy.searchIntro}
+  noindex={true}
+>
   <SearchPanel
     lang={lang}
     title={copy.searchLabel}

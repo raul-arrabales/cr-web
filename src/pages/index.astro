@@ -7,7 +7,7 @@ import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import ThemeBoot from "../components/ThemeBoot.astro";
 import { getPostExcerpt } from "../lib/blog";
-import { getNavItems, languages, sectionRoutes, siteCopy } from "../lib/site";
+import { getNavItems, languages, sectionRoutes, siteCopy, siteTitle, siteUrl } from "../lib/site";
 
 const englishNav = getNavItems("en");
 const spanishNav = getNavItems("es");
@@ -44,6 +44,7 @@ const latestPostsByLanguage = await Promise.all(
     };
   }),
 );
+const canonicalUrl = new URL("/", siteUrl).toString();
 ---
 
 <html lang="en">
@@ -56,7 +57,16 @@ const latestPostsByLanguage = await Promise.all(
       name="description"
       content="Conscious Robots - Raúl Arrabales personal website and blog in English and Spanish."
     />
-    <title>Conscious Robots</title>
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:site_name" content={siteTitle} />
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta
+      property="og:description"
+      content="Conscious Robots - Raúl Arrabales personal website and blog in English and Spanish."
+    />
+    <meta property="og:type" content="website" />
+    <title>{siteTitle}</title>
     <ThemeBoot />
     <style>
       .hero,

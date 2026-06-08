@@ -76,7 +76,7 @@ Este libro es una invitación a descubrir los límites (y las oportunidades) del
 <div class="featured-book-section">
 
 <div class="featured-book-cover">
-  <a href="https://www.conscious-robots.com/es/publicaciones/los-trastornos-mentales-de-la-inteligencia-artificial-libro/">
+  <a href="/es/pages/los-trastornos-mentales-de-la-inteligencia-artificial-libro/">
     <img src="/legacy-images/images/Los-Trastornos-Mentales-IA_Ebook-640x1024.jpg" alt="Portada de Los Trastornos Mentales de la Inteligencia Artificial" />
   </a>
 </div>

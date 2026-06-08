@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /en/search/
+Disallow: /es/search/
+
+Sitemap: https://conscious-robots.com/sitemap.xml
