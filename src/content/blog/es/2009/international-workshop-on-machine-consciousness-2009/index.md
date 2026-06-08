@@ -7,7 +7,7 @@ categories:
 
 (Seminario Internacional sobre Conciencia Artificial), Hong Kong 14 de Junio de 2009
 
-Este seminario organizado por Gino Yu y Ben Goertzel tendrá lugar junto con la conferencia [Toward a Science of Consciousness](http://www.conscious-robots.com/es/publicaciones/conferencias/toward-a-science-of-consciousness-2.html) (que se celebrará entre el 12 y 14 de Junio de 2009). Este seminario explorará los temas que se encuentran en la frontera entre los estudios sobre la conciencia y la robótica cognitiva y la inteligencia artificial general.
+Este seminario organizado por Gino Yu y Ben Goertzel tendrá lugar junto con la conferencia [Toward a Science of Consciousness](/es/pages/recurso-descatalogado/) (que se celebrará entre el 12 y 14 de Junio de 2009). Este seminario explorará los temas que se encuentran en la frontera entre los estudios sobre la conciencia y la robótica cognitiva y la inteligencia artificial general.
 
 Entre las muchas preguntas importantes que se plantean en esta frontera están las siguientes:
 

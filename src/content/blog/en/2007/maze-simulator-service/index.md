@@ -15,7 +15,7 @@ As I am currently using SONAR sensors instead of a LRF I commented out the laser
 
 **Service Download**
 
-\- [MazeSimulatorRa Source Code Download](http://www.conscious-robots.com/en/download/software-components-for-robotics/maze-simulator-for-robotics-studio-ra-version-1-/details.html) (for MSRS 1.5). - [Maze Simulator Source Code Download](http://www.conscious-robots.com/en/download-./services-for-robotics-developer-studio-2008/index.php) (for Robotics Developer Studio 2008).
+\- [MazeSimulatorRa Source Code Download](/en/pages/discontinued-resource/) (for MSRS 1.5). - [Maze Simulator Source Code Download](/en/pages/discontinued-resource/) (for Robotics Developer Studio 2008).
 
 **Installation Instructions (for source code zip archive)**
 
@@ -23,7 +23,7 @@ Please see readme.txt file included in the zip file for detailed instructions. T
 
 **Service Details**
 
-**Service Contract Identifier:**     _http://www.conscious-robots.com/2007/8/mazesimulatorra.html_
+**Service Contract Identifier:**     _/en/pages/discontinued-resource/_
 
 **Implements generic contract:**
 

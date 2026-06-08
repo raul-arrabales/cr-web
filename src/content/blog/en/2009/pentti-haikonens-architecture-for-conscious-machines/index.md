@@ -145,7 +145,7 @@ Outwardly, the Haikonen machine is able to behave in some of the ways which huma
 
 #### The Haikonen machine on ConsScale
 
-{mosimage} If consciousness is an all-or-nothing thing and the threshold is not set too high at human adults' level, then the Haikonen machine is conscious. If consciousness is a continuum, then putting the Haikonen machine on Raul Arrabales' [ConsScale](http://www.conscious-robots.com/consscale/) would place it at about 6 o'clock on the ConsScale graph, scoring below the level of young human toddlers, and possibly on a par with some animals which we humans suspect to be minimally conscious.
+{mosimage} If consciousness is an all-or-nothing thing and the threshold is not set too high at human adults' level, then the Haikonen machine is conscious. If consciousness is a continuum, then putting the Haikonen machine on Raul Arrabales' [ConsScale](/en/pages/discontinued-resource/) would place it at about 6 o'clock on the ConsScale graph, scoring below the level of young human toddlers, and possibly on a par with some animals which we humans suspect to be minimally conscious.
 
 {mosimage} Having said that, Haikonen's theory does not clearly show a path for the concept of "I" to emerge. Sure, the machine can perceive the world, its body, its mental flow. If it sees one person after another standing in front of it, finger pointing at himself/herself, saying "I", it probably can deduce that each person is an "I". In front of a mirror, it probably can even recognise itself. But from all of this, how does the machine eventually deduce the "I" as itself, then know that the perceptions and emotions going on are its own qualia? Haikonen comes tantalizingly close, but he has not provided the final step to answer this question.
 
@@ -159,4 +159,4 @@ For the answer, we just have to wait until a steel-and-silicon Haikonen machine 
 
 \- Book Review: [Robot Brains](en/reviews/consciousness-books-reviews/book-review-robot-brains.html).
 
-\- Consciousness based cognitive scale: [ConsScale](http://www.conscious-robots.com/consscale/).
+\- Consciousness based cognitive scale: [ConsScale](/en/pages/discontinued-resource/).

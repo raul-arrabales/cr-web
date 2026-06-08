@@ -15,6 +15,6 @@ Somehow, the brain recalls sensory information coming from the amputated limb, a
 
 Related Links:
 
-- [Dr. Steve Pettifer page](http://www.conscious-robots.com/Dr.%20Steve%20Pettifer).
+- [Dr. Steve Pettifer page](/en/pages/discontinued-resource/).
     
 - [Dr. Craig Murray Page](http://www.psych-sci.manchester.ac.uk/staff/CraigMurray)

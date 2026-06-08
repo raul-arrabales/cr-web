@@ -17,9 +17,9 @@ Dada la necesidad de usar un modelo más exacto de los sensores reales, hemos es
 
 ## Descarga del Servicio (Código fuente)
 
-- [Source Code Download](http://www.conscious-robots.com/en/download/software-components-for-robotics/simulatedpioneerbumper-service/details.html) (for Microsoft Robotics Studio 1.5)
+- [Source Code Download](/es/pages/recurso-descatalogado/) (for Microsoft Robotics Studio 1.5)
     
-- [Source Code Download for Robotics Developer Studio 2008](http://www.conscious-robots.com/es/descargas-./services-for-robotics-developer-studio-2008/index.php).
+- [Source Code Download for Robotics Developer Studio 2008](/es/pages/recurso-descatalogado/).
     
 
 ## Instrucciones de Instalación

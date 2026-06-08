@@ -17,9 +17,9 @@ The original [ExplorerSim](http://sky.fit.qut.edu.au/~taylort2/MSRS/ExplorerSim/
 
 **Service Download:**
 
-- [Source code download](http://www.conscious-robots.com/en/download/software-components-for-robotics/explorersimsonar-service-update-2-/details.html). (For MSRS 1.5)
+- [Source code download](/en/pages/discontinued-resource/). (For MSRS 1.5)
     
-- [Source Code Download (for Microsoft Robotics Developer  Studio 2008)](http://www.conscious-robots.com/en/download-./services-for-robotics-developer-studio-2008/index.php)
+- [Source Code Download (for Microsoft Robotics Developer  Studio 2008)](/en/pages/discontinued-resource/)
     
 
 **Installation instructions (for source code zip archive):**

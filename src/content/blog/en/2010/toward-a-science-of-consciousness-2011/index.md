@@ -12,7 +12,7 @@ categories:
 
 Toward a Science of Consciousness is an interdisciplinary conference emphasizing broad and rigorous approaches to the study of conscious awareness. Topical areas include neuroscience, philosophy, psychology, biology, quantum physics, meditation and altered states, machine consciousness, culture and experiential phenomenology. Held annually since 1994, the conference is organized by the Center for Consciousness Studies at the University of Arizona, and alternates yearly between Tucson, Arizona and various locations around the world. Toward a Science of Consciousness 2011 will be held at Stockholm University, Aula Magna Hall, Stockholm, Sweden, May 2-8, 2011.
 
-[See the Call for Abstracts](http://www.conscious-robots.com/Sessions,%20Themes%20and%20Speakers).
+[See the Call for Abstracts](/en/pages/discontinued-resource/).
 
 <!--more-->
 

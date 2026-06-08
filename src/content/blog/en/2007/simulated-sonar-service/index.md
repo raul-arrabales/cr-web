@@ -11,13 +11,13 @@ The Simulated SONAR Service provides access to a simulated SONAR array. It uses 
 
 ARCOS based robots (like the [Pioneer P3-DX](/en/blog/2007/mobilerobots-pioneer-3-p3-dx/)) can integrate up to four SONAR rings, each with eight transducers. These sensors provide object detection and distance information. The Robotics Studio platform doesn’t include a simulated SONAR service that could be use in the Visual Environment. However, there exists a generic contract for SONAR that I wanted to implement for the specific case of my SIMULATED P3-DX frontal SONAR array.
 
-**NOTE:** A real (not simulated) ARCOS SONAR service is available at: [http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/arcos-sonar-service.html](http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/arcos-sonar-service.html)
+**NOTE:** A real (not simulated) ARCOS SONAR service is available at: [this discontinued legacy resource](/en/pages/discontinued-resource/)
 
  I asked Microsoft and I got the following answer:
 
 _"you can make a reasonable simulated sonar sensor by doing something similar to the simulated laser rangefinder.  Instead of casting hundreds of rays in a scanline pattern like the laser rangefinder does, cast a handful of rays in a  cone that matches the aperture of the sonar sensor you want to simulate.  In  your code, look at the distance results returned by each ray and then set the sonar return value to be the closest intersection."_
 
-Trying to follow these instructions I wrote a service called SimulatedSonar – Source code is available in the [download section](http://www.conscious-robots.com/en/download/software-components-for-robotics/index.php).
+Trying to follow these instructions I wrote a service called SimulatedSonar – Source code is available in the [download section](/en/pages/discontinued-resource/).
 
 **NOTE:** Current version of SimulatedSonar don't generate a 3D cone using raycasting, instead a 2D pie is generated and used to calculate the closest intersection. Therefore, the robot only sees in a 2D plane (situated at the height of the SONAR device pose). In order to build a more realistic SONAR, this needs to be fixed. Additionally, noise should be added in the simulation in order to get as closest as possible to a real SONAR.
 
@@ -25,9 +25,9 @@ You can subscribe to this SimulatedSonar service from your application and easil
 
 **Service Download:**
 
-- [Source Code download](http://www.conscious-robots.com/en/download/software-components-for-robotics/simulated-sonar-beta1/details.html) (for MSRS 1.5).
+- [Source Code download](/en/pages/discontinued-resource/) (for MSRS 1.5).
     
-- [Source Code Download](http://www.conscious-robots.com/en/download-./services-for-robotics-developer-studio-2008/index.php) (for Microsoft Robotics Developer Studio 2008).
+- [Source Code Download](/en/pages/discontinued-resource/) (for Microsoft Robotics Developer Studio 2008).
     
 
 **Installation instructions (for source code zip archive):**
@@ -40,7 +40,7 @@ See the readme.txt file included in the distribution package for detailed instru
 
 **Service Details:**
 
-**Service Contract Identifier:**     _http://www.conscious-robots.com/2007/07/simulatedsonar.html_
+**Service Contract Identifier:**     _/en/pages/discontinued-resource/_
 
 **Implements generic contract:**     _Microsoft.Robotics.Services.Sonar_
 

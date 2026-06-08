@@ -13,7 +13,7 @@ The Simulated Pioneer GPS service provides a simple localization service to be u
 
 ## Service Download
 
- Simulated Pioneer GPS source code for MRDS 2008 R2 is available [here](http://www.conscious-robots.com/en/docman/mrds-2008-r2-services/index.php).
+ Simulated Pioneer GPS source code for MRDS 2008 R2 is available [here](/en/pages/discontinued-resource/).
 
 ## Installation Instructions
 
@@ -31,4 +31,4 @@ In order to have the project references working for your particular settings, yo
 
  bin\\DssProjectMigration.exe packages\\crubots\\simulation\\sensors\\SimulatedPioneerGPS
 
-See Readme.txt file for more details. Use the [MRDS forum](http://www.conscious-robots.com/en/forums-./microsoft-robotics-studio/showcat-5.html) if you have any question about this service.
+See Readme.txt file for more details. Use the [MRDS forum](/en/pages/discontinued-resource/) if you have any question about this service.

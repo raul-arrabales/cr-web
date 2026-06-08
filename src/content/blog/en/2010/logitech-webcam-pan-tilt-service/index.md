@@ -13,7 +13,7 @@ This service is based on the [Logitech Orbit/Sphere Mover DLL Library](http://co
 
 **Service Source Code Download**
 
-Pan Tilt Cam service source code is available at: [MRDS 2008 R2 Download section](http://www.conscious-robots.com/en/docman/mrds-2008-r2-services/index.php).
+Pan Tilt Cam service source code is available at: [MRDS 2008 R2 Download section](/en/pages/discontinued-resource/).
 
 **Service Details and Instructions**
 
@@ -47,4 +47,4 @@ The Pan Tilt service includes just a new operation called **_PanTiltOperation_**
 
     /// <summary> /// Pan Tilt Operation Request /// </summary> \[DataContract\] public class PanTiltOperationRequest { public enum OpType { MoveUp,     // Move the camera up MoveDown,   // Move the camera down MoveLeft,   // Move the camera left MoveRight,  // Move the camera right Reset       // Reset }
 
-See Readme.txt file for more details. Use the [MRDS forum](http://www.conscious-robots.com/en/forums-./microsoft-robotics-studio/showcat-5.html) if you have any question about this service.
+See Readme.txt file for more details. Use the [MRDS forum](/en/pages/discontinued-resource/) if you have any question about this service.

@@ -11,7 +11,7 @@ El servicio de SONAR Simulado proporciona acceso a un anillo sonar simulado. Usa
 
 Los robots basado en ARCOS (como el Pioneer P3-DX) pueden integrar hasta cuatro anillos Sonar, cada uno con ocho transductores. La plataforma Robotics Studio no incluye un servicio de Sonar Simulado que pueda usarse en el entorno visual (como es el caso del LRF). Sin embargo, sí que existe un contrato genérico para un sensor Sonar que quería implementar para el caso específico de un anillo frontal Sonar para el robot simulado Pioneer 3 DX.
 
-**NOTA:** También hay disponible un servicio de Sonar real para ARCOS (no simulado): http://www.conscious-robots.com/es/robotics-studio/robotics-studio-services/arcos-sonar-service.html
+**NOTA:** También hay disponible un servicio de Sonar real para ARCOS (no simulado): [este recurso antiguo ya no está disponible](/es/pages/recurso-descatalogado/)
 
  Con respecto a la simulación del Sonar esta es la sugerencia por parte de Microsoft:
 
@@ -25,9 +25,9 @@ Puedes suscribirte a este servicio SimulatedSonar desde tu aplicación y así ob
 
 **Descarga del Servicio:**
 
-- [Source Code download](http://www.conscious-robots.com/en/download/software-components-for-robotics/simulated-sonar-beta1/details.html) (for MSRS 1.5).
+- [Source Code download](/es/pages/recurso-descatalogado/) (for MSRS 1.5).
     
-- [Source Code Download](http://www.conscious-robots.com/es/descargas-./services-for-robotics-developer-studio-2008/index.php) (for Microsoft Robotics Developer Studio 2008).
+- [Source Code Download](/es/pages/recurso-descatalogado/) (for Microsoft Robotics Developer Studio 2008).
     
 
 **Instrucciones de Instalación (para el archivo zip con el código fuente):**
@@ -40,7 +40,7 @@ Mira el fichero readme.txt incluido en el paquete de distribución para ver inst
 
 **Detalles del Servicio:**
 
-**Identificador de Contrato:**     _http://www.conscious-robots.com/2007/07/simulatedsonar.html_
+**Identificador de Contrato:**     _/es/pages/recurso-descatalogado/_
 
 **Contrato Genérico Implementado:**     _Microsoft.Robotics.Services.Sonar_
 

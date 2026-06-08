@@ -14,7 +14,7 @@ tags:
 
 ### ¡¡¡El equipo Conscious-Robots ganador de la competición 2K BotPrize 2010!!!
 
-La tercera edición de la competición [2K BotPrize](http://www.botprize.org/) ha tenido lugar recientemente, habiéndose celebrado la sesión final en  Copenhague, en la conferencia [2010 IEEE Conference on Computational Intelligence and Games](http://game.itu.dk/cig2010/). Nos complace anunciar que el equipo español – Conscious-Robots – formado por [Jorge Muñoz](http://www.caos.inf.uc3m.es/~jorge/) y [Raúl Arrabales](http://www.conscious-robots.com/raul/) ha obtenido la victoria en la edición de este año de esta competición que consiste en un  [Test de Turing](http://es.wikipedia.org/wiki/Test_de_Turing) adaptado al dominio de los videojuegos \[1\].
+La tercera edición de la competición [2K BotPrize](http://www.botprize.org/) ha tenido lugar recientemente, habiéndose celebrado la sesión final en  Copenhague, en la conferencia [2010 IEEE Conference on Computational Intelligence and Games](http://game.itu.dk/cig2010/). Nos complace anunciar que el equipo español – Conscious-Robots – formado por [Jorge Muñoz](http://www.caos.inf.uc3m.es/~jorge/) y [Raúl Arrabales](/es/pages/recurso-descatalogado/) ha obtenido la victoria en la edición de este año de esta competición que consiste en un  [Test de Turing](http://es.wikipedia.org/wiki/Test_de_Turing) adaptado al dominio de los videojuegos \[1\].
 
 <img src="/legacy-images/images/botprizepic_1_small-300x256.jpg" alt="botprizepic\_1\_small" />
 

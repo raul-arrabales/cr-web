@@ -7,7 +7,7 @@ categories:
 
 ### In 30 years we will have an alternative to death: being a ghost in a machine.
 
-In a recent article by Christof Koch and Giulio Tononi \[1\], the authors argue that in 30 years we will be able to upload our mind to a computer. Actually, we can start building our “mindfiles” already using services like [Lifenaut](http://www.conscious-robots.com/en/conscious-machines/machine-consciousness-projects/eternalizing-consciousness-using-an-artificial-intelligenc.html).
+In a recent article by Christof Koch and Giulio Tononi \[1\], the authors argue that in 30 years we will be able to upload our mind to a computer. Actually, we can start building our “mindfiles” already using services like [Lifenaut](/en/pages/discontinued-resource/).
 
 Despite of the optimism of this claim, Koch and Tononi recall us that we don’t know yet what consciousness is. They believe that consciousness will be artificially created eventually; however, it might not be the same sort of consciousness as we think.
 

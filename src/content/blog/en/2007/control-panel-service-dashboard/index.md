@@ -13,7 +13,7 @@ This Control Panel Service provides access to a graphical representation of a�
 
 ARCOS based robots (like the [Pioneer P3-DX](/en/blog/2007/mobilerobots-pioneer-3-p3-dx/)) can integrate up to four SONAR rings, each with eight transducers. These sensors provide object detection and distance information. The Robotics Studio platform doesn’t include a simulated SONAR service that could be use in the Visual Environment. However, there exists a generic contract for SONAR that I wanted to implement for the specific case of my SIMULATED P3-DX frontal SONAR array.
 
-**NOTE:** A real (not simulated) ARCOS SONAR service is available at: [http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/arcos-sonar-service.html](http://www.conscious-robots.com/en/robotics-studio/robotics-studio-services/arcos-sonar-service.html)
+**NOTE:** A real (not simulated) ARCOS SONAR service is available at: [this discontinued legacy resource](/en/pages/discontinued-resource/)
 
 **NOTE:** Current version of SimulatedSonar don't generate a 3D cone using raycasting, instead a 2D pie is generated and used to calculate the closest intersection. Therefore, the robot only sees in a 2D plane (situated at the height of the SONAR device pose). In order to build a more realistic SONAR, this needs to be fixed. Additionally, noise should be added in the simulation in order to get as closest as possible to a real SONAR.
 
@@ -31,7 +31,7 @@ You can also check the actual values of measurement (in milimiters) obtained by 
 
 **Service Download:**
 
-- [Source Code download](http://www.conscious-robots.com/en/download/software-components-for-robotics/control-panel-update-9-/details.html)
+- [Source Code download](/en/pages/discontinued-resource/)
     
 
 **Installation instructions (for source code zip archive):**
@@ -42,7 +42,7 @@ See the readme.txt file included in the distribution package for detailed instru
 
 **Service Details:**
 
-**Service Contract Identifier:**     _http://www.conscious-robots.com/2007/8/controlpanel.html_
+**Service Contract Identifier:**     _/en/pages/discontinued-resource/_
 
 **Implements generic contract:**     _N/A_
 

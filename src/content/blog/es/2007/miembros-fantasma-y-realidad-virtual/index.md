@@ -15,4 +15,4 @@ De alguna forma, el cerebro recuerda la información sensitiva proveniente del m
 
 Enlaces relacionados:
 
-Página de [Dr. Steve Pettifer](http://www.conscious-robots.com/Dr.%20Steve%20Pettifer). Página de [Dr. Craig Murray](http://www.psych-sci.manchester.ac.uk/staff/CraigMurray).
+Página de [Dr. Steve Pettifer](/es/pages/recurso-descatalogado/). Página de [Dr. Craig Murray](http://www.psych-sci.manchester.ac.uk/staff/CraigMurray).

@@ -25,7 +25,7 @@ The original ExplorerSim service written by Trevor Taylor builds a map using the
 
 ## Application Download
 
-- [ExplorerSimSonar Application Download](http://www.conscious-robots.com/en/download/software-components-for-robotics/explorersimsonar-application-v11-/details.html)
+- [ExplorerSimSonar Application Download](/en/pages/discontinued-resource/)
 
 ## Installation Instructions - Usage
 

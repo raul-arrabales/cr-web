@@ -15,7 +15,7 @@ Pentti Haikonen es uno de los investigadores más destacados en el campo de la C
 
 La parte III de la tesis de Haikonen está disponible aquí (en inglés):
 
-Haikonen, Pentti O. A., [An Artificial Cognitive Neural System Based on a Novel Neuron Structure and a Reentrant Modular Architecture with Implications to Machine Consciousness](http://www.conscious-robots.com/documents/Haikonen_Thesis_part3.pdf). Helsinki University of Technology, Applied Electronics Laboratory, Series B: Research Reports, Espoo 1999, 156 pp. ISBN 951-22-4730-5, ISSN 1456-1174.
+Haikonen, Pentti O. A., [An Artificial Cognitive Neural System Based on a Novel Neuron Structure and a Reentrant Modular Architecture with Implications to Machine Consciousness](/es/pages/recurso-descatalogado/). Helsinki University of Technology, Applied Electronics Laboratory, Series B: Research Reports, Espoo 1999, 156 pp. ISBN 951-22-4730-5, ISSN 1456-1174.
 
 <!--more-->
 

@@ -142,7 +142,7 @@ Aparentemente, la máquina de Haikonen es capaz de mostrar un comportamiento que
 
 ##### La máquina de Haikonen en la escala ConsScale
 
-{mosimage} Si la conciencia es una característica binaria (de todo o nada) y el umbral no se pone muy alto al nivel de un humano adulto, entonces la máquina de Haikonen es consciente. Si la conciencia es una propiedad continua, entonces poniendo la máquina de Haikonen en la escala [ConsScale](http://www.conscious-robots.com/consscale/) de Raúl Arrabales ésta se colocaría alrededor de las 6 en punto en el gráfico de ConsScale, puntuando por debajo del nivel de los niños pequeños, y posiblemente paralela al nivel de algunos animales de los cuales sospechamos que tienen una conciencia mínima.
+{mosimage} Si la conciencia es una característica binaria (de todo o nada) y el umbral no se pone muy alto al nivel de un humano adulto, entonces la máquina de Haikonen es consciente. Si la conciencia es una propiedad continua, entonces poniendo la máquina de Haikonen en la escala [ConsScale](/es/pages/recurso-descatalogado/) de Raúl Arrabales ésta se colocaría alrededor de las 6 en punto en el gráfico de ConsScale, puntuando por debajo del nivel de los niños pequeños, y posiblemente paralela al nivel de algunos animales de los cuales sospechamos que tienen una conciencia mínima.
 
 {mosimage} Una vez dicho esto, la teoría de Haikonen no muestra claramente un camino para que emerja el concepto de “Yo”. Seguramente la máquina puede percibir el mundo, su cuerpo, su flujo mental. Si ve que una persona tras otra se señala a si misma diciendo “Yo”, probablemente pueda deducir que cada persona es un “Yo”. Delante de un espejo probablemente pueda reconocerse a sí misma, ¿sabría entonces que las percepciones y emociones que suceden son sus propios qualia? Haikonen se acerca tentadoramente a esto, pero no ha proporcionado el paso final para responder a esta pregunta inequívocamente.
 
@@ -156,4 +156,4 @@ Para una respuesta definitiva tendremos que esperar hasta que una máquina de Ha
 
 \- Reseña del libro: Robot Brains.
 
-\- Escala Cognitiva de Conciencia: [ConsScale](http://www.conscious-robots.com/consscale/).
+\- Escala Cognitiva de Conciencia: [ConsScale](/es/pages/recurso-descatalogado/).

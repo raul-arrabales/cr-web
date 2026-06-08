@@ -12,4 +12,4 @@ I’m about to finish reading the book _**Consciousness Explained by Daniel C. D
 
 As usual, the phenomenal dimension of consciousness is the controversial point. Dennett introduces the term “heterophenomenology” in this book. The heterophenomenological approach is the tool used by Dennett to explain the proposed model.
 
-An interesting interview with the author of the book, Daniel Dennett, is available [here](http://www.conscious-robots.com/en/researchers-and-associations/interviews/interview-with-daniel-dennett-by-robert-w.html).
+An interesting interview with the author of the book, Daniel Dennett, is available [here](/en/pages/discontinued-resource/).

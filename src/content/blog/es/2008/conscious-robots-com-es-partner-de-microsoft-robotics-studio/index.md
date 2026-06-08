@@ -16,4 +16,4 @@ Tal y como anunció el Grupo de Robótica de Microsoft (Microsoft Robotics Grou
 
 - [Microsoft Robotics Studio](http://www.microsoft.com/robotics).
     
-- [Conscious-Robots.com - Páginas de Robotics Studio](http://www.conscious-robots.com/es/robotics-studio/2.html).
+- [Conscious-Robots.com - Páginas de Robotics Studio](/es/pages/recurso-descatalogado/).
