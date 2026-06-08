@@ -1,0 +1,13 @@
+RT Conference Proceedings
+SR Print
+ID 23
+A1 Arrabales,Raúl
+A1 Ledezma,Agapito
+A1 Sanchis,Araceli
+T1 Modeling Consciousness for Autonomous Robot Exploration
+YR 2007
+VO 4527
+T2 IWINAC 2007
+T3 Lecture Notes in Computer Science
+AN Arrabales:2007
+SF InProceedings

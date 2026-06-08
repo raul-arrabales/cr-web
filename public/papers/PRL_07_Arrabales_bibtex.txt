@@ -1,0 +1,9 @@
+@inproceedings{ArrabalesPRL2008,
+	author={Raúl Arrabales and Araceli Sanchis},
+	year={2008},
+	title={Applying Machine Consciousness Models in Autonomous Situated Agents},
+	journal={Pattern Recognition Letters},
+	volume={29},
+	number={8},
+	pages={1033--1038}
+}

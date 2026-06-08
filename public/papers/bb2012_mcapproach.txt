@@ -1,0 +1,14 @@
+﻿@incollection {springerlink:10.1007/978-3-642-32323-2_7,
+   author = {Arrabales, Raúl and Muñoz, Jorge and Ledezma, Agapito and Gutierrez, German and Sanchis, Araceli},
+   affiliation = {Universidad Carlos III de Madrid, Avda. de la Universidad 30, 28911 Leganés, Madrid, Spain},
+   title = {A Machine Consciousness Approach to the Design of Human-Like Bots},
+   booktitle = {Believable Bots},
+   editor = {Hingston, Philip},
+   publisher = {Springer Berlin Heidelberg},
+   isbn = {978-3-642-32323-2},
+   keyword = {Computer Science},
+   pages = {171-191},
+   url = {http://dx.doi.org/10.1007/978-3-642-32323-2_7},
+   note = {10.1007/978-3-642-32323-2_7},
+   year = {2012}
+}

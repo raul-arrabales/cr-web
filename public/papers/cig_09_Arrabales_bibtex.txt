@@ -1,0 +1,10 @@
+@inproceedings{Arrabales_cig_09,
+	author={Raul Arrabales and Agapito Ledezma and Araceli Sanchis},
+	year={2009},
+	month={September},
+	pages={217--224},
+	address={Milano, Italy},
+	title={Towards Conscious-like Behavior in Computer Game Characters},
+	booktitle={IEEE Symposium on Computational Intelligence and Games},
+	publisher={IEEE Press}
+}

@@ -1,0 +1,9 @@
+@inproceedings{Arrabales_bics_2010,
+	author={Raul Arrabales and Agapito Ledezma and Araceli Sanchis},
+	year={2010},
+	month={July},
+	address={Madrid, Spain},
+	title={Towards the Generation of Visual Qualia in Artificial Cognitive Architectures},
+	booktitle={BICS 2010. Brain Inspired Cognitive Systems},
+	editor={Carlos Hernandez and Jaime Gomez and Ricardo Sanz}
+}

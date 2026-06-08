@@ -1,0 +1,9 @@
+@inproceedings{Arrabales_iwmc_09,
+	author={Raul Arrabales and Agapito Ledezma and Araceli Sanchis},
+	year={2009},
+	month={June},
+	address={Hong Kong},
+	title={CERA-CRANIUM: A Test Bed for Machine Consciousness Research},
+	booktitle={International Workshop on Machine Consciousness. Towards a Science of Consciousness 2009},
+	pages={105}
+}

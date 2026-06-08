@@ -1,0 +1,8 @@
+@InProceedings{Arrabales2008d,
+  title =	"A Multimodal Attention Mechanism for Autonomous Mobile Robotics",
+  author =	"Raul Arrabales and Agapito Ledezma and Araceli Sanchis",
+  booktitle =	"IX Workshop on Physical Agents 2008",
+  year = 	"2008",
+  pages =	"121-128",
+  location = 	"Vigo, Spain",
+}

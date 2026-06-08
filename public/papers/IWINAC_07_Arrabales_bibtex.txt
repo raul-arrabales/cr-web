@@ -1,0 +1,9 @@
+@inproceedings{Arrabales2007,
+	author={Raúl Arrabales and Agapito Ledezma and Araceli Sanchis},
+	year={2007},
+	title={Modeling Consciousness for Autonomous Robot Exploration},
+	booktitle={IWINAC 2007},
+	series={Lecture Notes in Computer Science},
+	volume={4527},
+	pages={51-60}
+}

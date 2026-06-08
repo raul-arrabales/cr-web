@@ -1,0 +1,10 @@
+@InProceedings{Arrabales2006,
+  title =	"A Machine Consciousness Approach to Autonomous Mobile Robotics",
+  author =	"Raul Arrabales and Araceli Sanchis",
+  booktitle =	"5th International Cognitive Robotics Workshop. AAAI-06.",
+  year = 	"2006",
+  ISBN =	"978-1-57735-285-3",
+  pages =	"111-118",
+  publisher =	"AAAI Press",
+  location = 	"Boston, MA.",
+}

@@ -1,0 +1,9 @@
+@inproceedings{AAAIFSS09Arrabales2009,
+	author={Raúl Arrabales and Agapito Ledezma and Araceli Sanchis},
+	year={2009},
+	title={Assessing and Characterizing the Cognitive Power of Machine Consciousness Implementations},
+	booktitle={Biologically Inspired Cognitive Architectures II},
+	series={AAAI Fall Symposium Series},
+	volume={1},
+	pages={16-21}
+}

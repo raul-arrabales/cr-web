@@ -1,0 +1,8 @@
+@InProceedings{Arrabales20081,
+  title =	"Criteria for Consciousness in Artificial Intelligent Agents",
+  author =	"Raul Arrabales and Agapito Ledezma and Araceli Sanchis",
+  booktitle =	"Proceedings of the AAMAS Workshop on Adaptive Learning and Multi-Agent Systems ALAMAS-ALAg 2008.",
+  year = 	"2008",
+  location = 	"Estoril, Portugal",
+  pages =	"57--64",
+}

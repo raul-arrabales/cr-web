@@ -1,0 +1,19 @@
+
+TY  - JOUR
+ID  - 8
+A1  - Arrabales,R.
+A1  - Flanagan,C.
+A1  - Toal,D.
+T1  - An Adaptive Video Event Mining System for an Autonomous Underwater Vehicle
+Y1  - 2002
+VL  - 12,
+SP  - 585
+EP  - 591
+N1  - key: Arrabales et al.
+A3  - Anonymous
+JF  - Intelligent Engineering Systems through Artificial Neural Networks
+M1  - Journal
+ER  - 
+
+
+

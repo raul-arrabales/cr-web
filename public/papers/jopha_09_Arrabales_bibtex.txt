@@ -1,0 +1,10 @@
+@article{Arrabales:jopha09,
+	author={R. Arrabales and A. Ledezma and A. Sanchis},
+	year={2009},
+	title={A Cognitive Approach to Multimodal Attention},
+	journal={Journal of Physical Agents},
+	volume={3},
+	number={1},
+	pages={53-64}
+}
+

@@ -1,0 +1,10 @@
+﻿@incollection {vgconsciousness2012,
+   author = {Arrabales, Raúl and Munoz, Jorge},
+   title = {Enhancing Game Play Experience Using Machine Consciousness},
+   booktitle = {Video Game Play and Consciousness},
+   editor = {Gackenbach, Jayne},
+   publisher = {Nova Publishers},
+   isbn = {978-1-62081-113-9},
+   pages = {319-328},
+   year = {2012}
+}

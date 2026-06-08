@@ -1,0 +1,14 @@
+﻿@incollection {springerlink:10.1007/978-3-642-32323-2_8,
+   author = {Arrabales, Raúl and Ledezma, Agapito and Sanchis, Araceli},
+   affiliation = {Carlos III University of Madrid, Avda. Universidad 30, 28911 Leganés, Madrid, Spain},
+   title = {&lt;i&gt;ConsScale&lt;/i&gt; FPS: Cognitive Integration for Improved Believability in Computer Game Bots},
+   booktitle = {Believable Bots},
+   editor = {Hingston, Philip},
+   publisher = {Springer Berlin Heidelberg},
+   isbn = {978-3-642-32323-2},
+   keyword = {Computer Science},
+   pages = {193-214},
+   url = {http://dx.doi.org/10.1007/978-3-642-32323-2_8},
+   note = {10.1007/978-3-642-32323-2_8},
+   year = {2012}
+}

@@ -1,0 +1,9 @@
+@phdthesis{Arrabales_thesis:2011,
+	author={Raul Arrabales},
+	title={Evaluation and Development of Consciousness in Artificial Cognitive Systems},
+	year={2011},
+	type={PhD in Computer Science and Technology}
+	month={February},
+	school={Polytechnic School, Carlos III University of Madrid}, 
+	address={Avda. Universidad, 30. 28911 Leganes. Spain}
+}

@@ -1,0 +1,96 @@
+Refworks Export Tagged Format
+
+Character Set=utf-8
+
+Tag legend
+*****
+RT=Reference Type
+SR=Source Type
+ID=Reference Identifier
+A1=Primary Authors
+T1=Primary Title
+JF=Periodical Full
+JO=Periodical Abbrev
+YR=Publication Year
+FD=Publication Data,Free Form
+VO=Volume
+IS=Issue
+SP=Start Page
+OP=Other Pages
+K1=Keyword
+AB=Abstract
+NO=Notes
+A2=Secondary Authors
+T2=Secondary Title
+ED=Edition
+PB=Publisher
+PP=Place of Publication
+A3=Tertiary Authors
+A4=Quaternary Authors
+A5=Quinary Authors
+T3=Tertiary Title
+SN=ISSN/ISBN
+AV=Availability
+AD=Author Address
+AN=Accession Number
+LA=Language
+CL=Classification
+SF=Subfile/Database
+OT=Original Foreign Title
+LK=Links
+DO=Document Object Index
+CN=Call Number
+DB=Database
+DS=Data Source
+IP=Identifying Phrase
+RD=Retrieved Date
+ST=Shortened Title
+U1=User 1
+U2=User 2
+U3=User 3
+U4=User 4
+U5=User 5
+UL=URL
+SL=Sponsoring Library
+LL=Sponsoring Library Location
+CR=Cited References
+WT=Website Title
+A6=Website Editor
+WV=Website Version
+WP=Date of Electronic Publication
+
+*****
+Font Attribute Legend
+Start Bold = 0RW1S34RfeSDcfkexd09rT0
+End Bold = 1RW1S34RfeSDcfkexd09rT0
+Start Underline = 0RW1S34RfeSDcfkexd09rT1
+End Underline = 1RW1S34RfeSDcfkexd09rT1
+Start Italic = 0RW1S34RfeSDcfkexd09rT2
+End Italic = 1RW1S34RfeSDcfkexd09rT2
+Start SuperScript = 0RW1S34RfeSDcfkexd09rT3
+End SuperScript = 1RW1S34RfeSDcfkexd09rT3
+Start SubScript = 0RW1S34RfeSDcfkexd09rT4
+End SubScript = 1RW1S34RfeSDcfkexd09rT4
+
+*****
+BEGIN EXPORTED REFERENCES
+
+
+
+
+RT Journal
+SR Print
+ID 8
+A1 Arrabales,R.
+A1 Flanagan,C.
+A1 Toal,D.
+T1 An Adaptive Video Event Mining System for an Autonomous Underwater Vehicle
+JF Intelligent Engineering Systems through Artificial Neural Networks
+YR 2002
+VO 12,
+SP 585
+OP 591
+NO key: Arrabales et al.
+AN Arrabales:2002
+SF Article
+

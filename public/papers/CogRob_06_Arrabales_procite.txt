@@ -1,0 +1,11 @@
+TY  - CONF
+ID  - 22
+A1  - Arrabales,Raúl
+A1  - Sanchis,Araceli
+T1  - A Machine Consciousness Approach to Autonomous Mobile Robotics
+Y1  - 2006
+T2  - 5th International Cognitive Robotics Workshop. AAAI-06.
+VL  - Boston, MA.
+A3  - Anonymous
+M1  - Conference Proceedings
+ER  - 

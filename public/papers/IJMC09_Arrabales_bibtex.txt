@@ -1,0 +1,9 @@
+@article{ArrabalesIJMC2009,
+	author={Raúl Arrabales and Agapito Ledezma and Araceli Sanchis},
+	year={2009},
+	title={Strategies for Measuring Machine Consciousness},
+	journal={International Journal of Machine Consciousness},
+	volume={1},
+	number={2},
+	pages={193--201}
+}

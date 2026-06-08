@@ -1,0 +1,14 @@
+@article {Arrabales:2010:1355-8250:131,
+	author = "Arrabales, Raul",
+	author = "Ledezma, A.",
+	author = "Sanchis, A.",
+	title = "ConsScale. A Pragmatic Scale for Measuring the Level of Consciousness in Artificial Agents",
+	journal = "Journal of Consciousness Studies",
+	volume = "17",
+	number = "3-4",
+	year = "2010",
+	abstract = "One of the key problems the field of Machine Consciousness (MC) is currently facing is the need to accurately assess the potential level of consciousness that an artificial agent might develop. This paper presents a novel artificial consciousness scale designed to provide a pragmatic and intuitive reference in the evaluation of MC implementations. The version of ConsScale described in this work provides a comprehensive evaluation mechanism which enables the estimation of the potential degree of consciousness of most of the existing artificial implementations. This scale offers both well defined levels of artificial consciousness (that can be used for qualitative classification of agents) and a method to calculate an orientative numerical score (which provides a quantitative grade for comparing agents in terms of consciousness). A set of architectural and cognitive criteria is considered for each level of the scale. This permits the definition of a cognitive framework in which MC implementations can be ranked according to their potential capability to reproduce functional synergies associated with consciousness. The probability of the implementations having any phenomenal states related to the assessed functional synergy is not specifically addressed in this paper; nevertheless, it could be thoughtfully discussed elsewhere.",
+	pages = "131-164(34)",
+	url = "http://www.ingentaconnect.com/content/imp/jcs/2010/00000017/F0020003/art00008"
+}
+

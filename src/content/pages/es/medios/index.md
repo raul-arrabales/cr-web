@@ -273,7 +273,7 @@ BotPrize 2010 winners. Science Magazine
 
 - "Unreal Tournament 2010: Narrowing the Gap between Human and Bot". Surfdaddy Orca. (10 Sept. 2010). [h+ magazine](http://www.hplusmagazine.com/editors-blog/unreal-tournament-2010-narrowing-gap-between-human-and-bot).
 
-- Radio interview about 2K BotPrize 2010. Ainhoa Goñi. [Cadena Ser](http://www.cadenaser.com/). Programa Hoy por Hoy Madrid (08 Sept. 2010). [YouTube](http://www.youtube.com/watch?v=iLhH9eaaP8c) - [MP3](papers/HoyxHoyMadrid_2010_09_08_BotPrize.mp3).
+- Radio interview about 2K BotPrize 2010. Ainhoa Goñi. [Cadena Ser](http://www.cadenaser.com/). Programa Hoy por Hoy Madrid (08 Sept. 2010). [YouTube](http://www.youtube.com/watch?v=iLhH9eaaP8c) - [MP3](/papers/HoyxHoyMadrid_2010_09_08_BotPrize.mp3).
 
 - "Un equipo español queda en primer lugar del 2K BotPrize 2010". Lektu / Microsiervos. [Lainformacion.com](http://noticias.lainformacion.com/ciencia-y-tecnologia/tecnologia-general/un-equipo-espanol-queda-en-primer-lugar-del-2k-botprize-2010_eB2nYg5smd9hxIN2WnHWR1/) (02 Sept. 2010).
 

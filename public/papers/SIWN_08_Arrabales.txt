@@ -1,0 +1,8 @@
+@inproceedings{ArrabalesSIWN2008,
+	author={Raúl Arrabales and Agapito Ledezma and Araceli Sanchis},
+	year={2008},
+	title={Integrated Attention for Cognitive Robotics},
+	journal={Communications of the Systemics and Informatics World Network},
+	volume={5},
+	pages={1-5}
+}

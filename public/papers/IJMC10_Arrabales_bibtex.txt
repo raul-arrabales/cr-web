@@ -1,0 +1,11 @@
+@article{ArrabalesIJMC2010,
+	author={Raúl Arrabales and Agapito Ledezma and Araceli Sanchis},
+	year={2010},
+	month={December},
+	editor={Alexei V. Samsonovich},
+	title={The Cognitive Development of Machine Consciousness Implementations},
+	journal={International Journal of Machine Consciousness},
+	volume={2},
+	number={2},
+	pages={213--225}
+}

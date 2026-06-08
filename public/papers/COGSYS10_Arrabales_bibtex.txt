@@ -1,0 +1,8 @@
+@inproceedings{Arrabales_cogsys_2010,
+	author={Raul Arrabales and Agapito Ledezma and Araceli Sanchis},
+	year={2010},
+	month={January},
+	address={Zurich, Switzerland},
+	title={ConsScale: A Cognitive Scale Inspired on Consciousness},
+	booktitle={International Conference on Cognitive Systems (CogSys 2010)}
+}

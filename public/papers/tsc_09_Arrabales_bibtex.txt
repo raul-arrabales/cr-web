@@ -1,0 +1,9 @@
+@inproceedings{Arrabales_tsc_09,
+	author={Raul Arrabales and Agapito Ledezma and Araceli Sanchis},
+	year={2009},
+	month={June},
+	address={Hong Kong},
+	title={Designing Human-like Video Game Synthetic Characters through Machine Consciousness},
+	booktitle={Towards a Science of Consciousness 2009},
+	pages={74}
+}

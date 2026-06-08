@@ -1,0 +1,8 @@
+@InProceedings{Arrabales2008c,
+  title =	"ConsScale: A Plausible Test for Machine Consciouness?",
+  author =	"Raul Arrabales and Agapito Ledezma and Araceli Sanchis",
+  booktitle =	"Proceedings of the Nokia Workshop on Machine Consciousness.",
+  year = 	"2008",
+  pages =	"49-57",
+  location = 	"Helsinki, Finland",
+}
