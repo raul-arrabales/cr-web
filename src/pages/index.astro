@@ -108,6 +108,47 @@ const latestPostsByLanguage = await Promise.all(
         margin-top: 1.25rem;
       }
 
+      .intro-card {
+        max-width: 44rem;
+        margin-top: 1.35rem;
+        padding: 1rem 1.1rem;
+        border: 1px solid var(--line);
+        border-radius: 1.1rem;
+        background: linear-gradient(135deg, var(--surface-strong), var(--surface-soft));
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.24);
+      }
+
+      .intro-card p {
+        margin: 0;
+        color: var(--text);
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+
+      .cta-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 2.75rem;
+        padding: 0.7rem 1rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background:
+          linear-gradient(135deg, var(--surface-strong), var(--surface-soft));
+        text-decoration: none;
+        transition:
+          transform 160ms ease,
+          border-color 160ms ease,
+          color 160ms ease,
+          background 160ms ease;
+      }
+
+      .cta-link:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+        transform: translateY(-1px);
+      }
+
       .grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -231,6 +272,17 @@ const latestPostsByLanguage = await Promise.all(
           <p class="lede">
             Cognitive Science | Artificial Intelligence | Machine Consciousness 
           </p>
+          <div class="intro-card">
+            <p>
+              Raúl Arrabales Moreno is an AI expert, psychologist, researcher, and educator
+              focused on helping organizations turn Artificial Intelligence into practical and
+              responsible value
+            </p>
+          </div>
+          <div class="cta-row" aria-label="Language landing pages">
+            <a class="cta-link" href="/en/">Enter in English</a>
+            <a class="cta-link" href="/es/">Entrar en español</a>
+          </div>
         </section>
 
         <section class="grid">

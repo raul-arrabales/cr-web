@@ -43,6 +43,9 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
       <p class="eyebrow">{copy.exploreLabel}</p>
       <h1>{copy.siteTitle}</h1>
       <p class="lede">{copy.homeIntro}</p>
+      <div class="intro-card">
+        <p>{copy.homeSummary}</p>
+      </div>
     </div>
   </section>
 
@@ -88,6 +91,23 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
 
     .browse-all {
       text-decoration: none;
+    }
+
+    .intro-card {
+      max-width: 44rem;
+      margin-top: 1.35rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--line);
+      border-radius: 1.1rem;
+      background: linear-gradient(135deg, var(--surface-strong), var(--surface-soft));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.24);
+    }
+
+    .intro-card p {
+      margin: 0;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.65;
     }
 
     .browse-all:hover {

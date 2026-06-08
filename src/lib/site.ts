@@ -43,6 +43,7 @@ type SiteCopy = {
   menuLabel: string;
   switchLanguageLabel: string;
   homeIntro: string;
+  homeSummary: string;
   blogIntro: string;
   dateLocale: string;
   recentPostsLabel: string;
@@ -129,6 +130,8 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     menuLabel: "Main menu",
     switchLanguageLabel: "Switch language",
     homeIntro: "Personal website, blog, books, and research-related writing.",
+    homeSummary:
+      "Raúl Arrabales Moreno is an AI expert, psychologist, researcher, and educator focused on helping organizations turn Artificial Intelligence into practical and responsible value",
     blogIntro: "Writing on artificial intelligence, consciousness, psychology, and related topics.",
     dateLocale: "en-US",
     recentPostsLabel: "Recent posts",
@@ -184,6 +187,8 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     menuLabel: "Menú principal",
     switchLanguageLabel: "Cambiar idioma",
     homeIntro: "Web personal, blog, libros y publicaciones relacionadas con la investigación.",
+    homeSummary:
+      "Raúl Arrabales Moreno es un experto en IA, psicólogo, investigador y docente, centrado en ayudar a las organizaciones a convertir la Inteligencia Artificial en valor práctico y responsable",
     blogIntro: "Artículos sobre inteligencia artificial, consciencia, psicología y temas afines.",
     dateLocale: "es-ES",
     recentPostsLabel: "Entradas recientes",
