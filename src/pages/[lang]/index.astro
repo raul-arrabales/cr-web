@@ -72,6 +72,14 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
         </li>
       ))}
     </ul>
+
+    <div class="archive-cta">
+      <div class="archive-cta-copy">
+        <p class="archive-cta-label">{copy.blogLabel}</p>
+        <p>{copy.browseArchiveIntro}</p>
+      </div>
+      <a class="browse-all archive-cta-link" href={routes.blog}>{copy.browseArchiveLabel}</a>
+    </div>
   </section>
 
   <section class="panel">
@@ -114,6 +122,7 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
       color: var(--accent);
     }
 
+    .archive-cta,
     .search-cta {
       display: flex;
       flex-wrap: wrap;
@@ -125,6 +134,36 @@ const formatter = new Intl.DateTimeFormat(copy.dateLocale, {
     .search-cta-copy {
       flex: 1 1 24rem;
       max-width: 40rem;
+    }
+
+    .archive-cta {
+      margin-top: 1.1rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--line);
+      border-radius: 1.1rem;
+      background: linear-gradient(135deg, var(--surface), var(--surface-soft));
+    }
+
+    .archive-cta-copy {
+      flex: 1 1 24rem;
+      max-width: 34rem;
+    }
+
+    .archive-cta-copy p {
+      margin: 0;
+    }
+
+    .archive-cta-label {
+      margin-bottom: 0.3rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .archive-cta-link {
+      flex: none;
     }
 
     .search-cta-copy p {

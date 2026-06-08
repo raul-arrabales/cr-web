@@ -49,6 +49,8 @@ type SiteCopy = {
   recentPostsLabel: string;
   latestPostsLabel: string;
   viewAllLabel: string;
+  browseArchiveLabel: string;
+  browseArchiveIntro: string;
   searchLabel: string;
   searchIntro: string;
   searchPlaceholder: string;
@@ -69,6 +71,8 @@ type SiteCopy = {
   paginationLabel: string;
   previousPageLabel: string;
   nextPageLabel: string;
+  previousPostLabel: string;
+  nextPostLabel: string;
   blogCategoriesLabel: string;
   blogTagsLabel: string;
   blogCategoryArchiveTitle: string;
@@ -137,6 +141,8 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     recentPostsLabel: "Recent posts",
     latestPostsLabel: "The Latest",
     viewAllLabel: "View all",
+    browseArchiveLabel: "Browse the archive",
+    browseArchiveIntro: "Looking for older writing? Explore the full blog archive.",
     searchLabel: "Search",
     searchIntro: "Find posts and pages.",
     searchPlaceholder: "Search posts and pages...",
@@ -157,6 +163,8 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     paginationLabel: "Blog pagination",
     previousPageLabel: "Previous",
     nextPageLabel: "Next",
+    previousPostLabel: "Previous post",
+    nextPostLabel: "Next post",
     blogCategoriesLabel: "Browse by category",
     blogTagsLabel: "Browse by tag",
     blogCategoryArchiveTitle: "Category",
@@ -194,6 +202,8 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     recentPostsLabel: "Entradas recientes",
     latestPostsLabel: "Lo último",
     viewAllLabel: "Ver todo",
+    browseArchiveLabel: "Explorar el archivo",
+    browseArchiveIntro: "Si buscas artículos anteriores, recorre el archivo completo del blog.",
     searchLabel: "Buscar",
     searchIntro: "Encuentra entradas y páginas.",
     searchPlaceholder: "Buscar entradas y páginas...",
@@ -214,6 +224,8 @@ export const siteCopy: Record<Lang, SiteCopy> = {
     paginationLabel: "Paginación del blog",
     previousPageLabel: "Anterior",
     nextPageLabel: "Siguiente",
+    previousPostLabel: "Entrada anterior",
+    nextPostLabel: "Entrada siguiente",
     blogCategoriesLabel: "Explorar por categoría",
     blogTagsLabel: "Explorar por etiqueta",
     blogCategoryArchiveTitle: "Categoría",
