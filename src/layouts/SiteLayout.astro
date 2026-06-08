@@ -66,19 +66,90 @@ const faviconVersion = "cr-5";
       }
 
       .prose img {
+        display: block;
         max-width: 100%;
         height: auto;
         border-radius: 1rem;
       }
 
       .prose figure {
-        margin: 1.75rem 0;
+        --content-media-max-width: min(100%, 42rem);
+        margin: 2rem auto;
+        width: min(100%, var(--content-media-max-width));
+      }
+
+      .prose figure.content-media {
+        padding: 0.9rem;
+        border: 1px solid var(--line);
+        border-radius: 1.35rem;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.08)),
+          var(--surface-strong);
+        box-shadow: var(--shadow);
+      }
+
+      .prose figure.content-media > :first-child {
+        margin-top: 0;
+      }
+
+      .prose figure.content-media > :last-child {
+        margin-bottom: 0;
+      }
+
+      .prose figure.content-media :where(img, a) {
+        display: block;
+      }
+
+      .prose figure.content-media img {
+        width: 100%;
+        border: 0;
+        border-radius: 0.95rem;
+        background: rgba(255, 255, 255, 0.72);
+        box-shadow: none;
       }
 
       .prose figcaption {
-        margin-top: 0.75rem;
+        margin-top: 0.85rem;
         color: var(--muted);
-        font-size: 0.95rem;
+        font-size: 0.92rem;
+        line-height: 1.55;
+        text-align: center;
+        text-wrap: pretty;
+      }
+
+      .prose > img,
+      .prose > p > img:first-child,
+      .prose > p > a:first-child:only-child,
+      .prose > p.media-leading-paragraph > a:first-child {
+        width: min(100%, 42rem);
+        margin: 2rem auto;
+      }
+
+      .prose > img,
+      .prose > p > img:first-child,
+      .prose > p > a:first-child:only-child > img,
+      .prose > p.media-leading-paragraph > a:first-child > img {
+        border: 1px solid var(--line);
+        background: var(--surface-strong);
+        box-shadow: var(--shadow);
+      }
+
+      .prose > p.media-leading-paragraph {
+        margin: 2rem 0;
+      }
+
+      .prose > p.media-leading-paragraph > :is(img, a):first-child {
+        margin-bottom: 1rem;
+      }
+
+      .prose > p.media-leading-paragraph > a:first-child {
+        display: block;
+      }
+
+      .prose > p.media-leading-paragraph > img:first-child,
+      .prose > p.media-leading-paragraph > a:first-child > img {
+        width: min(100%, 42rem);
+        margin-inline: auto;
       }
 
       .prose a {
