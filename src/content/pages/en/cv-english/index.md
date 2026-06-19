@@ -25,6 +25,7 @@ date: 2015-12-27
   <div class="cv-index-grid">
     <a href="#higher-education">Higher Education</a>
     <a href="#industry-professional-experience">Industry / Professional Experience</a>
+    <a href="#ai-architecture-deployment-expertise">AI Architecture & Deployment Expertise</a>
     <a href="#clinical-psychology-experience">Clinical Psychology Experience</a>
     <a href="#specialized-training-in-psychology">Specialized Training in Psychology</a>
     <a href="#international-doctoral-training">International Doctoral Training</a>
@@ -87,6 +88,30 @@ date: 2015-12-27
 | _2003 - 2004_ | _**nCUBE Corp. (CommScope). EMEA. Consultant**_   IPTV solutions. Presales consultant in Europe and support consultant EMEA. |
 | _2002 - 2003_ | _**Krop Audiovisual. (EADS Group). Technical consultant**_   Development and deployment of IPTV and VoD applications. |
 | _2000 - 2001_ | _**IBM Spain. Regional E-Commerce Web Producer**_   Deployment of B2B extranets for IBM Spain gold partners. |
+
+<h2 id="ai-architecture-deployment-expertise">AI Architecture & Deployment Expertise</h2>
+
+* * *
+
+**AI Implementation**
+
+| Generative AI | LLM-based application development. |
+| :-- | --- |
+| Agentic AI | Multi-Agent Architectures, orchestration, MCP, A2A. |
+| RAG | Semantic search, knowledge graphs, GraphRAG, Agentic RAG. |
+| Coding Agents | ADLC, Agent Skills, Agents.md, Harness Engineering. |
+| Enterprise Integration | MCP/AI Gateways, LLM routers, AI control plane. |
+| AgentOps | EDD, AI O11y, guardrails, GenAI evaluations, testset generation. |
+
+**Technical Stack**
+
+| Dev | Python, OpenAI API, VS Code, Git/GitHub, Codex. |
+| :-- | --- |
+| Agents | LangGraph, CrewAI, Msft Agent Framework. |
+| RAG | LangChain, LlamaIndex, Weviate, Chroma, Faiss, Neo4j, RAGAS. |
+| DSML | DataRobot, Databricks, Scikit-learn, Spark MLlib, R, MLFlow. |
+| Deployment | vLLM, FastMCP, Flask, Docker, Cloud Run, n8n, AI Foundry. |
+| Low Code | Copilot Studio, KNIME, FlutterFlow. |
 
 <h2 id="clinical-psychology-experience">Clinical Psychology Experience</h2>
 
@@ -403,7 +428,7 @@ date: 2015-12-27
 
 <h2 id="technical-methodological-skills">Technical & Methodological Skills</h2>
 
-| **Generative AI** | LLMs, RAG, MCP, AI Agents, Coding Agents | 
+| **Generative AI** | LLM-based application development, RAG architectures (GraphRAG, Agentic RAG), AI Agents (Orchestration patterns, MCP, A2A), Coding Agents (Codex) | 
 | --- | --- |
 | **B2B sales:** | Pipeline generation, MEDDIC, PoV planning and execution, business value assessment |
 | **Cognitive science:** | Cognitive and clinical psychology, artificial intelligence, psychobiology |

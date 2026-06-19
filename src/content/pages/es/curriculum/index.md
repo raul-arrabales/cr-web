@@ -25,6 +25,7 @@ date: 2016-01-03
   <div class="cv-index-grid">
     <a href="#formacion-universitaria">Formación Universitaria</a>
     <a href="#experiencia-profesional">Experiencia Profesional</a>
+    <a href="#experiencia-en-arquitectura-y-despliegue-de-ia">Experiencia en Arquitectura y Despliegue de IA</a>
     <a href="#experiencia-en-psicologia-clinica">Experiencia en Psicología Clínica</a>
     <a href="#formacion-especializada-en-psicologia">Formación Especializada en Psicología</a>
     <a href="#formacion-doctoral-internacional">Formación Doctoral Internacional</a>
@@ -89,6 +90,30 @@ date: 2016-01-03
 | _2003-2004_ | _**nCUBE Corp. (CommScope). EMEA. Consultor Ingeniero**_   Pre-venta para nuevos despliegues en Europa y consultor de soporte EMEA. |
 | _2002-2003_ | _**Krop Audiovisual. (EADS Group). Ingeniero de sistemas**_   Ingeniero de vídeo bajo demanda y middleware para soluciones de TV digital. |
 | _2000-2001_ | _**IBM España. Técnico E-Commerce**_   Implantación de E-Catalogues y Gestores de Contenido Web B2B en España. |
+
+<h2 id="experiencia-en-arquitectura-y-despliegue-de-ia">Experiencia en Arquitectura y Despliegue de IA</h2>
+
+* * *
+
+**Implementación de IA**
+
+| IA Generativa | Desarrollo de aplicaciones basadas en LLMs. |
+| :-- | --- |
+| IA Agéntica | Arquitecturas multiagente, orquestación, MCP, A2A. |
+| RAG | Búsqueda semántica, grafos de conocimiento, GraphRAG, Agentic RAG. |
+| Agentes de Código | ADLC, Agent Skills, Agents.md, Harness Engineering. |
+| Integración Empresarial | MCP/AI Gateways, routers de LLM, AI control plane. |
+| AgentOps | EDD, observabilidad de IA, guardrails, evaluaciones GenAI, generación de testsets. |
+
+**Stack técnico**
+
+| Desarrollo | Python, OpenAI API, VS Code, Git/GitHub, Codex. |
+| :-- | --- |
+| Agentes | LangGraph, CrewAI, Msft Agent Framework. |
+| RAG | LangChain, LlamaIndex, Weviate, Chroma, Faiss, Neo4j, RAGAS. |
+| DSML | DataRobot, Databricks, Scikit-learn, Spark MLlib, R, MLFlow. |
+| Despliegue | vLLM, FastMCP, Flask, Docker, Cloud Run, n8n, AI Foundry. |
+| Low Code | Copilot Studio, KNIME, FlutterFlow. |
 
 <h2 id="experiencia-en-psicologia-clinica">Experiencia en Psicología Clínica</h2>
 
@@ -408,7 +433,7 @@ date: 2016-01-03
 
 <h2 id="competencias-tecnicas-y-metodologicas">Competencias Técnicas y Metodológicas</h2>
 
-| **IA Generativa** | LLMs, RAG, MCP, AI Agents, Coding Agents | 
+| **IA Generativa** | LLM-based application development, RAG architectures (GraphRAG, Agentic RAG), AI Agents (Orchestration patterns, MCP, A2A), Coding Agents (Codex) | 
 | --- | --- |
 | **Ventas B2B** | Pipeline generation, MEDDIC, PoV planning and execution, business value assessment |
 | **Ciencia Cognitiva** | Cognitive and clinical psychology, artificial intelligence, psychobiology |
