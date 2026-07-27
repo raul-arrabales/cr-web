@@ -54,40 +54,40 @@ date: 2015-12-27
 
 * * *
 
-| _2017-2019_ | _**MSc in Clinical Psychology**_ International University of La Rioja (UNIR). |
+| _2017-2019_ | _**MSc in Clinical Psychology**_ <br>International University of La Rioja (UNIR). |
 | :-- | --- |
-| _2017-2018_ | _**Postgraduate Program in Coaching Psychology**_ Complutense University of Madrid (UCM). |
-| _2012-2017_ | _**BSc in Psychology**_ Major in Clinical Psychology and Treatment of Mental Disorders (UNED). |
-| _2011-2012_ | _**Executive MBA**_ Master in Business Administration (EOI Business School). |
-| _2006-2011_ | _**PhD in Artificial Intelligence**_ Carlos III University of Madrid (UC3M). |
-| _2004-2005_ | _**MSc in Computer Science and Technology**_   Carlos III University of Madrid (UC3M). |
-| _1999-2001_ | _**BSc in Computer Science**_   Carlos III University of Madrid (UC3M). |
-| _1994-1998_ | _**BEng in Computer Engineering**_   Polytechnic University of Madrid (UPM). |
+| _2017-2018_ | _**Postgraduate Program in Coaching Psychology**_ <br>Complutense University of Madrid (UCM). |
+| _2012-2017_ | _**BSc in Psychology**_ <br>Major in Clinical Psychology and Treatment of Mental Disorders (UNED). |
+| _2011-2012_ | _**Executive MBA**_ <br>Master in Business Administration (EOI Business School). |
+| _2006-2011_ | _**PhD in Artificial Intelligence**_ <br>Carlos III University of Madrid (UC3M). |
+| _2004-2005_ | _**MSc in Computer Science and Technology**_ <br>Carlos III University of Madrid (UC3M). |
+| _1999-2001_ | _**BSc in Computer Science**_ <br>Carlos III University of Madrid (UC3M). |
+| _1994-1998_ | _**BEng in Computer Engineering**_ <br>Polytechnic University of Madrid (UPM). |
 
 <h2 id="industry-professional-experience">Industry / Professional Experience</h2>
 
 * * *
 
-| 2025 - Now | _**Gartner. Senior Director Analyst - Generative AI**_ Delivering actionable, objective AI insights to technical executives and their teams. |
+| 2025 - Now | _**Gartner. Senior Director Analyst - Generative AI**_ <br>Delivering actionable, objective AI insights to technical executives and their teams. |
 | :-- | --- |
-| 2024 - 2025 | _**BASF - Global Digital Services. AI Technical Experts Advisory Lead**_   Driving AI transformation and value realization across the organization. |
-| 2023 - 2024 | _**Psicobōtica. Founder & CEO**_   Generative AI applied to Psychology. |
-| 2023 - 2024 | _**Independent Senior AI Advisor**_   Helping organizations with their predictive and generative AI projects. |
-| 2018 - 2024 | _**IE University. Artificial Intelligence Professor**_   Associate professor at the IE School of Human Sciences and Technology. |
-| 2021 - 2023 | _**DataRobot. Senior Data Scientist - Southern Europe & Emerging Markets**_   Senior pre-sales customer-facing data scientist. |
-| 2015 - 2021 | _**ESIC Business & Marketing School. Asoc. Professor**_   Associate professor at ESIC. Big Data, AI, Customer Intelligence, Data Science. |
-| 2017 - 2021 | _**Serendeepia Research & Psicobōtica. Partner & Co-founder**_   Innovative AI product development based on machine learning and deep learning. |
-| 2015 - 2017 | **_Accenture. Analytics Senior Manager_**    Managing large Big Data Analytics projects. Accenture AI. |
-| 2014 - 2015 | _**Altran (Capgemini). Analytics & Insights Solution Manager**_   Solution Manager for Data Science, Analytics & Insights (cross-industry). |
-| 2014 - 2017 | _**MBIT School. Academic Director and Lecturer**_   Director of the Academic Department (until Oct. 2014). Lecturer in Data Science. |
-| _2012 - 2014_ | _**UCJC. Digital Content Development Area Manager**_   Management of the Digital Technology Area at U-Tad. Strategy & Innovation. |
-| _2010 - 2012_ | _**Comaware. Co-Founder & CEO**_   Novel AI technology for believable human-like behavior in artificial agents. |
-| _2006 - 2012_ | _**Carlos III Univ. of Madrid. Researcher & Assist. Professor**_   PhD in Artificial Intelligence. Senior researcher international R&D projects. |
-| _2005 - 2006_ | _**T-Online Telecom. Spain (ORANGE). Project Manager**_   Triple Play deployment of digital entertainment services at telecom Ya.com |
-| _2004 - 2005_ | _**C-COR Corp. (CommScope). EMEA. Project Manager**_   VoD solutions at ONO and Telefónica. Presales and support for EMEA. |
-| _2003 - 2004_ | _**nCUBE Corp. (CommScope). EMEA. Consultant**_   IPTV solutions. Presales consultant in Europe and support consultant EMEA. |
-| _2002 - 2003_ | _**Krop Audiovisual. (EADS Group). Technical consultant**_   Development and deployment of IPTV and VoD applications. |
-| _2000 - 2001_ | _**IBM Spain. Regional E-Commerce Web Producer**_   Deployment of B2B extranets for IBM Spain gold partners. |
+| 2024 - 2025 | _**BASF - Global Digital Services. AI Technical Experts Advisory Lead**_ <br>Driving AI transformation and value realization across the organization. |
+| 2023 - 2024 | _**Psicobōtica. Founder & CEO**_ <br>Generative AI applied to Psychology. |
+| 2023 - 2024 | _**Independent Senior AI Advisor**_ <br>Helping organizations with their predictive and generative AI projects. |
+| 2018 - 2024 | _**IE University. Artificial Intelligence Professor**_ <br>Associate professor at the IE School of Human Sciences and Technology. |
+| 2021 - 2023 | _**DataRobot. Senior Data Scientist - Southern Europe & Emerging Markets**_ <br>Senior pre-sales customer-facing data scientist. |
+| 2015 - 2021 | _**ESIC Business & Marketing School. Asoc. Professor**_ <br>Associate professor at ESIC. Big Data, AI, Customer Intelligence, Data Science. |
+| 2017 - 2021 | _**Serendeepia Research & Psicobōtica. Partner & Co-founder**_ <br>Innovative AI product development based on machine learning and deep learning. |
+| 2015 - 2017 | **_Accenture. Analytics Senior Manager_** <br>Managing large Big Data Analytics projects. Accenture AI. |
+| 2014 - 2015 | _**Altran (Capgemini). Analytics & Insights Solution Manager**_ <br>Solution Manager for Data Science, Analytics & Insights (cross-industry). |
+| 2014 - 2017 | _**MBIT School. Academic Director and Lecturer**_ <br>Director of the Academic Department (until Oct. 2014). Lecturer in Data Science. |
+| _2012 - 2014_ | _**UCJC. Digital Content Development Area Manager**_ <br>Management of the Digital Technology Area at U-Tad. Strategy & Innovation. |
+| _2010 - 2012_ | _**Comaware. Co-Founder & CEO**_ <br>Novel AI technology for believable human-like behavior in artificial agents. |
+| _2006 - 2012_ | _**Carlos III Univ. of Madrid. Researcher & Assist. Professor**_ <br>PhD in Artificial Intelligence. Senior researcher international R&D projects. |
+| _2005 - 2006_ | _**T-Online Telecom. Spain (ORANGE). Project Manager**_ <br>Triple Play deployment of digital entertainment services at telecom Ya.com |
+| _2004 - 2005_ | _**C-COR Corp. (CommScope). EMEA. Project Manager**_ <br>VoD solutions at ONO and Telefónica. Presales and support for EMEA. |
+| _2003 - 2004_ | _**nCUBE Corp. (CommScope). EMEA. Consultant**_ <br>IPTV solutions. Presales consultant in Europe and support consultant EMEA. |
+| _2002 - 2003_ | _**Krop Audiovisual. (EADS Group). Technical consultant**_ <br>Development and deployment of IPTV and VoD applications. |
+| _2000 - 2001_ | _**IBM Spain. Regional E-Commerce Web Producer**_ <br>Deployment of B2B extranets for IBM Spain gold partners. |
 
 <h2 id="ai-architecture-deployment-expertise">AI Architecture & Deployment Expertise</h2>
 

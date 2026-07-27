@@ -56,40 +56,40 @@ date: 2016-01-03
 
 * * *
 
-| _2017-2019_ | **_Máster en Psicología General Sanitaria_**   Universidad Internacional de la Rioja (UNIR). |
+| _2017-2019_ | **_Máster en Psicología General Sanitaria_** <br>Universidad Internacional de la Rioja (UNIR). |
 | :-- | --- |
-| _2017-2018_ | _**Programa Superior de Coaching Psicológico**_   Universidad Complutense de Madrid (UCM). |
-| _2012-2017_ | _**Graduado en Psicología**_    Psicología de la Salud e Intervención en Trastornos Mentales (UNED). |
-| _2011-2012_ | _**Executive MBA**_   Máster en Dirección de Empresas (Escuela de Organización Industrial). |
-| _2006-2011_ | _**Doctor en Inteligencia Artificial**_   Universidad Carlos III de Madrid (UC3M). |
-| _2004-2005_ | _**Máster en Ciencia y Tecnología Informática (DEA)**_   Universidad Carlos III de Madrid (UC3M). |
-| _1999-2001_ | _**Ingeniero en Informática**_   Universidad Carlos III de Madrid (UC3M). |
-| _1994-1998_ | _**Ingeniero Técnico en Informática de Sistemas**_   Universidad Politécnica de Madrid (UPM). |
+| _2017-2018_ | _**Programa Superior de Coaching Psicológico**_ <br>Universidad Complutense de Madrid (UCM). |
+| _2012-2017_ | _**Graduado en Psicología**_ <br>Psicología de la Salud e Intervención en Trastornos Mentales (UNED). |
+| _2011-2012_ | _**Executive MBA**_ <br>Máster en Dirección de Empresas (Escuela de Organización Industrial). |
+| _2006-2011_ | _**Doctor en Inteligencia Artificial**_ <br>Universidad Carlos III de Madrid (UC3M). |
+| _2004-2005_ | _**Máster en Ciencia y Tecnología Informática (DEA)**_ <br>Universidad Carlos III de Madrid (UC3M). |
+| _1999-2001_ | _**Ingeniero en Informática**_ <br>Universidad Carlos III de Madrid (UC3M). |
+| _1994-1998_ | _**Ingeniero Técnico en Informática de Sistemas**_ <br>Universidad Politécnica de Madrid (UPM). |
 
 <h2 id="experiencia-profesional">Experiencia Profesional</h2>
 
 * * *
 
-| 2025 - Hoy | _**Gartner. Director Senior de Análisis - IA Generativa**_ Proporcionando análisis objetivos y recomendaciones a líderes tecnológicos para apoyar la toma de decisiones sobre IA. |
+| 2025 - Hoy | _**Gartner. Director Senior de Análisis - IA Generativa**_ <br>Proporcionando análisis objetivos y recomendaciones a líderes tecnológicos para apoyar la toma de decisiones sobre IA. |
 | :-- | --- |
-| 2024 - 2025 | _**BASF. Global Digital Services. AI Technical Experts Advisory Lead**_   Impulsando la generación de valor a través de la IA. |
-| 2023 - 2024 | _**Psicobōtica. Socio fundador y CEO**_   IA generativa aplicada a la psicología. |
-| 2023 - 2024 | _**Senior AI Advisor**_   Ayudo a las empresas con sus proyectos de IA generativa y predictiva. |
-| 2018 - 2024 | _**IE University (Instituto de Empresa). Profesor de Inteligencia Artificial**_   Profesor asociado en IE School of Human Sciences & Technology. |
-| 2021-2023 | _**DataRobot. Senior Data Scientist - Southern Europe & Emerging Markets**_   Científico de datos sénior del área de preventa. |
-| 2015-2021 | _**ESIC. Profesor Asociado**_   Profesor en ESIC. Neurociencia, AI, Data Science. |
-| 2017-2021 | _**Serendeepia Research. Socio y cofundador**_   Desarrollo de productos IA basados en machine learning y deep learning. |
-| 2015-2017 | **_Accenture. Analytics Senior Manager_**    Responsable de grandes proyectos Big Data Analytics. Accenture AI. |
-| 2014-2015 | _**Altran (Capgemini). Analytics & Insights Solution Manager**_   Gerente responsable de las soluciones de Data Science, Analytics & Insights. |
-| 2014-2017 | _**MBIT School. Director Académico y profesor**_   Dirección académica e innovación hasta Oct. 2014. Profesor Data Science. |
-| _2012-2014_ | _**UCJC. Director del Área de Ingeniería**_   Responsable del área Ingeniería de Centro Adscrito. Estrategia e Innovación. |
-| _2010-2012_ | _**Comaware. Co-Fundador y CEO**_   IA para generación de comportamiento realista en agentes artificiales. |
-| 2006-2012 | _**Universidad Carlos III de Madrid (UC3M). Docente e Investigador**_   Doctor en Inteligencia Artificial. Investigador en proyectos I+D+i. |
-| _2005-2006_ | _**T-Online Telecom. Spain (ORANGE). Jefe de Proyecto**_   Implantación del Triple Play en Ya.com Responsable de servicios interactivos TV. |
-| _2004-2005_ | _**C-COR Corp. (CommScope). EMEA. Jefe de Proyecto**_   Coordinación servicios VoD en ONO y Telefónica. Pre-venta y soporte EMEA. |
-| _2003-2004_ | _**nCUBE Corp. (CommScope). EMEA. Consultor Ingeniero**_   Pre-venta para nuevos despliegues en Europa y consultor de soporte EMEA. |
-| _2002-2003_ | _**Krop Audiovisual. (EADS Group). Ingeniero de sistemas**_   Ingeniero de vídeo bajo demanda y middleware para soluciones de TV digital. |
-| _2000-2001_ | _**IBM España. Técnico E-Commerce**_   Implantación de E-Catalogues y Gestores de Contenido Web B2B en España. |
+| 2024 - 2025 | _**BASF. Global Digital Services. AI Technical Experts Advisory Lead**_ <br>Impulsando la generación de valor a través de la IA. |
+| 2023 - 2024 | _**Psicobōtica. Socio fundador y CEO**_ <br>IA generativa aplicada a la psicología. |
+| 2023 - 2024 | _**Senior AI Advisor**_ <br>Ayudo a las empresas con sus proyectos de IA generativa y predictiva. |
+| 2018 - 2024 | _**IE University (Instituto de Empresa). Profesor de Inteligencia Artificial**_ <br>Profesor asociado en IE School of Human Sciences & Technology. |
+| 2021-2023 | _**DataRobot. Senior Data Scientist - Southern Europe & Emerging Markets**_ <br>Científico de datos sénior del área de preventa. |
+| 2015-2021 | _**ESIC. Profesor Asociado**_ <br>Profesor en ESIC. Neurociencia, AI, Data Science. |
+| 2017-2021 | _**Serendeepia Research. Socio y cofundador**_ <br>Desarrollo de productos IA basados en machine learning y deep learning. |
+| 2015-2017 | **_Accenture. Analytics Senior Manager_** <br>Responsable de grandes proyectos Big Data Analytics. Accenture AI. |
+| 2014-2015 | _**Altran (Capgemini). Analytics & Insights Solution Manager**_ <br>Gerente responsable de las soluciones de Data Science, Analytics & Insights. |
+| 2014-2017 | _**MBIT School. Director Académico y profesor**_ <br>Dirección académica e innovación hasta Oct. 2014. Profesor Data Science. |
+| _2012-2014_ | _**UCJC. Director del Área de Ingeniería**_ <br>Responsable del área Ingeniería de Centro Adscrito. Estrategia e Innovación. |
+| _2010-2012_ | _**Comaware. Co-Fundador y CEO**_ <br>IA para generación de comportamiento realista en agentes artificiales. |
+| 2006-2012 | _**Universidad Carlos III de Madrid (UC3M). Docente e Investigador**_ <br>Doctor en Inteligencia Artificial. Investigador en proyectos I+D+i. |
+| _2005-2006_ | _**T-Online Telecom. Spain (ORANGE). Jefe de Proyecto**_ <br>Implantación del Triple Play en Ya.com Responsable de servicios interactivos TV. |
+| _2004-2005_ | _**C-COR Corp. (CommScope). EMEA. Jefe de Proyecto**_ <br>Coordinación servicios VoD en ONO y Telefónica. Pre-venta y soporte EMEA. |
+| _2003-2004_ | _**nCUBE Corp. (CommScope). EMEA. Consultor Ingeniero**_ <br>Pre-venta para nuevos despliegues en Europa y consultor de soporte EMEA. |
+| _2002-2003_ | _**Krop Audiovisual. (EADS Group). Ingeniero de sistemas**_ <br>Ingeniero de vídeo bajo demanda y middleware para soluciones de TV digital. |
+| _2000-2001_ | _**IBM España. Técnico E-Commerce**_ <br>Implantación de E-Catalogues y Gestores de Contenido Web B2B en España. |
 
 <h2 id="experiencia-en-arquitectura-y-despliegue-de-ia">Experiencia en Arquitectura y Despliegue de IA</h2>
 
