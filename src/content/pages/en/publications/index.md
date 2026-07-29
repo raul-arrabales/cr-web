@@ -135,7 +135,9 @@ Arrabales, R. "**Los Trastornos Mentales de la Inteligencia Artificial**". Psico
 
 <a id="gartner-research"></a>
 
-### Gartner Research (4)
+### Gartner Research (5)
+
+Arrabales, R. "**When to Use AI Agents in RAG**". Jul., 2026. Gartner. \[[Gartner Research]( https://www.gartner.com/document-reader/document/8138629)\]
 
 Arrabales, R. "**Use These Best Practices for Successful Agentic Analytics Implementations**". Apr., 2026. Gartner. \[[Gartner Research](https://www.gartner.com/en/documents/7374530)\]
 
