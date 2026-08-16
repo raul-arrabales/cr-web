@@ -1,14 +1,10 @@
 # cr-web
 
-Raul's personal website and blog built with Astro.
+Raul's personal website and blog, built with Astro and published at
+[conscious-robots.com](https://conscious-robots.com/).
 
-The website is content-first, bilingual and optimized for static hosting.
-
-It deploys to both Github Pages and Cloudfare Pages: 
-- [raul-arrabales.github.io/cr-web/](https://raul-arrabales.github.io/cr-web/) (GH Pages)
-- [conscious-robots.com](https://conscious-robots.com/]) (DNS -> GH Pages)
-- [cr-web.pages.dev](https://cr-web.pages.dev/) (Cloudfare)
-
+The website is content-first, bilingual, and optimized for static hosting. Its
+source repository is [`raul-arrabales/cr-web`](https://github.com/raul-arrabales/cr-web).
 
 ## Stack
 
@@ -31,7 +27,7 @@ Canonical content paths:
 Current route shape:
 
 - Blog posts: `/{lang}/blog/{year}/{slug}/`
-- Pages: `/{lang}/pages/{year}/{slug}/`
+- Pages: `/{lang}/pages/{slug}/`
 
 Supported languages:
 
@@ -66,28 +62,70 @@ Preview the built site locally:
 npm run preview
 ```
 
-## Cloudflare Pages
+## Hosting and Deployment
 
-This project currently deploys cleanly as a static Astro site.
+GitHub Pages is the production hosting target. Cloudflare Pages remains enabled
+as a secondary automatic deployment:
 
-Recommended Cloudflare Pages settings:
+```text
+GitHub repository (main)
+        |
+        +--> GitHub Actions --> GitHub Pages --> conscious-robots.com
+        |
+        +--> Cloudflare Pages --> cr-web.pages.dev
+```
+
+The move to GitHub Pages reduces reliance on shared Cloudflare infrastructure
+after the Cloudflare-hosted site became temporarily unreachable through some
+Spanish ISPs, including Movistar.
+
+### GitHub Pages (production)
+
+The [GitHub Pages workflow](.github/workflows/deploy-github-pages.yml):
+
+- Runs automatically on pushes to `main` and supports manual dispatch
+- Uses Node.js `22.12.0`
+- Builds Astro with `https://conscious-robots.com` as the production `site` URL
+- Uploads `dist/` and deploys it with the official GitHub Pages Actions
+
+GitHub Pages manages the custom domain and its HTTPS certificate.
+
+### DNS
+
+Cloudflare remains the authoritative DNS provider, but the website records are
+**DNS only**. Web traffic does not pass through the Cloudflare proxy.
+
+The apex domain uses GitHub Pages' A records:
+
+```text
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+The `www` hostname uses:
+
+```text
+CNAME -> raul-arrabales.github.io
+```
+
+### Cloudflare Pages (secondary)
+
+Cloudflare Pages continues to deploy automatically from the repository and is
+available at [cr-web.pages.dev](https://cr-web.pages.dev/). Its build settings
+are:
 
 - Framework preset: `Astro`
-- Production branch: `main` or your chosen default branch
+- Production branch: `main`
 - Build command: `npm run build`
 - Build output directory: `dist`
 - Root directory: repository root
+- Node version: `22.12.0`
 
-Optional environment setting:
-
-- `NODE_VERSION=22.12.0`
-
-The repo includes [wrangler.toml](/home/array/projects/web/cr-web/wrangler.toml) to document the Pages output directory for Wrangler-based workflows.
-
-Important:
-
-- If you use a Cloudflare dashboard-connected Git deployment, keep the dashboard build settings aligned with this repo.
-- If you later add Pages Functions or bindings, update `wrangler.toml` intentionally and treat it as part of your deployment source of truth.
+The repository's `wrangler.toml` also records `dist/` as the Pages output
+directory for Wrangler-based workflows. Keep Cloudflare dashboard settings and
+this file aligned if the secondary deployment changes.
 
 ## Notes
 
