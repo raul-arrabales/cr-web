@@ -34,7 +34,7 @@ jobs:
         run: npm ci
 
       - name: Build Astro for GitHub Pages
-        run: npm run build -- --site https://gh.raul-arrabales.github.io 
+        run: npm run build -- --site https://conscious-robots.com
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
