@@ -2,7 +2,13 @@
 
 Raul's personal website and blog built with Astro.
 
-This repository consolidates content from two legacy WordPress sites, one in English and one in Spanish, into a single static site. The project is content-first, bilingual, and optimized for static hosting.
+The website is content-first, bilingual and optimized for static hosting.
+
+It deploys to both Github Pages and Cloudfare Pages: 
+- (raul-arrabales.github.io/cr-web/)[https://raul-arrabales.github.io/cr-web/] (GH Pages)
+- (conscious-robots.com)[https://conscious-robots.com/] (DNS -> GH Pages)
+- (cr-web.pages.dev)[https://cr-web.pages.dev/] (Cloudfare)
+
 
 ## Stack
 
