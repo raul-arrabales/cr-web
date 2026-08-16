@@ -5,9 +5,9 @@ Raul's personal website and blog built with Astro.
 The website is content-first, bilingual and optimized for static hosting.
 
 It deploys to both Github Pages and Cloudfare Pages: 
-- (raul-arrabales.github.io/cr-web/)[https://raul-arrabales.github.io/cr-web/] (GH Pages)
-- (conscious-robots.com)[https://conscious-robots.com/] (DNS -> GH Pages)
-- (cr-web.pages.dev)[https://cr-web.pages.dev/] (Cloudfare)
+- [raul-arrabales.github.io/cr-web/](https://raul-arrabales.github.io/cr-web/) (GH Pages)
+- [conscious-robots.com](https://conscious-robots.com/]) (DNS -> GH Pages)
+- [cr-web.pages.dev](https://cr-web.pages.dev/) (Cloudfare)
 
 
 ## Stack
