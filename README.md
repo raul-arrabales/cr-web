@@ -1,4 +1,4 @@
-# cr-web
+# cr-web | Conscious-Robots.com website
 
 Raul's personal website and blog, built with Astro and published at
 [conscious-robots.com](https://conscious-robots.com/).
