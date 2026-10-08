@@ -135,7 +135,11 @@ Arrabales, R. "**Los Trastornos Mentales de la Inteligencia Artificial**". Psico
 
 <a id="gartner-research"></a>
 
-### Gartner Research (5)
+### Gartner Research (7)
+
+Georgia O'Callaghanm et al. "**2027 Planning Guide for AI, Agents and Analytics**". Oct., 2026. Gartner. \[[Gartner Research](https://www.gartner.com/document-reader/document/8462645)\]
+
+Arrabales, R., Meyer, H. "**Solution Path for Implementing RAG at Scale**". Sept., 2026. Gartner. \[[Gartner Research](https://www.gartner.com/document-reader/document/8427513)\]
 
 Arrabales, R. "**When to Use AI Agents in RAG**". Jul., 2026. Gartner. \[[Gartner Research]( https://www.gartner.com/document-reader/document/8138629)\]
 
