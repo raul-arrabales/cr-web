@@ -134,7 +134,9 @@ Arrabales, R. "**Los Trastornos Mentales de la Inteligencia Artificial**". Psico
 \[[Edición de bolsillo](https://www.amazon.es/Los-Trastornos-Mentales-Inteligencia-Artificial/dp/B0CKD3VTBW/)\] \[[Edición Kindle](https://www.amazon.es/Los-Trastornos-Mentales-Inteligencia-Artificial-ebook/dp/B0CK8LXFNF/)\]
 
 <a id="articulos-de-investigacion-gartner"></a>
-### Artículos de Investigación Gartner (7)
+### Artículos de Investigación Gartner (8)
+
+Arrabales, R. "**Scale Enterprise RAG With Reusable Blueprints**". Oct., 2026. Gartner. \[[Gartner Research](https://www.gartner.com/document-reader/document/8532009)\]
 
 Georgia O'Callaghanm et al. "**2027 Planning Guide for AI, Agents and Analytics**". Oct., 2026. Gartner. \[[Gartner Research](https://www.gartner.com/document-reader/document/8462645)\]
 
