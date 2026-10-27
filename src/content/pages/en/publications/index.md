@@ -135,7 +135,9 @@ Arrabales, R. "**Los Trastornos Mentales de la Inteligencia Artificial**". Psico
 
 <a id="gartner-research"></a>
 
-### Gartner Research (8)
+### Gartner Research (9)
+
+Meyer, H., Arrabales, R., Olliffe, G. "**How to Close the AI Agent Registry Governance Gap**". Oct., 2026. Gartner. \[[Gartner Research](https://www.gartner.com/document-reader/document/8538109)\]
 
 Arrabales, R. "**Scale Enterprise RAG With Reusable Blueprints**". Oct., 2026. Gartner. \[[Gartner Research](https://www.gartner.com/document-reader/document/8532009)\]
 
